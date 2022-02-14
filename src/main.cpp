@@ -3,9 +3,11 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include "Mode.hpp"
+#include "PlayMode.hpp"
 
 #include <iostream>
+#include <memory>
+
 
 int main()
 {
@@ -48,10 +50,11 @@ int main()
     glfwSetFramebufferSizeCallback(window, on_window_resized);
 
     // set callback functions for user input
-    glfwSetKeyCallback(window, Mode::handle_key_wrapper);
+    glfwSetKeyCallback(window, &(Mode::handle_key_wrapper));
+
 
     // set the current mode to the default mode
-    Mode::set_current(std::make_shared<Mode>());
+    Mode::set_current(std::make_shared<PlayMode>());
 
 
     // render loop

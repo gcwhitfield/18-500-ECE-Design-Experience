@@ -33,4 +33,5 @@ struct Mode : std::enable_shared_from_this<Mode> {
     // application needs to switch between screens. For example, a pause screen or a menu can 
     // be implemented by changing the mode
     static void set_current(std::shared_ptr<Mode> const &new_mode);
+
 };
