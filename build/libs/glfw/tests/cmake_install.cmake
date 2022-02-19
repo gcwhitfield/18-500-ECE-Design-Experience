@@ -1,4 +1,4 @@
-# Install script for directory: /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/tests
+# Install script for directory: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

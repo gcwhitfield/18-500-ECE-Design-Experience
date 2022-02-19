@@ -1,5 +1,11 @@
 #include "PlayMode.hpp"
 
+// "stb_image.h" must be included from the .cpp file and not from an .hpp file.
+// the following two lines must be place inside of a .cpp file and not a .hpp file. Otherwise, 
+// a linker error will occur because STB_IMAGE_IMPLEMENTATION gets defined multiple times. 
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+
 PlayMode::PlayMode() {
 
     // "create buffer to store vertex information", "create vertex array object...", and 
@@ -73,6 +79,25 @@ PlayMode::PlayMode() {
         glBindTexture(GL_TEXTURE_2D, 0);
         print_gl_errors();
     }
+    { // import llama texture. stb_image code from OpenGL programming book by Joey de Vries
+        glGenTextures(1, &llama_texture);
+        glBindTexture(GL_TEXTURE_2D, llama_texture);
+        int width, height, nr_channels;
+        unsigned char *data = stbi_load("images/llama.png", &width, &height, &nr_channels, 0);
+        if (!data) {
+            std::cerr << "could not read llama png" << std::endl;
+            exit(1);
+        }
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        glGenerateMipmap(GL_TEXTURE_2D);
+        glBindTexture(GL_TEXTURE_2D, 0);
+        stbi_image_free(data);
+        print_gl_errors();
+    }
 }
 
 PlayMode::~PlayMode() {
@@ -84,7 +109,7 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     // drawing starter code taken from "game 0 base code"
     // https://github.com/15-466/15-466-f21-base0
     vertices.clear();
-    draw_rectangle(vertices, glm::vec2(0.4f, 0.4f), glm::vec2(0.5, 0.5), glm::u8vec4(0x83, 0x3f, 0x24, 0xff));
+    draw_rectangle(vertices, glm::vec2(0.4f, 0.4f), glm::vec2(0.5, 0.5), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
 
     (void) drawable_size;
     glUseProgram(program.program);
@@ -98,7 +123,7 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     
     glBindVertexArray(vertex_array_object);
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, white_texture);
+    glBindTexture(GL_TEXTURE_2D, llama_texture);
 
     glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
     print_gl_errors();

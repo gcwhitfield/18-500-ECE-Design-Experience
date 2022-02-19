@@ -3,6 +3,7 @@
 #include <glm.hpp>
 #include <iostream>
 #include <vector>
+
 // PlayMode is where all of the drawing and logic related to gameplay is stored. 
 // The scene where the player plays the game is typically referred to as the "play mode"
 struct PlayMode : Mode {
@@ -14,6 +15,7 @@ struct PlayMode : Mode {
     GLuint vertex_buffer_object = -1U;
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
+    GLuint llama_texture = -1U;
 
     // update is called every frame
     virtual void update(float elapsed) override;
@@ -48,13 +50,13 @@ struct PlayMode : Mode {
     // draw_rectangle copied from NEST framework 
     // https://github.com/gcwhitfield/Game-Programming-f21-base6/blob/main/NEST.md
     inline void draw_rectangle (std::vector<Vertex> &verts, glm::vec2 const &center, glm::vec2 const &radius, glm::u8vec4 const &color) {
-        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 0.0f)));
-        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 1.0f)));
-        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 1.0f)));
+        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 1.0f))); // top left
+        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y-radius.y, 0.0f), color, glm::vec2(1.0f, 1.0f))); // top right
+        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 0.0f))); // bottom right
 
-        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 0.0f)));
-        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 1.0f)));
-        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 0.0f)));
+        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 1.0f))); // top left
+        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 0.0f))); // bottom right
+        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y+radius.y, 0.0f), color, glm::vec2(0.0f, 0.0f))); // bottom left
     };
 
     void print_gl_errors()

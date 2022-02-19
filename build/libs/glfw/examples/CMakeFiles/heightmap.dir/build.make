@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.18.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window
+CMAKE_SOURCE_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build
+CMAKE_BINARY_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build"
 
 # Include any dependencies generated for this target.
 include libs/glfw/examples/CMakeFiles/heightmap.dir/depend.make
@@ -78,33 +78,33 @@ include libs/glfw/examples/CMakeFiles/heightmap.dir/flags.make
 
 libs/glfw/examples/heightmap.app/Contents/Resources/glfw.icns: ../libs/glfw/examples/glfw.icns
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Copying OS X content libs/glfw/examples/heightmap.app/Contents/Resources/glfw.icns"
-	$(CMAKE_COMMAND) -E copy /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/examples/glfw.icns libs/glfw/examples/heightmap.app/Contents/Resources/glfw.icns
+	$(CMAKE_COMMAND) -E copy "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/examples/glfw.icns" libs/glfw/examples/heightmap.app/Contents/Resources/glfw.icns
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.o: libs/glfw/examples/CMakeFiles/heightmap.dir/flags.make
 libs/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.o: ../libs/glfw/examples/heightmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.o"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/heightmap.c.o -c /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/examples/heightmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.o"
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/heightmap.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/examples/heightmap.c"
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/heightmap.dir/heightmap.c.i"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/examples/heightmap.c" > CMakeFiles/heightmap.dir/heightmap.c.i
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/heightmap.dir/heightmap.c.s"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/examples/heightmap.c" -o CMakeFiles/heightmap.dir/heightmap.c.s
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: libs/glfw/examples/CMakeFiles/heightmap.dir/flags.make
 libs/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: ../libs/glfw/deps/glad_gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -c /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/deps/glad_gl.c"
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/deps/glad_gl.c > CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/deps/glad_gl.c" > CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/deps/glad_gl.c -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/deps/glad_gl.c" -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s
 
 # Object files for target heightmap
 heightmap_OBJECTS = \
@@ -119,8 +119,8 @@ libs/glfw/examples/heightmap.app/Contents/MacOS/heightmap: libs/glfw/examples/CM
 libs/glfw/examples/heightmap.app/Contents/MacOS/heightmap: libs/glfw/examples/CMakeFiles/heightmap.dir/build.make
 libs/glfw/examples/heightmap.app/Contents/MacOS/heightmap: libs/glfw/src/libglfw3.a
 libs/glfw/examples/heightmap.app/Contents/MacOS/heightmap: libs/glfw/examples/CMakeFiles/heightmap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap.app/Contents/MacOS/heightmap"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap.app/Contents/MacOS/heightmap"
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/glfw/examples/CMakeFiles/heightmap.dir/build: libs/glfw/examples/heightmap.app/Contents/MacOS/heightmap
@@ -129,10 +129,10 @@ libs/glfw/examples/CMakeFiles/heightmap.dir/build: libs/glfw/examples/heightmap.
 .PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/build
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/clean:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
 .PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/clean
 
 libs/glfw/examples/CMakeFiles/heightmap.dir/depend:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/examples /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/heightmap.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/examples" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/heightmap.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/depend
 

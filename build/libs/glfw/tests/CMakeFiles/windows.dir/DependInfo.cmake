@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/deps/getopt.c" "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o"
-  "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/deps/glad_gl.c" "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o"
-  "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/tests/windows.c" "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/windows.dir/windows.c.o"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/deps/getopt.c" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/deps/glad_gl.c" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/tests/windows.c" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/windows.dir/windows.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -18,7 +18,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

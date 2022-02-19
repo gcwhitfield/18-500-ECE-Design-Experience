@@ -67,13 +67,25 @@ RM = /usr/local/Cellar/cmake/3.18.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window
+CMAKE_SOURCE_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build
+CMAKE_BINARY_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.18.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.18.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -131,23 +143,11 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.18.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.18.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -176,17 +176,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named myproject
+# Target rules for targets named RhythmGame
 
 # Build rule for target.
-myproject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myproject
-.PHONY : myproject
+RhythmGame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RhythmGame
+.PHONY : RhythmGame
 
 # fast build rule for target.
-myproject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/build
-.PHONY : myproject/fast
+RhythmGame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/build
+.PHONY : RhythmGame/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -610,7 +610,7 @@ libs/glad/src/glad.o: libs/glad/src/glad.c.o
 
 # target to build an object file
 libs/glad/src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/libs/glad/src/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.o
 .PHONY : libs/glad/src/glad.c.o
 
 libs/glad/src/glad.i: libs/glad/src/glad.c.i
@@ -619,7 +619,7 @@ libs/glad/src/glad.i: libs/glad/src/glad.c.i
 
 # target to preprocess a source file
 libs/glad/src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/libs/glad/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.i
 .PHONY : libs/glad/src/glad.c.i
 
 libs/glad/src/glad.s: libs/glad/src/glad.c.s
@@ -628,8 +628,35 @@ libs/glad/src/glad.s: libs/glad/src/glad.c.s
 
 # target to generate assembly for a file
 libs/glad/src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/libs/glad/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.s
 .PHONY : libs/glad/src/glad.c.s
+
+src/ColorTextureProgram.o: src/ColorTextureProgram.cpp.o
+
+.PHONY : src/ColorTextureProgram.o
+
+# target to build an object file
+src/ColorTextureProgram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o
+.PHONY : src/ColorTextureProgram.cpp.o
+
+src/ColorTextureProgram.i: src/ColorTextureProgram.cpp.i
+
+.PHONY : src/ColorTextureProgram.i
+
+# target to preprocess a source file
+src/ColorTextureProgram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.i
+.PHONY : src/ColorTextureProgram.cpp.i
+
+src/ColorTextureProgram.s: src/ColorTextureProgram.cpp.s
+
+.PHONY : src/ColorTextureProgram.s
+
+# target to generate assembly for a file
+src/ColorTextureProgram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.s
+.PHONY : src/ColorTextureProgram.cpp.s
 
 src/Mode.o: src/Mode.cpp.o
 
@@ -637,7 +664,7 @@ src/Mode.o: src/Mode.cpp.o
 
 # target to build an object file
 src/Mode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/Mode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Mode.cpp.o
 .PHONY : src/Mode.cpp.o
 
 src/Mode.i: src/Mode.cpp.i
@@ -646,7 +673,7 @@ src/Mode.i: src/Mode.cpp.i
 
 # target to preprocess a source file
 src/Mode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/Mode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Mode.cpp.i
 .PHONY : src/Mode.cpp.i
 
 src/Mode.s: src/Mode.cpp.s
@@ -655,8 +682,35 @@ src/Mode.s: src/Mode.cpp.s
 
 # target to generate assembly for a file
 src/Mode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/Mode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Mode.cpp.s
 .PHONY : src/Mode.cpp.s
+
+src/PlayMode.o: src/PlayMode.cpp.o
+
+.PHONY : src/PlayMode.o
+
+# target to build an object file
+src/PlayMode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o
+.PHONY : src/PlayMode.cpp.o
+
+src/PlayMode.i: src/PlayMode.cpp.i
+
+.PHONY : src/PlayMode.i
+
+# target to preprocess a source file
+src/PlayMode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.i
+.PHONY : src/PlayMode.cpp.i
+
+src/PlayMode.s: src/PlayMode.cpp.s
+
+.PHONY : src/PlayMode.s
+
+# target to generate assembly for a file
+src/PlayMode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.s
+.PHONY : src/PlayMode.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -664,7 +718,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -673,7 +727,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -682,7 +736,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -699,6 +753,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... RhythmGame"
 	@echo "... boing"
 	@echo "... clipboard"
 	@echo "... cursor"
@@ -715,7 +770,6 @@ help:
 	@echo "... joysticks"
 	@echo "... monitors"
 	@echo "... msaa"
-	@echo "... myproject"
 	@echo "... offscreen"
 	@echo "... opacity"
 	@echo "... particles"
@@ -733,9 +787,15 @@ help:
 	@echo "... libs/glad/src/glad.o"
 	@echo "... libs/glad/src/glad.i"
 	@echo "... libs/glad/src/glad.s"
+	@echo "... src/ColorTextureProgram.o"
+	@echo "... src/ColorTextureProgram.i"
+	@echo "... src/ColorTextureProgram.s"
 	@echo "... src/Mode.o"
 	@echo "... src/Mode.i"
 	@echo "... src/Mode.s"
+	@echo "... src/PlayMode.o"
+	@echo "... src/PlayMode.i"
+	@echo "... src/PlayMode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

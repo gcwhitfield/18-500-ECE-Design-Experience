@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/deps -I/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/include
+C_INCLUDES = -I"/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/deps" -I"/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/include"
 
 C_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -std=gnu99
 

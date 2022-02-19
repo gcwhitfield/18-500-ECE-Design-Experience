@@ -1,63 +1,63 @@
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/install/strip.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/install.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/list_install_components.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/rebuild_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/edit_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/install/local.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles/myproject.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/install/local.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/rebuild_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/edit_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/install/strip.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/uninstall.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/install.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/list_install_components.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/install/local.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/install/strip.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/install.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/list_install_components.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/update_mappings.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/rebuild_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/edit_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/glfw.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/install/strip.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/install.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/wave.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/install/local.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/simple.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/rebuild_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/sharing.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/particles.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/list_install_components.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/heightmap.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/edit_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/splitview.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/offscreen.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/gears.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/examples/CMakeFiles/boing.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/install/strip.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/edit_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/triangle-vulkan.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/install/local.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/clipboard.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/title.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/install.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/timeout.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/rebuild_cache.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/threads.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/opacity.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/gamma.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/tearing.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/list_install_components.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/iconify.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/joysticks.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/windows.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/inputlag.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/empty.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/reopen.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/msaa.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/cursor.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/glfwinfo.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/monitors.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/events.dir
-/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/tests/CMakeFiles/icon.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/install/local.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/install/strip.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/install.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/list_install_components.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/rebuild_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/edit_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/install/local.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/rebuild_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/edit_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/install/strip.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/uninstall.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/install.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/list_install_components.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/install/local.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/install/strip.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/install.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/list_install_components.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/update_mappings.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/rebuild_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/edit_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/glfw.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/install/strip.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/install.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/wave.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/install/local.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/simple.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/rebuild_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/sharing.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/particles.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/list_install_components.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/heightmap.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/edit_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/splitview.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/offscreen.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/gears.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/examples/CMakeFiles/boing.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/install/strip.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/edit_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/triangle-vulkan.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/install/local.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/clipboard.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/title.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/install.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/timeout.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/rebuild_cache.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/threads.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/opacity.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/gamma.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/tearing.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/list_install_components.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/iconify.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/joysticks.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/windows.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/inputlag.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/empty.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/reopen.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/msaa.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/cursor.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/glfwinfo.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/monitors.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/events.dir
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/tests/CMakeFiles/icon.dir

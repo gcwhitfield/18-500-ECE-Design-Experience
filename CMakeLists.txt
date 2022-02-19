@@ -16,7 +16,10 @@ include_directories(./libs/glfw/include/
                     )
 
 # set the names of all of the cpp files into one variable called "NAMES"
-set(NAMES ./src/Mode.cpp)
+set(NAMES ./src/Mode.cpp
+          ./src/PlayMode.cpp
+          ./src/ColorTextureProgram.cpp
+          )
 
 
 # add the executable

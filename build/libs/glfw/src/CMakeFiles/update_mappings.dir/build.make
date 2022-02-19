@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.18.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window
+CMAKE_SOURCE_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build
+CMAKE_BINARY_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build"
 
 # Utility rule file for update_mappings.
 
@@ -73,8 +73,8 @@ CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-
 include libs/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 libs/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/src && /usr/local/Cellar/cmake/3.18.2/bin/cmake -P /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/src" && /usr/local/Cellar/cmake/3.18.2/bin/cmake -P "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h
 
 update_mappings: libs/glfw/src/CMakeFiles/update_mappings
 update_mappings: libs/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -87,10 +87,10 @@ libs/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/build
 
 libs/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src" && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 libs/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw/src /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw/src" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/depend
 

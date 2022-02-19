@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.18.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window
+CMAKE_SOURCE_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build
+CMAKE_BINARY_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/src//CMakeFiles/progress.marks
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/CMakeFiles 0
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src//CMakeFiles/progress.marks"
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/clean
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/preinstall
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/preinstall
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/glfw/src/CMakeFiles/update_mappings.dir/rule:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/CMakeFiles/update_mappings.dir/rule
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/CMakeFiles/update_mappings.dir/rule
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ update_mappings: libs/glfw/src/CMakeFiles/update_mappings.dir/rule
 
 # fast build rule for target.
 update_mappings/fast:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
 # Convenience name for target.
 libs/glfw/src/CMakeFiles/glfw.dir/rule:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/CMakeFiles/glfw.dir/rule
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/CMakeFiles/glfw.dir/rule
 .PHONY : libs/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ glfw: libs/glfw/src/CMakeFiles/glfw.dir/rule
 
 # fast build rule for target.
 glfw/fast:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 cocoa_init.o: cocoa_init.m.o
@@ -211,7 +211,7 @@ cocoa_init.o: cocoa_init.m.o
 
 # target to build an object file
 cocoa_init.m.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o
 .PHONY : cocoa_init.m.o
 
 cocoa_init.i: cocoa_init.m.i
@@ -220,7 +220,7 @@ cocoa_init.i: cocoa_init.m.i
 
 # target to preprocess a source file
 cocoa_init.m.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.i
 .PHONY : cocoa_init.m.i
 
 cocoa_init.s: cocoa_init.m.s
@@ -229,7 +229,7 @@ cocoa_init.s: cocoa_init.m.s
 
 # target to generate assembly for a file
 cocoa_init.m.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.s
 .PHONY : cocoa_init.m.s
 
 cocoa_joystick.o: cocoa_joystick.m.o
@@ -238,7 +238,7 @@ cocoa_joystick.o: cocoa_joystick.m.o
 
 # target to build an object file
 cocoa_joystick.m.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o
 .PHONY : cocoa_joystick.m.o
 
 cocoa_joystick.i: cocoa_joystick.m.i
@@ -247,7 +247,7 @@ cocoa_joystick.i: cocoa_joystick.m.i
 
 # target to preprocess a source file
 cocoa_joystick.m.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.i
 .PHONY : cocoa_joystick.m.i
 
 cocoa_joystick.s: cocoa_joystick.m.s
@@ -256,7 +256,7 @@ cocoa_joystick.s: cocoa_joystick.m.s
 
 # target to generate assembly for a file
 cocoa_joystick.m.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.s
 .PHONY : cocoa_joystick.m.s
 
 cocoa_monitor.o: cocoa_monitor.m.o
@@ -265,7 +265,7 @@ cocoa_monitor.o: cocoa_monitor.m.o
 
 # target to build an object file
 cocoa_monitor.m.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o
 .PHONY : cocoa_monitor.m.o
 
 cocoa_monitor.i: cocoa_monitor.m.i
@@ -274,7 +274,7 @@ cocoa_monitor.i: cocoa_monitor.m.i
 
 # target to preprocess a source file
 cocoa_monitor.m.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.i
 .PHONY : cocoa_monitor.m.i
 
 cocoa_monitor.s: cocoa_monitor.m.s
@@ -283,7 +283,7 @@ cocoa_monitor.s: cocoa_monitor.m.s
 
 # target to generate assembly for a file
 cocoa_monitor.m.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.s
 .PHONY : cocoa_monitor.m.s
 
 cocoa_time.o: cocoa_time.c.o
@@ -292,7 +292,7 @@ cocoa_time.o: cocoa_time.c.o
 
 # target to build an object file
 cocoa_time.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o
 .PHONY : cocoa_time.c.o
 
 cocoa_time.i: cocoa_time.c.i
@@ -301,7 +301,7 @@ cocoa_time.i: cocoa_time.c.i
 
 # target to preprocess a source file
 cocoa_time.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.i
 .PHONY : cocoa_time.c.i
 
 cocoa_time.s: cocoa_time.c.s
@@ -310,7 +310,7 @@ cocoa_time.s: cocoa_time.c.s
 
 # target to generate assembly for a file
 cocoa_time.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.s
 .PHONY : cocoa_time.c.s
 
 cocoa_window.o: cocoa_window.m.o
@@ -319,7 +319,7 @@ cocoa_window.o: cocoa_window.m.o
 
 # target to build an object file
 cocoa_window.m.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o
 .PHONY : cocoa_window.m.o
 
 cocoa_window.i: cocoa_window.m.i
@@ -328,7 +328,7 @@ cocoa_window.i: cocoa_window.m.i
 
 # target to preprocess a source file
 cocoa_window.m.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.i
 .PHONY : cocoa_window.m.i
 
 cocoa_window.s: cocoa_window.m.s
@@ -337,7 +337,7 @@ cocoa_window.s: cocoa_window.m.s
 
 # target to generate assembly for a file
 cocoa_window.m.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.s
 .PHONY : cocoa_window.m.s
 
 context.o: context.c.o
@@ -346,7 +346,7 @@ context.o: context.c.o
 
 # target to build an object file
 context.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/context.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/context.c.o
 .PHONY : context.c.o
 
 context.i: context.c.i
@@ -355,7 +355,7 @@ context.i: context.c.i
 
 # target to preprocess a source file
 context.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/context.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/context.c.i
 .PHONY : context.c.i
 
 context.s: context.c.s
@@ -364,7 +364,7 @@ context.s: context.c.s
 
 # target to generate assembly for a file
 context.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/context.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/context.c.s
 .PHONY : context.c.s
 
 egl_context.o: egl_context.c.o
@@ -373,7 +373,7 @@ egl_context.o: egl_context.c.o
 
 # target to build an object file
 egl_context.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
 .PHONY : egl_context.c.o
 
 egl_context.i: egl_context.c.i
@@ -382,7 +382,7 @@ egl_context.i: egl_context.c.i
 
 # target to preprocess a source file
 egl_context.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.i
 .PHONY : egl_context.c.i
 
 egl_context.s: egl_context.c.s
@@ -391,7 +391,7 @@ egl_context.s: egl_context.c.s
 
 # target to generate assembly for a file
 egl_context.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.s
 .PHONY : egl_context.c.s
 
 init.o: init.c.o
@@ -400,7 +400,7 @@ init.o: init.c.o
 
 # target to build an object file
 init.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/init.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/init.c.o
 .PHONY : init.c.o
 
 init.i: init.c.i
@@ -409,7 +409,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/init.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -418,7 +418,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/init.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/init.c.s
 .PHONY : init.c.s
 
 input.o: input.c.o
@@ -427,7 +427,7 @@ input.o: input.c.o
 
 # target to build an object file
 input.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/input.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/input.c.o
 .PHONY : input.c.o
 
 input.i: input.c.i
@@ -436,7 +436,7 @@ input.i: input.c.i
 
 # target to preprocess a source file
 input.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/input.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/input.c.i
 .PHONY : input.c.i
 
 input.s: input.c.s
@@ -445,7 +445,7 @@ input.s: input.c.s
 
 # target to generate assembly for a file
 input.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/input.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/input.c.s
 .PHONY : input.c.s
 
 monitor.o: monitor.c.o
@@ -454,7 +454,7 @@ monitor.o: monitor.c.o
 
 # target to build an object file
 monitor.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
 .PHONY : monitor.c.o
 
 monitor.i: monitor.c.i
@@ -463,7 +463,7 @@ monitor.i: monitor.c.i
 
 # target to preprocess a source file
 monitor.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.i
 .PHONY : monitor.c.i
 
 monitor.s: monitor.c.s
@@ -472,7 +472,7 @@ monitor.s: monitor.c.s
 
 # target to generate assembly for a file
 monitor.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.s
 .PHONY : monitor.c.s
 
 nsgl_context.o: nsgl_context.m.o
@@ -481,7 +481,7 @@ nsgl_context.o: nsgl_context.m.o
 
 # target to build an object file
 nsgl_context.m.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o
 .PHONY : nsgl_context.m.o
 
 nsgl_context.i: nsgl_context.m.i
@@ -490,7 +490,7 @@ nsgl_context.i: nsgl_context.m.i
 
 # target to preprocess a source file
 nsgl_context.m.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.i
 .PHONY : nsgl_context.m.i
 
 nsgl_context.s: nsgl_context.m.s
@@ -499,7 +499,7 @@ nsgl_context.s: nsgl_context.m.s
 
 # target to generate assembly for a file
 nsgl_context.m.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.s
 .PHONY : nsgl_context.m.s
 
 osmesa_context.o: osmesa_context.c.o
@@ -508,7 +508,7 @@ osmesa_context.o: osmesa_context.c.o
 
 # target to build an object file
 osmesa_context.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
 .PHONY : osmesa_context.c.o
 
 osmesa_context.i: osmesa_context.c.i
@@ -517,7 +517,7 @@ osmesa_context.i: osmesa_context.c.i
 
 # target to preprocess a source file
 osmesa_context.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.i
 .PHONY : osmesa_context.c.i
 
 osmesa_context.s: osmesa_context.c.s
@@ -526,7 +526,7 @@ osmesa_context.s: osmesa_context.c.s
 
 # target to generate assembly for a file
 osmesa_context.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.s
 .PHONY : osmesa_context.c.s
 
 posix_thread.o: posix_thread.c.o
@@ -535,7 +535,7 @@ posix_thread.o: posix_thread.c.o
 
 # target to build an object file
 posix_thread.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
 .PHONY : posix_thread.c.o
 
 posix_thread.i: posix_thread.c.i
@@ -544,7 +544,7 @@ posix_thread.i: posix_thread.c.i
 
 # target to preprocess a source file
 posix_thread.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.i
 .PHONY : posix_thread.c.i
 
 posix_thread.s: posix_thread.c.s
@@ -553,7 +553,7 @@ posix_thread.s: posix_thread.c.s
 
 # target to generate assembly for a file
 posix_thread.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.s
 .PHONY : posix_thread.c.s
 
 vulkan.o: vulkan.c.o
@@ -562,7 +562,7 @@ vulkan.o: vulkan.c.o
 
 # target to build an object file
 vulkan.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
 .PHONY : vulkan.c.o
 
 vulkan.i: vulkan.c.i
@@ -571,7 +571,7 @@ vulkan.i: vulkan.c.i
 
 # target to preprocess a source file
 vulkan.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.i
 .PHONY : vulkan.c.i
 
 vulkan.s: vulkan.c.s
@@ -580,7 +580,7 @@ vulkan.s: vulkan.c.s
 
 # target to generate assembly for a file
 vulkan.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.s
 .PHONY : vulkan.c.s
 
 window.o: window.c.o
@@ -589,7 +589,7 @@ window.o: window.c.o
 
 # target to build an object file
 window.c.o:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/window.c.o
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/window.c.o
 .PHONY : window.c.o
 
 window.i: window.c.i
@@ -598,7 +598,7 @@ window.i: window.c.i
 
 # target to preprocess a source file
 window.c.i:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/window.c.i
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/window.c.i
 .PHONY : window.c.i
 
 window.s: window.c.s
@@ -607,7 +607,7 @@ window.s: window.c.s
 
 # target to generate assembly for a file
 window.c.s:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/window.c.s
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/window.c.s
 .PHONY : window.c.s
 
 # Help Target
@@ -680,6 +680,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

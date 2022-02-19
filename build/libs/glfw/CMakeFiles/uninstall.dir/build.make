@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.18.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window
+CMAKE_SOURCE_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build
+CMAKE_BINARY_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build"
 
 # Utility rule file for uninstall.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-
 include libs/glfw/CMakeFiles/uninstall.dir/progress.make
 
 libs/glfw/CMakeFiles/uninstall:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw && /usr/local/Cellar/cmake/3.18.2/bin/cmake -P /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/cmake_uninstall.cmake
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw" && /usr/local/Cellar/cmake/3.18.2/bin/cmake -P /Users/george/Desktop/教育/CMU/Senior\ Year/ECE\ Capstone\ 18-500/18-500-ECE-Design-Experience/build/libs/glfw/cmake_uninstall.cmake
 
 uninstall: libs/glfw/CMakeFiles/uninstall
 uninstall: libs/glfw/CMakeFiles/uninstall.dir/build.make
@@ -86,10 +86,10 @@ libs/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : libs/glfw/CMakeFiles/uninstall.dir/build
 
 libs/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw" && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : libs/glfw/CMakeFiles/uninstall.dir/clean
 
 libs/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/libs/glfw /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw /Users/george/Desktop/Programming/OpenGL-Learning/projects/1-create-window/build/libs/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glfw" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : libs/glfw/CMakeFiles/uninstall.dir/depend
 
