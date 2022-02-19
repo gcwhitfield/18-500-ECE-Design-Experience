@@ -14,6 +14,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/glfw/include"
   ".././libs/glad/include"
   ".././libs/glm/include"
+  ".././libs/SFML/include"
   "../libs/glfw/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
@@ -29,12 +30,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/glfw/include"
   ".././libs/glad/include"
   ".././libs/glm/include"
+  ".././libs/SFML/include"
   "../libs/glfw/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/SFML/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

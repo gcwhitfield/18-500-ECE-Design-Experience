@@ -73,160 +73,160 @@ CMAKE_BINARY_DIR = "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18
 
 # The main recursive "all" target.
 all: CMakeFiles/RhythmGame.dir/all
-all: libs/glfw/all
+all: libs/SFML/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: libs/glfw/preinstall
+preinstall: libs/SFML/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/RhythmGame.dir/clean
-clean: libs/glfw/clean
+clean: libs/SFML/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory libs/glfw
+# Directory level rules for directory libs/SFML
 
 # Recursive "all" directory target.
-libs/glfw/all: libs/glfw/src/all
-libs/glfw/all: libs/glfw/examples/all
-libs/glfw/all: libs/glfw/tests/all
+libs/SFML/all: libs/SFML/src/all
+libs/SFML/all: libs/SFML/examples/all
+libs/SFML/all: libs/SFML/tests/all
 
-.PHONY : libs/glfw/all
+.PHONY : libs/SFML/all
 
 # Recursive "preinstall" directory target.
-libs/glfw/preinstall: libs/glfw/src/preinstall
-libs/glfw/preinstall: libs/glfw/examples/preinstall
-libs/glfw/preinstall: libs/glfw/tests/preinstall
+libs/SFML/preinstall: libs/SFML/src/preinstall
+libs/SFML/preinstall: libs/SFML/examples/preinstall
+libs/SFML/preinstall: libs/SFML/tests/preinstall
 
-.PHONY : libs/glfw/preinstall
+.PHONY : libs/SFML/preinstall
 
 # Recursive "clean" directory target.
-libs/glfw/clean: libs/glfw/CMakeFiles/uninstall.dir/clean
-libs/glfw/clean: libs/glfw/src/clean
-libs/glfw/clean: libs/glfw/examples/clean
-libs/glfw/clean: libs/glfw/tests/clean
+libs/SFML/clean: libs/SFML/CMakeFiles/uninstall.dir/clean
+libs/SFML/clean: libs/SFML/src/clean
+libs/SFML/clean: libs/SFML/examples/clean
+libs/SFML/clean: libs/SFML/tests/clean
 
-.PHONY : libs/glfw/clean
+.PHONY : libs/SFML/clean
 
 #=============================================================================
-# Directory level rules for directory libs/glfw/examples
+# Directory level rules for directory libs/SFML/examples
 
 # Recursive "all" directory target.
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/wave.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/simple.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/sharing.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/particles.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/heightmap.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/splitview.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/offscreen.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/gears.dir/all
-libs/glfw/examples/all: libs/glfw/examples/CMakeFiles/boing.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/wave.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/simple.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/sharing.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/particles.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/heightmap.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/splitview.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/offscreen.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/gears.dir/all
+libs/SFML/examples/all: libs/SFML/examples/CMakeFiles/boing.dir/all
 
-.PHONY : libs/glfw/examples/all
+.PHONY : libs/SFML/examples/all
 
 # Recursive "preinstall" directory target.
-libs/glfw/examples/preinstall:
+libs/SFML/examples/preinstall:
 
-.PHONY : libs/glfw/examples/preinstall
+.PHONY : libs/SFML/examples/preinstall
 
 # Recursive "clean" directory target.
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/wave.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/simple.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/sharing.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/particles.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/heightmap.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/splitview.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/offscreen.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/gears.dir/clean
-libs/glfw/examples/clean: libs/glfw/examples/CMakeFiles/boing.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/wave.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/simple.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/sharing.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/particles.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/heightmap.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/splitview.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/offscreen.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/gears.dir/clean
+libs/SFML/examples/clean: libs/SFML/examples/CMakeFiles/boing.dir/clean
 
-.PHONY : libs/glfw/examples/clean
+.PHONY : libs/SFML/examples/clean
 
 #=============================================================================
-# Directory level rules for directory libs/glfw/src
+# Directory level rules for directory libs/SFML/src
 
 # Recursive "all" directory target.
-libs/glfw/src/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+libs/SFML/src/all: libs/SFML/src/CMakeFiles/glfw.dir/all
 
-.PHONY : libs/glfw/src/all
+.PHONY : libs/SFML/src/all
 
 # Recursive "preinstall" directory target.
-libs/glfw/src/preinstall:
+libs/SFML/src/preinstall:
 
-.PHONY : libs/glfw/src/preinstall
+.PHONY : libs/SFML/src/preinstall
 
 # Recursive "clean" directory target.
-libs/glfw/src/clean: libs/glfw/src/CMakeFiles/update_mappings.dir/clean
-libs/glfw/src/clean: libs/glfw/src/CMakeFiles/glfw.dir/clean
+libs/SFML/src/clean: libs/SFML/src/CMakeFiles/update_mappings.dir/clean
+libs/SFML/src/clean: libs/SFML/src/CMakeFiles/glfw.dir/clean
 
-.PHONY : libs/glfw/src/clean
+.PHONY : libs/SFML/src/clean
 
 #=============================================================================
-# Directory level rules for directory libs/glfw/tests
+# Directory level rules for directory libs/SFML/tests
 
 # Recursive "all" directory target.
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/clipboard.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/title.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/timeout.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/threads.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/opacity.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/gamma.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/tearing.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/iconify.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/joysticks.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/windows.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/inputlag.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/empty.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/reopen.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/msaa.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/cursor.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/glfwinfo.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/monitors.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/events.dir/all
-libs/glfw/tests/all: libs/glfw/tests/CMakeFiles/icon.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/clipboard.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/title.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/timeout.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/threads.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/opacity.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/gamma.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/tearing.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/iconify.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/joysticks.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/windows.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/inputlag.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/empty.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/reopen.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/msaa.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/cursor.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/glfwinfo.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/monitors.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/events.dir/all
+libs/SFML/tests/all: libs/SFML/tests/CMakeFiles/icon.dir/all
 
-.PHONY : libs/glfw/tests/all
+.PHONY : libs/SFML/tests/all
 
 # Recursive "preinstall" directory target.
-libs/glfw/tests/preinstall:
+libs/SFML/tests/preinstall:
 
-.PHONY : libs/glfw/tests/preinstall
+.PHONY : libs/SFML/tests/preinstall
 
 # Recursive "clean" directory target.
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/clipboard.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/title.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/timeout.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/threads.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/opacity.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/gamma.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/tearing.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/iconify.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/joysticks.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/windows.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/inputlag.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/empty.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/reopen.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/msaa.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/cursor.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/glfwinfo.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/monitors.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/events.dir/clean
-libs/glfw/tests/clean: libs/glfw/tests/CMakeFiles/icon.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/clipboard.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/title.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/timeout.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/threads.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/opacity.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/gamma.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/tearing.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/iconify.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/joysticks.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/windows.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/inputlag.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/empty.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/reopen.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/msaa.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/cursor.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/glfwinfo.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/monitors.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/events.dir/clean
+libs/SFML/tests/clean: libs/SFML/tests/CMakeFiles/icon.dir/clean
 
-.PHONY : libs/glfw/tests/clean
+.PHONY : libs/SFML/tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/RhythmGame.dir
 
 # All Build rule for target.
-CMakeFiles/RhythmGame.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/RhythmGame.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=1,2,3,4 "Built target RhythmGame"
@@ -250,868 +250,868 @@ CMakeFiles/RhythmGame.dir/clean:
 .PHONY : CMakeFiles/RhythmGame.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/CMakeFiles/uninstall.dir
+# Target rules for target libs/SFML/CMakeFiles/uninstall.dir
 
 # All Build rule for target.
-libs/glfw/CMakeFiles/uninstall.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/CMakeFiles/uninstall.dir/build.make libs/glfw/CMakeFiles/uninstall.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/CMakeFiles/uninstall.dir/build.make libs/glfw/CMakeFiles/uninstall.dir/build
+libs/SFML/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/CMakeFiles/uninstall.dir/build.make libs/SFML/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/CMakeFiles/uninstall.dir/build.make libs/SFML/CMakeFiles/uninstall.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num= "Built target uninstall"
-.PHONY : libs/glfw/CMakeFiles/uninstall.dir/all
+.PHONY : libs/SFML/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+libs/SFML/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/CMakeFiles/uninstall.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/CMakeFiles/uninstall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/CMakeFiles/uninstall.dir/rule
+.PHONY : libs/SFML/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
-uninstall: libs/glfw/CMakeFiles/uninstall.dir/rule
+uninstall: libs/SFML/CMakeFiles/uninstall.dir/rule
 
 .PHONY : uninstall
 
 # clean rule for target.
-libs/glfw/CMakeFiles/uninstall.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/CMakeFiles/uninstall.dir/build.make libs/glfw/CMakeFiles/uninstall.dir/clean
-.PHONY : libs/glfw/CMakeFiles/uninstall.dir/clean
+libs/SFML/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/CMakeFiles/uninstall.dir/build.make libs/SFML/CMakeFiles/uninstall.dir/clean
+.PHONY : libs/SFML/CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/src/CMakeFiles/update_mappings.dir
+# Target rules for target libs/SFML/src/CMakeFiles/update_mappings.dir
 
 # All Build rule for target.
-libs/glfw/src/CMakeFiles/update_mappings.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
+libs/SFML/src/CMakeFiles/update_mappings.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/update_mappings.dir/build.make libs/SFML/src/CMakeFiles/update_mappings.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/update_mappings.dir/build.make libs/SFML/src/CMakeFiles/update_mappings.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=94 "Built target update_mappings"
-.PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/all
+.PHONY : libs/SFML/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
+libs/SFML/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/CMakeFiles/update_mappings.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/src/CMakeFiles/update_mappings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/rule
+.PHONY : libs/SFML/src/CMakeFiles/update_mappings.dir/rule
 
 # Convenience name for target.
-update_mappings: libs/glfw/src/CMakeFiles/update_mappings.dir/rule
+update_mappings: libs/SFML/src/CMakeFiles/update_mappings.dir/rule
 
 .PHONY : update_mappings
 
 # clean rule for target.
-libs/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/clean
-.PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/clean
+libs/SFML/src/CMakeFiles/update_mappings.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/update_mappings.dir/build.make libs/SFML/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : libs/SFML/src/CMakeFiles/update_mappings.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/src/CMakeFiles/glfw.dir
+# Target rules for target libs/SFML/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
-libs/glfw/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
+libs/SFML/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/glfw.dir/build.make libs/SFML/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/glfw.dir/build.make libs/SFML/src/CMakeFiles/glfw.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target glfw"
-.PHONY : libs/glfw/src/CMakeFiles/glfw.dir/all
+.PHONY : libs/SFML/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+libs/SFML/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/src/CMakeFiles/glfw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/src/CMakeFiles/glfw.dir/rule
+.PHONY : libs/SFML/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
-glfw: libs/glfw/src/CMakeFiles/glfw.dir/rule
+glfw: libs/SFML/src/CMakeFiles/glfw.dir/rule
 
 .PHONY : glfw
 
 # clean rule for target.
-libs/glfw/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/clean
-.PHONY : libs/glfw/src/CMakeFiles/glfw.dir/clean
+libs/SFML/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/glfw.dir/build.make libs/SFML/src/CMakeFiles/glfw.dir/clean
+.PHONY : libs/SFML/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/wave.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/wave.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/wave.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/wave.dir/build.make libs/glfw/examples/CMakeFiles/wave.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/wave.dir/build.make libs/glfw/examples/CMakeFiles/wave.dir/build
+libs/SFML/examples/CMakeFiles/wave.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/wave.dir/build.make libs/SFML/examples/CMakeFiles/wave.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/wave.dir/build.make libs/SFML/examples/CMakeFiles/wave.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=95,96 "Built target wave"
-.PHONY : libs/glfw/examples/CMakeFiles/wave.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/wave.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/wave.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/wave.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/wave.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/wave.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/wave.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/wave.dir/rule
 
 # Convenience name for target.
-wave: libs/glfw/examples/CMakeFiles/wave.dir/rule
+wave: libs/SFML/examples/CMakeFiles/wave.dir/rule
 
 .PHONY : wave
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/wave.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/wave.dir/build.make libs/glfw/examples/CMakeFiles/wave.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/wave.dir/clean
+libs/SFML/examples/CMakeFiles/wave.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/wave.dir/build.make libs/SFML/examples/CMakeFiles/wave.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/wave.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/simple.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/simple.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/simple.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/simple.dir/build.make libs/glfw/examples/CMakeFiles/simple.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/simple.dir/build.make libs/glfw/examples/CMakeFiles/simple.dir/build
+libs/SFML/examples/CMakeFiles/simple.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/simple.dir/build.make libs/SFML/examples/CMakeFiles/simple.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/simple.dir/build.make libs/SFML/examples/CMakeFiles/simple.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=76,77,78 "Built target simple"
-.PHONY : libs/glfw/examples/CMakeFiles/simple.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/simple.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/simple.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/simple.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/simple.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/simple.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/simple.dir/rule
 
 # Convenience name for target.
-simple: libs/glfw/examples/CMakeFiles/simple.dir/rule
+simple: libs/SFML/examples/CMakeFiles/simple.dir/rule
 
 .PHONY : simple
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/simple.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/simple.dir/build.make libs/glfw/examples/CMakeFiles/simple.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/simple.dir/clean
+libs/SFML/examples/CMakeFiles/simple.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/simple.dir/build.make libs/SFML/examples/CMakeFiles/simple.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/simple.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/sharing.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/sharing.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/sharing.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/sharing.dir/build.make libs/glfw/examples/CMakeFiles/sharing.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/sharing.dir/build.make libs/glfw/examples/CMakeFiles/sharing.dir/build
+libs/SFML/examples/CMakeFiles/sharing.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/sharing.dir/build.make libs/SFML/examples/CMakeFiles/sharing.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/sharing.dir/build.make libs/SFML/examples/CMakeFiles/sharing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=74,75 "Built target sharing"
-.PHONY : libs/glfw/examples/CMakeFiles/sharing.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/sharing.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/sharing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/sharing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/sharing.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/sharing.dir/rule
 
 # Convenience name for target.
-sharing: libs/glfw/examples/CMakeFiles/sharing.dir/rule
+sharing: libs/SFML/examples/CMakeFiles/sharing.dir/rule
 
 .PHONY : sharing
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/sharing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/sharing.dir/build.make libs/glfw/examples/CMakeFiles/sharing.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/sharing.dir/clean
+libs/SFML/examples/CMakeFiles/sharing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/sharing.dir/build.make libs/SFML/examples/CMakeFiles/sharing.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/sharing.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/particles.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/particles.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/particles.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/particles.dir/build.make libs/glfw/examples/CMakeFiles/particles.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/particles.dir/build.make libs/glfw/examples/CMakeFiles/particles.dir/build
+libs/SFML/examples/CMakeFiles/particles.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/particles.dir/build.make libs/SFML/examples/CMakeFiles/particles.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/particles.dir/build.make libs/SFML/examples/CMakeFiles/particles.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=67,68,69,70 "Built target particles"
-.PHONY : libs/glfw/examples/CMakeFiles/particles.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/particles.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/particles.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/particles.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/particles.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/particles.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/particles.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/particles.dir/rule
 
 # Convenience name for target.
-particles: libs/glfw/examples/CMakeFiles/particles.dir/rule
+particles: libs/SFML/examples/CMakeFiles/particles.dir/rule
 
 .PHONY : particles
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/particles.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/particles.dir/build.make libs/glfw/examples/CMakeFiles/particles.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/particles.dir/clean
+libs/SFML/examples/CMakeFiles/particles.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/particles.dir/build.make libs/SFML/examples/CMakeFiles/particles.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/particles.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/heightmap.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/heightmap.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/heightmap.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/heightmap.dir/build.make libs/glfw/examples/CMakeFiles/heightmap.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/heightmap.dir/build.make libs/glfw/examples/CMakeFiles/heightmap.dir/build
+libs/SFML/examples/CMakeFiles/heightmap.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/heightmap.dir/build.make libs/SFML/examples/CMakeFiles/heightmap.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/heightmap.dir/build.make libs/SFML/examples/CMakeFiles/heightmap.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=42,43 "Built target heightmap"
-.PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/heightmap.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/heightmap.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/heightmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/heightmap.dir/rule
 
 # Convenience name for target.
-heightmap: libs/glfw/examples/CMakeFiles/heightmap.dir/rule
+heightmap: libs/SFML/examples/CMakeFiles/heightmap.dir/rule
 
 .PHONY : heightmap
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/heightmap.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/heightmap.dir/build.make libs/glfw/examples/CMakeFiles/heightmap.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/clean
+libs/SFML/examples/CMakeFiles/heightmap.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/heightmap.dir/build.make libs/SFML/examples/CMakeFiles/heightmap.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/heightmap.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/splitview.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/splitview.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/splitview.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/splitview.dir/build.make libs/glfw/examples/CMakeFiles/splitview.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/splitview.dir/build.make libs/glfw/examples/CMakeFiles/splitview.dir/build
+libs/SFML/examples/CMakeFiles/splitview.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/splitview.dir/build.make libs/SFML/examples/CMakeFiles/splitview.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/splitview.dir/build.make libs/SFML/examples/CMakeFiles/splitview.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=79,80 "Built target splitview"
-.PHONY : libs/glfw/examples/CMakeFiles/splitview.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/splitview.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/splitview.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/splitview.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/splitview.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/splitview.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/splitview.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/splitview.dir/rule
 
 # Convenience name for target.
-splitview: libs/glfw/examples/CMakeFiles/splitview.dir/rule
+splitview: libs/SFML/examples/CMakeFiles/splitview.dir/rule
 
 .PHONY : splitview
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/splitview.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/splitview.dir/build.make libs/glfw/examples/CMakeFiles/splitview.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/splitview.dir/clean
+libs/SFML/examples/CMakeFiles/splitview.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/splitview.dir/build.make libs/SFML/examples/CMakeFiles/splitview.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/splitview.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/offscreen.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/offscreen.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/offscreen.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/offscreen.dir/build.make libs/glfw/examples/CMakeFiles/offscreen.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/offscreen.dir/build.make libs/glfw/examples/CMakeFiles/offscreen.dir/build
+libs/SFML/examples/CMakeFiles/offscreen.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/offscreen.dir/build.make libs/SFML/examples/CMakeFiles/offscreen.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/offscreen.dir/build.make libs/SFML/examples/CMakeFiles/offscreen.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=62,63,64 "Built target offscreen"
-.PHONY : libs/glfw/examples/CMakeFiles/offscreen.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/offscreen.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/offscreen.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/offscreen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/offscreen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/offscreen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/offscreen.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/offscreen.dir/rule
 
 # Convenience name for target.
-offscreen: libs/glfw/examples/CMakeFiles/offscreen.dir/rule
+offscreen: libs/SFML/examples/CMakeFiles/offscreen.dir/rule
 
 .PHONY : offscreen
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/offscreen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/offscreen.dir/build.make libs/glfw/examples/CMakeFiles/offscreen.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/offscreen.dir/clean
+libs/SFML/examples/CMakeFiles/offscreen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/offscreen.dir/build.make libs/SFML/examples/CMakeFiles/offscreen.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/offscreen.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/gears.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/gears.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/gears.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/gears.dir/build.make libs/glfw/examples/CMakeFiles/gears.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/gears.dir/build.make libs/glfw/examples/CMakeFiles/gears.dir/build
+libs/SFML/examples/CMakeFiles/gears.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/gears.dir/build.make libs/SFML/examples/CMakeFiles/gears.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/gears.dir/build.make libs/SFML/examples/CMakeFiles/gears.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=22,23,24 "Built target gears"
-.PHONY : libs/glfw/examples/CMakeFiles/gears.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/gears.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/gears.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/gears.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/gears.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/gears.dir/rule
 
 # Convenience name for target.
-gears: libs/glfw/examples/CMakeFiles/gears.dir/rule
+gears: libs/SFML/examples/CMakeFiles/gears.dir/rule
 
 .PHONY : gears
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/gears.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/gears.dir/build.make libs/glfw/examples/CMakeFiles/gears.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/gears.dir/clean
+libs/SFML/examples/CMakeFiles/gears.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/gears.dir/build.make libs/SFML/examples/CMakeFiles/gears.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/gears.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/examples/CMakeFiles/boing.dir
+# Target rules for target libs/SFML/examples/CMakeFiles/boing.dir
 
 # All Build rule for target.
-libs/glfw/examples/CMakeFiles/boing.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/boing.dir/build.make libs/glfw/examples/CMakeFiles/boing.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/boing.dir/build.make libs/glfw/examples/CMakeFiles/boing.dir/build
+libs/SFML/examples/CMakeFiles/boing.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/boing.dir/build.make libs/SFML/examples/CMakeFiles/boing.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/boing.dir/build.make libs/SFML/examples/CMakeFiles/boing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=5,6,7 "Built target boing"
-.PHONY : libs/glfw/examples/CMakeFiles/boing.dir/all
+.PHONY : libs/SFML/examples/CMakeFiles/boing.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/examples/CMakeFiles/boing.dir/rule: cmake_check_build_system
+libs/SFML/examples/CMakeFiles/boing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/boing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/examples/CMakeFiles/boing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/examples/CMakeFiles/boing.dir/rule
+.PHONY : libs/SFML/examples/CMakeFiles/boing.dir/rule
 
 # Convenience name for target.
-boing: libs/glfw/examples/CMakeFiles/boing.dir/rule
+boing: libs/SFML/examples/CMakeFiles/boing.dir/rule
 
 .PHONY : boing
 
 # clean rule for target.
-libs/glfw/examples/CMakeFiles/boing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/boing.dir/build.make libs/glfw/examples/CMakeFiles/boing.dir/clean
-.PHONY : libs/glfw/examples/CMakeFiles/boing.dir/clean
+libs/SFML/examples/CMakeFiles/boing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/boing.dir/build.make libs/SFML/examples/CMakeFiles/boing.dir/clean
+.PHONY : libs/SFML/examples/CMakeFiles/boing.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/triangle-vulkan.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/triangle-vulkan.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/build
+libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=92,93 "Built target triangle-vulkan"
-.PHONY : libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/rule
 
 # Convenience name for target.
-triangle-vulkan: libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/rule
+triangle-vulkan: libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/rule
 
 .PHONY : triangle-vulkan
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/clean
+libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/clipboard.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/clipboard.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/clipboard.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/clipboard.dir/build.make libs/glfw/tests/CMakeFiles/clipboard.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/clipboard.dir/build.make libs/glfw/tests/CMakeFiles/clipboard.dir/build
+libs/SFML/tests/CMakeFiles/clipboard.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/clipboard.dir/build.make libs/SFML/tests/CMakeFiles/clipboard.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/clipboard.dir/build.make libs/SFML/tests/CMakeFiles/clipboard.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=8,9,10 "Built target clipboard"
-.PHONY : libs/glfw/tests/CMakeFiles/clipboard.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/clipboard.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/clipboard.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/clipboard.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/clipboard.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/clipboard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/clipboard.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/clipboard.dir/rule
 
 # Convenience name for target.
-clipboard: libs/glfw/tests/CMakeFiles/clipboard.dir/rule
+clipboard: libs/SFML/tests/CMakeFiles/clipboard.dir/rule
 
 .PHONY : clipboard
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/clipboard.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/clipboard.dir/build.make libs/glfw/tests/CMakeFiles/clipboard.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/clipboard.dir/clean
+libs/SFML/tests/CMakeFiles/clipboard.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/clipboard.dir/build.make libs/SFML/tests/CMakeFiles/clipboard.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/clipboard.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/title.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/title.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/title.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/title.dir/build.make libs/glfw/tests/CMakeFiles/title.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/title.dir/build.make libs/glfw/tests/CMakeFiles/title.dir/build
+libs/SFML/tests/CMakeFiles/title.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/title.dir/build.make libs/SFML/tests/CMakeFiles/title.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/title.dir/build.make libs/SFML/tests/CMakeFiles/title.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=89,90,91 "Built target title"
-.PHONY : libs/glfw/tests/CMakeFiles/title.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/title.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/title.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/title.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/title.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/title.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/title.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/title.dir/rule
 
 # Convenience name for target.
-title: libs/glfw/tests/CMakeFiles/title.dir/rule
+title: libs/SFML/tests/CMakeFiles/title.dir/rule
 
 .PHONY : title
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/title.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/title.dir/build.make libs/glfw/tests/CMakeFiles/title.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/title.dir/clean
+libs/SFML/tests/CMakeFiles/title.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/title.dir/build.make libs/SFML/tests/CMakeFiles/title.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/title.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/timeout.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/timeout.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/timeout.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/timeout.dir/build.make libs/glfw/tests/CMakeFiles/timeout.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/timeout.dir/build.make libs/glfw/tests/CMakeFiles/timeout.dir/build
+libs/SFML/tests/CMakeFiles/timeout.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/timeout.dir/build.make libs/SFML/tests/CMakeFiles/timeout.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/timeout.dir/build.make libs/SFML/tests/CMakeFiles/timeout.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=87,88 "Built target timeout"
-.PHONY : libs/glfw/tests/CMakeFiles/timeout.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/timeout.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/timeout.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/timeout.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/timeout.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/timeout.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/timeout.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/timeout.dir/rule
 
 # Convenience name for target.
-timeout: libs/glfw/tests/CMakeFiles/timeout.dir/rule
+timeout: libs/SFML/tests/CMakeFiles/timeout.dir/rule
 
 .PHONY : timeout
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/timeout.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/timeout.dir/build.make libs/glfw/tests/CMakeFiles/timeout.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/timeout.dir/clean
+libs/SFML/tests/CMakeFiles/timeout.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/timeout.dir/build.make libs/SFML/tests/CMakeFiles/timeout.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/timeout.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/threads.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/threads.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/threads.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/threads.dir/build.make libs/glfw/tests/CMakeFiles/threads.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/threads.dir/build.make libs/glfw/tests/CMakeFiles/threads.dir/build
+libs/SFML/tests/CMakeFiles/threads.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/threads.dir/build.make libs/SFML/tests/CMakeFiles/threads.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/threads.dir/build.make libs/SFML/tests/CMakeFiles/threads.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=83,84,85,86 "Built target threads"
-.PHONY : libs/glfw/tests/CMakeFiles/threads.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/threads.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/threads.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/threads.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/threads.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/threads.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/threads.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/threads.dir/rule
 
 # Convenience name for target.
-threads: libs/glfw/tests/CMakeFiles/threads.dir/rule
+threads: libs/SFML/tests/CMakeFiles/threads.dir/rule
 
 .PHONY : threads
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/threads.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/threads.dir/build.make libs/glfw/tests/CMakeFiles/threads.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/threads.dir/clean
+libs/SFML/tests/CMakeFiles/threads.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/threads.dir/build.make libs/SFML/tests/CMakeFiles/threads.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/threads.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/opacity.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/opacity.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/opacity.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/opacity.dir/build.make libs/glfw/tests/CMakeFiles/opacity.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/opacity.dir/build.make libs/glfw/tests/CMakeFiles/opacity.dir/build
+libs/SFML/tests/CMakeFiles/opacity.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/opacity.dir/build.make libs/SFML/tests/CMakeFiles/opacity.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/opacity.dir/build.make libs/SFML/tests/CMakeFiles/opacity.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=65,66 "Built target opacity"
-.PHONY : libs/glfw/tests/CMakeFiles/opacity.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/opacity.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/opacity.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/opacity.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/opacity.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/opacity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/opacity.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/opacity.dir/rule
 
 # Convenience name for target.
-opacity: libs/glfw/tests/CMakeFiles/opacity.dir/rule
+opacity: libs/SFML/tests/CMakeFiles/opacity.dir/rule
 
 .PHONY : opacity
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/opacity.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/opacity.dir/build.make libs/glfw/tests/CMakeFiles/opacity.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/opacity.dir/clean
+libs/SFML/tests/CMakeFiles/opacity.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/opacity.dir/build.make libs/SFML/tests/CMakeFiles/opacity.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/opacity.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/gamma.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/gamma.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/gamma.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/gamma.dir/build.make libs/glfw/tests/CMakeFiles/gamma.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/gamma.dir/build.make libs/glfw/tests/CMakeFiles/gamma.dir/build
+libs/SFML/tests/CMakeFiles/gamma.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/gamma.dir/build.make libs/SFML/tests/CMakeFiles/gamma.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/gamma.dir/build.make libs/SFML/tests/CMakeFiles/gamma.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=20,21 "Built target gamma"
-.PHONY : libs/glfw/tests/CMakeFiles/gamma.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/gamma.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/gamma.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/gamma.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/gamma.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/gamma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/gamma.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/gamma.dir/rule
 
 # Convenience name for target.
-gamma: libs/glfw/tests/CMakeFiles/gamma.dir/rule
+gamma: libs/SFML/tests/CMakeFiles/gamma.dir/rule
 
 .PHONY : gamma
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/gamma.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/gamma.dir/build.make libs/glfw/tests/CMakeFiles/gamma.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/gamma.dir/clean
+libs/SFML/tests/CMakeFiles/gamma.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/gamma.dir/build.make libs/SFML/tests/CMakeFiles/gamma.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/gamma.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/tearing.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/tearing.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/tearing.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/tearing.dir/build.make libs/glfw/tests/CMakeFiles/tearing.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/tearing.dir/build.make libs/glfw/tests/CMakeFiles/tearing.dir/build
+libs/SFML/tests/CMakeFiles/tearing.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/tearing.dir/build.make libs/SFML/tests/CMakeFiles/tearing.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/tearing.dir/build.make libs/SFML/tests/CMakeFiles/tearing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=81,82 "Built target tearing"
-.PHONY : libs/glfw/tests/CMakeFiles/tearing.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/tearing.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/tearing.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/tearing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/tearing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/tearing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/tearing.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/tearing.dir/rule
 
 # Convenience name for target.
-tearing: libs/glfw/tests/CMakeFiles/tearing.dir/rule
+tearing: libs/SFML/tests/CMakeFiles/tearing.dir/rule
 
 .PHONY : tearing
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/tearing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/tearing.dir/build.make libs/glfw/tests/CMakeFiles/tearing.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/tearing.dir/clean
+libs/SFML/tests/CMakeFiles/tearing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/tearing.dir/build.make libs/SFML/tests/CMakeFiles/tearing.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/tearing.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/iconify.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/iconify.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/iconify.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/iconify.dir/build.make libs/glfw/tests/CMakeFiles/iconify.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/iconify.dir/build.make libs/glfw/tests/CMakeFiles/iconify.dir/build
+libs/SFML/tests/CMakeFiles/iconify.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/iconify.dir/build.make libs/SFML/tests/CMakeFiles/iconify.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/iconify.dir/build.make libs/SFML/tests/CMakeFiles/iconify.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=47,48,49 "Built target iconify"
-.PHONY : libs/glfw/tests/CMakeFiles/iconify.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/iconify.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/iconify.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/iconify.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/iconify.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/iconify.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/iconify.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/iconify.dir/rule
 
 # Convenience name for target.
-iconify: libs/glfw/tests/CMakeFiles/iconify.dir/rule
+iconify: libs/SFML/tests/CMakeFiles/iconify.dir/rule
 
 .PHONY : iconify
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/iconify.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/iconify.dir/build.make libs/glfw/tests/CMakeFiles/iconify.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/iconify.dir/clean
+libs/SFML/tests/CMakeFiles/iconify.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/iconify.dir/build.make libs/SFML/tests/CMakeFiles/iconify.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/iconify.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/joysticks.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/joysticks.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/joysticks.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/joysticks.dir/build.make libs/glfw/tests/CMakeFiles/joysticks.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/joysticks.dir/build.make libs/glfw/tests/CMakeFiles/joysticks.dir/build
+libs/SFML/tests/CMakeFiles/joysticks.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/joysticks.dir/build.make libs/SFML/tests/CMakeFiles/joysticks.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/joysticks.dir/build.make libs/SFML/tests/CMakeFiles/joysticks.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=53,54,55 "Built target joysticks"
-.PHONY : libs/glfw/tests/CMakeFiles/joysticks.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/joysticks.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/joysticks.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/joysticks.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/joysticks.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/joysticks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/joysticks.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/joysticks.dir/rule
 
 # Convenience name for target.
-joysticks: libs/glfw/tests/CMakeFiles/joysticks.dir/rule
+joysticks: libs/SFML/tests/CMakeFiles/joysticks.dir/rule
 
 .PHONY : joysticks
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/joysticks.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/joysticks.dir/build.make libs/glfw/tests/CMakeFiles/joysticks.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/joysticks.dir/clean
+libs/SFML/tests/CMakeFiles/joysticks.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/joysticks.dir/build.make libs/SFML/tests/CMakeFiles/joysticks.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/joysticks.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/windows.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/windows.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/windows.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/windows.dir/build.make libs/glfw/tests/CMakeFiles/windows.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/windows.dir/build.make libs/glfw/tests/CMakeFiles/windows.dir/build
+libs/SFML/tests/CMakeFiles/windows.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/windows.dir/build.make libs/SFML/tests/CMakeFiles/windows.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/windows.dir/build.make libs/SFML/tests/CMakeFiles/windows.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=97,98,99,100 "Built target windows"
-.PHONY : libs/glfw/tests/CMakeFiles/windows.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/windows.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/windows.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/windows.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/windows.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/windows.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/windows.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/windows.dir/rule
 
 # Convenience name for target.
-windows: libs/glfw/tests/CMakeFiles/windows.dir/rule
+windows: libs/SFML/tests/CMakeFiles/windows.dir/rule
 
 .PHONY : windows
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/windows.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/windows.dir/build.make libs/glfw/tests/CMakeFiles/windows.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/windows.dir/clean
+libs/SFML/tests/CMakeFiles/windows.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/windows.dir/build.make libs/SFML/tests/CMakeFiles/windows.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/windows.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/inputlag.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/inputlag.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/inputlag.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/inputlag.dir/build.make libs/glfw/tests/CMakeFiles/inputlag.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/inputlag.dir/build.make libs/glfw/tests/CMakeFiles/inputlag.dir/build
+libs/SFML/tests/CMakeFiles/inputlag.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/inputlag.dir/build.make libs/SFML/tests/CMakeFiles/inputlag.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/inputlag.dir/build.make libs/SFML/tests/CMakeFiles/inputlag.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=50,51,52 "Built target inputlag"
-.PHONY : libs/glfw/tests/CMakeFiles/inputlag.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/inputlag.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/inputlag.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/inputlag.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/inputlag.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/inputlag.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/inputlag.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/inputlag.dir/rule
 
 # Convenience name for target.
-inputlag: libs/glfw/tests/CMakeFiles/inputlag.dir/rule
+inputlag: libs/SFML/tests/CMakeFiles/inputlag.dir/rule
 
 .PHONY : inputlag
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/inputlag.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/inputlag.dir/build.make libs/glfw/tests/CMakeFiles/inputlag.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/inputlag.dir/clean
+libs/SFML/tests/CMakeFiles/inputlag.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/inputlag.dir/build.make libs/SFML/tests/CMakeFiles/inputlag.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/inputlag.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/empty.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/empty.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/empty.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/empty.dir/build.make libs/glfw/tests/CMakeFiles/empty.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/empty.dir/build.make libs/glfw/tests/CMakeFiles/empty.dir/build
+libs/SFML/tests/CMakeFiles/empty.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/empty.dir/build.make libs/SFML/tests/CMakeFiles/empty.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/empty.dir/build.make libs/SFML/tests/CMakeFiles/empty.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=14,15,16 "Built target empty"
-.PHONY : libs/glfw/tests/CMakeFiles/empty.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/empty.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/empty.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/empty.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/empty.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/empty.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/empty.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/empty.dir/rule
 
 # Convenience name for target.
-empty: libs/glfw/tests/CMakeFiles/empty.dir/rule
+empty: libs/SFML/tests/CMakeFiles/empty.dir/rule
 
 .PHONY : empty
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/empty.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/empty.dir/build.make libs/glfw/tests/CMakeFiles/empty.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/empty.dir/clean
+libs/SFML/tests/CMakeFiles/empty.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/empty.dir/build.make libs/SFML/tests/CMakeFiles/empty.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/empty.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/reopen.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/reopen.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/reopen.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/reopen.dir/build.make libs/glfw/tests/CMakeFiles/reopen.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/reopen.dir/build.make libs/glfw/tests/CMakeFiles/reopen.dir/build
+libs/SFML/tests/CMakeFiles/reopen.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/reopen.dir/build.make libs/SFML/tests/CMakeFiles/reopen.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/reopen.dir/build.make libs/SFML/tests/CMakeFiles/reopen.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=71,72,73 "Built target reopen"
-.PHONY : libs/glfw/tests/CMakeFiles/reopen.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/reopen.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/reopen.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/reopen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/reopen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/reopen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/reopen.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/reopen.dir/rule
 
 # Convenience name for target.
-reopen: libs/glfw/tests/CMakeFiles/reopen.dir/rule
+reopen: libs/SFML/tests/CMakeFiles/reopen.dir/rule
 
 .PHONY : reopen
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/reopen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/reopen.dir/build.make libs/glfw/tests/CMakeFiles/reopen.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/reopen.dir/clean
+libs/SFML/tests/CMakeFiles/reopen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/reopen.dir/build.make libs/SFML/tests/CMakeFiles/reopen.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/reopen.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/msaa.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/msaa.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/msaa.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/msaa.dir/build.make libs/glfw/tests/CMakeFiles/msaa.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/msaa.dir/build.make libs/glfw/tests/CMakeFiles/msaa.dir/build
+libs/SFML/tests/CMakeFiles/msaa.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/msaa.dir/build.make libs/SFML/tests/CMakeFiles/msaa.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/msaa.dir/build.make libs/SFML/tests/CMakeFiles/msaa.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=59,60,61 "Built target msaa"
-.PHONY : libs/glfw/tests/CMakeFiles/msaa.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/msaa.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/msaa.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/msaa.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/msaa.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/msaa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/msaa.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/msaa.dir/rule
 
 # Convenience name for target.
-msaa: libs/glfw/tests/CMakeFiles/msaa.dir/rule
+msaa: libs/SFML/tests/CMakeFiles/msaa.dir/rule
 
 .PHONY : msaa
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/msaa.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/msaa.dir/build.make libs/glfw/tests/CMakeFiles/msaa.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/msaa.dir/clean
+libs/SFML/tests/CMakeFiles/msaa.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/msaa.dir/build.make libs/SFML/tests/CMakeFiles/msaa.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/msaa.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/cursor.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/cursor.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/cursor.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/cursor.dir/build.make libs/glfw/tests/CMakeFiles/cursor.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/cursor.dir/build.make libs/glfw/tests/CMakeFiles/cursor.dir/build
+libs/SFML/tests/CMakeFiles/cursor.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/cursor.dir/build.make libs/SFML/tests/CMakeFiles/cursor.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/cursor.dir/build.make libs/SFML/tests/CMakeFiles/cursor.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=11,12,13 "Built target cursor"
-.PHONY : libs/glfw/tests/CMakeFiles/cursor.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/cursor.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/cursor.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/cursor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/cursor.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/cursor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/cursor.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/cursor.dir/rule
 
 # Convenience name for target.
-cursor: libs/glfw/tests/CMakeFiles/cursor.dir/rule
+cursor: libs/SFML/tests/CMakeFiles/cursor.dir/rule
 
 .PHONY : cursor
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/cursor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/cursor.dir/build.make libs/glfw/tests/CMakeFiles/cursor.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/cursor.dir/clean
+libs/SFML/tests/CMakeFiles/cursor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/cursor.dir/build.make libs/SFML/tests/CMakeFiles/cursor.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/cursor.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/glfwinfo.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/glfwinfo.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/glfwinfo.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/glfwinfo.dir/build.make libs/glfw/tests/CMakeFiles/glfwinfo.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/glfwinfo.dir/build.make libs/glfw/tests/CMakeFiles/glfwinfo.dir/build
+libs/SFML/tests/CMakeFiles/glfwinfo.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/glfwinfo.dir/build.make libs/SFML/tests/CMakeFiles/glfwinfo.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/glfwinfo.dir/build.make libs/SFML/tests/CMakeFiles/glfwinfo.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=38,39,40,41 "Built target glfwinfo"
-.PHONY : libs/glfw/tests/CMakeFiles/glfwinfo.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/glfwinfo.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/glfwinfo.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/glfwinfo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/glfwinfo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/glfwinfo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/glfwinfo.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/glfwinfo.dir/rule
 
 # Convenience name for target.
-glfwinfo: libs/glfw/tests/CMakeFiles/glfwinfo.dir/rule
+glfwinfo: libs/SFML/tests/CMakeFiles/glfwinfo.dir/rule
 
 .PHONY : glfwinfo
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/glfwinfo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/glfwinfo.dir/build.make libs/glfw/tests/CMakeFiles/glfwinfo.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/glfwinfo.dir/clean
+libs/SFML/tests/CMakeFiles/glfwinfo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/glfwinfo.dir/build.make libs/SFML/tests/CMakeFiles/glfwinfo.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/glfwinfo.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/monitors.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/monitors.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/monitors.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/monitors.dir/build.make libs/glfw/tests/CMakeFiles/monitors.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/monitors.dir/build.make libs/glfw/tests/CMakeFiles/monitors.dir/build
+libs/SFML/tests/CMakeFiles/monitors.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/monitors.dir/build.make libs/SFML/tests/CMakeFiles/monitors.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/monitors.dir/build.make libs/SFML/tests/CMakeFiles/monitors.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=56,57,58 "Built target monitors"
-.PHONY : libs/glfw/tests/CMakeFiles/monitors.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/monitors.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/monitors.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/monitors.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/monitors.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/monitors.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/monitors.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/monitors.dir/rule
 
 # Convenience name for target.
-monitors: libs/glfw/tests/CMakeFiles/monitors.dir/rule
+monitors: libs/SFML/tests/CMakeFiles/monitors.dir/rule
 
 .PHONY : monitors
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/monitors.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/monitors.dir/build.make libs/glfw/tests/CMakeFiles/monitors.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/monitors.dir/clean
+libs/SFML/tests/CMakeFiles/monitors.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/monitors.dir/build.make libs/SFML/tests/CMakeFiles/monitors.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/monitors.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/events.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/events.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/events.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/events.dir/build.make libs/glfw/tests/CMakeFiles/events.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/events.dir/build.make libs/glfw/tests/CMakeFiles/events.dir/build
+libs/SFML/tests/CMakeFiles/events.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/events.dir/build.make libs/SFML/tests/CMakeFiles/events.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/events.dir/build.make libs/SFML/tests/CMakeFiles/events.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=17,18,19 "Built target events"
-.PHONY : libs/glfw/tests/CMakeFiles/events.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/events.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/events.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/events.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/events.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/events.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/events.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/events.dir/rule
 
 # Convenience name for target.
-events: libs/glfw/tests/CMakeFiles/events.dir/rule
+events: libs/SFML/tests/CMakeFiles/events.dir/rule
 
 .PHONY : events
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/events.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/events.dir/build.make libs/glfw/tests/CMakeFiles/events.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/events.dir/clean
+libs/SFML/tests/CMakeFiles/events.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/events.dir/build.make libs/SFML/tests/CMakeFiles/events.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/events.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/tests/CMakeFiles/icon.dir
+# Target rules for target libs/SFML/tests/CMakeFiles/icon.dir
 
 # All Build rule for target.
-libs/glfw/tests/CMakeFiles/icon.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/icon.dir/build.make libs/glfw/tests/CMakeFiles/icon.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/icon.dir/build.make libs/glfw/tests/CMakeFiles/icon.dir/build
+libs/SFML/tests/CMakeFiles/icon.dir/all: libs/SFML/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/icon.dir/build.make libs/SFML/tests/CMakeFiles/icon.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/icon.dir/build.make libs/SFML/tests/CMakeFiles/icon.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=44,45,46 "Built target icon"
-.PHONY : libs/glfw/tests/CMakeFiles/icon.dir/all
+.PHONY : libs/SFML/tests/CMakeFiles/icon.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/tests/CMakeFiles/icon.dir/rule: cmake_check_build_system
+libs/SFML/tests/CMakeFiles/icon.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/icon.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/SFML/tests/CMakeFiles/icon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" 0
-.PHONY : libs/glfw/tests/CMakeFiles/icon.dir/rule
+.PHONY : libs/SFML/tests/CMakeFiles/icon.dir/rule
 
 # Convenience name for target.
-icon: libs/glfw/tests/CMakeFiles/icon.dir/rule
+icon: libs/SFML/tests/CMakeFiles/icon.dir/rule
 
 .PHONY : icon
 
 # clean rule for target.
-libs/glfw/tests/CMakeFiles/icon.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/icon.dir/build.make libs/glfw/tests/CMakeFiles/icon.dir/clean
-.PHONY : libs/glfw/tests/CMakeFiles/icon.dir/clean
+libs/SFML/tests/CMakeFiles/icon.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/icon.dir/build.make libs/SFML/tests/CMakeFiles/icon.dir/clean
+.PHONY : libs/SFML/tests/CMakeFiles/icon.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

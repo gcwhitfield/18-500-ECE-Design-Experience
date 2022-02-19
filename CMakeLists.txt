@@ -8,12 +8,13 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic -std=c++11")
 
-add_subdirectory(./libs/glfw/)
+add_subdirectory(./libs/glfw/
+		 ./libs/SFML)
 
 include_directories(./libs/glfw/include/
                     ./libs/glad/include/
                     ./libs/glm/include/
-                    )
+                    ./libs/SFML/include)
 
 # set the names of all of the cpp files into one variable called "NAMES"
 set(NAMES ./src/Mode.cpp
@@ -26,4 +27,4 @@ set(NAMES ./src/Mode.cpp
 add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} src/main.cpp)
 
 # link GLFW
-target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES} SFML ${SFML_LIBRARIES})

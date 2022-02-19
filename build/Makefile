@@ -198,7 +198,7 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/CMakeFiles/uninstall.dir/build.make libs/glfw/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/CMakeFiles/uninstall.dir/build.make libs/SFML/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 #=============================================================================
@@ -211,7 +211,7 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/update_mappings.dir/build.make libs/SFML/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
 #=============================================================================
@@ -224,7 +224,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/src/CMakeFiles/glfw.dir/build.make libs/SFML/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -237,7 +237,7 @@ wave: cmake_check_build_system
 
 # fast build rule for target.
 wave/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/wave.dir/build.make libs/glfw/examples/CMakeFiles/wave.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/wave.dir/build.make libs/SFML/examples/CMakeFiles/wave.dir/build
 .PHONY : wave/fast
 
 #=============================================================================
@@ -250,7 +250,7 @@ simple: cmake_check_build_system
 
 # fast build rule for target.
 simple/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/simple.dir/build.make libs/glfw/examples/CMakeFiles/simple.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/simple.dir/build.make libs/SFML/examples/CMakeFiles/simple.dir/build
 .PHONY : simple/fast
 
 #=============================================================================
@@ -263,7 +263,7 @@ sharing: cmake_check_build_system
 
 # fast build rule for target.
 sharing/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/sharing.dir/build.make libs/glfw/examples/CMakeFiles/sharing.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/sharing.dir/build.make libs/SFML/examples/CMakeFiles/sharing.dir/build
 .PHONY : sharing/fast
 
 #=============================================================================
@@ -276,7 +276,7 @@ particles: cmake_check_build_system
 
 # fast build rule for target.
 particles/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/particles.dir/build.make libs/glfw/examples/CMakeFiles/particles.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/particles.dir/build.make libs/SFML/examples/CMakeFiles/particles.dir/build
 .PHONY : particles/fast
 
 #=============================================================================
@@ -289,7 +289,7 @@ heightmap: cmake_check_build_system
 
 # fast build rule for target.
 heightmap/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/heightmap.dir/build.make libs/glfw/examples/CMakeFiles/heightmap.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/heightmap.dir/build.make libs/SFML/examples/CMakeFiles/heightmap.dir/build
 .PHONY : heightmap/fast
 
 #=============================================================================
@@ -302,7 +302,7 @@ splitview: cmake_check_build_system
 
 # fast build rule for target.
 splitview/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/splitview.dir/build.make libs/glfw/examples/CMakeFiles/splitview.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/splitview.dir/build.make libs/SFML/examples/CMakeFiles/splitview.dir/build
 .PHONY : splitview/fast
 
 #=============================================================================
@@ -315,7 +315,7 @@ offscreen: cmake_check_build_system
 
 # fast build rule for target.
 offscreen/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/offscreen.dir/build.make libs/glfw/examples/CMakeFiles/offscreen.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/offscreen.dir/build.make libs/SFML/examples/CMakeFiles/offscreen.dir/build
 .PHONY : offscreen/fast
 
 #=============================================================================
@@ -328,7 +328,7 @@ gears: cmake_check_build_system
 
 # fast build rule for target.
 gears/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/gears.dir/build.make libs/glfw/examples/CMakeFiles/gears.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/gears.dir/build.make libs/SFML/examples/CMakeFiles/gears.dir/build
 .PHONY : gears/fast
 
 #=============================================================================
@@ -341,7 +341,7 @@ boing: cmake_check_build_system
 
 # fast build rule for target.
 boing/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/boing.dir/build.make libs/glfw/examples/CMakeFiles/boing.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/examples/CMakeFiles/boing.dir/build.make libs/SFML/examples/CMakeFiles/boing.dir/build
 .PHONY : boing/fast
 
 #=============================================================================
@@ -354,7 +354,7 @@ triangle-vulkan: cmake_check_build_system
 
 # fast build rule for target.
 triangle-vulkan/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/glfw/tests/CMakeFiles/triangle-vulkan.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/build.make libs/SFML/tests/CMakeFiles/triangle-vulkan.dir/build
 .PHONY : triangle-vulkan/fast
 
 #=============================================================================
@@ -367,7 +367,7 @@ clipboard: cmake_check_build_system
 
 # fast build rule for target.
 clipboard/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/clipboard.dir/build.make libs/glfw/tests/CMakeFiles/clipboard.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/clipboard.dir/build.make libs/SFML/tests/CMakeFiles/clipboard.dir/build
 .PHONY : clipboard/fast
 
 #=============================================================================
@@ -380,7 +380,7 @@ title: cmake_check_build_system
 
 # fast build rule for target.
 title/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/title.dir/build.make libs/glfw/tests/CMakeFiles/title.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/title.dir/build.make libs/SFML/tests/CMakeFiles/title.dir/build
 .PHONY : title/fast
 
 #=============================================================================
@@ -393,7 +393,7 @@ timeout: cmake_check_build_system
 
 # fast build rule for target.
 timeout/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/timeout.dir/build.make libs/glfw/tests/CMakeFiles/timeout.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/timeout.dir/build.make libs/SFML/tests/CMakeFiles/timeout.dir/build
 .PHONY : timeout/fast
 
 #=============================================================================
@@ -406,7 +406,7 @@ threads: cmake_check_build_system
 
 # fast build rule for target.
 threads/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/threads.dir/build.make libs/glfw/tests/CMakeFiles/threads.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/threads.dir/build.make libs/SFML/tests/CMakeFiles/threads.dir/build
 .PHONY : threads/fast
 
 #=============================================================================
@@ -419,7 +419,7 @@ opacity: cmake_check_build_system
 
 # fast build rule for target.
 opacity/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/opacity.dir/build.make libs/glfw/tests/CMakeFiles/opacity.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/opacity.dir/build.make libs/SFML/tests/CMakeFiles/opacity.dir/build
 .PHONY : opacity/fast
 
 #=============================================================================
@@ -432,7 +432,7 @@ gamma: cmake_check_build_system
 
 # fast build rule for target.
 gamma/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/gamma.dir/build.make libs/glfw/tests/CMakeFiles/gamma.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/gamma.dir/build.make libs/SFML/tests/CMakeFiles/gamma.dir/build
 .PHONY : gamma/fast
 
 #=============================================================================
@@ -445,7 +445,7 @@ tearing: cmake_check_build_system
 
 # fast build rule for target.
 tearing/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/tearing.dir/build.make libs/glfw/tests/CMakeFiles/tearing.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/tearing.dir/build.make libs/SFML/tests/CMakeFiles/tearing.dir/build
 .PHONY : tearing/fast
 
 #=============================================================================
@@ -458,7 +458,7 @@ iconify: cmake_check_build_system
 
 # fast build rule for target.
 iconify/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/iconify.dir/build.make libs/glfw/tests/CMakeFiles/iconify.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/iconify.dir/build.make libs/SFML/tests/CMakeFiles/iconify.dir/build
 .PHONY : iconify/fast
 
 #=============================================================================
@@ -471,7 +471,7 @@ joysticks: cmake_check_build_system
 
 # fast build rule for target.
 joysticks/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/joysticks.dir/build.make libs/glfw/tests/CMakeFiles/joysticks.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/joysticks.dir/build.make libs/SFML/tests/CMakeFiles/joysticks.dir/build
 .PHONY : joysticks/fast
 
 #=============================================================================
@@ -484,7 +484,7 @@ windows: cmake_check_build_system
 
 # fast build rule for target.
 windows/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/windows.dir/build.make libs/glfw/tests/CMakeFiles/windows.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/windows.dir/build.make libs/SFML/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
 #=============================================================================
@@ -497,7 +497,7 @@ inputlag: cmake_check_build_system
 
 # fast build rule for target.
 inputlag/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/inputlag.dir/build.make libs/glfw/tests/CMakeFiles/inputlag.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/inputlag.dir/build.make libs/SFML/tests/CMakeFiles/inputlag.dir/build
 .PHONY : inputlag/fast
 
 #=============================================================================
@@ -510,7 +510,7 @@ empty: cmake_check_build_system
 
 # fast build rule for target.
 empty/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/empty.dir/build.make libs/glfw/tests/CMakeFiles/empty.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/empty.dir/build.make libs/SFML/tests/CMakeFiles/empty.dir/build
 .PHONY : empty/fast
 
 #=============================================================================
@@ -523,7 +523,7 @@ reopen: cmake_check_build_system
 
 # fast build rule for target.
 reopen/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/reopen.dir/build.make libs/glfw/tests/CMakeFiles/reopen.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/reopen.dir/build.make libs/SFML/tests/CMakeFiles/reopen.dir/build
 .PHONY : reopen/fast
 
 #=============================================================================
@@ -536,7 +536,7 @@ msaa: cmake_check_build_system
 
 # fast build rule for target.
 msaa/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/msaa.dir/build.make libs/glfw/tests/CMakeFiles/msaa.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/msaa.dir/build.make libs/SFML/tests/CMakeFiles/msaa.dir/build
 .PHONY : msaa/fast
 
 #=============================================================================
@@ -549,7 +549,7 @@ cursor: cmake_check_build_system
 
 # fast build rule for target.
 cursor/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/cursor.dir/build.make libs/glfw/tests/CMakeFiles/cursor.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/cursor.dir/build.make libs/SFML/tests/CMakeFiles/cursor.dir/build
 .PHONY : cursor/fast
 
 #=============================================================================
@@ -562,7 +562,7 @@ glfwinfo: cmake_check_build_system
 
 # fast build rule for target.
 glfwinfo/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/glfwinfo.dir/build.make libs/glfw/tests/CMakeFiles/glfwinfo.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/glfwinfo.dir/build.make libs/SFML/tests/CMakeFiles/glfwinfo.dir/build
 .PHONY : glfwinfo/fast
 
 #=============================================================================
@@ -575,7 +575,7 @@ monitors: cmake_check_build_system
 
 # fast build rule for target.
 monitors/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/monitors.dir/build.make libs/glfw/tests/CMakeFiles/monitors.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/monitors.dir/build.make libs/SFML/tests/CMakeFiles/monitors.dir/build
 .PHONY : monitors/fast
 
 #=============================================================================
@@ -588,7 +588,7 @@ events: cmake_check_build_system
 
 # fast build rule for target.
 events/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/events.dir/build.make libs/glfw/tests/CMakeFiles/events.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/events.dir/build.make libs/SFML/tests/CMakeFiles/events.dir/build
 .PHONY : events/fast
 
 #=============================================================================
@@ -601,7 +601,7 @@ icon: cmake_check_build_system
 
 # fast build rule for target.
 icon/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/icon.dir/build.make libs/glfw/tests/CMakeFiles/icon.dir/build
+	$(MAKE) $(MAKESILENT) -f libs/SFML/tests/CMakeFiles/icon.dir/build.make libs/SFML/tests/CMakeFiles/icon.dir/build
 .PHONY : icon/fast
 
 libs/glad/src/glad.o: libs/glad/src/glad.c.o

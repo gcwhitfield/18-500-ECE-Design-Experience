@@ -158,7 +158,7 @@ RhythmGame: CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/main.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/build.make
-RhythmGame: libs/glfw/src/libglfw3.a
+RhythmGame: libs/SFML/src/libglfw3.a
 RhythmGame: CMakeFiles/RhythmGame.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable RhythmGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RhythmGame.dir/link.txt --verbose=$(VERBOSE)
