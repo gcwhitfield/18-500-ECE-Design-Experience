@@ -18,6 +18,7 @@ include_directories(./libs/glfw/include/
                     ./libs/glad/include/
                     ./libs/glm/include/
                     ./libs/portaudio/include/
+		    ./libs/libaudiodecoder/include/
                     )
 
 # set the names of all of the cpp files into one variable called "NAMES"
@@ -27,15 +28,15 @@ set(NAMES ./src/Mode.cpp
           ./src/Sound.cpp
           )
 
-# file(GLOB_RECURSE SOLOUD_NAMES ./libs/soloud/src/**.cpp)
+# file(GLOB_RECURSE LIBAUDIODECODER_NAMES ./libs/libaudiodecoder/src/**.cpp)
 
 
 # add the executable
-add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} src/main.cpp)
+add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} ${LIBAUDIODECODER_NAMES} src/main.cpp)
 
 # link libraries
 target_link_libraries(
 	${PROJECT_NAME} 
 	glfw ${GLFW_LIBRARIES}
-    portaudio
+    	portaudio
     )

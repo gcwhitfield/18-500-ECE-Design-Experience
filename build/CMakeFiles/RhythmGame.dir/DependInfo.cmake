@@ -15,6 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/glad/include"
   ".././libs/glm/include"
   ".././libs/portaudio/include"
+  ".././libs/libaudiodecoder/include"
   "../libs/glfw/include"
   "../libs/portaudio/include"
   )
@@ -33,6 +34,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/glad/include"
   ".././libs/glm/include"
   ".././libs/portaudio/include"
+  ".././libs/libaudiodecoder/include"
   "../libs/glfw/include"
   "../libs/portaudio/include"
   )
