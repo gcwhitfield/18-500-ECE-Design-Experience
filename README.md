@@ -1,7 +1,7 @@
 # ECE Capstone Project - Rhythm Game
 Created with "OpenGL Boilerplate" - starter code for making C++ programs with OpenGL. 
 
-## Libraries
+## Libraries Used
 * glm 0.9.9.8 https://github.com/g-truc/glm/releases/tag/0.9.9.8
 * GLFW 3.3.6 https://www.glfw.org/download.html
 * glad https://github.com/Dav1dde/glad
@@ -10,9 +10,11 @@ Created with "OpenGL Boilerplate" - starter code for making C++ programs with Op
     fine as well). Also make sure the profile is set to Core and that the Generate a loader option 
     is ticked. Ignore the extensions (for now) and click Generate to produce the resulting library 
     files". Quote copied from "Learn OpenGL - Graphics Programming" by Joey de Vries 
+* PortAudio - http://www.portaudio.com/
+* libaudiodecoder - https://github.com/asantoni/libaudiodecoder
 
 ## Credits 
 * window creation code taken from "Learn OpenGL - Graphics Programming" by Joey de Vries 
 https://learnopengl.com 
-* *Mode.cpp*, *Mode.hpp*, and render loop code based off "game 0" base code from Computer Game 
+* *Mode.cpp*, *Mode.hpp*, *Sound.cpp* and render loop code based off "game 0" and "game 3" base code from Computer Game 
 Programming 16-466 at CMU https://github.com/15-466/15-466-f21-base0 
