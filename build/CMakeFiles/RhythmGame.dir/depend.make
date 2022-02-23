@@ -479,6 +479,10 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/PlayMode.cpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/PlayMode.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/stb_image.h
 
+CMakeFiles/RhythmGame.dir/src/Sound.cpp.o: ../libs/portaudio/include/portaudio.h
+CMakeFiles/RhythmGame.dir/src/Sound.cpp.o: ../src/Sound.cpp
+CMakeFiles/RhythmGame.dir/src/Sound.cpp.o: ../src/Sound.hpp
+
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glad/include/KHR/khrplatform.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glad/include/glad/glad.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glfw/include/GLFW/glfw3.h
@@ -633,8 +637,10 @@ CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vec2.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vec3.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vec4.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vector_relational.hpp
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/portaudio/include/portaudio.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/ColorTextureProgram.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/Mode.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/PlayMode.hpp
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/Sound.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/main.cpp
 

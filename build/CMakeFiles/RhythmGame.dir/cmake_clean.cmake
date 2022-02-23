@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/Mode.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o"
+  "CMakeFiles/RhythmGame.dir/src/Sound.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/main.cpp.o"
   "RhythmGame"
   "RhythmGame.pdb"

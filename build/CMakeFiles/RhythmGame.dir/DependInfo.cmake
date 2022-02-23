@@ -14,13 +14,15 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/glfw/include"
   ".././libs/glad/include"
   ".././libs/glm/include"
-  ".././libs/SFML/include"
+  ".././libs/portaudio/include"
   "../libs/glfw/include"
+  "../libs/portaudio/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/Mode.cpp.o"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/Sound.cpp.o"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/main.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
@@ -30,13 +32,15 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/glfw/include"
   ".././libs/glad/include"
   ".././libs/glm/include"
-  ".././libs/SFML/include"
+  ".././libs/portaudio/include"
   "../libs/glfw/include"
+  "../libs/portaudio/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/SFML/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/build/bin/CMakeFiles/portaudio.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
