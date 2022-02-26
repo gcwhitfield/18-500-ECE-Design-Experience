@@ -27,6 +27,8 @@ struct Beatmap {
     // the beats in 'beats' are ordered based on the time that they occur in the song. Beats at 
     // lower indices occur earlier in the song, beats at later indices occur later
     std::vector<Beat> beats;
+    size_t next_beat = 0; // an index into 'beats' that corresponds to the next beat after beatmap.t
+
 
     // given a path to a song JSON file, loads the data into the 'beats' vector
     void load(std::string filePath);
@@ -36,4 +38,8 @@ struct Beatmap {
 
     // called every frame
     void update(float elapsed);
+
+    // Returns the amount of time that will elapse after beatmap.t until the next occurrence of a 
+    // beat at 'location'. If the next occurrence takes too long, this function will return -1.
+    float time_until_next(BeatLocation location);
 };

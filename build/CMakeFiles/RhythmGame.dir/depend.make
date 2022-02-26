@@ -810,6 +810,7 @@ CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/libaudiodecoder/include/audiod
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/portaudio/include/portaudio.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/Beatmap.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/ColorTextureProgram.hpp
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/Input.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/Mode.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/PlayMode.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/Sound.hpp

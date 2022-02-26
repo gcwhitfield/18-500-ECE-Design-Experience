@@ -35,4 +35,33 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
 
 void Beatmap::update(float elapsed) {
     t += elapsed;
+    while (t < beats[next_beat].time) {
+        next_beat ++;
+    }
+}
+
+float Beatmap::time_until_next(BeatLocation location) {
+    float MAX_INPUT_THRESHOLD = 1.0; // seconds
+    // check for beats coming in the future
+    for (size_t i = next_beat; i < beats.size(); i++) {
+        Beat &curr_beat = beats[i];
+        float next_time = curr_beat.time - t;
+        if (MAX_INPUT_THRESHOLD < next_time) {
+            break;
+        }
+        if (curr_beat.location != location) continue;
+        else return next_time;
+    }
+    // check beats that have just occurred
+    for (size_t i = next_beat - 1; i >= 0; i--) {
+        Beat &curr_beat = beats[i];
+        float prev_time = t - curr_beat.time;
+        if (MAX_INPUT_THRESHOLD < prev_time) {
+            return -1;
+        }
+        if (curr_beat.location != location) continue;
+        else return prev_time;
+    }
+
+    return -1;
 }

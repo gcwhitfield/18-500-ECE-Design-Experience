@@ -39,6 +39,7 @@ struct Input {
         ENTER = 257,
         LEFT_SHIFT = 340,
         RIGHT_SHIFT = 344,
-        SPACE = 32
+        SPACE = 32,
+        ESCAPE = 256
     };
 };

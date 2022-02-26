@@ -100,21 +100,18 @@ PlayMode::PlayMode() {
     }
 
     { // initialize the test beatmap
-
-        std::cout << "Initializing beatmap" << std::endl;
+        beatmap = new Beatmap();
         size_t test_beatmap_len = 50;
         std::vector<Beatmap::Beat> beats;
-        beatmap.beats.reserve(test_beatmap_len);
+        beatmap->beats.reserve(test_beatmap_len);
         float time_between_beats = 1;
         for (size_t i = 0; i < test_beatmap_len; i++) {
             size_t rand_lane = rand() % 4;
             Beatmap::Beat new_beat;
             new_beat.location = (Beatmap::BeatLocation)rand_lane;
             new_beat.time = time_between_beats * i;
-            beatmap.beats.push_back(new_beat);
+            beatmap->beats.push_back(new_beat);
         }
-
-        std::cout << beatmap.beats.size() << std::endl;
     }
 }
 
@@ -124,16 +121,72 @@ PlayMode::~PlayMode() {
 
 void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action, int mods) {
     (void) window;
-    (void) key;
     (void) scancode;
     (void) action;
     (void) mods;
-    std::cout << "Key has been pressed: " << key << " : " << scancode << std::endl;
+
+    {   // Detect input from player, grade input, add points to score
+        const Input::KeyCode up = Input::KeyCode::W;
+        const Input::KeyCode down = Input::KeyCode::S;
+        const Input::KeyCode left = Input::KeyCode::A;
+        const Input::KeyCode right = Input::KeyCode::D;
+        Beatmap::BeatLocation location;
+
+        switch(key)
+        {
+            case up:
+                location = Beatmap::BeatLocation::UP;
+                break;
+            case down:
+                location = Beatmap::BeatLocation::DOWN;
+                break;
+            case left:
+                location = Beatmap::BeatLocation::LEFT;
+                break;
+            case right:
+                location = Beatmap::BeatLocation::RIGHT;
+                break;
+            default: // the player did not hit a valid key
+                return; 
+        }
+
+        BeatGrade grade = grade_input(location);
+        switch(grade) {
+            case BeatGrade::PERFECT:
+                score += 100;
+                break;
+            case BeatGrade::GOOD:
+                score += 25;
+                break;
+            case BeatGrade::MISS:
+                score -= 25;
+                break;
+            default: // do not modify score for BeatGrade::NONE
+                break;
+        }
+
+        std::cout << "Score: " << score << std::endl;
+
+    }
+    // std::cout << "Key has been pressed: " << key << " : " << scancode << std::endl;
+}
+
+PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
+    float time = beatmap->time_until_next(location);
+    std::cout << "time until next: " << time << std::endl;
+    if (time < 0.1) { // one tenth of a second
+        return BeatGrade::PERFECT;
+    } else if (time < 0.5) { // half a second
+        return BeatGrade::GOOD;
+    } else if (time < 1) { // one second
+        return BeatGrade::MISS;
+    } else {
+        return BeatGrade::NONE;
+    }
 }
 
 void PlayMode::update(float elapsed) {
-    beatmap.update(elapsed);
-    // std::cout << beatmap.t << std::endl;
+    beatmap->update(elapsed);
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {
@@ -142,7 +195,7 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     // https://github.com/15-466/15-466-f21-base0
     vertices.clear();
 
-    beatmap.draw(vertices, drawable_size);
+    beatmap->draw(vertices, drawable_size);
 
     (void) drawable_size;
     glUseProgram(program.program);

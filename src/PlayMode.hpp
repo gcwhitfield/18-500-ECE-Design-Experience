@@ -14,13 +14,16 @@
 struct PlayMode : Mode {
     PlayMode();
     ~PlayMode();
+
+    // ---------- gameplay ---------- 
+    enum BeatGrade {
+        PERFECT, // player hit the note exactly with the beat
+        GOOD,  // player hit the note more-or-less with the beat
+        MISS, // player did not hit the note on beat at all
+        NONE // the player did not hit or miss the beat 
+    };
     
-    GLuint tex = -1U;
-    ColorTextureProgram program;
-    GLuint vertex_buffer_object = -1U;
-    GLuint vertex_array_object = -1U;
-    GLuint white_texture = -1U;
-    GLuint x_texture = -1U;
+    int score = 0;
 
     // update is called every frame
     virtual void update(float elapsed) override;
@@ -33,13 +36,25 @@ struct PlayMode : Mode {
         int action, 
         int mods) override;
 
-    // draw is called whenever we want to draw something to the screen
-    virtual void draw(glm::uvec2 const &drawable_size) override;
+    Beatmap *beatmap;
+
+    // given a beat location 'location', returns the score to assign to the beat
+    BeatGrade grade_input(Beatmap::BeatLocation location);
+
+    // ---------- drawing ----------
+    GLuint tex = -1U;
+    ColorTextureProgram program;
+    GLuint vertex_buffer_object = -1U;
+    GLuint vertex_array_object = -1U;
+    GLuint white_texture = -1U;
+    GLuint x_texture = -1U;
 
     std::vector<Vertex> vertices;
 
-    Beatmap beatmap;
-
+    // draw is called whenever we want to draw something to the screen
+    virtual void draw(glm::uvec2 const &drawable_size) override;
+    
+    // ---------- debugging -----------
     void print_gl_errors()
     {
         GLenum err;
