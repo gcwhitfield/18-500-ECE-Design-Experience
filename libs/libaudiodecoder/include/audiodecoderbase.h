@@ -72,12 +72,12 @@ class DllExport AudioDecoderBase
         int open() { return 0; };
 
         /** Seek to a sample in the file */
-        int seek(int filepos) { return 0l; };
+        int seek(int filepos) { (void)filepos; return 0l; };
 
         /** Read a maximum of 'size' samples of audio into buffer. 
             Samples are always returned as 32-bit floats, with stereo interlacing.
             Returns the number of samples read. */
-        int read(int size, const SAMPLE *buffer) { return 0u; };
+        int read(int size, const SAMPLE *buffer) { (void)buffer; (void)size; return 0u; };
 
         /** Get the number of audio samples in the file. This will be a good estimate of the 
             number of samples you can get out of read(), though you should not rely on it

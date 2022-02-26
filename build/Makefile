@@ -657,6 +657,33 @@ libs/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.s
 .PHONY : libs/glad/src/glad.c.s
 
+src/Beatmap.o: src/Beatmap.cpp.o
+
+.PHONY : src/Beatmap.o
+
+# target to build an object file
+src/Beatmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o
+.PHONY : src/Beatmap.cpp.o
+
+src/Beatmap.i: src/Beatmap.cpp.i
+
+.PHONY : src/Beatmap.i
+
+# target to preprocess a source file
+src/Beatmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.i
+.PHONY : src/Beatmap.cpp.i
+
+src/Beatmap.s: src/Beatmap.cpp.s
+
+.PHONY : src/Beatmap.s
+
+# target to generate assembly for a file
+src/Beatmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.s
+.PHONY : src/Beatmap.cpp.s
+
 src/ColorTextureProgram.o: src/ColorTextureProgram.cpp.o
 
 .PHONY : src/ColorTextureProgram.o
@@ -842,6 +869,9 @@ help:
 	@echo "... libs/glad/src/glad.o"
 	@echo "... libs/glad/src/glad.i"
 	@echo "... libs/glad/src/glad.s"
+	@echo "... src/Beatmap.o"
+	@echo "... src/Beatmap.i"
+	@echo "... src/Beatmap.s"
 	@echo "... src/ColorTextureProgram.o"
 	@echo "... src/ColorTextureProgram.i"
 	@echo "... src/ColorTextureProgram.s"

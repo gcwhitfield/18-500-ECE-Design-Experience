@@ -79,13 +79,13 @@ PlayMode::PlayMode() {
         glBindTexture(GL_TEXTURE_2D, 0);
         print_gl_errors();
     }
-    { // import llama texture. stb_image code from OpenGL programming book by Joey de Vries
-        glGenTextures(1, &llama_texture);
-        glBindTexture(GL_TEXTURE_2D, llama_texture);
+    { // import x texture. stb_image code from OpenGL programming book by Joey de Vries
+        glGenTextures(1, &x_texture);
+        glBindTexture(GL_TEXTURE_2D, x_texture);
         int width, height, nr_channels;
-        unsigned char *data = stbi_load("images/llama.png", &width, &height, &nr_channels, 0);
+        unsigned char *data = stbi_load("images/x.png", &width, &height, &nr_channels, 0);
         if (!data) {
-            std::cerr << "could not read llama png" << std::endl;
+            std::cerr << "could not read x png" << std::endl;
             exit(1);
         }
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
@@ -98,10 +98,42 @@ PlayMode::PlayMode() {
         stbi_image_free(data);
         print_gl_errors();
     }
+
+    { // initialize the test beatmap
+
+        std::cout << "Initializing beatmap" << std::endl;
+        size_t test_beatmap_len = 50;
+        std::vector<Beatmap::Beat> beats;
+        beatmap.beats.reserve(test_beatmap_len);
+        float time_between_beats = 1;
+        for (size_t i = 0; i < test_beatmap_len; i++) {
+            size_t rand_lane = rand() % 4;
+            Beatmap::Beat new_beat;
+            new_beat.location = (Beatmap::BeatLocation)rand_lane;
+            new_beat.time = time_between_beats * i;
+            beatmap.beats.push_back(new_beat);
+        }
+
+        std::cout << beatmap.beats.size() << std::endl;
+    }
 }
 
 PlayMode::~PlayMode() {
 
+}
+
+void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action, int mods) {
+    (void) window;
+    (void) key;
+    (void) scancode;
+    (void) action;
+    (void) mods;
+    std::cout << "Key has been pressed: " << key << " : " << scancode << std::endl;
+}
+
+void PlayMode::update(float elapsed) {
+    beatmap.update(elapsed);
+    // std::cout << beatmap.t << std::endl;
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {
@@ -109,7 +141,8 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     // drawing starter code taken from "game 0 base code"
     // https://github.com/15-466/15-466-f21-base0
     vertices.clear();
-    draw_rectangle(vertices, glm::vec2(0.4f, 0.4f), glm::vec2(0.5, 0.5), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+
+    beatmap.draw(vertices, drawable_size);
 
     (void) drawable_size;
     glUseProgram(program.program);
@@ -123,23 +156,11 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     
     glBindVertexArray(vertex_array_object);
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, llama_texture);
+    glBindTexture(GL_TEXTURE_2D, x_texture);
 
     glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
     print_gl_errors();
     glBindTexture(GL_TEXTURE_2D, 0);
     glBindVertexArray(0);    
     glUseProgram(0);
-}
-
-void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action, int mods) {
-    (void) window;
-    (void) key;
-    (void) scancode;
-    (void) action;
-    (void) mods;
-}
-
-void PlayMode::update(float elapsed) {
-    (void) elapsed;
 }

@@ -1,4 +1,5 @@
 #include "portaudio.h"
+#include "audiodecoder.h"
 #include <iostream>
 
 // this Sound class is a simple interface for playing sounds in our game with Portaudio

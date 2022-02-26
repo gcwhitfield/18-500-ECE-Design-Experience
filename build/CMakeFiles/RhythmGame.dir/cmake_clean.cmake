@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.o"
+  "CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/Mode.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o"

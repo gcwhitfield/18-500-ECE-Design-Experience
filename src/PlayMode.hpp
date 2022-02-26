@@ -1,8 +1,13 @@
 #include "Mode.hpp"
 #include "ColorTextureProgram.hpp"
+#include "Beatmap.hpp"
+#include "Vertex.hpp"
+#include "Input.hpp"
+
 #include <glm.hpp>
 #include <iostream>
 #include <vector>
+#include <random>
 
 // PlayMode is where all of the drawing and logic related to gameplay is stored. 
 // The scene where the player plays the game is typically referred to as the "play mode"
@@ -15,7 +20,7 @@ struct PlayMode : Mode {
     GLuint vertex_buffer_object = -1U;
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
-    GLuint llama_texture = -1U;
+    GLuint x_texture = -1U;
 
     // update is called every frame
     virtual void update(float elapsed) override;
@@ -31,33 +36,9 @@ struct PlayMode : Mode {
     // draw is called whenever we want to draw something to the screen
     virtual void draw(glm::uvec2 const &drawable_size) override;
 
-    // 'Vertex' stores the information that we give to OpenGL in the vertex buffer
-    struct Vertex {
-        Vertex(glm::vec3 pos, glm::u8vec4 col, glm::vec2 tex) : position(pos), color(col), tex_coord(tex) {
-            position = pos;
-            color = col;
-            tex_coord = tex;
-        }
-        ~Vertex() {};
-        glm::vec3 position;
-        glm::u8vec4 color;
-        glm::vec2 tex_coord;
-    };
-
     std::vector<Vertex> vertices;
 
-    // inline helper functions for drawing shapes. The triangles are being counter clockwise.
-    // draw_rectangle copied from NEST framework 
-    // https://github.com/gcwhitfield/Game-Programming-f21-base6/blob/main/NEST.md
-    inline void draw_rectangle (std::vector<Vertex> &verts, glm::vec2 const &center, glm::vec2 const &radius, glm::u8vec4 const &color) {
-        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 1.0f))); // top left
-        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y-radius.y, 0.0f), color, glm::vec2(1.0f, 1.0f))); // top right
-        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 0.0f))); // bottom right
-
-        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y-radius.y, 0.0f), color, glm::vec2(0.0f, 1.0f))); // top left
-        verts.emplace_back(Vertex(glm::vec3(center.x+radius.x, center.y+radius.y, 0.0f), color, glm::vec2(1.0f, 0.0f))); // bottom right
-        verts.emplace_back(Vertex(glm::vec3(center.x-radius.x, center.y+radius.y, 0.0f), color, glm::vec2(0.0f, 0.0f))); // bottom left
-    };
+    Beatmap beatmap;
 
     void print_gl_errors()
     {

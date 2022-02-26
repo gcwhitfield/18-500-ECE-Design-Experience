@@ -5,6 +5,7 @@
 
 #include "PlayMode.hpp"
 #include "Sound.hpp"
+#include "audiodecoder.h"
 
 #include <iostream>
 #include <memory>
@@ -40,9 +41,10 @@ int main()
     }
 
     // initialize sound
-    Sound *sound = new Sound();
-    sound->init();
-    // sound->play_test_sound();
+    // Sound *sound = new Sound();
+    // sound->init();
+    // AudioDecoder *audio = new AudioDecoder("songs/Starbucks Music/StarbucksMusic.wav");
+    // (void)audio;
 
     // set the viewport size 
     glm::uvec2 window_size(800, 800);
@@ -88,7 +90,7 @@ int main()
         glfwPollEvents(); // will call input callback functions as needed
     }
 
-    sound->de_init();
+    // sound->de_init();
     glfwTerminate();
     return 0;
 }
