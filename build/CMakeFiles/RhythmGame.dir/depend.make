@@ -630,6 +630,7 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glm/include/vec4.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glm/include/vector_relational.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Beatmap.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/ColorTextureProgram.hpp
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Input.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Mode.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/PlayMode.cpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/PlayMode.hpp

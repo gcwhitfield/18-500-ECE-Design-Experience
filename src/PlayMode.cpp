@@ -148,7 +148,8 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     glUseProgram(program.program);
     glClearColor(0.5, 0.5, 0.5, 1);
     glClear(GL_COLOR_BUFFER_BIT);
-
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     // send the vertices to the vertex buffer
     glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
