@@ -5,6 +5,15 @@ CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.o
  ../libs/glad/include/KHR/khrplatform.h
  ../libs/glad/include/glad/glad.h
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/glad/src/glad.c
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o
+ ../libs/libaudiodecoder/include/audiodecoderbase.h
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libaudiodecoder/src/audiodecoderbase.cpp
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o
+ ../libs/libaudiodecoder/include/apple/CADebugMacros.h
+ ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
+ ../libs/libaudiodecoder/include/audiodecoderbase.h
+ ../libs/libaudiodecoder/include/audiodecodercoreaudio.h
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp
 CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o
  ../libs/glm/include/common.hpp
  ../libs/glm/include/detail/_fixes.hpp

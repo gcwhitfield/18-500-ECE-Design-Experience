@@ -1,5 +1,7 @@
 #include "Sound.hpp"
 
+const size_t NUM_CHANNELS = 2;
+
 // a lot of the portaudio code in this file was copied from the portaudio tutorials from 
 // http://www.portaudio.com/docs/. Specifically, the code for Sound::Init, Sound::DeInit, Sound::paTestData, 
 // and stream_callback were taken from the portaudio documentation
@@ -9,6 +11,11 @@
 // up the system, such as malloc() or free()
 int stream_callback(const void *input, void *output, unsigned long frame_count,  
     const PaStreamCallbackTimeInfo *time_info, PaStreamCallbackFlags status_flags, void *user_data){
+
+    // initialize the data in 'output' to zero, to make sure that we don't get any crazy popping 
+    // noises
+    // line taken from libaudiodecoder documentation: https://github.com/asantoni/libaudiodecoder/blob/master/examples/playsong/playsong.cpp
+    memset((float*)output, 0, frame_count * NUM_CHANNELS * sizeof(float));
 
     // cast data passed through stream to our structure
     Sound::paTestData *data = (Sound::paTestData*) user_data;

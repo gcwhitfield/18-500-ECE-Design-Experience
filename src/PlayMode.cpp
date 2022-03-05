@@ -110,7 +110,7 @@ PlayMode::PlayMode() {
             Beatmap::Beat new_beat;
             new_beat.location = (Beatmap::BeatLocation)rand_lane;
             new_beat.time = time_between_beats * i;
-            beatmap->beats.push_back(new_beat);
+            beatmap->beats.push_back(std::make_pair(new_beat, false));
         }
     }
 }
@@ -172,7 +172,7 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 }
 
 PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
-    float time = beatmap->time_until_next(location);
+    float time = beatmap->process_beat(location);
     std::cout << "time until next: " << time << std::endl;
     if (time < 0.1) { // one tenth of a second
         return BeatGrade::PERFECT;

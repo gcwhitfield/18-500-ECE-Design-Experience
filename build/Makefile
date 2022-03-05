@@ -657,6 +657,60 @@ libs/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.s
 .PHONY : libs/glad/src/glad.c.s
 
+libs/libaudiodecoder/src/audiodecoderbase.o: libs/libaudiodecoder/src/audiodecoderbase.cpp.o
+
+.PHONY : libs/libaudiodecoder/src/audiodecoderbase.o
+
+# target to build an object file
+libs/libaudiodecoder/src/audiodecoderbase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o
+.PHONY : libs/libaudiodecoder/src/audiodecoderbase.cpp.o
+
+libs/libaudiodecoder/src/audiodecoderbase.i: libs/libaudiodecoder/src/audiodecoderbase.cpp.i
+
+.PHONY : libs/libaudiodecoder/src/audiodecoderbase.i
+
+# target to preprocess a source file
+libs/libaudiodecoder/src/audiodecoderbase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.i
+.PHONY : libs/libaudiodecoder/src/audiodecoderbase.cpp.i
+
+libs/libaudiodecoder/src/audiodecoderbase.s: libs/libaudiodecoder/src/audiodecoderbase.cpp.s
+
+.PHONY : libs/libaudiodecoder/src/audiodecoderbase.s
+
+# target to generate assembly for a file
+libs/libaudiodecoder/src/audiodecoderbase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.s
+.PHONY : libs/libaudiodecoder/src/audiodecoderbase.cpp.s
+
+libs/libaudiodecoder/src/audiodecodercoreaudio.o: libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o
+
+.PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.o
+
+# target to build an object file
+libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o
+.PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o
+
+libs/libaudiodecoder/src/audiodecodercoreaudio.i: libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.i
+
+.PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.i
+
+# target to preprocess a source file
+libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.i
+.PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.i
+
+libs/libaudiodecoder/src/audiodecodercoreaudio.s: libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s
+
+.PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.s
+
+# target to generate assembly for a file
+libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s
+.PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s
+
 src/Beatmap.o: src/Beatmap.cpp.o
 
 .PHONY : src/Beatmap.o
@@ -869,6 +923,12 @@ help:
 	@echo "... libs/glad/src/glad.o"
 	@echo "... libs/glad/src/glad.i"
 	@echo "... libs/glad/src/glad.s"
+	@echo "... libs/libaudiodecoder/src/audiodecoderbase.o"
+	@echo "... libs/libaudiodecoder/src/audiodecoderbase.i"
+	@echo "... libs/libaudiodecoder/src/audiodecoderbase.s"
+	@echo "... libs/libaudiodecoder/src/audiodecodercoreaudio.o"
+	@echo "... libs/libaudiodecoder/src/audiodecodercoreaudio.i"
+	@echo "... libs/libaudiodecoder/src/audiodecodercoreaudio.s"
 	@echo "... src/Beatmap.o"
 	@echo "... src/Beatmap.i"
 	@echo "... src/Beatmap.s"

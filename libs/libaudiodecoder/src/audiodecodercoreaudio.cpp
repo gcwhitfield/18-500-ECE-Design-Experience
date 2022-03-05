@@ -229,7 +229,9 @@ int AudioDecoderCoreAudio::read(int size, const SAMPLE *destination) {
     OSStatus err;
     SAMPLE *destBuffer(const_cast<SAMPLE*>(destination));
     unsigned int samplesWritten = 0;
+    (void)samplesWritten;
     unsigned int i = 0;
+    (void)i;
     UInt32 numFrames = 0;
     unsigned int totalFramesToRead = size/2;
     unsigned int numFramesRead = 0;

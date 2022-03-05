@@ -29,11 +29,22 @@ set(NAMES ./src/Mode.cpp
           ./src/Beatmap.cpp
           )
 
-# file(GLOB_RECURSE LIBAUDIODECODER_NAMES ./libs/libaudiodecoder/src/**.cpp)
+# import libaudiodecoder
+if (APPLE) # compile for macos
+    set (LIBAUDIODECODER_NAMES
+                ./libs/libaudiodecoder/src/audiodecoderbase.cpp
+                ./libs/libaudiodecoder/src/audiodecodercoreaudio.cpp)
+endif (APPLE)
+if (WIN32) # compile for windows
+    set (LIBAUDIODECODER_NAMES
+                ./libs/libaudiodecoder/src/audiodecoderbase.cpp
+                ./libs/libaudiodecoder/src/audiodecodermediafoundation.cpp)
+endif (WIN32)
 
+#file(GLOB_RECURSE LIBAUDIODECODER_NAMES ./libs/libaudiodecoder/src/**.cpp)
 
 # add the executable
-add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} ${LIBAUDIODECODER_NAMES} src/main.cpp)
+add_executable(RhythmGame libs/glad/src/glad.c ${NAMES}  ${LIBAUDIODECODER_NAMES} src/main.cpp)
 
 # link libraries
 target_link_libraries(

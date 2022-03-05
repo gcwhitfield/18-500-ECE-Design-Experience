@@ -5,6 +5,15 @@ CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.o: ../libs/glad/include/KHR/khrpl
 CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.o: ../libs/glad/include/glad/glad.h
 CMakeFiles/RhythmGame.dir/libs/glad/src/glad.c.o: ../libs/glad/src/glad.c
 
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o: ../libs/libaudiodecoder/include/audiodecoderbase.h
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o: ../libs/libaudiodecoder/src/audiodecoderbase.cpp
+
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: ../libs/libaudiodecoder/include/apple/CADebugMacros.h
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: ../libs/libaudiodecoder/include/audiodecoderbase.h
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: ../libs/libaudiodecoder/include/audiodecodercoreaudio.h
+CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: ../libs/libaudiodecoder/src/audiodecodercoreaudio.cpp
+
 CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o: ../libs/glm/include/common.hpp
 CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o: ../libs/glm/include/detail/_fixes.hpp
 CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o: ../libs/glm/include/detail/_swizzle.hpp

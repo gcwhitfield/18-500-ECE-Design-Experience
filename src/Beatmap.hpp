@@ -12,10 +12,15 @@ struct Beatmap {
         UP = 2,
         RIGHT = 3
     };
-
     struct Beat {
         BeatLocation location; // which lane does the beat occur in?
         float time; // when does the beat occur?
+    };
+
+    struct BeatFileData {
+        std::string name;
+        size_t BPM;
+        std::vector<Beat> beats;
     };
 
     Beatmap();
@@ -26,7 +31,9 @@ struct Beatmap {
 
     // the beats in 'beats' are ordered based on the time that they occur in the song. Beats at 
     // lower indices occur earlier in the song, beats at later indices occur later
-    std::vector<Beat> beats;
+    // the first element contains the beat info
+    // the second element contains a bool, which flags whether the beet has been hit by the user
+    std::vector<std::pair<Beat, bool>> beats;
     size_t next_beat = 0; // an index into 'beats' that corresponds to the next beat after beatmap.t
 
 
@@ -41,5 +48,7 @@ struct Beatmap {
 
     // Returns the amount of time that will elapse after beatmap.t until the next occurrence of a 
     // beat at 'location'. If the next occurrence takes too long, this function will return -1.
-    float time_until_next(BeatLocation location);
+    // Additionally, process_beat will flag the second element of the beat to 'true', which means 
+    // that the beat has been seen and it should no longer be drawn 
+    float process_beat(BeatLocation location);
 };
