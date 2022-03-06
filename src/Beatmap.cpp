@@ -13,24 +13,32 @@ void Beatmap::load(std::string filePath) {
 }
 
 void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_size) {
+    // draw the notes that are currently flying towards the player
+    glm::vec2 judgement_pos(-200, -400);
+    float horz_spacing = 200;
+    glm::vec2 size(80, 80); // size of the notes
+    size.x /= drawable_size.x;
+    size.y /= drawable_size.y;
     for (size_t i = 0; i < beats.size(); i++) {
         std::pair<Beatmap::Beat, bool> *beat = &(beats[i]);
         if (t < beat->first.time && !beat->second) { // draw the beat
             float scroll_speed = 20.0f;
-            float desired_height = -500;
             float starting_height = scroll_speed * beat->first.time;
             float curr_height = starting_height - scroll_speed*t;
             curr_height *= scroll_speed;
-            float horz_spacing = 200;
-            glm::vec2 size(80, 80);
-            size.x /= drawable_size.x;
-            size.y /= drawable_size.y;
-            glm::vec2 pos(horz_spacing * (int)beat->first.location - 300, curr_height + desired_height);
+            glm::vec2 pos(horz_spacing * (int)beat->first.location + judgement_pos.x, curr_height + judgement_pos.y);
             pos.x /= drawable_size.x;
             pos.y /= drawable_size.y;
             draw_rectangle(vertices, pos, size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
         }
     }
+    // draw the judgement notes
+    judgement_pos.x /= drawable_size.x;
+    judgement_pos.y /= drawable_size.y;
+    draw_rectangle(vertices, judgement_pos, size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + horz_spacing/drawable_size.x, judgement_pos.y), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 2*horz_spacing/drawable_size.x, judgement_pos.y), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 3*horz_spacing/drawable_size.x, judgement_pos.y), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
 }
 
 void Beatmap::update(float elapsed) {

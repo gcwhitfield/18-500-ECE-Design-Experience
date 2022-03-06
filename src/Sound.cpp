@@ -5,7 +5,7 @@ const size_t NUM_CHANNELS = 2;
 // a lot of the portaudio code in this file was copied from the portaudio tutorials from 
 // http://www.portaudio.com/docs/. Specifically, the code for Sound::Init, Sound::DeInit, Sound::paTestData, 
 // and stream_callback were taken from the portaudio documentation
-
+//
 // This function will be called by the PortAudio engine when audio is needed. It 
 // may be called at interrupt level on some machines so do not do anything that could mess 
 // up the system, such as malloc() or free()
@@ -19,26 +19,39 @@ int stream_callback(const void *input, void *output, unsigned long frame_count,
 
     // cast data passed through stream to our structure
     Sound::paTestData *data = (Sound::paTestData*) user_data;
+    (void)data;
     float *out = (float*)output;
+    (void)out;
     (void) input;
     (void) time_info;
     (void) status_flags;
-    for (unsigned int i = 0; i < frame_count; i++) {
-        out[i] = data->left_phase;
-        out[i + 1] = data->right_phase;
-        // generate simple sawtooth phaser that ranges between -1.0 and 1.0
-        data->left_phase += 0.01f;
-        // when the signal reaches top, drop back down
-        if (data->left_phase >= 1.0f) {
-            data->left_phase -= 2.0f;
-        }
-        // make the right phase have a higher pitch, so that we can distingish the left and 
-        // right signals
-        data->right_phase += 0.03f;
-        if(data->right_phase >= 1.0f) {
-            data->right_phase -= 2.0f;
-        }
-    }
+    // for (unsigned int i = 0; i < frame_count; i++) {
+    //     out[i] = data->left_phase;
+    //     out[i + 1] = data->right_phase;
+    //     // generate simple sawtooth phaser that ranges between -1.0 and 1.0
+    //     data->left_phase += 0.01f;
+    //     // when the signal reaches top, drop back down
+    //     if (data->left_phase >= 1.0f) {
+    //         data->left_phase -= 2.0f;
+    //     }
+    //     // make the right phase have a higher pitch, so that we can distingish the left and 
+    //     // right signals
+    //     data->right_phase += 0.03f;
+    //     if(data->right_phase >= 1.0f) {
+    //         data->right_phase -= 2.0f;
+    //     }
+    // }
+    // loop derived from game 3 base code of Computer Game Programming course
+    // for (Sound::PlayingSample *sample : *(data->playing_samples)) {
+    //     (void) sample;
+    //     for (size_t i = 0; i < frame_count * NUM_CHANNELS; i++) {
+    //         out[i] = sample->data[sample->curr_index];
+    //         sample->curr_index ++;
+    //         if (sample->curr_index >= sample->data.size()) {
+    //             sample->curr_index = 0;
+    //         }
+    //     }
+    // }
     return 0;
 }
 
@@ -57,6 +70,7 @@ void Sound::init() {
         std::cerr << Pa_GetErrorText(err) << std::endl;
         exit(1);
     }
+    stream_data.playing_samples = &playing_samples;
 
     size_t sample_rate = 44100;
     // Open an audio I/O stream 
@@ -95,4 +109,13 @@ void Sound::play_test_sound() {
         std::cerr << Pa_GetErrorText(err) << std::endl;
         }
     }
+}
+
+void Sound::play(Sound::PlayingSample *sample) {
+    playing_samples.push_back(sample);
+}
+
+void Sound::stop(Sound::PlayingSample *sample) {
+    sample->stop = true; 
+    // the sample will be removed from the playing samples vector at the next call to the update function
 }

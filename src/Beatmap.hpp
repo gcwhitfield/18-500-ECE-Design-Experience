@@ -12,6 +12,7 @@ struct Beatmap {
         UP = 2,
         RIGHT = 3
     };
+
     struct Beat {
         BeatLocation location; // which lane does the beat occur in?
         float time; // when does the beat occur?
@@ -35,7 +36,6 @@ struct Beatmap {
     // the second element contains a bool, which flags whether the beet has been hit by the user
     std::vector<std::pair<Beat, bool>> beats;
     size_t next_beat = 0; // an index into 'beats' that corresponds to the next beat after beatmap.t
-
 
     // given a path to a song JSON file, loads the data into the 'beats' vector
     void load(std::string filePath);
