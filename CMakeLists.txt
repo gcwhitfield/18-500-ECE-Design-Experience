@@ -3,22 +3,13 @@ cmake_minimum_required(VERSION 3.10)
 # set the project name
 project(RhythmGame)
 
-# specify the C++ standard
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11")
-
-
-
-add_subdirectory(./libs/glfw/)
-
-add_subdirectory(./libs/portaudio/ ./build/bin EXCLUDE_FROM_ALL)
-
 include_directories(./libs/glfw/include/
                     ./libs/glad/include/
                     ./libs/glm/include/
                     ./libs/portaudio/include/
 		            ./libs/libaudiodecoder/include/
+                    ./libs/harfbuzz/include/
+                    ./libs/freetype/include/
                     )
 
 # set the names of all of the cpp files into one variable called "NAMES"
@@ -28,6 +19,12 @@ set(NAMES ./src/Mode.cpp
           ./src/Sound.cpp
           ./src/Beatmap.cpp
           )
+
+# import glfw
+add_subdirectory(./libs/glfw/)
+
+# import portaudio
+add_subdirectory(./libs/portaudio/ ./build/bin EXCLUDE_FROM_ALL)
 
 # import libaudiodecoder
 if (APPLE) # compile for macos
@@ -41,7 +38,16 @@ if (WIN32) # compile for windows
                 ./libs/libaudiodecoder/src/audiodecodermediafoundation.cpp)
 endif (WIN32)
 
-#file(GLOB_RECURSE LIBAUDIODECODER_NAMES ./libs/libaudiodecoder/src/**.cpp)
+# import harfbuzz
+add_subdirectory(./libs/harfbuzz)
+
+# import freetype
+add_subdirectory(./libs/freetype)
+
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11")
 
 # add the executable
 add_executable(RhythmGame libs/glad/src/glad.c ${NAMES}  ${LIBAUDIODECODER_NAMES} src/main.cpp)
@@ -51,4 +57,6 @@ target_link_libraries(
 	${PROJECT_NAME} 
 	glfw ${GLFW_LIBRARIES}
     	portaudio
+    harfbuzz
+    freetype ${FREETYPE_LIBRARIES}
     )

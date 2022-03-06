@@ -484,6 +484,8 @@ CMakeFiles/RhythmGame.dir/src/Mode.cpp.o
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.cpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o
+ ../libs/freetype/include/freetype/config/ftheader.h
+ ../libs/freetype/include/ft2build.h
  ../libs/glad/include/KHR/khrplatform.h
  ../libs/glad/include/glad/glad.h
  ../libs/glfw/include/GLFW/glfw3.h
@@ -638,6 +640,22 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o
  ../libs/glm/include/vec3.hpp
  ../libs/glm/include/vec4.hpp
  ../libs/glm/include/vector_relational.hpp
+ ../libs/harfbuzz/src/hb-blob.h
+ ../libs/harfbuzz/src/hb-buffer.h
+ ../libs/harfbuzz/src/hb-common.h
+ ../libs/harfbuzz/src/hb-deprecated.h
+ ../libs/harfbuzz/src/hb-draw.h
+ ../libs/harfbuzz/src/hb-face.h
+ ../libs/harfbuzz/src/hb-font.h
+ ../libs/harfbuzz/src/hb-ft.h
+ ../libs/harfbuzz/src/hb-map.h
+ ../libs/harfbuzz/src/hb-set.h
+ ../libs/harfbuzz/src/hb-shape-plan.h
+ ../libs/harfbuzz/src/hb-shape.h
+ ../libs/harfbuzz/src/hb-style.h
+ ../libs/harfbuzz/src/hb-unicode.h
+ ../libs/harfbuzz/src/hb-version.h
+ ../libs/harfbuzz/src/hb.h
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
@@ -657,6 +675,8 @@ CMakeFiles/RhythmGame.dir/src/Sound.cpp.o
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.cpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o
+ ../libs/freetype/include/freetype/config/ftheader.h
+ ../libs/freetype/include/ft2build.h
  ../libs/glad/include/KHR/khrplatform.h
  ../libs/glad/include/glad/glad.h
  ../libs/glfw/include/GLFW/glfw3.h
@@ -811,6 +831,22 @@ CMakeFiles/RhythmGame.dir/src/main.cpp.o
  ../libs/glm/include/vec3.hpp
  ../libs/glm/include/vec4.hpp
  ../libs/glm/include/vector_relational.hpp
+ ../libs/harfbuzz/src/hb-blob.h
+ ../libs/harfbuzz/src/hb-buffer.h
+ ../libs/harfbuzz/src/hb-common.h
+ ../libs/harfbuzz/src/hb-deprecated.h
+ ../libs/harfbuzz/src/hb-draw.h
+ ../libs/harfbuzz/src/hb-face.h
+ ../libs/harfbuzz/src/hb-font.h
+ ../libs/harfbuzz/src/hb-ft.h
+ ../libs/harfbuzz/src/hb-map.h
+ ../libs/harfbuzz/src/hb-set.h
+ ../libs/harfbuzz/src/hb-shape-plan.h
+ ../libs/harfbuzz/src/hb-shape.h
+ ../libs/harfbuzz/src/hb-style.h
+ ../libs/harfbuzz/src/hb-unicode.h
+ ../libs/harfbuzz/src/hb-version.h
+ ../libs/harfbuzz/src/hb.h
  ../libs/libaudiodecoder/include/apple/CADebugMacros.h
  ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
  ../libs/libaudiodecoder/include/audiodecoder.h

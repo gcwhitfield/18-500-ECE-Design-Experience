@@ -111,15 +111,16 @@ install/fast: preinstall/fast
 	/usr/local/Cellar/cmake/3.18.2/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/local/Cellar/cmake/3.18.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/george/Desktop/教育/CMU/Senior\ Year/ECE\ Capstone\ 18-500/18-500-ECE-Design-Experience/build/CPackSourceConfig.cmake
+.PHONY : package_source
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target package_source
+package_source/fast: package_source
 
-.PHONY : list_install_components/fast
+.PHONY : package_source/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -142,6 +143,27 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/local/Cellar/cmake/3.18.2/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -202,19 +224,6 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
-# Target rules for targets named update_mappings
-
-# Build rule for target.
-update_mappings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
-.PHONY : update_mappings
-
-# fast build rule for target.
-update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
-.PHONY : update_mappings/fast
-
-#=============================================================================
 # Target rules for targets named glfw
 
 # Build rule for target.
@@ -226,6 +235,19 @@ glfw: cmake_check_build_system
 glfw/fast:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
 
 #=============================================================================
 # Target rules for targets named wave
@@ -630,6 +652,45 @@ portaudio/fast:
 	$(MAKE) $(MAKESILENT) -f build/bin/CMakeFiles/portaudio.dir/build.make build/bin/CMakeFiles/portaudio.dir/build
 .PHONY : portaudio/fast
 
+#=============================================================================
+# Target rules for targets named harfbuzz-subset
+
+# Build rule for target.
+harfbuzz-subset: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 harfbuzz-subset
+.PHONY : harfbuzz-subset
+
+# fast build rule for target.
+harfbuzz-subset/fast:
+	$(MAKE) $(MAKESILENT) -f libs/harfbuzz/CMakeFiles/harfbuzz-subset.dir/build.make libs/harfbuzz/CMakeFiles/harfbuzz-subset.dir/build
+.PHONY : harfbuzz-subset/fast
+
+#=============================================================================
+# Target rules for targets named harfbuzz
+
+# Build rule for target.
+harfbuzz: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 harfbuzz
+.PHONY : harfbuzz
+
+# fast build rule for target.
+harfbuzz/fast:
+	$(MAKE) $(MAKESILENT) -f libs/harfbuzz/CMakeFiles/harfbuzz.dir/build.make libs/harfbuzz/CMakeFiles/harfbuzz.dir/build
+.PHONY : harfbuzz/fast
+
+#=============================================================================
+# Target rules for targets named freetype
+
+# Build rule for target.
+freetype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 freetype
+.PHONY : freetype
+
+# fast build rule for target.
+freetype/fast:
+	$(MAKE) $(MAKESILENT) -f libs/freetype/CMakeFiles/freetype.dir/build.make libs/freetype/CMakeFiles/freetype.dir/build
+.PHONY : freetype/fast
+
 libs/glad/src/glad.o: libs/glad/src/glad.c.o
 
 .PHONY : libs/glad/src/glad.o
@@ -884,6 +945,8 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
@@ -893,10 +956,13 @@ help:
 	@echo "... cursor"
 	@echo "... empty"
 	@echo "... events"
+	@echo "... freetype"
 	@echo "... gamma"
 	@echo "... gears"
 	@echo "... glfw"
 	@echo "... glfwinfo"
+	@echo "... harfbuzz"
+	@echo "... harfbuzz-subset"
 	@echo "... heightmap"
 	@echo "... icon"
 	@echo "... iconify"

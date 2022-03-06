@@ -16,8 +16,13 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/glm/include"
   ".././libs/portaudio/include"
   ".././libs/libaudiodecoder/include"
+  ".././libs/harfbuzz/include"
+  ".././libs/freetype/include"
   "../libs/glfw/include"
   "../libs/portaudio/include"
+  "../libs/harfbuzz/src"
+  "libs/freetype/include"
+  "../libs/freetype/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libaudiodecoder/src/audiodecoderbase.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o"
@@ -38,14 +43,21 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/glm/include"
   ".././libs/portaudio/include"
   ".././libs/libaudiodecoder/include"
+  ".././libs/harfbuzz/include"
+  ".././libs/freetype/include"
   "../libs/glfw/include"
   "../libs/portaudio/include"
+  "../libs/harfbuzz/src"
+  "libs/freetype/include"
+  "../libs/freetype/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/build/bin/CMakeFiles/portaudio.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/harfbuzz/CMakeFiles/harfbuzz.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/freetype/CMakeFiles/freetype.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

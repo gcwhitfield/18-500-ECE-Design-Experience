@@ -9,6 +9,13 @@
 #include <vector>
 #include <random>
 
+#include <ft2build.h>
+#include FT_FREETYPE_H
+
+#include <hb.h>
+#include <hb-ft.h>
+
+
 // PlayMode is where all of the drawing and logic related to gameplay is stored. 
 // The scene where the player plays the game is typically referred to as the "play mode"
 struct PlayMode : Mode {

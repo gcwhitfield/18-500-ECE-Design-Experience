@@ -483,6 +483,8 @@ CMakeFiles/RhythmGame.dir/src/Mode.cpp.o: ../libs/glm/include/vector_relational.
 CMakeFiles/RhythmGame.dir/src/Mode.cpp.o: ../src/Mode.cpp
 CMakeFiles/RhythmGame.dir/src/Mode.cpp.o: ../src/Mode.hpp
 
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/freetype/include/freetype/config/ftheader.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/freetype/include/ft2build.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glad/include/KHR/khrplatform.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glad/include/glad/glad.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glfw/include/GLFW/glfw3.h
@@ -637,6 +639,22 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glm/include/vec2.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glm/include/vec3.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glm/include/vec4.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/glm/include/vector_relational.hpp
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-blob.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-buffer.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-common.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-deprecated.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-draw.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-face.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-font.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-ft.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-map.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-set.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-shape-plan.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-shape.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-style.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-unicode.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-version.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Beatmap.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/ColorTextureProgram.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Input.hpp
@@ -656,6 +674,8 @@ CMakeFiles/RhythmGame.dir/src/Sound.cpp.o: ../libs/portaudio/include/portaudio.h
 CMakeFiles/RhythmGame.dir/src/Sound.cpp.o: ../src/Sound.cpp
 CMakeFiles/RhythmGame.dir/src/Sound.cpp.o: ../src/Sound.hpp
 
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/freetype/include/freetype/config/ftheader.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/freetype/include/ft2build.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glad/include/KHR/khrplatform.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glad/include/glad/glad.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glfw/include/GLFW/glfw3.h
@@ -810,6 +830,22 @@ CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vec2.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vec3.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vec4.hpp
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/glm/include/vector_relational.hpp
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-blob.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-buffer.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-common.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-deprecated.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-draw.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-face.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-font.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-ft.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-map.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-set.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-shape-plan.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-shape.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-style.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-unicode.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb-version.h
+CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/harfbuzz/src/hb.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/libaudiodecoder/include/apple/CADebugMacros.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../libs/libaudiodecoder/include/audiodecoder.h

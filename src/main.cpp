@@ -50,14 +50,6 @@ int main()
         exit(1);
     }
 
-    std::vector<float> audio_data(audio->numSamples());
-    audio->read(audio_data.size(), audio_data.data());
-
-    for (size_t i = 0; i < 100; i++) {
-        std::cout << audio_data[i] << std::endl;
-    }
-    std::cout << std::endl;
-
     // set the viewport size 
     glm::uvec2 window_size(800, 800);
     glViewport(0, 0, window_size.x, window_size.y);

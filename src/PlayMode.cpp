@@ -113,6 +113,16 @@ PlayMode::PlayMode() {
             beatmap->beats.push_back(std::make_pair(new_beat, false));
         }
     }
+
+    // initialize freetype
+    {
+    
+    }
+
+    // initialize harfbuzz
+    {
+        
+    }
 }
 
 PlayMode::~PlayMode() {
@@ -164,16 +174,12 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
             default: // do not modify score for BeatGrade::NONE
                 break;
         }
-
-        std::cout << "Score: " << score << std::endl;
-
     }
     // std::cout << "Key has been pressed: " << key << " : " << scancode << std::endl;
 }
 
 PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
     float time = beatmap->process_beat(location);
-    std::cout << "time until next: " << time << std::endl;
     if (time < 0.1) { // one tenth of a second
         return BeatGrade::PERFECT;
     } else if (time < 0.5) { // half a second

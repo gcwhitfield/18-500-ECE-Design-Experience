@@ -220,6 +220,15 @@ RhythmGame: CMakeFiles/RhythmGame.dir/src/main.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/build.make
 RhythmGame: libs/glfw/src/libglfw3.a
 RhythmGame: build/bin/libportaudio.dylib
+RhythmGame: libs/harfbuzz/libharfbuzz.a
+RhythmGame: libs/freetype/libfreetype.a
+RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd
+RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd
+RhythmGame: /usr/local/lib/libpng.dylib
+RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd
+RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd
+RhythmGame: /usr/local/lib/libpng.dylib
+RhythmGame: /usr/local/lib/libharfbuzz.dylib
 RhythmGame: CMakeFiles/RhythmGame.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable RhythmGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RhythmGame.dir/link.txt --verbose=$(VERBOSE)

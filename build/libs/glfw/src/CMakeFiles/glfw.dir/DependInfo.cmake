@@ -29,6 +29,13 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  ".././libs/glfw/include"
+  ".././libs/glad/include"
+  ".././libs/glm/include"
+  ".././libs/portaudio/include"
+  ".././libs/libaudiodecoder/include"
+  ".././libs/harfbuzz/include"
+  ".././libs/freetype/include"
   "../libs/glfw/include"
   "../libs/glfw/src"
   "libs/glfw/src"

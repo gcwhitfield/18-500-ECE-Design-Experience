@@ -42,8 +42,20 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
 }
 
 void Beatmap::update(float elapsed) {
+    // validate that the beatmap is being displayed correctly
+    {
+        // all of the beats that occur after beats[next_beat] will occur in the future
+        for (size_t i = next_beat; i < beats.size(); i++) {
+            assert(beats[i].first.time >= t);
+
+        }
+        for (size_t i = 0; i < next_beat; i++) {
+            assert(beats[i].first.time <= t);
+        }
+    }
+
     t += elapsed;
-    while (t < beats[next_beat].first.time) {
+    while (beats[next_beat].first.time < t) {
         next_beat ++;
     }
 }

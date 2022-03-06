@@ -1,0 +1,1994 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/freetype/include/freetype/config/ftheader.h
+
+../libs/freetype/include/ft2build.h
+freetype/config/ftheader.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/harfbuzz.cc
+hb-aat-layout.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.cc
+hb-aat-map.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-map.cc
+hb-blob.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.cc
+hb-buffer-serialize.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-serialize.cc
+hb-buffer-verify.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-verify.cc
+hb-buffer.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.cc
+hb-common.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.cc
+hb-draw.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.cc
+hb-face.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.cc
+hb-fallback-shape.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-fallback-shape.cc
+hb-font.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.cc
+hb-map.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.cc
+hb-number.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number.cc
+hb-ot-cff1-table.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff1-table.cc
+hb-ot-cff2-table.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff2-table.cc
+hb-ot-color.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color.cc
+hb-ot-face.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.cc
+hb-ot-font.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-font.cc
+hb-ot-layout.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.cc
+hb-ot-map.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.cc
+hb-ot-math.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math.cc
+hb-ot-meta.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta.cc
+hb-ot-metrics.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.cc
+hb-ot-name.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.cc
+hb-ot-shape-complex-arabic.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic.cc
+hb-ot-shape-complex-default.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-default.cc
+hb-ot-shape-complex-hangul.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-hangul.cc
+hb-ot-shape-complex-hebrew.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-hebrew.cc
+hb-ot-shape-complex-indic-table.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic-table.cc
+hb-ot-shape-complex-indic.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.cc
+hb-ot-shape-complex-khmer.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-khmer.cc
+hb-ot-shape-complex-myanmar.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-myanmar.cc
+hb-ot-shape-complex-syllabic.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-syllabic.cc
+hb-ot-shape-complex-thai.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-thai.cc
+hb-ot-shape-complex-use.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use.cc
+hb-ot-shape-complex-vowel-constraints.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-vowel-constraints.cc
+hb-ot-shape-fallback.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-fallback.cc
+hb-ot-shape-normalize.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-normalize.cc
+hb-ot-shape.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.cc
+hb-ot-tag.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-tag.cc
+hb-ot-var.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var.cc
+hb-set.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.cc
+hb-shape-plan.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.cc
+hb-shape.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape.cc
+hb-shaper.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.cc
+hb-static.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-static.cc
+hb-style.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-style.cc
+hb-ucd.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ucd.cc
+hb-unicode.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.cc
+hb-glib.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-glib.cc
+hb-ft.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ft.cc
+hb-graphite2.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-graphite2.cc
+hb-uniscribe.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-uniscribe.cc
+hb-gdi.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-gdi.cc
+hb-directwrite.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-directwrite.cc
+hb-coretext.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-coretext.cc
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-ankr-table.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-bsln-table.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-aat-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-feat-table.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-just-table.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-aat-layout-morx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-morx-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-kerx-table.hh
+hb-kern.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-kern.hh
+hb-aat-layout-ankr-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-ankr-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-morx-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-ot-layout-gdef-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gdef-table.hh
+hb-aat-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-map.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-opbd-table.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-trak-table.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-aat-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+hb-aat-layout-ankr-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-ankr-table.hh
+hb-aat-layout-bsln-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-bsln-table.hh
+hb-aat-layout-feat-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-feat-table.hh
+hb-aat-layout-just-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-just-table.hh
+hb-aat-layout-kerx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-kerx-table.hh
+hb-aat-layout-morx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-morx-table.hh
+hb-aat-layout-trak-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-trak-table.hh
+hb-aat-ltag-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-ltag-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-aat-ltag-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-ltag-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-ltag-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-map.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-aat-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-map.hh
+hb-aat-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+hb-aat-layout-feat-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-feat-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-map.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-aat-layout.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-algs.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-meta.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-meta.hh
+hb-null.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-null.hh
+hb-number.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number.hh
+algorithm
+-
+initializer_list
+-
+functional
+-
+new
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-array.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-algs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-algs.hh
+hb-iter.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-iter.hh
+hb-null.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-null.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-atomic.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-meta.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-meta.hh
+atomic
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bimap.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bit-page.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bit-set-invertible.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-bit-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bit-set.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bit-set.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-bit-page.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bit-page.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-blob.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+unistd.h
+-
+sys/mman.h
+-
+sys/paths.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+windows.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-deserialize-json.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-deserialize-text.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-serialize.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb-buffer-deserialize-json.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-deserialize-json.hh
+hb-buffer-deserialize-text.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-deserialize-text.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer-verify.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.cc
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb-utf.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-utf.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-unicode.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.h
+hb-font.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-unicode.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cache.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-cs-common.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-cff-interp-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-dict-common.hh
+hb-cff-interp-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff1-interp-cs.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-cff-interp-cs-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-cs-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff2-interp-cs.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-cff-interp-cs-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-cs-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+locale.h
+-
+xlocale.h
+-
+hb-static.cc
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-static.cc
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+inttypes.h
+-
+sys/inttypes.h
+-
+linux/types.h
+-
+stdint.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-config.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+config.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/config.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-coretext.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper-impl.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+hb-coretext.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-coretext.h
+hb-aat-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-coretext.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+TargetConditionals.h
+-
+CoreText/CoreText.h
+-
+CoreGraphics/CoreGraphics.h
+-
+ApplicationServices/ApplicationServices.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-debug.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-atomic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-atomic.hh
+hb-algs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-algs.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-deprecated.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-unicode.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.h
+hb-font.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.h
+hb-set.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-directwrite.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper-impl.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+dwrite_1.h
+-
+hb-directwrite.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-directwrite.h
+hb-ms-feature-ranges.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ms-feature-ranges.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-directwrite.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-dispatch.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.hh
+hb-blob.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+hb-open-file.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-file.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb-ot-cmap-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cmap-table.hh
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-blob.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.h
+hb-set.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-shape-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-fallback-shape.cc
+hb-shaper-impl.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-ot.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot.h
+hb-ot-var-avar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-avar-table.hh
+hb-ot-var-fvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-fvar-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-face.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.h
+hb-draw.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ft.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ft.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ft.h
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-cache.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cache.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ft.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+ft2build.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-gdi.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-gdi.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-gdi.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-gdi.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+windows.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-glib.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-glib.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-glib.h
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-glib.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+glib.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-graphite2.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper-impl.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+hb-graphite2.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-graphite2.h
+graphite2/Segment.h
+-
+hb-ot-layout.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-graphite2.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+graphite2/Font.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-icu.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+unicode/uscript.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-iter.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-algs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-algs.hh
+hb-meta.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-meta.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-kern.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-ot-layout-gpos-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gpos-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-blob.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+hb-dispatch.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-dispatch.hh
+hb-sanitize.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-sanitize.hh
+hb-serialize.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-serialize.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.cc
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-meta.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+memory
+-
+type_traits
+-
+utility
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ms-feature-ranges.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-mutex.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+pthread.h
+-
+mutex
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-null.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-meta.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-meta.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number-parser.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-number.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number.hh
+hb-number-parser.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number-parser.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-object.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-atomic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-atomic.hh
+hb-mutex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-mutex.hh
+hb-vector.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-vector.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-file.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-head-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-head-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-blob.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+hb-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-subset.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff-common.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-bimap.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bimap.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-cff-interp-dict-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff-interp-dict-common.hh
+hb-subset-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-plan.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff1-table.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+hb-algs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-algs.hh
+hb-ot-cff1-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff1-table.hh
+hb-cff1-interp-cs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff1-interp-cs.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff1-table.hh
+hb-ot-cff-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff-common.hh
+hb-subset-cff1.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-cff1.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+hb-string-array.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-string-array.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff2-table.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-cff2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff2-table.hh
+hb-cff2-interp-cs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-cff2-interp-cs.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff2-table.hh
+hb-ot-cff-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff-common.hh
+hb-subset-cff2.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-cff2.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cmap-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-cbdt-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-colr-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-ot-var-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-cpal-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-color.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color.h
+hb-ot-name.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-sbix-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-svg-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot.h
+hb-ot-color-cbdt-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-cbdt-table.hh
+hb-ot-color-colr-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-colr-table.hh
+hb-ot-color-cpal-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-cpal-table.hh
+hb-ot-color-sbix-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-sbix-table.hh
+hb-ot-color-svg-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-svg-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot-name.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-deprecated.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot-name.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face-table-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.cc
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb-ot-cmap-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cmap-table.hh
+hb-ot-glyf-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-glyf-table.hh
+hb-ot-cff1-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff1-table.hh
+hb-ot-cff2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff2-table.hh
+hb-ot-hmtx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hmtx-table.hh
+hb-ot-kern-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-kern-table.hh
+hb-ot-meta-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta-table.hh
+hb-ot-name-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-table.hh
+hb-ot-post-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-post-table.hh
+hb-ot-color-cbdt-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-cbdt-table.hh
+hb-ot-color-sbix-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-sbix-table.hh
+hb-ot-color-svg-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-svg-table.hh
+hb-ot-layout-gdef-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gdef-table.hh
+hb-ot-layout-gsub-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsub-table.hh
+hb-ot-layout-gpos-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gpos-table.hh
+hb-ot-face-table-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face-table-list.hh
+hb-ot-face-table-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face-table-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-ot-face-table-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face-table-list.hh
+hb-ot-face-table-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face-table-list.hh
+hb-ot-face-table-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face-table-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-font.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot.h
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb-ot-cmap-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cmap-table.hh
+hb-ot-glyf-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-glyf-table.hh
+hb-ot-cff1-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff1-table.hh
+hb-ot-cff2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cff2-table.hh
+hb-ot-hmtx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hmtx-table.hh
+hb-ot-os2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-table.hh
+hb-ot-post-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-post-table.hh
+hb-ot-stat-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-stat-table.hh
+hb-ot-vorg-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-vorg-table.hh
+hb-ot-color-cbdt-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-cbdt-table.hh
+hb-ot-color-sbix-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color-sbix-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-font.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-gasp-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-hhea-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hhea-table.hh
+hb-ot-os2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-table.hh
+hb-ot-var-hvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-hvar-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-glyf-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-head-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-head-table.hh
+hb-ot-hmtx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hmtx-table.hh
+hb-ot-var-gvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-gvar-table.hh
+hb-draw.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-head-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hhea-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hmtx-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-maxp-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-maxp-table.hh
+hb-ot-hhea-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hhea-table.hh
+hb-ot-var-hvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-hvar-table.hh
+hb-ot-metrics.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-kern-table.hh
+hb-aat-layout-kerx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-kerx-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-base-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+hb-bimap.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bimap.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gdef-table.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gpos-table.hh
+hb-ot-layout-gsubgpos.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsubgpos.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsub-table.hh
+hb-ot-layout-gsubgpos.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsubgpos.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsubgpos.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+hb-ot-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-ot-layout-gdef-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gdef-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-jstf-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout-gpos-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gpos-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb-ot-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.hh
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+hb-ot-kern-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-kern-table.hh
+hb-ot-layout-gdef-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gdef-table.hh
+hb-ot-layout-gsub-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsub-table.hh
+hb-ot-layout-gpos-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gpos-table.hh
+hb-ot-layout-base-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-base-table.hh
+hb-ot-layout-jstf-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-jstf-table.hh
+hb-ot-name-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-table.hh
+hb-ot-os2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-table.hh
+hb-aat-layout-morx-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-morx-table.hh
+hb-aat-layout-opbd-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-opbd-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot-name.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-set-digest.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set-digest.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-ot-math.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-math-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-maxp-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-meta-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-var-mvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-mvar-table.hh
+hb-ot-gasp-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-gasp-table.hh
+hb-ot-os2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-table.hh
+hb-ot-post-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-post-table.hh
+hb-ot-hhea-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-hhea-table.hh
+hb-ot-metrics.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot-name.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-language-static.hh
+hb-ot-name-language.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-language.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-language.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-name-language.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-language.hh
+hb-aat-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-name-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-table.hh
+hb-utf.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-utf.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-os2-unicode-ranges.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-unicode-ranges.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-unicode-ranges.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-post-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-string-array.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-string-array.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-fallback.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-ot-layout-gsub-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-gsub-table.hh
+hb-ot-shape-complex-arabic-win1256.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-win1256.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-joining-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-win1256.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-arabic-win1256.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-win1256.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-arabic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-ot-shape-complex-arabic-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-table.hh
+hb-ot-shape-complex-arabic-fallback.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-fallback.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-default.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-hangul.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-hebrew.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic-machine.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic-table.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-indic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-indic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.hh
+hb-ot-shape-complex-indic-machine.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic-machine.hh
+hb-ot-shape-complex-vowel-constraints.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-vowel-constraints.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-syllabic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-syllabic.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-khmer-machine.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-khmer.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-khmer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-khmer.hh
+hb-ot-shape-complex-khmer-machine.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-khmer-machine.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-khmer.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-indic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-myanmar-machine.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-myanmar.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-myanmar.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-myanmar.hh
+hb-ot-shape-complex-myanmar-machine.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-myanmar-machine.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-myanmar.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-indic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-indic.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-syllabic.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-syllabic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-syllabic.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-syllabic.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-thai.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use-machine.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-syllabic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-syllabic.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use-table.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-use-machine.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use-machine.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-use-machine.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use-machine.hh
+hb-ot-shape-complex-use-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-use-table.hh
+hb-ot-shape-complex-arabic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic.hh
+hb-ot-shape-complex-arabic-joining-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-arabic-joining-list.hh
+hb-ot-shape-complex-vowel-constraints.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-vowel-constraints.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-vowel-constraints.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex-vowel-constraints.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-vowel-constraints.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex-vowel-constraints.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-ot-shape-normalize.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-normalize.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-fallback.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-fallback.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-fallback.hh
+hb-kern.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-kern.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-fallback.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-normalize.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-shape-normalize.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-normalize.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-normalize.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper-impl.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb-ot-shape-complex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-complex.hh
+hb-ot-shape-fallback.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-fallback.hh
+hb-ot-shape-normalize.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape-normalize.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+hb-aat-layout.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-map.hh
+hb-aat-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-map.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-stat-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-tag-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-tag.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-tag-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-tag-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-avar-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-common.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-fvar-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-gvar-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-hvar-table.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-ot-var-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-mvar-table.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-var.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var.h
+hb-ot-var-avar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-avar-table.hh
+hb-ot-var-fvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-fvar-table.hh
+hb-ot-var-mvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-mvar-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-vorg-table.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot-color.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-color.h
+hb-ot-deprecated.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-deprecated.h
+hb-ot-font.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-font.h
+hb-ot-layout.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.h
+hb-ot-math.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-math.h
+hb-ot-meta.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-meta.h
+hb-ot-metrics.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-metrics.h
+hb-ot-name.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name.h
+hb-ot-shape.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.h
+hb-ot-var.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-pool.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-sanitize.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-blob.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+hb-dispatch.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-dispatch.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-serialize.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-blob.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.hh
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+hb-pool.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-pool.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set-digest.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.cc
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-bit-set-invertible.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-bit-set-invertible.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shape-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-font.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-ot-shape.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-shape.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-shape-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-buffer.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.h
+hb-font.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+hb-shape-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.hh
+hb-buffer.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+hb-shaper-list.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-list.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-static.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+hb-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.hh
+hb-aat-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-common.hh
+hb-aat-layout-feat-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat-layout-feat-table.hh
+hb-ot-layout-common.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout-common.hh
+hb-ot-cmap-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-cmap-table.hh
+hb-ot-glyf-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-glyf-table.hh
+hb-ot-head-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-head-table.hh
+hb-ot-maxp-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-maxp-table.hh
+hb-ot-name-language-static.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-language-static.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-string-array.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-style.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-ot-var-avar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-avar-table.hh
+hb-ot-var-fvar-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-var-fvar-table.hh
+hb-ot-stat-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-stat-table.hh
+hb-ot-os2-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-os2-table.hh
+hb-ot-head-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-head-table.hh
+hb-ot-post-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-post-table.hh
+hb-ot-face.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-face.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-style.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-cff1.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-subset-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-plan.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-cff2.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-subset-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-plan.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-input.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-subset.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset.h
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+hb-font.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-plan.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-subset.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset.h
+hb-subset-input.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-input.hh
+hb-map.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.hh
+hb-set.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-subset.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset.h
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-subset-input.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-input.hh
+hb-subset-plan.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-subset-plan.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ucd-table.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ucd.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-unicode.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.hh
+hb-machinery.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-machinery.hh
+hb-ucd-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ucd-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode-emoji-table.hh
+hb-unicode.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-unicode.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.hh
+hb-glib.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-glib.h
+hb-icu.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-icu.h
+hb-unicode-emoji-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode-emoji-table.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-uniscribe.cc
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-shaper-impl.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shaper-impl.hh
+windows.h
+-
+usp10.h
+-
+rpc.h
+-
+hb-uniscribe.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-uniscribe.h
+hb-ms-feature-ranges.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ms-feature-ranges.hh
+hb-open-file.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-file.hh
+hb-ot-name-table.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-name-table.hh
+hb-ot-layout.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot-layout.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-uniscribe.h
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+windows.h
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-utf.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-open-type.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-open-type.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-vector.hh
+hb.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-array.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-array.hh
+hb-null.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-null.hh
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-version.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-blob.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-blob.h
+hb-buffer.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-buffer.h
+hb-common.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-common.h
+hb-deprecated.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-deprecated.h
+hb-draw.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-draw.h
+hb-face.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-face.h
+hb-font.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-font.h
+hb-map.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-map.h
+hb-set.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-set.h
+hb-shape.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape.h
+hb-shape-plan.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-shape-plan.h
+hb-style.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-style.h
+hb-unicode.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-unicode.h
+hb-version.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-version.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.hh
+hb-config.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-config.hh
+hb.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb.h
+hb-ot.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-ot.h
+hb-aat.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-aat.h
+cassert
+-
+cfloat
+-
+climits
+-
+cmath
+-
+cstdarg
+-
+cstddef
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+intrin.h
+-
+windows.h
+-
+winapifamily.h
+-
+sal.h
+-
+cerrno
+-
+hb-meta.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-meta.hh
+hb-mutex.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-mutex.hh
+hb-number.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-number.hh
+hb-atomic.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-atomic.hh
+hb-null.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-null.hh
+hb-algs.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-algs.hh
+hb-iter.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-iter.hh
+hb-debug.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-debug.hh
+hb-array.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-array.hh
+hb-vector.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-vector.hh
+hb-object.hh
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz/src/hb-object.hh
+

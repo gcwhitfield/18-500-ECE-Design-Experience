@@ -13,6 +13,13 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  ".././libs/glfw/include"
+  ".././libs/glad/include"
+  ".././libs/glm/include"
+  ".././libs/portaudio/include"
+  ".././libs/libaudiodecoder/include"
+  ".././libs/harfbuzz/include"
+  ".././libs/freetype/include"
   "../libs/glfw/deps"
   "../libs/glfw/include"
   )
