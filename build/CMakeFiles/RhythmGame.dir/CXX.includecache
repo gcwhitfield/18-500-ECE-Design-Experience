@@ -6,64 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../libs/glad/include/KHR/khrplatform.h
-stdint.h
--
-inttypes.h
--
-stdint.h
--
-
-../libs/glad/include/glad/glad.h
-KHR/khrplatform.h
--
-
-../libs/glfw/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-vulkan/vulkan.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-GLES3/gl32.h
--
-GLES2/gl2ext.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-GL/glcorearb.h
--
-GL/glext.h
--
-OpenGL/glu.h
--
-GL/glu.h
--
-OpenGL/gl.h
--
-GL/gl.h
--
-GL/glext.h
--
-
 ../libs/glm/include/common.hpp
 detail/qualifier.hpp
 ../libs/glm/include/detail/qualifier.hpp
@@ -1072,139 +1014,17 @@ detail/setup.hpp
 detail/func_vector_relational.inl
 ../libs/glm/include/detail/func_vector_relational.inl
 
-../libs/libaudiodecoder/include/apple/CADebugMacros.h
-CoreAudio/CoreAudioTypes.h
--
-CoreAudioTypes.h
-../libs/libaudiodecoder/include/apple/CoreAudioTypes.h
-CADebugPrintf.h
-../libs/libaudiodecoder/include/apple/CADebugPrintf.h
-pthread.h
--
-CAHostTimeBase.h
-../libs/libaudiodecoder/include/apple/CAHostTimeBase.h
-CAHostTimeBase.h
-../libs/libaudiodecoder/include/apple/CAHostTimeBase.h
-CADebugger.h
-../libs/libaudiodecoder/include/apple/CADebugger.h
-
-../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
-CoreAudio/CoreAudioTypes.h
--
-CoreFoundation/CoreFoundation.h
--
-CoreAudioTypes.h
-../libs/libaudiodecoder/include/apple/CoreAudioTypes.h
-CoreFoundation.h
-../libs/libaudiodecoder/include/apple/CoreFoundation.h
-CADebugMacros.h
-../libs/libaudiodecoder/include/apple/CADebugMacros.h
-string.h
--
-stdio.h
--
-
-../libs/libaudiodecoder/include/audiodecoder.h
-audiodecoderbase.h
-../libs/libaudiodecoder/include/audiodecoderbase.h
-audiodecodermediafoundation.h
-../libs/libaudiodecoder/include/audiodecodermediafoundation.h
-audiodecodercoreaudio.h
-../libs/libaudiodecoder/include/audiodecodercoreaudio.h
-
-../libs/libaudiodecoder/include/audiodecoderbase.h
-string
--
-vector
--
-
-../libs/libaudiodecoder/include/audiodecodercoreaudio.h
-audiodecoderbase.h
-../libs/libaudiodecoder/include/audiodecoderbase.h
-AudioToolbox/AudioToolbox.h
--
-apple/CAStreamBasicDescription.h
-../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
-CoreServices/CoreServices.h
--
-CoreAudio/CoreAudioTypes.h
--
-AudioToolbox/AudioFile.h
--
-AudioToolbox/AudioFormat.h
--
-CoreAudioTypes.h
-../libs/libaudiodecoder/include/CoreAudioTypes.h
-AudioFile.h
-../libs/libaudiodecoder/include/AudioFile.h
-AudioFormat.h
-../libs/libaudiodecoder/include/AudioFormat.h
-fcntl.h
--
-
-../libs/libaudiodecoder/include/audiodecodermediafoundation.h
-audiodecoderbase.h
-../libs/libaudiodecoder/include/audiodecoderbase.h
-
-../libs/portaudio/include/portaudio.h
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
-Vertex.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
-vector
--
-string
--
-iostream
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
-glad/glad.h
--
-GLFW/glfw3.h
--
-glm.hpp
--
-iostream
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
-glad/glad.h
--
-GLFW/glfw3.h
--
-glm.hpp
--
-memory
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
-Mode.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
-ColorTextureProgram.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.cpp
 Beatmap.hpp
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
 Vertex.hpp
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
-Input.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
-glm.hpp
--
-iostream
--
 vector
 -
-random
+string
 -
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.hpp
-portaudio.h
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/portaudio.h
-audiodecoder.h
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/audiodecoder.h
 iostream
 -
 
@@ -1212,21 +1032,5 @@ iostream
 glm.hpp
 -
 vector
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/main.cpp
-glad/glad.h
--
-GLFW/glfw3.h
--
-PlayMode.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
-Sound.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.hpp
-audiodecoder.h
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/audiodecoder.h
-iostream
--
-memory
 -
 
