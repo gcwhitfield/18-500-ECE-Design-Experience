@@ -114,9 +114,85 @@ PlayMode::PlayMode() {
         }
     }
 
-    // initialize freetype
+    // initialize font rendering
     {
-    
+        // make a map of glyph textures with FreeType
+        // 1) Load font with freetype 
+		// copied from https://github.com/harfbuzz/harfbuzz-tutorial/blob/master/hello-harfbuzz-freetype.c
+        FT_Library ft;
+        if (FT_Init_FreeType(&ft)) {
+            std::cout << "Could not init FreeType library :(" << std::endl;
+            exit(1);
+        }
+
+        if (FT_New_Face(ft, font_file.c_str(), 0, &face)) {
+            std::cout << "Failed to load font :(" << std::endl;
+            exit(1);
+        }
+
+        // disable alignment wince what we read from the face (font) is grayscale.
+		// this line was copied from https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+        FT_Set_Pixel_Sizes(face, 48, 0);
+
+        // 2 load characters into map
+        char letter_min = 32;
+        char letter_max = 127;
+        for (char c = letter_min; c < letter_max; c++) {
+            std::cerr << "char: " << c << std::endl;
+        
+            if (int err = FT_Load_Glyph(face, c, FT_LOAD_RENDER)) {
+                std::cout << "failed to load glyph: " << err << std::endl;
+                exit(1);
+            }
+
+            // 3) create texture from glyph
+            GLuint new_tex = 0;
+            glGenTextures(1, &new_tex);
+            glBindTexture(GL_TEXTURE_2D, new_tex);
+            glm::uvec2 size(face->glyph->bitmap.rows, face->glyph->bitmap.width);
+            std::vector<glm::u8vec4> data(size.x*size.y, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+            for (size_t y = 0; y < size.y; y++) {
+                for (size_t x = 0; x < size.x; x++) {
+                    // copied from professor Mccan's example code for printing bitmap buffer from Computer Game Programming course
+                    uint8_t val = face->glyph->bitmap.buffer[x*std::abs(face->glyph->bitmap.pitch) + y]; 
+                    size_t index = y*size.y + x;
+                    data[index].x = val;
+                    data[index].y = val;
+                    data[index].z = val;
+                    data[index].w = val;
+                }
+            }
+            glTexImage2D(
+                GL_TEXTURE_2D, 
+                0, 
+                GL_RGBA, 
+                size.y, 
+                size.x, 
+                0, 
+                GL_RGBA, 
+                GL_UNSIGNED_BYTE, 
+                data.data()
+            );
+            Character new_char = {
+                new_tex, 
+                // the following 2 lines were copied from // line copied from https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
+                glm::ivec2(face->glyph->bitmap.width, face->glyph->bitmap.rows),
+                glm::ivec2(face->glyph->bitmap_left, face->glyph->bitmap_top)
+            };
+            characters.insert(std::pair<char, Character>(c, new_char));
+        
+            // since textures uses a mipmap and we haven't uploaded one, instruct opengl to create one for us
+            glGenerateMipmap(GL_TEXTURE_2D);
+            // set filtering and wrapping parameters
+            // parameters copied form https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
     }
 
     // initialize harfbuzz
@@ -221,6 +297,59 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
     print_gl_errors();
     glBindTexture(GL_TEXTURE_2D, 0);
+
+    // ---------- render text ----------
+    {
+        text_to_display = "ouoiouoioiuo";
+        { // use Harfbuzz to shape text
+            // create hb-ft font
+            hb_font = hb_ft_font_create(face, NULL);
+
+            // create hb_buffer and populate
+            hb_buffer = hb_buffer_create();
+            if (!hb_buffer_allocation_successful(hb_buffer)) {
+                std::cerr << "hb buffer allocation unsuccessfull" << std::endl;
+                exit(1);
+            }
+            hb_buffer_add_utf8(hb_buffer, text_to_display.c_str(), -1, 0, -1);
+            hb_buffer_guess_segment_properties(hb_buffer);
+
+            // shape it!
+            hb_shape(hb_font, hb_buffer, NULL, 0);
+
+            // get glyph information and positions out of the buffer
+            info = hb_buffer_get_glyph_infos(hb_buffer, NULL);
+            pos = hb_buffer_get_glyph_positions(hb_buffer, NULL);
+        }
+        size_t i = 0;
+       for (char c : text_to_display) {
+            // first get the hb shaping infos (offset & advance)
+            float x_offset = pos[i].x_offset / 64.0f;
+            float y_offset = pos[i].y_offset / 64.0f;
+            float x_advance = pos[i].x_advance / 64.0f;
+            float y_advance = pos[i].y_advance / 64.0f;
+
+            // take out the glyph using char
+            Character ch = characters[c];
+            glm::vec2 scale(10/drawable_size.x, 10/drawable_size.y);
+            float x = 400;
+            float y = 400;
+            // calculate the actual position
+            draw_rectangle(vertices, glm::ivec2((0.50f + x + x_offset)/drawable_size.x, (0.50f + y + y_offset)/drawable_size.y), scale, glm::u8vec4(0X33, 0x33, 0x33, 0xff));
+            glBindTexture(GL_TEXTURE_2D, ch.texture_id);
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(GL_ARRAY_BUFFER, vertices.size(), vertices.data(), GL_DYNAMIC_DRAW);
+            glDrawArrays(GL_TRIANGLES, 0, 6);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+            x += x_advance * scale.x;
+            y += y_advance * scale.y;
+            i++;
+            glBindTexture(GL_TEXTURE_2D, 0);
+
+       }
+    }
+
     glBindVertexArray(0);    
     glUseProgram(0);
 }

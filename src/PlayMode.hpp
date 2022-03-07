@@ -7,6 +7,7 @@
 #include <glm.hpp>
 #include <iostream>
 #include <vector>
+#include <map>
 #include <random>
 
 #include <ft2build.h>
@@ -57,6 +58,28 @@ struct PlayMode : Mode {
     GLuint x_texture = -1U;
 
     std::vector<Vertex> vertices;
+
+    // ---------- font ----------
+    std::string font_file = "fonts/Syne_Mono/SyneMono-Regular.ttf";
+
+    // Character struct and characters map were derived from an OpenGL tutorial
+    // about text rendering
+    // https://learnopengl.com/In-Practice/Text-Rendering
+    struct Character {
+        unsigned int texture_id; // id handle of the glyph texture
+        glm::ivec2 size; // size of the glyph
+        glm::ivec2 bearing; // offset from baseline to left/top of the glyph
+    };
+
+    std::map<char, Character> characters;
+
+    FT_Face face;
+    hb_buffer_t *hb_buffer;
+    hb_font_t *hb_font;
+    hb_glyph_position_t *pos;
+    hb_glyph_info_t *info;
+
+    std::string text_to_display;
 
     // draw is called whenever we want to draw something to the screen
     virtual void draw(glm::uvec2 const &drawable_size) override;
