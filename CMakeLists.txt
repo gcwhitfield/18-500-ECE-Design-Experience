@@ -18,6 +18,8 @@ set(NAMES ./src/Mode.cpp
           ./src/ColorTextureProgram.cpp
           ./src/Sound.cpp
           ./src/Beatmap.cpp
+          ./src/Shader.cpp
+          ./src/TextRenderProgram.cpp
           )
 
 # import glfw

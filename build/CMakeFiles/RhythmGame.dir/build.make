@@ -154,9 +154,35 @@ CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.cpp" -o CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.s
 
+CMakeFiles/RhythmGame.dir/src/Shader.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
+CMakeFiles/RhythmGame.dir/src/Shader.cpp.o: ../src/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RhythmGame.dir/src/Shader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/Shader.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.cpp"
+
+CMakeFiles/RhythmGame.dir/src/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhythmGame.dir/src/Shader.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.cpp" > CMakeFiles/RhythmGame.dir/src/Shader.cpp.i
+
+CMakeFiles/RhythmGame.dir/src/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/Shader.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.cpp" -o CMakeFiles/RhythmGame.dir/src/Shader.cpp.s
+
+CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
+CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o: ../src/TextRenderProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.cpp"
+
+CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.cpp" > CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.i
+
+CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.cpp" -o CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.s
+
 CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o: ../libs/libaudiodecoder/src/audiodecoderbase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libaudiodecoder/src/audiodecoderbase.cpp"
 
 CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.i: cmake_force
@@ -169,7 +195,7 @@ CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.s: cmake
 
 CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o: ../libs/libaudiodecoder/src/audiodecodercoreaudio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp"
 
 CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.i: cmake_force
@@ -182,7 +208,7 @@ CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s: 
 
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RhythmGame.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RhythmGame.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/main.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/main.cpp"
 
 CMakeFiles/RhythmGame.dir/src/main.cpp.i: cmake_force
@@ -201,6 +227,8 @@ RhythmGame_OBJECTS = \
 "CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/Sound.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o" \
+"CMakeFiles/RhythmGame.dir/src/Shader.cpp.o" \
+"CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o" \
 "CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o" \
 "CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/main.cpp.o"
@@ -214,6 +242,8 @@ RhythmGame: CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/Sound.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o
+RhythmGame: CMakeFiles/RhythmGame.dir/src/Shader.cpp.o
+RhythmGame: CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/main.cpp.o
@@ -230,7 +260,7 @@ RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform
 RhythmGame: /usr/local/lib/libpng.dylib
 RhythmGame: /usr/local/lib/libharfbuzz.dylib
 RhythmGame: CMakeFiles/RhythmGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable RhythmGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable RhythmGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RhythmGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

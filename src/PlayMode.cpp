@@ -134,7 +134,7 @@ PlayMode::PlayMode() {
 		// this line was copied from https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
         glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
-        FT_Set_Pixel_Sizes(face, 48, 0);
+        FT_Set_Pixel_Sizes(face, 32, 32);
 
         // 2 load characters into map
         char letter_min = 32;
@@ -142,42 +142,29 @@ PlayMode::PlayMode() {
         for (char c = letter_min; c < letter_max; c++) {
             std::cerr << "char: " << c << std::endl;
         
-            if (int err = FT_Load_Glyph(face, c, FT_LOAD_RENDER)) {
+            if (int err = FT_Load_Char(face, c, FT_LOAD_RENDER)) {
                 std::cout << "failed to load glyph: " << err << std::endl;
                 exit(1);
             }
 
             // 3) create texture from glyph
+            // xcopied from https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
             GLuint new_tex = 0;
             glGenTextures(1, &new_tex);
             glBindTexture(GL_TEXTURE_2D, new_tex);
-            glm::uvec2 size(face->glyph->bitmap.rows, face->glyph->bitmap.width);
-            std::vector<glm::u8vec4> data(size.x*size.y, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-            for (size_t y = 0; y < size.y; y++) {
-                for (size_t x = 0; x < size.x; x++) {
-                    // copied from professor Mccan's example code for printing bitmap buffer from Computer Game Programming course
-                    uint8_t val = face->glyph->bitmap.buffer[x*std::abs(face->glyph->bitmap.pitch) + y]; 
-                    size_t index = y*size.y + x;
-                    data[index].x = val;
-                    data[index].y = val;
-                    data[index].z = val;
-                    data[index].w = val;
-                }
-            }
             glTexImage2D(
                 GL_TEXTURE_2D, 
                 0, 
-                GL_RGBA, 
-                size.y, 
-                size.x, 
+                GL_RED, 
+                face->glyph->bitmap.width, 
+                face->glyph->bitmap.rows, 
                 0, 
-                GL_RGBA, 
+                GL_RED, 
                 GL_UNSIGNED_BYTE, 
-                data.data()
+                face->glyph->bitmap.buffer
             );
             Character new_char = {
                 new_tex, 
-                // the following 2 lines were copied from // line copied from https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
                 glm::ivec2(face->glyph->bitmap.width, face->glyph->bitmap.rows),
                 glm::ivec2(face->glyph->bitmap_left, face->glyph->bitmap_top)
             };
@@ -186,7 +173,6 @@ PlayMode::PlayMode() {
             // since textures uses a mipmap and we haven't uploaded one, instruct opengl to create one for us
             glGenerateMipmap(GL_TEXTURE_2D);
             // set filtering and wrapping parameters
-            // parameters copied form https://github.com/ChunanGang/TextBasedGame/blob/main/TextRenderer.cpp
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -300,7 +286,10 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
 
     // ---------- render text ----------
     {
-        text_to_display = "ouoiouoioiuo";
+        glUseProgram(text_program.program);
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        text_to_display = "llama";
         { // use Harfbuzz to shape text
             // create hb-ft font
             hb_font = hb_ft_font_create(face, NULL);
@@ -318,36 +307,62 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
             hb_shape(hb_font, hb_buffer, NULL, 0);
 
             // get glyph information and positions out of the buffer
-            info = hb_buffer_get_glyph_infos(hb_buffer, NULL);
-            pos = hb_buffer_get_glyph_positions(hb_buffer, NULL);
+            unsigned int len = 0;
+            info = hb_buffer_get_glyph_infos(hb_buffer, &len);
+            if (len <= 0) {
+                std::cerr << "hb buffer get glyph infos err" << std::endl;
+                exit(1);
+            }
+            pos = hb_buffer_get_glyph_positions(hb_buffer, &len);
+            if (len <= 0) {
+                std::cerr << "hb buffer get glyph positions err" << std::endl;
+                exit(1);
+            }
+            
         }
         size_t i = 0;
-       for (char c : text_to_display) {
+        float x = 50.0f;
+        float y = 50.0f;
+        for (char c : text_to_display) {
             // first get the hb shaping infos (offset & advance)
             float x_offset = pos[i].x_offset / 64.0f;
             float y_offset = pos[i].y_offset / 64.0f;
             float x_advance = pos[i].x_advance / 64.0f;
             float y_advance = pos[i].y_advance / 64.0f;
+            (void) x_offset;
+            (void) y_offset;
 
             // take out the glyph using char
             Character ch = characters[c];
-            glm::vec2 scale(10/drawable_size.x, 10/drawable_size.y);
-            float x = 400;
-            float y = 400;
+            glm::vec2 scale(2, 2);
+            glm::vec2 loc(x + (x_offset + ch.bearing.x) * scale.x, y + (y_offset - (ch.size.y - ch.bearing.y)) * scale.y);
             // calculate the actual position
-            draw_rectangle(vertices, glm::ivec2((0.50f + x + x_offset)/drawable_size.x, (0.50f + y + y_offset)/drawable_size.y), scale, glm::u8vec4(0X33, 0x33, 0x33, 0xff));
+            vertices.clear();
+            draw_rectangle(vertices, glm::vec2(loc.x/drawable_size.x, loc.y/drawable_size.y), glm::vec2(scale.x * ch.size.x/ drawable_size.x, scale.y * ch.size.y / drawable_size.y), glm::u8vec4(0Xff, 0xff, 0xff, 0xff));
+            // draw_rectangle(vertices, glm::vec2(0.0, 0.0), scale, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+            glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, ch.texture_id);
+            glBindVertexArray(vertex_array_object);
             glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
-            glBufferData(GL_ARRAY_BUFFER, vertices.size(), vertices.data(), GL_DYNAMIC_DRAW);
-            glDrawArrays(GL_TRIANGLES, 0, 6);
+            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
             glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-            x += x_advance * scale.x;
-            y += y_advance * scale.y;
+            x += x_advance * scale.x * 6 + 80;
+            y += y_advance * scale.y * 6;
+            std::cout << "x: " << x << ", y: " << y << std::endl;
+            std::cout << "x_offset: " << x_offset << ", y_offset: " << y_offset << std::endl;
+            std::cout << "x_advance: " << x_advance << ", y_advance: " << y_advance << std::endl;
+            std::cout << "i: " << i << std::endl;
+            // float a = pos[i].x_offset;
+            float a = pos[i].x_offset;
+            std::cout << "pos[i].x_offset: " << a << std::endl;
             i++;
             glBindTexture(GL_TEXTURE_2D, 0);
 
        }
+    //    exit(1);
+       glUseProgram(0);
     }
 
     glBindVertexArray(0);    

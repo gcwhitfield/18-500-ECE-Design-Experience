@@ -880,6 +880,33 @@ src/PlayMode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.s
 .PHONY : src/PlayMode.cpp.s
 
+src/Shader.o: src/Shader.cpp.o
+
+.PHONY : src/Shader.o
+
+# target to build an object file
+src/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Shader.cpp.o
+.PHONY : src/Shader.cpp.o
+
+src/Shader.i: src/Shader.cpp.i
+
+.PHONY : src/Shader.i
+
+# target to preprocess a source file
+src/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
+
+src/Shader.s: src/Shader.cpp.s
+
+.PHONY : src/Shader.s
+
+# target to generate assembly for a file
+src/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
 src/Sound.o: src/Sound.cpp.o
 
 .PHONY : src/Sound.o
@@ -906,6 +933,33 @@ src/Sound.s: src/Sound.cpp.s
 src/Sound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Sound.cpp.s
 .PHONY : src/Sound.cpp.s
+
+src/TextRenderProgram.o: src/TextRenderProgram.cpp.o
+
+.PHONY : src/TextRenderProgram.o
+
+# target to build an object file
+src/TextRenderProgram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o
+.PHONY : src/TextRenderProgram.cpp.o
+
+src/TextRenderProgram.i: src/TextRenderProgram.cpp.i
+
+.PHONY : src/TextRenderProgram.i
+
+# target to preprocess a source file
+src/TextRenderProgram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.i
+.PHONY : src/TextRenderProgram.cpp.i
+
+src/TextRenderProgram.s: src/TextRenderProgram.cpp.s
+
+.PHONY : src/TextRenderProgram.s
+
+# target to generate assembly for a file
+src/TextRenderProgram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.s
+.PHONY : src/TextRenderProgram.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -1007,9 +1061,15 @@ help:
 	@echo "... src/PlayMode.o"
 	@echo "... src/PlayMode.i"
 	@echo "... src/PlayMode.s"
+	@echo "... src/Shader.o"
+	@echo "... src/Shader.i"
+	@echo "... src/Shader.s"
 	@echo "... src/Sound.o"
 	@echo "... src/Sound.i"
 	@echo "... src/Sound.s"
+	@echo "... src/TextRenderProgram.o"
+	@echo "... src/TextRenderProgram.i"
+	@echo "... src/TextRenderProgram.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

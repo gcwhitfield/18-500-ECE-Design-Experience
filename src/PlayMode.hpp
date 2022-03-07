@@ -1,8 +1,10 @@
 #include "Mode.hpp"
 #include "ColorTextureProgram.hpp"
+#include "TextRenderProgram.hpp"
 #include "Beatmap.hpp"
 #include "Vertex.hpp"
 #include "Input.hpp"
+
 
 #include <glm.hpp>
 #include <iostream>
@@ -60,7 +62,8 @@ struct PlayMode : Mode {
     std::vector<Vertex> vertices;
 
     // ---------- font ----------
-    std::string font_file = "fonts/Syne_Mono/SyneMono-Regular.ttf";
+    TextRenderProgram text_program;
+    std::string font_file = "fonts/Roboto/Roboto-Regular.ttf";
 
     // Character struct and characters map were derived from an OpenGL tutorial
     // about text rendering
