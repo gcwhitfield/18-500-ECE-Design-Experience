@@ -2,6 +2,7 @@
 #include "ColorTextureProgram.hpp"
 #include "Input.hpp"
 #include "Mode.hpp"
+#include "Sound.hpp"
 #include "TextRenderer.hpp"
 #include "Vertex.hpp"
 

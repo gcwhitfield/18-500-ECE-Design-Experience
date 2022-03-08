@@ -7,9 +7,10 @@
 
 #ifndef SHADER
 #define SHADER
+
 // 'Shader' is a struct that stores information about the vertex shader and fragment shader 
 //  for an OpenGL program. In the constructor of 'Shader', the vertex and fragment shaders get
-// compiled and linked my OpenGL. Much of the code in Shader.cpp
+// compiled and linked by OpenGL. Much of the code in Shader.cpp
 // comes from the Learning OpenGL textbook by Joey de Vries and the game 0 base code from 
 // ixchow https://github.com/15-466/15-466-f21-base0/blob/main/main.cpp. 
 struct Shader {

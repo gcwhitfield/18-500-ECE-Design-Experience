@@ -6,6 +6,9 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+// import sounds
+static Sound::Sample splash_sound("./art/sounds/splash.wav");
+
 PlayMode::PlayMode() {
 
     // "create buffer to store vertex information", "create vertex array object...", and 
@@ -83,7 +86,7 @@ PlayMode::PlayMode() {
         glGenTextures(1, &x_texture);
         glBindTexture(GL_TEXTURE_2D, x_texture);
         int width, height, nr_channels;
-        unsigned char *data = stbi_load("images/x.png", &width, &height, &nr_channels, 0);
+        unsigned char *data = stbi_load("art/images/x.png", &width, &height, &nr_channels, 0);
         if (!data) {
             std::cerr << "could not read x png" << std::endl;
             exit(1);
@@ -125,44 +128,56 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
     (void) action;
     (void) mods;
 
-    if (action == Input::KeyAction::PRESS) {   // Detect input from player, grade input, add points to score
+    if (action == Input::KeyAction::PRESS) {   
+        
+        // Detect UP DOWN LEFT RIGHT keyboard input from player, grade input, add points to score
         const Input::KeyCode up = Input::KeyCode::W;
         const Input::KeyCode down = Input::KeyCode::S;
         const Input::KeyCode left = Input::KeyCode::A;
         const Input::KeyCode right = Input::KeyCode::D;
-        Beatmap::BeatLocation location;
+        if (key == up || key == down || key == left || key == right) {
+            Beatmap::BeatLocation location;
 
-        switch(key)
-        {
-            case up:
-                location = Beatmap::BeatLocation::UP;
-                break;
-            case down:
-                location = Beatmap::BeatLocation::DOWN;
-                break;
-            case left:
-                location = Beatmap::BeatLocation::LEFT;
-                break;
-            case right:
-                location = Beatmap::BeatLocation::RIGHT;
-                break;
-            default: // the player did not hit a valid key
-                return; 
+            switch(key)
+            {
+                case up:
+                    location = Beatmap::BeatLocation::UP;
+                    break;
+                case down:
+                    location = Beatmap::BeatLocation::DOWN;
+                    break;
+                case left:
+                    location = Beatmap::BeatLocation::LEFT;
+                    break;
+                case right:
+                    location = Beatmap::BeatLocation::RIGHT;
+                    break;
+                default: // the player did not hit a valid key
+                    return; 
+            }
+
+            BeatGrade grade = grade_input(location);
+            switch(grade) {
+                case BeatGrade::PERFECT:
+                    score += 100;
+                    break;
+                case BeatGrade::GOOD:
+                    score += 25;
+                    break;
+                case BeatGrade::MISS:
+                    score -= 25;
+                    break;
+                default: // do not modify score for BeatGrade::NONE
+                    break;
+            }
         }
 
-        BeatGrade grade = grade_input(location);
-        switch(grade) {
-            case BeatGrade::PERFECT:
-                score += 100;
-                break;
-            case BeatGrade::GOOD:
-                score += 25;
-                break;
-            case BeatGrade::MISS:
-                score -= 25;
-                break;
-            default: // do not modify score for BeatGrade::NONE
-                break;
+        // play splash sound if the 'p' key is pressed 
+        {
+            if (key == 80) {
+                Sound::PlayingSample *new_sample = new Sound::PlayingSample(&splash_sound);
+                Sound::play(new_sample);
+            }
         }
     }
     // std::cout << "Key has been pressed: " << key << " : " << scancode << " : " << action << " : " << mods << std::endl;

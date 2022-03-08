@@ -12,9 +12,6 @@
 
 int main()
 {
-    // this main function was derived from code in chapter 1 of  "Learn OpenGL - Graphics 
-    // Programming" by Joey de Vries. https://learnopengl.com/
-
     // initialize OpenGL
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -42,14 +39,7 @@ int main()
     }
 
     // initialize sound
-    // Sound *sound = new Sound();
-    // sound->init();
-    AudioDecoder *audio = new AudioDecoder("songs/Starbucks Music/StarbucksMusic.wav");
-    
-    if (audio->open() != AUDIODECODER_OK) {
-        std::cerr << "Something went wrong trying to open the audio file :'(" << std::endl;
-        exit(1);
-    }
+    Sound::init();
 
     // set the viewport size 
     glm::uvec2 window_size(1600, 900);
@@ -95,7 +85,7 @@ int main()
         glfwPollEvents(); // will call input callback functions as needed
     }
 
-    // sound->de_init();
+    Sound::de_init();
     glfwTerminate();
     return 0;
 }

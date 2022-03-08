@@ -113,8 +113,8 @@ void TextRenderer::draw(const glm::uvec2 &drawable_size, std::string text, glm::
             
         }
         size_t i = 0;
-        float x = 50.0f;
-        float y = 50.0f;
+        float x = 0.0f;
+        float y = 0.0f;
         for (char c : text) {
             // first get the hb shaping infos (offset & advance)
             float x_offset = pos[i].x_offset / 64.0f;
@@ -139,17 +139,10 @@ void TextRenderer::draw(const glm::uvec2 &drawable_size, std::string text, glm::
             // TODO: figure out why x_advance and y_advance are always 0  
             x += x_advance * size.x * 6 + 80;
             y += y_advance * size.y * 6;
-            // std::cout << "x: " << x << ", y: " << y << std::endl;
-            // std::cout << "x_offset: " << x_offset << ", y_offset: " << y_offset << std::endl;
-            // std::cout << "x_advance: " << x_advance << ", y_advance: " << y_advance << std::endl;
-            // std::cout << "i: " << i << std::endl;
-            // float a = pos[i].x_offset;
-
             i++;
             glBindTexture(GL_TEXTURE_2D, 0);
 
        }
-    //    exit(1);
        glUseProgram(0);
     }
 }

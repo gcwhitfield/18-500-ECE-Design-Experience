@@ -18,7 +18,7 @@ struct TextRenderer {
     ~TextRenderer();
 
     TextRenderProgram text_program;
-    std::string font_file = "fonts/Roboto/Roboto-Regular.ttf";
+    std::string font_file = "art/fonts/Roboto/Roboto-Regular.ttf";
 
     std::vector<Vertex> vertices;
 
