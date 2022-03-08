@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../../bin/libportaudio.pdb"
+  "../../lib/libportaudio.dylib"
   "CMakeFiles/portaudio.dir/src/common/pa_allocation.c.o"
   "CMakeFiles/portaudio.dir/src/common/pa_converters.c.o"
   "CMakeFiles/portaudio.dir/src/common/pa_cpuload.c.o"
@@ -15,8 +17,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/portaudio.dir/src/hostapi/skeleton/pa_hostapi_skeleton.c.o"
   "CMakeFiles/portaudio.dir/src/os/unix/pa_unix_hostapis.c.o"
   "CMakeFiles/portaudio.dir/src/os/unix/pa_unix_util.c.o"
-  "libportaudio.dylib"
-  "libportaudio.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

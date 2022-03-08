@@ -691,6 +691,32 @@ freetype/fast:
 	$(MAKE) $(MAKESILENT) -f libs/freetype/CMakeFiles/freetype.dir/build.make libs/freetype/CMakeFiles/freetype.dir/build
 .PHONY : freetype/fast
 
+#=============================================================================
+# Target rules for targets named jsoncpp_object
+
+# Build rule for target.
+jsoncpp_object: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jsoncpp_object
+.PHONY : jsoncpp_object
+
+# fast build rule for target.
+jsoncpp_object/fast:
+	$(MAKE) $(MAKESILENT) -f libs/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make libs/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_object.dir/build
+.PHONY : jsoncpp_object/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_static
+
+# Build rule for target.
+jsoncpp_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jsoncpp_static
+.PHONY : jsoncpp_static
+
+# fast build rule for target.
+jsoncpp_static/fast:
+	$(MAKE) $(MAKESILENT) -f libs/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make libs/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/build
+.PHONY : jsoncpp_static/fast
+
 libs/glad/src/glad.o: libs/glad/src/glad.c.o
 
 .PHONY : libs/glad/src/glad.o
@@ -961,6 +987,33 @@ src/TextRenderProgram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.s
 .PHONY : src/TextRenderProgram.cpp.s
 
+src/TextRenderer.o: src/TextRenderer.cpp.o
+
+.PHONY : src/TextRenderer.o
+
+# target to build an object file
+src/TextRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.o
+.PHONY : src/TextRenderer.cpp.o
+
+src/TextRenderer.i: src/TextRenderer.cpp.i
+
+.PHONY : src/TextRenderer.i
+
+# target to preprocess a source file
+src/TextRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.i
+.PHONY : src/TextRenderer.cpp.i
+
+src/TextRenderer.s: src/TextRenderer.cpp.s
+
+.PHONY : src/TextRenderer.s
+
+# target to generate assembly for a file
+src/TextRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.s
+.PHONY : src/TextRenderer.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -1022,6 +1075,8 @@ help:
 	@echo "... iconify"
 	@echo "... inputlag"
 	@echo "... joysticks"
+	@echo "... jsoncpp_object"
+	@echo "... jsoncpp_static"
 	@echo "... monitors"
 	@echo "... msaa"
 	@echo "... offscreen"
@@ -1070,6 +1125,9 @@ help:
 	@echo "... src/TextRenderProgram.o"
 	@echo "... src/TextRenderProgram.i"
 	@echo "... src/TextRenderProgram.s"
+	@echo "... src/TextRenderer.o"
+	@echo "... src/TextRenderer.i"
+	@echo "... src/TextRenderer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

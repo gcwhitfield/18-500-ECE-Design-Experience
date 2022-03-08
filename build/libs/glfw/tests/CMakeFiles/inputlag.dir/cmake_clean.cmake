@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "../../../bin/inputlag.app/Contents/MacOS/inputlag"
+  "../../../bin/inputlag.pdb"
   "CMakeFiles/inputlag.dir/__/deps/getopt.c.o"
   "CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/inputlag.dir/inputlag.c.o"
-  "inputlag.app/Contents/MacOS/inputlag"
-  "inputlag.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

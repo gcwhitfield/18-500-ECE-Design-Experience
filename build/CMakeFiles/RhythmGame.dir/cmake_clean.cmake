@@ -9,9 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/RhythmGame.dir/src/Shader.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/Sound.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o"
+  "CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/main.cpp.o"
   "RhythmGame"
-  "RhythmGame.pdb"
+  "bin/RhythmGame.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

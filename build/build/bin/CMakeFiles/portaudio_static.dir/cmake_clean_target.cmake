@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libportaudio.a"
+  "../../lib/libportaudio.a"
 )

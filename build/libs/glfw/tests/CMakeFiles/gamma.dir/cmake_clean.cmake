@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "../../../bin/gamma.app/Contents/MacOS/gamma"
+  "../../../bin/gamma.pdb"
   "CMakeFiles/gamma.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/gamma.dir/gamma.c.o"
-  "gamma.app/Contents/MacOS/gamma"
-  "gamma.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

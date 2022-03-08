@@ -28,15 +28,15 @@ The CXX compiler identification is AppleClang, found in "/Users/george/Desktop/�
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3e3bb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3e3bb.dir/build.make CMakeFiles/cmTC_3e3bb.dir/build
-Building C object CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl,-v -o CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/make cmTC_e1dc8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e1dc8.dir/build.make CMakeFiles/cmTC_e1dc8.dir/build
+Building C object CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl,-v -o CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c
 Apple clang version 11.0.0 (clang-1100.0.33.17)
 Target: x86_64-apple-darwin18.7.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c
 clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin18.7.0
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/Library/Frameworks"
@@ -47,14 +47,14 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
 End of search list.
-Linking C executable cmTC_3e3bb
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e3bb.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -o cmTC_3e3bb 
+Linking C executable cmTC_e1dc8
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1dc8.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -o cmTC_e1dc8 
 Apple clang version 11.0.0 (clang-1100.0.33.17)
 Target: x86_64-apple-darwin18.7.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_3e3bb -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_e1dc8 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-530
 BUILD 18:57:17 Dec 13 2019
 configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -82,15 +82,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_3e3bb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3e3bb.dir/build.make CMakeFiles/cmTC_3e3bb.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl -v -o CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_e1dc8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e1dc8.dir/build.make CMakeFiles/cmTC_e1dc8.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl -v -o CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
   ignore line: [Target: x86_64-apple-darwin18.7.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
   ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin18.7.0]
   ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"]
   ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/Library/Frameworks"]
@@ -101,14 +101,14 @@ Parsed C implicit link information from above output:
   ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
   ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)]
   ignore line: [End of search list.]
-  ignore line: [Linking C executable cmTC_3e3bb]
-  ignore line: [/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e3bb.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -o cmTC_3e3bb ]
+  ignore line: [Linking C executable cmTC_e1dc8]
+  ignore line: [/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1dc8.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -o cmTC_e1dc8 ]
   ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
   ignore line: [Target: x86_64-apple-darwin18.7.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_3e3bb -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_e1dc8 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-lto_library] ==> ignore, skip following value
@@ -121,11 +121,11 @@ Parsed C implicit link information from above output:
     arg [-syslibroot] ==> ignore
     arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3e3bb] ==> ignore
+    arg [cmTC_e1dc8] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_3e3bb.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_e1dc8.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lSystem] ==> lib [System]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
@@ -142,15 +142,15 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7f7bc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7f7bc.dir/build.make CMakeFiles/cmTC_7f7bc.dir/build
-Building CXX object CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl,-v -o CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/make cmTC_8751e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8751e.dir/build.make CMakeFiles/cmTC_8751e.dir/build
+Building CXX object CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl,-v -o CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Apple clang version 11.0.0 (clang-1100.0.33.17)
 Target: x86_64-apple-darwin18.7.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdeprecated-macro -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdeprecated-macro -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin18.7.0
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/c++/v1"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"
@@ -163,14 +163,14 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
 End of search list.
-Linking CXX executable cmTC_7f7bc
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f7bc.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7f7bc 
+Linking CXX executable cmTC_8751e
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8751e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8751e 
 Apple clang version 11.0.0 (clang-1100.0.33.17)
 Target: x86_64-apple-darwin18.7.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_7f7bc -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_8751e -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-530
 BUILD 18:57:17 Dec 13 2019
 configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -200,15 +200,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_7f7bc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7f7bc.dir/build.make CMakeFiles/cmTC_7f7bc.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl -v -o CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_8751e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8751e.dir/build.make CMakeFiles/cmTC_8751e.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -v -Wl -v -o CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
   ignore line: [Target: x86_64-apple-darwin18.7.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
   ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdeprecated-macro -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.14.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdeprecated-macro -fdebug-compilation-dir /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.14.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin18.7.0]
   ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/c++/v1"]
   ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"]
@@ -221,14 +221,14 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
   ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)]
   ignore line: [End of search list.]
-  ignore line: [Linking CXX executable cmTC_7f7bc]
-  ignore line: [/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f7bc.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7f7bc ]
+  ignore line: [Linking CXX executable cmTC_8751e]
+  ignore line: [/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8751e.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8751e ]
   ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
   ignore line: [Target: x86_64-apple-darwin18.7.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_7f7bc -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.14.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_8751e -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-lto_library] ==> ignore, skip following value
@@ -241,11 +241,11 @@ Parsed CXX implicit link information from above output:
     arg [-syslibroot] ==> ignore
     arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7f7bc] ==> ignore
+    arg [cmTC_8751e] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_7f7bc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_8751e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lSystem] ==> lib [System]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
@@ -263,24 +263,24 @@ Parsed CXX implicit link information from above output:
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_38e15/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_38e15.dir/build.make CMakeFiles/cmTC_38e15.dir/build
-Building C object CMakeFiles/cmTC_38e15.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_38e15.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_38e15
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38e15.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_38e15.dir/CheckIncludeFile.c.o -o cmTC_38e15 
+Run Build Command(s):/usr/bin/make cmTC_8e114/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8e114.dir/build.make CMakeFiles/cmTC_8e114.dir/build
+Building C object CMakeFiles/cmTC_8e114.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_8e114.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_8e114
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e114.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8e114.dir/CheckIncludeFile.c.o -o cmTC_8e114 
 
 
 
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a216e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a216e.dir/build.make CMakeFiles/cmTC_a216e.dir/build
-Building C object CMakeFiles/cmTC_a216e.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_a216e.dir/src.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.c"
-Linking C executable cmTC_a216e
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a216e.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a216e.dir/src.c.o -o cmTC_a216e 
+Run Build Command(s):/usr/bin/make cmTC_386db/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_386db.dir/build.make CMakeFiles/cmTC_386db.dir/build
+Building C object CMakeFiles/cmTC_386db.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_386db.dir/src.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_386db
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_386db.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_386db.dir/src.c.o -o cmTC_386db 
 
 
 Source file was:
@@ -307,60 +307,60 @@ int main(void)
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_49a28/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_49a28.dir/build.make CMakeFiles/cmTC_49a28.dir/build
-Building C object CMakeFiles/cmTC_49a28.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_49a28.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_49a28
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49a28.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_49a28.dir/CheckIncludeFile.c.o -o cmTC_49a28 
+Run Build Command(s):/usr/bin/make cmTC_b96a2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b96a2.dir/build.make CMakeFiles/cmTC_b96a2.dir/build
+Building C object CMakeFiles/cmTC_b96a2.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_b96a2.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_b96a2
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b96a2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b96a2.dir/CheckIncludeFile.c.o -o cmTC_b96a2 
 
 
 
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c6bb2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c6bb2.dir/build.make CMakeFiles/cmTC_c6bb2.dir/build
-Building C object CMakeFiles/cmTC_c6bb2.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_c6bb2.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_c6bb2
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6bb2.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c6bb2.dir/CheckIncludeFile.c.o -o cmTC_c6bb2 
+Run Build Command(s):/usr/bin/make cmTC_33f03/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_33f03.dir/build.make CMakeFiles/cmTC_33f03.dir/build
+Building C object CMakeFiles/cmTC_33f03.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_33f03.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_33f03
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33f03.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_33f03.dir/CheckIncludeFile.c.o -o cmTC_33f03 
 
 
 
 Determining if the include file stddef.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_8e7ae/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8e7ae.dir/build.make CMakeFiles/cmTC_8e7ae.dir/build
-Building C object CMakeFiles/cmTC_8e7ae.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_8e7ae.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_8e7ae
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e7ae.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8e7ae.dir/CheckIncludeFile.c.o -o cmTC_8e7ae 
+Run Build Command(s):/usr/bin/make cmTC_c6084/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c6084.dir/build.make CMakeFiles/cmTC_c6084.dir/build
+Building C object CMakeFiles/cmTC_c6084.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_c6084.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_c6084
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6084.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c6084.dir/CheckIncludeFile.c.o -o cmTC_c6084 
 
 
 
 Determining size of unsigned short passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_60661/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_60661.dir/build.make CMakeFiles/cmTC_60661.dir/build
-Building C object CMakeFiles/cmTC_60661.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_60661.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c"
-Linking C executable cmTC_60661
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60661.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_60661.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o -o cmTC_60661 
+Run Build Command(s):/usr/bin/make cmTC_d092b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d092b.dir/build.make CMakeFiles/cmTC_d092b.dir/build
+Building C object CMakeFiles/cmTC_d092b.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_d092b.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c"
+Linking C executable cmTC_d092b
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d092b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d092b.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o -o cmTC_d092b 
 
 
 
 Determining if the system is big endian passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_53e2d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_53e2d.dir/build.make CMakeFiles/cmTC_53e2d.dir/build
-Building C object CMakeFiles/cmTC_53e2d.dir/TestEndianess.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_53e2d.dir/TestEndianess.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/TestEndianess.c"
-Linking C executable cmTC_53e2d
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53e2d.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_53e2d.dir/TestEndianess.c.o -o cmTC_53e2d 
+Run Build Command(s):/usr/bin/make cmTC_37fbd/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_37fbd.dir/build.make CMakeFiles/cmTC_37fbd.dir/build
+Building C object CMakeFiles/cmTC_37fbd.dir/TestEndianess.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_37fbd.dir/TestEndianess.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/TestEndianess.c"
+Linking C executable cmTC_37fbd
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37fbd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_37fbd.dir/TestEndianess.c.o -o cmTC_37fbd 
 
 
 TestEndianess.c:
@@ -392,120 +392,120 @@ int main(int argc, char *argv[])
 Determining if the function atexit exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_caa1d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_caa1d.dir/build.make CMakeFiles/cmTC_caa1d.dir/build
-Building C object CMakeFiles/cmTC_caa1d.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atexit -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_caa1d.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_caa1d
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caa1d.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=atexit -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_caa1d.dir/CheckFunctionExists.c.o -o cmTC_caa1d  -lm 
+Run Build Command(s):/usr/bin/make cmTC_a8154/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a8154.dir/build.make CMakeFiles/cmTC_a8154.dir/build
+Building C object CMakeFiles/cmTC_a8154.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atexit -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_a8154.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a8154
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8154.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=atexit -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a8154.dir/CheckFunctionExists.c.o -o cmTC_a8154  -lm 
 
 
 
 Determining if the function mprotect exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_bb930/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bb930.dir/build.make CMakeFiles/cmTC_bb930.dir/build
-Building C object CMakeFiles/cmTC_bb930.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mprotect -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_bb930.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_bb930
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb930.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mprotect -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bb930.dir/CheckFunctionExists.c.o -o cmTC_bb930  -lm 
+Run Build Command(s):/usr/bin/make cmTC_cd0c7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cd0c7.dir/build.make CMakeFiles/cmTC_cd0c7.dir/build
+Building C object CMakeFiles/cmTC_cd0c7.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mprotect -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_cd0c7.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cd0c7
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd0c7.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mprotect -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cd0c7.dir/CheckFunctionExists.c.o -o cmTC_cd0c7  -lm 
 
 
 
 Determining if the function sysconf exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1fc59/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1fc59.dir/build.make CMakeFiles/cmTC_1fc59.dir/build
-Building C object CMakeFiles/cmTC_1fc59.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sysconf -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_1fc59.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1fc59
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fc59.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sysconf -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1fc59.dir/CheckFunctionExists.c.o -o cmTC_1fc59  -lm 
+Run Build Command(s):/usr/bin/make cmTC_e8338/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e8338.dir/build.make CMakeFiles/cmTC_e8338.dir/build
+Building C object CMakeFiles/cmTC_e8338.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sysconf -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_e8338.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e8338
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8338.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sysconf -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e8338.dir/CheckFunctionExists.c.o -o cmTC_e8338  -lm 
 
 
 
 Determining if the function getpagesize exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e341d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e341d.dir/build.make CMakeFiles/cmTC_e341d.dir/build
-Building C object CMakeFiles/cmTC_e341d.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpagesize -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_e341d.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e341d
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e341d.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpagesize -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e341d.dir/CheckFunctionExists.c.o -o cmTC_e341d  -lm 
+Run Build Command(s):/usr/bin/make cmTC_d8d77/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d8d77.dir/build.make CMakeFiles/cmTC_d8d77.dir/build
+Building C object CMakeFiles/cmTC_d8d77.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpagesize -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_d8d77.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8d77
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8d77.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpagesize -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d8d77.dir/CheckFunctionExists.c.o -o cmTC_d8d77  -lm 
 
 
 
 Determining if the function mmap exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2e20a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2e20a.dir/build.make CMakeFiles/cmTC_2e20a.dir/build
-Building C object CMakeFiles/cmTC_2e20a.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mmap -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_2e20a.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_2e20a
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e20a.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mmap -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2e20a.dir/CheckFunctionExists.c.o -o cmTC_2e20a  -lm 
+Run Build Command(s):/usr/bin/make cmTC_6e2a9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6e2a9.dir/build.make CMakeFiles/cmTC_6e2a9.dir/build
+Building C object CMakeFiles/cmTC_6e2a9.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mmap -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_6e2a9.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6e2a9
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e2a9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mmap -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6e2a9.dir/CheckFunctionExists.c.o -o cmTC_6e2a9  -lm 
 
 
 
 Determining if the function isatty exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_48117/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_48117.dir/build.make CMakeFiles/cmTC_48117.dir/build
-Building C object CMakeFiles/cmTC_48117.dir/CheckFunctionExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_48117.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_48117
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48117.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isatty -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_48117.dir/CheckFunctionExists.c.o -o cmTC_48117  -lm 
+Run Build Command(s):/usr/bin/make cmTC_d017d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d017d.dir/build.make CMakeFiles/cmTC_d017d.dir/build
+Building C object CMakeFiles/cmTC_d017d.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_d017d.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d017d
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d017d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isatty -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d017d.dir/CheckFunctionExists.c.o -o cmTC_d017d  -lm 
 
 
 
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_957f6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_957f6.dir/build.make CMakeFiles/cmTC_957f6.dir/build
-Building C object CMakeFiles/cmTC_957f6.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_957f6.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_957f6
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_957f6.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_957f6.dir/CheckIncludeFile.c.o -o cmTC_957f6 
+Run Build Command(s):/usr/bin/make cmTC_e4850/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e4850.dir/build.make CMakeFiles/cmTC_e4850.dir/build
+Building C object CMakeFiles/cmTC_e4850.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_e4850.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_e4850
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4850.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e4850.dir/CheckIncludeFile.c.o -o cmTC_e4850 
 
 
 
 Determining if the include file sys/mman.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_769b8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_769b8.dir/build.make CMakeFiles/cmTC_769b8.dir/build
-Building C object CMakeFiles/cmTC_769b8.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_769b8.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_769b8
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_769b8.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_769b8.dir/CheckIncludeFile.c.o -o cmTC_769b8 
+Run Build Command(s):/usr/bin/make cmTC_44c96/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_44c96.dir/build.make CMakeFiles/cmTC_44c96.dir/build
+Building C object CMakeFiles/cmTC_44c96.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_44c96.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_44c96
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44c96.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_44c96.dir/CheckIncludeFile.c.o -o cmTC_44c96 
 
 
 
 Determining if the include file stdbool.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_776ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_776ba.dir/build.make CMakeFiles/cmTC_776ba.dir/build
-Building C object CMakeFiles/cmTC_776ba.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_776ba.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_776ba
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_776ba.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_776ba.dir/CheckIncludeFile.c.o -o cmTC_776ba 
+Run Build Command(s):/usr/bin/make cmTC_a1c36/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a1c36.dir/build.make CMakeFiles/cmTC_a1c36.dir/build
+Building C object CMakeFiles/cmTC_a1c36.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_a1c36.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_a1c36
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1c36.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a1c36.dir/CheckIncludeFile.c.o -o cmTC_a1c36 
 
 
 
 Performing C++ SOURCE FILE Test CXX_SUPPORTS_FLAG_BSYMB_FUNCS succeeded with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f656d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f656d.dir/build.make CMakeFiles/cmTC_f656d.dir/build
-Building CXX object CMakeFiles/cmTC_f656d.dir/src.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11 -DCXX_SUPPORTS_FLAG_BSYMB_FUNCS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -Bsymbolic-functions -o CMakeFiles/cmTC_f656d.dir/src.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.cxx"
-Linking CXX executable cmTC_f656d
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f656d.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11 -DCXX_SUPPORTS_FLAG_BSYMB_FUNCS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f656d.dir/src.cxx.o -o cmTC_f656d  -lm 
+Run Build Command(s):/usr/bin/make cmTC_2f450/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2f450.dir/build.make CMakeFiles/cmTC_2f450.dir/build
+Building CXX object CMakeFiles/cmTC_2f450.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DCXX_SUPPORTS_FLAG_BSYMB_FUNCS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -Bsymbolic-functions -o CMakeFiles/cmTC_2f450.dir/src.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_2f450
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f450.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DCXX_SUPPORTS_FLAG_BSYMB_FUNCS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2f450.dir/src.cxx.o -o cmTC_2f450  -lm 
 
 
 Source file was:
@@ -513,12 +513,12 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_35f76/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_35f76.dir/build.make CMakeFiles/cmTC_35f76.dir/build
-Building CXX object CMakeFiles/cmTC_35f76.dir/src.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11 -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -std=c++11 -o CMakeFiles/cmTC_35f76.dir/src.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.cxx"
-Linking CXX executable cmTC_35f76
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35f76.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11 -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_35f76.dir/src.cxx.o -o cmTC_35f76  -lm 
+Run Build Command(s):/usr/bin/make cmTC_06821/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_06821.dir/build.make CMakeFiles/cmTC_06821.dir/build
+Building CXX object CMakeFiles/cmTC_06821.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -std=c++11 -o CMakeFiles/cmTC_06821.dir/src.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_06821
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06821.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_06821.dir/src.cxx.o -o cmTC_06821  -lm 
 
 
 Source file was:
@@ -526,12 +526,12 @@ int main() { return 0; }
 Determining if the BZ2_bzCompressInit exist passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_42fcd/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_42fcd.dir/build.make CMakeFiles/cmTC_42fcd.dir/build
-Building C object CMakeFiles/cmTC_42fcd.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_42fcd.dir/CheckSymbolExists.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
-Linking C executable cmTC_42fcd
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42fcd.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_42fcd.dir/CheckSymbolExists.c.o -o cmTC_42fcd  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd 
+Run Build Command(s):/usr/bin/make cmTC_ee643/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ee643.dir/build.make CMakeFiles/cmTC_ee643.dir/build
+Building C object CMakeFiles/cmTC_ee643.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_ee643.dir/CheckSymbolExists.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_ee643
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee643.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ee643.dir/CheckSymbolExists.c.o -o cmTC_ee643  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd 
 
 
 File /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -551,12 +551,82 @@ int main(int argc, char** argv)
 Determining if the include file fcntl.h exists passed with the following output:
 Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4f66a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4f66a.dir/build.make CMakeFiles/cmTC_4f66a.dir/build
-Building C object CMakeFiles/cmTC_4f66a.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_4f66a.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
-Linking C executable cmTC_4f66a
-/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f66a.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4f66a.dir/CheckIncludeFile.c.o -o cmTC_4f66a 
+Run Build Command(s):/usr/bin/make cmTC_87f42/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_87f42.dir/build.make CMakeFiles/cmTC_87f42.dir/build
+Building C object CMakeFiles/cmTC_87f42.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_87f42.dir/CheckIncludeFile.c.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_87f42
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87f42.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_87f42.dir/CheckIncludeFile.c.o -o cmTC_87f42 
 
 
+
+Determining if the include file clocale exists passed with the following output:
+Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c56d4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c56d4.dir/build.make CMakeFiles/cmTC_c56d4.dir/build
+Building CXX object CMakeFiles/cmTC_c56d4.dir/CheckIncludeFile.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_c56d4.dir/CheckIncludeFile.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx"
+Linking CXX executable cmTC_c56d4
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c56d4.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c56d4.dir/CheckIncludeFile.cxx.o -o cmTC_c56d4 
+
+
+
+Determining if the localeconv exist passed with the following output:
+Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_11571/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_11571.dir/build.make CMakeFiles/cmTC_11571.dir/build
+Building CXX object CMakeFiles/cmTC_11571.dir/CheckSymbolExists.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_11571.dir/CheckSymbolExists.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
+Linking CXX executable cmTC_11571
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11571.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_11571.dir/CheckSymbolExists.cxx.o -o cmTC_11571 
+
+
+File /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <clocale>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef localeconv
+  return ((int*)(&localeconv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of lconv passed with the following output:
+Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c3caa/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c3caa.dir/build.make CMakeFiles/cmTC_c3caa.dir/build
+Building CXX object CMakeFiles/cmTC_c3caa.dir/LCONV_SIZE.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_c3caa.dir/LCONV_SIZE.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CheckTypeSize/LCONV_SIZE.cpp"
+Linking CXX executable cmTC_c3caa
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3caa.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c3caa.dir/LCONV_SIZE.cpp.o -o cmTC_c3caa 
+
+
+
+Performing C++ SOURCE FILE Test HAVE_DECIMAL_POINT succeeded with the following output:
+Change Dir: /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31b1e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_31b1e.dir/build.make CMakeFiles/cmTC_31b1e.dir/build
+Building CXX object CMakeFiles/cmTC_31b1e.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DHAVE_DECIMAL_POINT -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -o CMakeFiles/cmTC_31b1e.dir/src.cxx.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_31b1e
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31b1e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DHAVE_DECIMAL_POINT -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_31b1e.dir/src.cxx.o -o cmTC_31b1e 
+
+
+Source file was:
+
+#include <clocale>
+
+int main()
+{
+  (void)sizeof(((lconv *)0)->decimal_point);
+  return 0;
+}
 

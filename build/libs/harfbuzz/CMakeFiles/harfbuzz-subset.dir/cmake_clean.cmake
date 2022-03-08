@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../../bin/libharfbuzz-subset.pdb"
+  "../../lib/libharfbuzz-subset.a"
   "CMakeFiles/harfbuzz-subset.dir/src/hb-number.cc.o"
   "CMakeFiles/harfbuzz-subset.dir/src/hb-ot-cff1-table.cc.o"
   "CMakeFiles/harfbuzz-subset.dir/src/hb-ot-cff2-table.cc.o"
@@ -9,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/harfbuzz-subset.dir/src/hb-subset-input.cc.o"
   "CMakeFiles/harfbuzz-subset.dir/src/hb-subset-plan.cc.o"
   "CMakeFiles/harfbuzz-subset.dir/src/hb-subset.cc.o"
-  "libharfbuzz-subset.a"
-  "libharfbuzz-subset.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

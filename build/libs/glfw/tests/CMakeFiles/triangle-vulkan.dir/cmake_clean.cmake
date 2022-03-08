@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "../../../bin/triangle-vulkan"
+  "../../../bin/triangle-vulkan.pdb"
   "CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o"
   "CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o"
-  "triangle-vulkan"
-  "triangle-vulkan.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

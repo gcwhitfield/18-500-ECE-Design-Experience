@@ -42,4 +42,11 @@ struct Input {
         SPACE = 32,
         ESCAPE = 256
     };
+
+    enum KeyAction {
+        RELEASE = 0, // action is 0 when the user releases the button
+        PRESS = 1, // action is 1 when the user presses the button for the first time
+        HOLD = 2 // action is 2 when the user is holding the button for additional frames after the 
+                 // first press
+    };
 };

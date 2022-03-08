@@ -656,55 +656,55 @@ freetype_OBJECTS = \
 # External object files for target freetype
 freetype_EXTERNAL_OBJECTS =
 
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/builds/unix/ftsystem.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftdebug.c.o
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/build.make
-libs/freetype/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Linking C static library libfreetype.a"
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/builds/unix/ftsystem.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/src/base/ftdebug.c.o
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/build.make
+lib/libfreetype.a: libs/freetype/CMakeFiles/freetype.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Linking C static library ../../lib/libfreetype.a"
 	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/freetype" && $(CMAKE_COMMAND) -P CMakeFiles/freetype.dir/cmake_clean_target.cmake
 	cd "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/freetype" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/freetype.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-libs/freetype/CMakeFiles/freetype.dir/build: libs/freetype/libfreetype.a
+libs/freetype/CMakeFiles/freetype.dir/build: lib/libfreetype.a
 
 .PHONY : libs/freetype/CMakeFiles/freetype.dir/build
 

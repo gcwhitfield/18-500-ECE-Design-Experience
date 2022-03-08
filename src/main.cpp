@@ -26,7 +26,8 @@ int main()
     #endif
 
     // create window
-    GLFWwindow *window = glfwCreateWindow(800, 800, "LearningOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(1600, 900, "Hit It!", NULL, NULL);
+    glfwSetWindowAspectRatio(window, 16, 9);
     if (!window) {
         std::cerr << "Could not create GL window." << std::endl;
         glfwTerminate();
@@ -51,7 +52,7 @@ int main()
     }
 
     // set the viewport size 
-    glm::uvec2 window_size(800, 800);
+    glm::uvec2 window_size(1600, 900);
     glViewport(0, 0, window_size.x, window_size.y);
     auto on_window_resized = [](GLFWwindow *window, int width, int height) {
         (void)window;

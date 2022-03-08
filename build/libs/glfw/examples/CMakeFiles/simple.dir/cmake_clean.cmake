@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "../../../bin/simple.app/Contents/MacOS/simple"
+  "../../../bin/simple.app/Contents/Resources/glfw.icns"
+  "../../../bin/simple.pdb"
   "CMakeFiles/simple.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/simple.dir/simple.c.o"
-  "simple.app/Contents/MacOS/simple"
-  "simple.app/Contents/Resources/glfw.icns"
-  "simple.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

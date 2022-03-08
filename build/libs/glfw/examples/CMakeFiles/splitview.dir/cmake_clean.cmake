@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "../../../bin/splitview.app/Contents/MacOS/splitview"
+  "../../../bin/splitview.app/Contents/Resources/glfw.icns"
+  "../../../bin/splitview.pdb"
   "CMakeFiles/splitview.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/splitview.dir/splitview.c.o"
-  "splitview.app/Contents/MacOS/splitview"
-  "splitview.app/Contents/Resources/glfw.icns"
-  "splitview.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1200,17 +1200,19 @@ hb-unicode.h
 hb-version.h
 ../libs/harfbuzz/src/hb-version.h
 
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
-Vertex.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
-vector
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.hpp
+glad/glad.h
 -
-string
+GLFW/glfw3.h
+-
+glm.hpp
 -
 iostream
 -
+string
+-
 
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.hpp
 Shader.hpp
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.hpp
 glad/glad.h
@@ -1222,46 +1224,20 @@ glm.hpp
 iostream
 -
 
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderer.cpp
+TextRenderer.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderer.hpp
 
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderer.hpp
+TextRenderProgram.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.hpp
+Vertex.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
+glm.hpp
+-
 glad/glad.h
 -
 GLFW/glfw3.h
--
-glm.hpp
--
-memory
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.cpp
-PlayMode.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
-stb_image.h
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/stb_image.h
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
-Mode.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
-ColorTextureProgram.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
-TextRenderProgram.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.hpp
-Beatmap.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
-Vertex.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
-Input.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
-glm.hpp
--
-iostream
--
-vector
--
-map
--
-random
 -
 ft2build.h
 -
@@ -1269,66 +1245,16 @@ hb.h
 -
 hb-ft.h
 -
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.hpp
-glad/glad.h
--
-GLFW/glfw3.h
--
-glm.hpp
--
-iostream
--
 string
 -
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.hpp
-Shader.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.hpp
-glad/glad.h
+map
 -
-GLFW/glfw3.h
--
-glm.hpp
--
-iostream
+vector
 -
 
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
 glm.hpp
 -
 vector
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/stb_image.h
-stb_image.h
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/stb_image.h
-stdio.h
--
-stdlib.h
--
-stdarg.h
--
-stddef.h
--
-stdlib.h
--
-string.h
--
-limits.h
--
-math.h
--
-stdio.h
--
-assert.h
--
-stdint.h
--
-emmintrin.h
--
-intrin.h
--
-arm_neon.h
 -
 

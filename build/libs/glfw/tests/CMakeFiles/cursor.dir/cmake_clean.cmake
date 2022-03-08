@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "../../../bin/cursor"
+  "../../../bin/cursor.pdb"
   "CMakeFiles/cursor.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/cursor.dir/cursor.c.o"
-  "cursor"
-  "cursor.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

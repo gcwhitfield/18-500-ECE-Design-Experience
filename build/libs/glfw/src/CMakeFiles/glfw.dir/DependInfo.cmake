@@ -36,6 +36,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/libaudiodecoder/include"
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
+  ".././libs/jsoncpp/include"
   "../libs/glfw/include"
   "../libs/glfw/src"
   "libs/glfw/src"

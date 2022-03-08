@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
+  "../../../bin/particles.app/Contents/MacOS/particles"
+  "../../../bin/particles.app/Contents/Resources/glfw.icns"
+  "../../../bin/particles.pdb"
   "CMakeFiles/particles.dir/__/deps/getopt.c.o"
   "CMakeFiles/particles.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
   "CMakeFiles/particles.dir/particles.c.o"
-  "particles.app/Contents/MacOS/particles"
-  "particles.app/Contents/Resources/glfw.icns"
-  "particles.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

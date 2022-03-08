@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "../../bin/libharfbuzz.pdb"
+  "../../lib/libharfbuzz.a"
   "CMakeFiles/harfbuzz.dir/src/harfbuzz.cc.o"
-  "libharfbuzz.a"
-  "libharfbuzz.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

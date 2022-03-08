@@ -41,6 +41,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/libaudiodecoder/include"
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
+  ".././libs/jsoncpp/include"
   "../libs/harfbuzz/src"
   "libs/harfbuzz/src"
   )

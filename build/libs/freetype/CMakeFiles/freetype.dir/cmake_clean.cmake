@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../../bin/libfreetype.pdb"
+  "../../lib/libfreetype.a"
   "CMakeFiles/freetype.dir/builds/unix/ftsystem.c.o"
   "CMakeFiles/freetype.dir/src/autofit/autofit.c.o"
   "CMakeFiles/freetype.dir/src/base/ftbase.c.o"
@@ -40,8 +42,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/freetype.dir/src/type1/type1.c.o"
   "CMakeFiles/freetype.dir/src/type42/type42.c.o"
   "CMakeFiles/freetype.dir/src/winfonts/winfnt.c.o"
-  "libfreetype.a"
-  "libfreetype.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

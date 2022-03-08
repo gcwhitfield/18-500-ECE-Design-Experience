@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "../../../bin/reopen"
+  "../../../bin/reopen.pdb"
   "CMakeFiles/reopen.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/reopen.dir/reopen.c.o"
-  "reopen"
-  "reopen.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

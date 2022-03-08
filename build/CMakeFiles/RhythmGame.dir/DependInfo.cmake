@@ -18,11 +18,14 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/libaudiodecoder/include"
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
+  ".././libs/jsoncpp/include"
   "../libs/glfw/include"
   "../libs/portaudio/include"
   "../libs/harfbuzz/src"
   "libs/freetype/include"
   "../libs/freetype/include"
+  "../libs/jsoncpp/src/lib_json/../../include"
+  "libs/jsoncpp/include/json"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libaudiodecoder/src/audiodecoderbase.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecoderbase.cpp.o"
@@ -34,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/Shader.cpp.o"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/Sound.cpp.o"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderer.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.o"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/main.cpp" "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles/RhythmGame.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
@@ -47,11 +51,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/libaudiodecoder/include"
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
+  ".././libs/jsoncpp/include"
   "../libs/glfw/include"
   "../libs/portaudio/include"
   "../libs/harfbuzz/src"
   "libs/freetype/include"
   "../libs/freetype/include"
+  "../libs/jsoncpp/src/lib_json/../../include"
+  "libs/jsoncpp/include/json"
   )
 
 # Targets to which this target links.
@@ -60,6 +67,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/build/bin/CMakeFiles/portaudio.dir/DependInfo.cmake"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/harfbuzz/CMakeFiles/harfbuzz.dir/DependInfo.cmake"
   "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/freetype/CMakeFiles/freetype.dir/DependInfo.cmake"
+  "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

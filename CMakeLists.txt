@@ -10,6 +10,7 @@ include_directories(./libs/glfw/include/
 		            ./libs/libaudiodecoder/include/
                     ./libs/harfbuzz/include/
                     ./libs/freetype/include/
+                    ./libs/jsoncpp/include/
                     )
 
 # set the names of all of the cpp files into one variable called "NAMES"
@@ -20,6 +21,7 @@ set(NAMES ./src/Mode.cpp
           ./src/Beatmap.cpp
           ./src/Shader.cpp
           ./src/TextRenderProgram.cpp
+          ./src/TextRenderer.cpp
           )
 
 # import glfw
@@ -46,19 +48,27 @@ add_subdirectory(./libs/harfbuzz)
 # import freetype
 add_subdirectory(./libs/freetype)
 
+# import serial
+# add_subdirectory(./libs/serial) # when this line is uncommented, the program cannot compile because 'catkin' is not installed
+
+# import jsoncpp
+add_subdirectory(./libs/jsoncpp)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11")
 
 # add the executable
-add_executable(RhythmGame libs/glad/src/glad.c ${NAMES}  ${LIBAUDIODECODER_NAMES} src/main.cpp)
+add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} ${LIBAUDIODECODER_NAMES} src/main.cpp)
 
 # link libraries
 target_link_libraries(
 	${PROJECT_NAME} 
 	glfw ${GLFW_LIBRARIES}
-    	portaudio
+    portaudio
     harfbuzz
     freetype ${FREETYPE_LIBRARIES}
+    jsoncpp_static
     )

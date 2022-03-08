@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "../../../bin/offscreen"
+  "../../../bin/offscreen.pdb"
   "CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/offscreen.dir/offscreen.c.o"
-  "offscreen"
-  "offscreen.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

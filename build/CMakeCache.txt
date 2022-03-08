@@ -29,8 +29,14 @@ BROTLIDEC_INCLUDE_DIRS:PATH=BROTLIDEC_INCLUDE_DIRS-NOTFOUND
 //Path to a library.
 BROTLIDEC_LIBRARIES:FILEPATH=BROTLIDEC_LIBRARIES-NOTFOUND
 
-//Build shared libraries
+//Build jsoncpp_lib as a object library.
+BUILD_OBJECT_LIBS:BOOL=ON
+
+//Build jsoncpp_lib as a shared library.
 BUILD_SHARED_LIBS:BOOL=OFF
+
+//Build jsoncpp_lib as a static library.
+BUILD_STATIC_LIBS:BOOL=ON
 
 //Path to a file.
 BZIP2_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include
@@ -42,10 +48,16 @@ BZIP2_LIBRARY_DEBUG:FILEPATH=BZIP2_LIBRARY_DEBUG-NOTFOUND
 BZIP2_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd
 
 //Path to a program.
+CCACHE_EXECUTABLE:FILEPATH=CCACHE_EXECUTABLE-NOTFOUND
+
+//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
+
+//Archive output dir.
+CMAKE_ARCHIVE_OUTPUT_DIRECTORY:PATH=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/lib
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -168,6 +180,9 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 //Read-only single-machine data (etc)
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
+//Library output dir.
+CMAKE_LIBRARY_OUTPUT_DIRECTORY:PATH=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/lib
+
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
 
@@ -214,6 +229,9 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=10.14
 // inside the indicated SDK.
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
 
+//PDB (MSVC debug symbol)output dir.
+CMAKE_PDB_OUTPUT_DIRECTORY:PATH=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/bin
+
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
 
@@ -243,6 +261,9 @@ CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcod
 
 //Path to a program.
 CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
+
+//Executable/dll output dir.
+CMAKE_RUNTIME_OUTPUT_DIRECTORY:PATH=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/bin
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -419,6 +440,33 @@ HarfBuzz_INCLUDE_DIR:PATH=/usr/local/include/harfbuzz
 //Path to a library.
 HarfBuzz_LIBRARY:FILEPATH=/usr/local/lib/libharfbuzz.dylib
 
+//Use static (MT/MTd) Windows runtime
+JSONCPP_STATIC_WINDOWS_RUNTIME:BOOL=OFF
+
+//-D...=1 to use memory-wiping allocator for STL
+JSONCPP_USE_SECURE_MEMORY:STRING=0
+
+//Generate and install cmake package files
+JSONCPP_WITH_CMAKE_PACKAGE:BOOL=ON
+
+//Compile JsonCpp example
+JSONCPP_WITH_EXAMPLE:BOOL=OFF
+
+//Generate and install .pc files
+JSONCPP_WITH_PKGCONFIG_SUPPORT:BOOL=ON
+
+//Automatically run unit-tests as a post build step
+JSONCPP_WITH_POST_BUILD_UNITTEST:BOOL=OFF
+
+//Issue all the warnings demanded by strict ISO C and ISO C++
+JSONCPP_WITH_STRICT_ISO:BOOL=ON
+
+//Compile and (for jsoncpp_check) run JsonCpp test executables
+JSONCPP_WITH_TESTS:BOOL=OFF
+
+//Force compilation to fail if a warning occurs
+JSONCPP_WITH_WARNING_AS_ERROR:BOOL=OFF
+
 //Include example projects
 PA_BUILD_EXAMPLES:BOOL=OFF
 
@@ -496,6 +544,12 @@ harfbuzz_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/P
 
 //Value Computed by CMake
 harfbuzz_SOURCE_DIR:STATIC=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/harfbuzz
+
+//Value Computed by CMake
+jsoncpp_BINARY_DIR:STATIC=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/jsoncpp
+
+//Value Computed by CMake
+jsoncpp_SOURCE_DIR:STATIC=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/jsoncpp
 
 //Dependencies for the target
 portaudio_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreAudio.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioUnit.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework;general;m;general;pthread;
@@ -654,7 +708,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -737,8 +791,12 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include][v1.2.11()]
 //Have function atexit
 HAVE_ATEXIT:INTERNAL=1
+//Have include clocale
+HAVE_CLOCALE:INTERNAL=1
 //Result of TRY_COMPILE
 HAVE_CMAKE_SIZEOF_UNSIGNED_SHORT:INTERNAL=TRUE
+//Test HAVE_DECIMAL_POINT
+HAVE_DECIMAL_POINT:INTERNAL=1
 //Have include fcntl.h
 HAVE_FCNTL_H:INTERNAL=1
 //Have function getpagesize
@@ -747,6 +805,10 @@ HAVE_GETPAGESIZE:INTERNAL=1
 HAVE_ISATTY:INTERNAL=1
 //Result of TRY_COMPILE
 HAVE_IS_BIG_ENDIAN:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_LCONV_SIZE:INTERNAL=TRUE
+//Have symbol localeconv
+HAVE_LOCALECONV:INTERNAL=1
 //Have function mmap
 HAVE_MMAP:INTERNAL=1
 //Have function mprotect
@@ -771,6 +833,8 @@ HarfBuzz_INCLUDE_DIR-ADVANCED:INTERNAL=1
 HarfBuzz_LIBRARY-ADVANCED:INTERNAL=1
 //Result of TEST_BIG_ENDIAN
 IS_BIG_ENDIAN:INTERNAL=0
+//CHECK_TYPE_SIZE: sizeof(lconv)
+LCONV_SIZE:INTERNAL=96
 //ADVANCED property for variable: PA_LIBNAME_ADD_SUFFIX
 PA_LIBNAME_ADD_SUFFIX-ADVANCED:INTERNAL=1
 PC_BROTLIDEC_CFLAGS:INTERNAL=

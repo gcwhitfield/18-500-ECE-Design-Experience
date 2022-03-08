@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "../../../bin/icon.app/Contents/MacOS/icon"
+  "../../../bin/icon.pdb"
   "CMakeFiles/icon.dir/__/deps/glad_gl.c.o"
   "CMakeFiles/icon.dir/icon.c.o"
-  "icon.app/Contents/MacOS/icon"
-  "icon.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

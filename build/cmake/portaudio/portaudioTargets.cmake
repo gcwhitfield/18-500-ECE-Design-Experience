@@ -59,7 +59,7 @@ set_target_properties(portaudio_static PROPERTIES
 set_property(TARGET portaudio APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(portaudio PROPERTIES
   IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreAudio.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioUnit.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework;m;pthread"
-  IMPORTED_LOCATION_NOCONFIG "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/build/bin/libportaudio.dylib"
+  IMPORTED_LOCATION_NOCONFIG "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/lib/libportaudio.dylib"
   IMPORTED_SONAME_NOCONFIG "@rpath/libportaudio.dylib"
   )
 
@@ -68,7 +68,7 @@ set_property(TARGET portaudio_static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOC
 set_target_properties(portaudio_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
   IMPORTED_LINK_INTERFACE_LIBRARIES_NOCONFIG "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreAudio.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioUnit.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework;m;pthread"
-  IMPORTED_LOCATION_NOCONFIG "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/build/bin/libportaudio.a"
+  IMPORTED_LOCATION_NOCONFIG "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/lib/libportaudio.a"
   )
 
 # This file does not depend on other imported targets which have
