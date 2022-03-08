@@ -656,6 +656,13 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-style.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-unicode.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb-version.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/harfbuzz/src/hb.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/libaudiodecoder/include/apple/CADebugMacros.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/libaudiodecoder/include/audiodecoder.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/libaudiodecoder/include/audiodecoderbase.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/libaudiodecoder/include/audiodecodercoreaudio.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/libaudiodecoder/include/audiodecodermediafoundation.h
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../libs/portaudio/include/portaudio.h
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Beatmap.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/ColorTextureProgram.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Input.hpp
@@ -663,6 +670,7 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Mode.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/PlayMode.cpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/PlayMode.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Shader.hpp
+CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Sound.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/TextRenderProgram.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/TextRenderer.hpp
 CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o: ../src/Vertex.hpp
