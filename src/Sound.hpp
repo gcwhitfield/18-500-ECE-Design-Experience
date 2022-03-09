@@ -10,7 +10,6 @@
 
 // this Sound class is a simple interface for playing sounds in our game with Portaudio
 namespace Sound {
-
         struct Sample {
             Sample(std::string file_path) {
                 audio = new AudioDecoder(file_path.c_str());
@@ -55,9 +54,8 @@ namespace Sound {
         // call this function to clean up portaudio resources
         void de_init();
         
-        void play_test_sound();
-
-        // begins playback of PortAudio stream
+        // ---------- private ----------
+        // begins playback of PortAudio stream.
         void begin_play();
 };
 

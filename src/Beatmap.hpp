@@ -1,8 +1,10 @@
 #include "Vertex.hpp"
+#include <json/json.h>
 
 #include <vector>
 #include <string>
 #include <iostream>
+#include <fstream>
 
 struct Beatmap {
 
@@ -24,11 +26,14 @@ struct Beatmap {
         std::vector<Beat> beats;
     };
 
+    size_t BPM = 0;
+    float t = 0.0f; // the current time that has elapsed into the song
+
     Beatmap();
-    Beatmap(std::vector<Beatmap::Beat> beats); // initializes the Beatmap with a given 'beats' queue
+    Beatmap(std::string beatmap_file_path); // loads beatmap from JSON file 
+    Beatmap(std::vector<Beatmap::Beat> &beats, size_t bpm); // initializes the Beatmap with a given 'beats' queue
     ~Beatmap();
 
-    float t = 0.0f; // the current time that has elapsed into the song
 
     // the beats in 'beats' are ordered based on the time that they occur in the song. Beats at 
     // lower indices occur earlier in the song, beats at later indices occur later

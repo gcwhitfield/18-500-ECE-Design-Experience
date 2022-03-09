@@ -4,6 +4,53 @@ Beatmap::Beatmap() {
 
 }
 
+// code for reading file and loading into Json object taken from jsoncpp documentation
+// https://github.com/open-source-parsers/jsoncpp/blob/master/example/readFromStream/readFromStream.cpp
+Beatmap::Beatmap(std::string beatmap_file_path) {
+    (void)beatmap_file_path;
+    Json::Value root;
+    std::ifstream ifs(beatmap_file_path.c_str(), std::ifstream::binary);
+    size_t len = 0;
+    std::string line;
+    // 1) read the entire file, put into string
+    // 1.1) get the size of the string
+    while(getline(ifs, line)) {
+        std::cout << line << std::endl;
+        len += line.size();
+    }
+    // 1.2) now that we have the size, allocate a new string of size 'len' and put the contents
+    // of the file inside
+    ifs.clear();
+    ifs.seekg(ifs.beg); // go back to the beginning of the file
+    size_t i = 0;
+    std::string data(len, ' '); // the contents of the json file
+    while (ifs.is_open()) {
+        while (getline(ifs, line)) {
+            for (size_t k = 0; k < line.size(); k++) {
+                data[i] = line[k];
+                std::cout << 1 << std::endl;
+                i++;
+            }
+        }
+        ifs.close();
+    }
+    std::cout << beatmap_file_path << std::endl;
+    std::cout << data << std::endl;
+    Json::CharReaderBuilder builder;
+    const std::unique_ptr<Json::CharReader> reader(builder.newCharReader());
+    JSONCPP_STRING errs;
+    if (!reader->parse(data.c_str(), data.c_str() + data.size(), &root, &errs)) {
+        std::cout << "Failed reading beatmap JSON" << std::endl;
+        std::cout << errs << std::endl;
+        exit(1);
+    }
+
+    // TODO: take the JSON information and put into Beatmap member variables
+    // std::cout << "root[name]: " << root["name"] << std::endl;
+    // std::cout << "root[BPM]: " << root["BPM"] << std::endl;
+    // std::cout << "root[beats]: " << root["beats"] << std::endl;
+}
+
 Beatmap::~Beatmap() {
     
 }

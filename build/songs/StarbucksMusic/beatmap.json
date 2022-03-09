@@ -1,0 +1,11 @@
+{ "name" : "Starbucks Music", 
+    "BPM" : 146,
+    "beats" : [
+        {"location": 0, "time": 1.0},
+        {"location": 2, "time": 2.0},
+        {"location": 3, "time": 3.0},
+        {"location": 1, "time": 4.0},
+        {"location": 1, "time": 5.0},
+        {"location": 2, "time": 6.0}
+    ]
+}

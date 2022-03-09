@@ -120,16 +120,6 @@ void Sound::begin_play() {
     }
 }
 
-void Sound::play_test_sound() {
-    PaError err = Pa_StartStream(stream);
-    if (err != paNoError) {
-        if (err != paNoError) {
-        std::cerr << "Error with starting PortAudio stream" << std::endl;
-        std::cerr << Pa_GetErrorText(err) << std::endl;
-        }
-    }
-}
-
 void Sound::play(Sound::PlayingSample *sample) {
     sound_mutex.lock();
     playing_samples.push_back(sample);

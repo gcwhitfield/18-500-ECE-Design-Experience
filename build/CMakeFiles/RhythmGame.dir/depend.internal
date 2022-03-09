@@ -166,6 +166,15 @@ CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o
  ../libs/glm/include/vec3.hpp
  ../libs/glm/include/vec4.hpp
  ../libs/glm/include/vector_relational.hpp
+ ../libs/jsoncpp/include/json/allocator.h
+ ../libs/jsoncpp/include/json/config.h
+ ../libs/jsoncpp/include/json/forwards.h
+ ../libs/jsoncpp/include/json/json.h
+ ../libs/jsoncpp/include/json/json_features.h
+ ../libs/jsoncpp/include/json/reader.h
+ ../libs/jsoncpp/include/json/value.h
+ ../libs/jsoncpp/include/json/version.h
+ ../libs/jsoncpp/include/json/writer.h
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.cpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
@@ -657,6 +666,15 @@ CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o
  ../libs/harfbuzz/src/hb-unicode.h
  ../libs/harfbuzz/src/hb-version.h
  ../libs/harfbuzz/src/hb.h
+ ../libs/jsoncpp/include/json/allocator.h
+ ../libs/jsoncpp/include/json/config.h
+ ../libs/jsoncpp/include/json/forwards.h
+ ../libs/jsoncpp/include/json/json.h
+ ../libs/jsoncpp/include/json/json_features.h
+ ../libs/jsoncpp/include/json/reader.h
+ ../libs/jsoncpp/include/json/value.h
+ ../libs/jsoncpp/include/json/version.h
+ ../libs/jsoncpp/include/json/writer.h
  ../libs/libaudiodecoder/include/apple/CADebugMacros.h
  ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
  ../libs/libaudiodecoder/include/audiodecoder.h
@@ -1352,6 +1370,15 @@ CMakeFiles/RhythmGame.dir/src/main.cpp.o
  ../libs/harfbuzz/src/hb-unicode.h
  ../libs/harfbuzz/src/hb-version.h
  ../libs/harfbuzz/src/hb.h
+ ../libs/jsoncpp/include/json/allocator.h
+ ../libs/jsoncpp/include/json/config.h
+ ../libs/jsoncpp/include/json/forwards.h
+ ../libs/jsoncpp/include/json/json.h
+ ../libs/jsoncpp/include/json/json_features.h
+ ../libs/jsoncpp/include/json/reader.h
+ ../libs/jsoncpp/include/json/value.h
+ ../libs/jsoncpp/include/json/version.h
+ ../libs/jsoncpp/include/json/writer.h
  ../libs/libaudiodecoder/include/apple/CADebugMacros.h
  ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
  ../libs/libaudiodecoder/include/audiodecoder.h

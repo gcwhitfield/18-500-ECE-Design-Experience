@@ -7,7 +7,7 @@
 #include "stb_image.h"
 
 // import sounds
-static Sound::Sample splash_sound("./art/sounds/splash.wav");
+static Sound::Sample starbucks_music("./songs/StarbucksMusic/StarbucksMusic.wav");
 
 PlayMode::PlayMode() {
 
@@ -102,7 +102,7 @@ PlayMode::PlayMode() {
         print_gl_errors();
     }
 
-    { // initialize the test beatmap
+    { // initialize test beatmap from raw input
         beatmap = new Beatmap();
         size_t test_beatmap_len = 50;
         std::vector<Beatmap::Beat> beats;
@@ -115,6 +115,16 @@ PlayMode::PlayMode() {
             new_beat.time = time_between_beats * i;
             beatmap->beats.push_back(std::make_pair(new_beat, false));
         }
+    } 
+
+    {   // initialize test beatmap from JSON 
+        Beatmap *b = new Beatmap("./songs/StarbucksMusic/beatmap.json");
+        (void)b;
+    }
+
+    { // play starbucks music
+        Sound::PlayingSample *music = new Sound::PlayingSample(&starbucks_music);
+        Sound::play(music);
     }
 }
 
@@ -172,13 +182,6 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
             }
         }
 
-        // play splash sound if the 'p' key is pressed 
-        {
-            if (key == 80) {
-                Sound::PlayingSample *new_sample = new Sound::PlayingSample(&splash_sound);
-                Sound::play(new_sample);
-            }
-        }
     }
     // std::cout << "Key has been pressed: " << key << " : " << scancode << " : " << action << " : " << mods << std::endl;
 }
