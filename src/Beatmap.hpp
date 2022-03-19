@@ -6,6 +6,8 @@
 #include <iostream>
 #include <fstream>
 
+#ifndef BEATMAP
+#define BEATMAP
 struct Beatmap {
 
     enum BeatLocation {
@@ -57,3 +59,5 @@ struct Beatmap {
     // that the beat has been seen and it should no longer be drawn 
     float process_beat(BeatLocation location);
 };
+
+#endif

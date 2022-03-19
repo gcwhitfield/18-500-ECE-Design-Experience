@@ -33,6 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
   ".././libs/jsoncpp/include"
+  ".././libs/serialib/lib"
   "../libs/harfbuzz/src"
   "libs/harfbuzz/src"
   )

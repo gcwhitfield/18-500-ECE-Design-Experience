@@ -125,6 +125,10 @@ PlayMode::PlayMode() {
     { // play starbucks music
         Sound::PlayingSample *music = new Sound::PlayingSample(&starbucks_music);
         Sound::play(music);
+    } 
+
+    { // initialize drums
+      drums = new DrumPeripheral();
     }
 }
 
@@ -186,6 +190,10 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
     // std::cout << "Key has been pressed: " << key << " : " << scancode << " : " << action << " : " << mods << std::endl;
 }
 
+void PlayMode::handle_drum(std::vector<DrumPeripheral::HitInfo> hits) {
+    (void) hits;
+}
+
 PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
     float time = beatmap->process_beat(location);
     if (time < 0) {
@@ -203,6 +211,7 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
 
 void PlayMode::update(float elapsed) {
     beatmap->update(elapsed);
+    drums->update(elapsed);
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {
