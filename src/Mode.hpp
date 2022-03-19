@@ -1,3 +1,8 @@
+#ifndef MODE
+#define MODE
+
+#include "DrumPeripheral.hpp"
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <glm.hpp>
@@ -25,6 +30,10 @@ struct Mode : std::enable_shared_from_this<Mode> {
             Mode::current->handle_key(window, key, scancode, action, mods);
     }
 
+    // This function gets called whenever the user hits something on the drum
+    // the datatype of the 'hits' vector should be the same as DrumPeripheral::HitInfo
+    static void handle_drum_wrapper(std::vector<char> hits); 
+
     // Draws to the window
     virtual void draw(glm::uvec2 const &drawable_size);
 
@@ -35,3 +44,5 @@ struct Mode : std::enable_shared_from_this<Mode> {
     static void set_current(std::shared_ptr<Mode> const &new_mode);
 
 };
+
+#endif

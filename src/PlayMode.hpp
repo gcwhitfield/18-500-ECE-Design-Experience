@@ -1,5 +1,6 @@
 #include "Beatmap.hpp"
 #include "ColorTextureProgram.hpp"
+#include "DrumPeripheral.hpp"
 #include "Input.hpp"
 #include "Mode.hpp"
 #include "Sound.hpp"
@@ -46,6 +47,12 @@ struct PlayMode : Mode {
 
     // given a beat location 'location', returns the score to assign to the beat
     BeatGrade grade_input(Beatmap::BeatLocation location);
+
+    // ---------- drums input ----------
+    DrumPeripheral *drums;
+
+    // handle_drum gets called whenever the user hits something on the drum
+    void handle_drum(std::vector<DrumPeripheral::HitInfo> hits);
 
     // ---------- drawing ----------
     TextRenderer text_renderer;

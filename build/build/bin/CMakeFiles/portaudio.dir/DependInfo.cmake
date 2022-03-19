@@ -40,6 +40,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
   ".././libs/jsoncpp/include"
+  ".././libs/serialib/lib"
   "../libs/portaudio/src/common"
   "build/bin"
   "../libs/portaudio/src/os/unix"

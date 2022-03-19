@@ -798,6 +798,33 @@ libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s
 .PHONY : libs/libaudiodecoder/src/audiodecodercoreaudio.cpp.s
 
+libs/serialib/lib/serialib.o: libs/serialib/lib/serialib.cpp.o
+
+.PHONY : libs/serialib/lib/serialib.o
+
+# target to build an object file
+libs/serialib/lib/serialib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o
+.PHONY : libs/serialib/lib/serialib.cpp.o
+
+libs/serialib/lib/serialib.i: libs/serialib/lib/serialib.cpp.i
+
+.PHONY : libs/serialib/lib/serialib.i
+
+# target to preprocess a source file
+libs/serialib/lib/serialib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.i
+.PHONY : libs/serialib/lib/serialib.cpp.i
+
+libs/serialib/lib/serialib.s: libs/serialib/lib/serialib.cpp.s
+
+.PHONY : libs/serialib/lib/serialib.s
+
+# target to generate assembly for a file
+libs/serialib/lib/serialib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.s
+.PHONY : libs/serialib/lib/serialib.cpp.s
+
 src/Beatmap.o: src/Beatmap.cpp.o
 
 .PHONY : src/Beatmap.o
@@ -851,6 +878,33 @@ src/ColorTextureProgram.s: src/ColorTextureProgram.cpp.s
 src/ColorTextureProgram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.s
 .PHONY : src/ColorTextureProgram.cpp.s
+
+src/DrumPeripheral.o: src/DrumPeripheral.cpp.o
+
+.PHONY : src/DrumPeripheral.o
+
+# target to build an object file
+src/DrumPeripheral.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/DrumPeripheral.cpp.o
+.PHONY : src/DrumPeripheral.cpp.o
+
+src/DrumPeripheral.i: src/DrumPeripheral.cpp.i
+
+.PHONY : src/DrumPeripheral.i
+
+# target to preprocess a source file
+src/DrumPeripheral.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/DrumPeripheral.cpp.i
+.PHONY : src/DrumPeripheral.cpp.i
+
+src/DrumPeripheral.s: src/DrumPeripheral.cpp.s
+
+.PHONY : src/DrumPeripheral.s
+
+# target to generate assembly for a file
+src/DrumPeripheral.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/DrumPeripheral.cpp.s
+.PHONY : src/DrumPeripheral.cpp.s
 
 src/Mode.o: src/Mode.cpp.o
 
@@ -1104,12 +1158,18 @@ help:
 	@echo "... libs/libaudiodecoder/src/audiodecodercoreaudio.o"
 	@echo "... libs/libaudiodecoder/src/audiodecodercoreaudio.i"
 	@echo "... libs/libaudiodecoder/src/audiodecodercoreaudio.s"
+	@echo "... libs/serialib/lib/serialib.o"
+	@echo "... libs/serialib/lib/serialib.i"
+	@echo "... libs/serialib/lib/serialib.s"
 	@echo "... src/Beatmap.o"
 	@echo "... src/Beatmap.i"
 	@echo "... src/Beatmap.s"
 	@echo "... src/ColorTextureProgram.o"
 	@echo "... src/ColorTextureProgram.i"
 	@echo "... src/ColorTextureProgram.s"
+	@echo "... src/DrumPeripheral.o"
+	@echo "... src/DrumPeripheral.i"
+	@echo "... src/DrumPeripheral.s"
 	@echo "... src/Mode.o"
 	@echo "... src/Mode.i"
 	@echo "... src/Mode.s"

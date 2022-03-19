@@ -19,6 +19,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././libs/harfbuzz/include"
   ".././libs/freetype/include"
   ".././libs/jsoncpp/include"
+  ".././libs/serialib/lib"
   "../libs/glfw/deps"
   "../libs/glfw/include"
   )

@@ -7,7 +7,6 @@ Beatmap::Beatmap() {
 // code for reading file and loading into Json object taken from jsoncpp documentation
 // https://github.com/open-source-parsers/jsoncpp/blob/master/example/readFromStream/readFromStream.cpp
 Beatmap::Beatmap(std::string beatmap_file_path) {
-    (void)beatmap_file_path;
     Json::Value root;
     std::ifstream ifs(beatmap_file_path.c_str(), std::ifstream::binary);
     size_t len = 0;
@@ -15,7 +14,6 @@ Beatmap::Beatmap(std::string beatmap_file_path) {
     // 1) read the entire file, put into string
     // 1.1) get the size of the string
     while(getline(ifs, line)) {
-        std::cout << line << std::endl;
         len += line.size();
     }
     // 1.2) now that we have the size, allocate a new string of size 'len' and put the contents
@@ -28,14 +26,12 @@ Beatmap::Beatmap(std::string beatmap_file_path) {
         while (getline(ifs, line)) {
             for (size_t k = 0; k < line.size(); k++) {
                 data[i] = line[k];
-                std::cout << 1 << std::endl;
                 i++;
             }
         }
         ifs.close();
     }
-    std::cout << beatmap_file_path << std::endl;
-    std::cout << data << std::endl;
+
     Json::CharReaderBuilder builder;
     const std::unique_ptr<Json::CharReader> reader(builder.newCharReader());
     JSONCPP_STRING errs;
@@ -44,6 +40,11 @@ Beatmap::Beatmap(std::string beatmap_file_path) {
         std::cout << errs << std::endl;
         exit(1);
     }
+
+    // 2) place the data from JSON into Beatmap member variables
+    // BPM = root["BPM"].asInt();
+    // beats.resize(root["beats"].size());
+    // for (size_t k = 0; k < root["beats"s])
 
     // TODO: take the JSON information and put into Beatmap member variables
     // std::cout << "root[name]: " << root["name"] << std::endl;

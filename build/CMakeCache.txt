@@ -348,6 +348,9 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
+//Dot tool for use with Doxygen
+DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
+
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
@@ -440,6 +443,12 @@ HarfBuzz_INCLUDE_DIR:PATH=/usr/local/include/harfbuzz
 //Path to a library.
 HarfBuzz_LIBRARY:FILEPATH=/usr/local/lib/libharfbuzz.dylib
 
+//Install shared object library.
+INSTALL_SHARED:BOOL=ON
+
+//Install static library.
+INSTALL_STATIC:BOOL=ON
+
 //Use static (MT/MTd) Windows runtime
 JSONCPP_STATIC_WINDOWS_RUNTIME:BOOL=OFF
 
@@ -466,6 +475,24 @@ JSONCPP_WITH_TESTS:BOOL=OFF
 
 //Force compilation to fail if a warning occurs
 JSONCPP_WITH_WARNING_AS_ERROR:BOOL=OFF
+
+//Build the Doxygen docs
+LIBSERIAL_BUILD_DOCS:BOOL=ON
+
+//Enables building example programs
+LIBSERIAL_BUILD_EXAMPLES:BOOL=ON
+
+//Enables building unit tests
+LIBSERIAL_ENABLE_TESTING:BOOL=ON
+
+//Enables building the library with Python SIP bindings
+LIBSERIAL_PYTHON_ENABLE:BOOL=ON
+
+//Value Computed by CMake
+LibSerial_BINARY_DIR:STATIC=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/libs/libserial
+
+//Value Computed by CMake
+LibSerial_SOURCE_DIR:STATIC=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/libserial
 
 //Include example projects
 PA_BUILD_EXAMPLES:BOOL=OFF
@@ -775,6 +802,8 @@ CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Test CXX_SUPPORTS_FLAG_BSYMB_FUNCS
 CXX_SUPPORTS_FLAG_BSYMB_FUNCS:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
+DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding BZip2
