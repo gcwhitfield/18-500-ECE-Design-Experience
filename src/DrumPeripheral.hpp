@@ -61,8 +61,6 @@ struct DrumPeripheral {
     void update(float elapsed); // called every frame. Processes input from the drum peripheral, calls 
     // the drum callback function
 
-    void read_test();
-
     serialib serial;
 };
 
