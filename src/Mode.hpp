@@ -30,9 +30,14 @@ struct Mode : std::enable_shared_from_this<Mode> {
             Mode::current->handle_key(window, key, scancode, action, mods);
     }
 
+
     // This function gets called whenever the user hits something on the drum
     // the datatype of the 'hits' vector should be the same as DrumPeripheral::HitInfo
-    static void handle_drum_wrapper(std::vector<char> hits); 
+    virtual void handle_drum(std::vector<char> hits);
+    // Wrapper function for drum input callback
+    static void handle_drum_wrapper(std::vector<char> hits) {
+            Mode::current->handle_drum(hits);
+    }   
 
     // Draws to the window
     virtual void draw(glm::uvec2 const &drawable_size);

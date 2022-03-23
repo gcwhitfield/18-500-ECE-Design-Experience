@@ -20,7 +20,7 @@ DrumPeripheral::DrumPeripheral() {
 
     // initialize 'hits'
     {
-        hits.resize(4)
+        hits.resize(4);
     }
 }
 
@@ -46,16 +46,18 @@ void DrumPeripheral::update(float elapsed) {
         // if the char is an acceptable input
         for (auto i = acceptable_inputs.begin(); i != acceptable_inputs.end(); i++) {
             if (c == *i) {
+                std::cout << "Acceptable input found" << std::endl;
                 if (c & HitLocation::DRUM_0) {
-
+                    
                 } else if (c & HitLocation::DRUM_1) {
-
+                    
                 } else if (c & HitLocation::DRUM_2) {
                     
                 } else if (c & HitLocation::DRUM_3) {
 
                 }
                 // TODO: call Mode::handle_drum_wrapper based on input 
+                Mode::handle_drum_wrapper(hits);
             }
         }
 

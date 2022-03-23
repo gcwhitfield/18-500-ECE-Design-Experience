@@ -42,14 +42,18 @@ Beatmap::Beatmap(std::string beatmap_file_path) {
     }
 
     // 2) place the data from JSON into Beatmap member variables
-    // BPM = root["BPM"].asInt();
-    // beats.resize(root["beats"].size());
-    // for (size_t k = 0; k < root["beats"s])
+    BPM = root["BPM"].asInt();
+    beats.resize(root["beats"].size());
+    for (size_t k = 0; k < root["beats"].size(); k++)
+    {
+        Json::Value b = root["beats"];
+        beats[k].first.location = (Beatmap::BeatLocation)b[(int)k].get("location", Json::Value(0)).asInt();
+        beats[k].first.time = (float)b[(int)k].get("time", Json::Value(0.0f)).asFloat();
+    }
 
-    // TODO: take the JSON information and put into Beatmap member variables
-    // std::cout << "root[name]: " << root["name"] << std::endl;
-    // std::cout << "root[BPM]: " << root["BPM"] << std::endl;
-    // std::cout << "root[beats]: " << root["beats"] << std::endl;
+    for (size_t k = 0; k < beats.size(); k++) {
+        std::cout << beats[k].first.time << std::endl;
+    }
 }
 
 Beatmap::~Beatmap() {

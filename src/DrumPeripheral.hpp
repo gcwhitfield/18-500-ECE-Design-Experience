@@ -16,9 +16,9 @@ struct DrumPeripheral {
     ~DrumPeripheral();
 
     enum HitInfo {
-        NONE = -1, // the drum is not currently being hit
-        PRESS = 0, // for the first frame that the user holds the button down
-        HOLD = 1 // for every subsequent frame where the user holds the button down
+        NONE = 0, // the drum is not currently being hit
+        PRESS = 1, // for the first frame that the user holds the button down
+        HOLD = 2 // for every subsequent frame where the user holds the button down
     };
 
     enum HitLocation {
@@ -56,7 +56,7 @@ struct DrumPeripheral {
             0x0F  // [X X X X]
         };
 
-    std::vector<HitInfo> hits; 
+    std::vector<char> hits; 
 
     void update(float elapsed); // called every frame. Processes input from the drum peripheral, calls 
     // the drum callback function

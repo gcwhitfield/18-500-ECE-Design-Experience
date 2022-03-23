@@ -102,24 +102,24 @@ PlayMode::PlayMode() {
         print_gl_errors();
     }
 
-    { // initialize test beatmap from raw input
-        beatmap = new Beatmap();
-        size_t test_beatmap_len = 50;
-        std::vector<Beatmap::Beat> beats;
-        beatmap->beats.reserve(test_beatmap_len);
-        float time_between_beats = 1;
-        for (size_t i = 0; i < test_beatmap_len; i++) {
-            size_t rand_lane = rand() % 4;
-            Beatmap::Beat new_beat;
-            new_beat.location = (Beatmap::BeatLocation)rand_lane;
-            new_beat.time = time_between_beats * i;
-            beatmap->beats.push_back(std::make_pair(new_beat, false));
-        }
-    } 
+    // { // initialize test beatmap from raw input
+    //     beatmap = new Beatmap();
+    //     size_t test_beatmap_len = 50;
+    //     std::vector<Beatmap::Beat> beats;
+    //     beatmap->beats.reserve(test_beatmap_len);
+    //     float time_between_beats = 1;
+    //     for (size_t i = 0; i < test_beatmap_len; i++) {
+    //         size_t rand_lane = rand() % 4;
+    //         Beatmap::Beat new_beat;
+    //         new_beat.location = (Beatmap::BeatLocation)rand_lane;
+    //         new_beat.time = time_between_beats * i;
+    //         beatmap->beats.push_back(std::make_pair(new_beat, false));
+    //     }
+    // } 
 
     {   // initialize test beatmap from JSON 
         Beatmap *b = new Beatmap("./songs/StarbucksMusic/beatmap.json");
-        (void)b;
+        beatmap = b;
     }
 
     { // play starbucks music
@@ -190,8 +190,24 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
     // std::cout << "Key has been pressed: " << key << " : " << scancode << " : " << action << " : " << mods << std::endl;
 }
 
-void PlayMode::handle_drum(std::vector<DrumPeripheral::HitInfo> hits) {
+void PlayMode::handle_drum(std::vector<char> hits) {
     (void) hits;
+    BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
+    switch(grade) {
+        case BeatGrade::PERFECT:
+            score += 100;
+            break;
+        case BeatGrade::GOOD:
+            score += 25;
+            break;
+        case BeatGrade::MISS:
+            score -= 25;
+            break;
+        default: // do not modify score for BeatGrade::NONE
+            break;
+    }
+    // if (hits[0] == DrumPeripheral::HitInfo::PRESS) {
+    // }
 }
 
 PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {

@@ -52,7 +52,7 @@ struct PlayMode : Mode {
     DrumPeripheral *drums;
 
     // handle_drum gets called whenever the user hits something on the drum
-    void handle_drum(std::vector<DrumPeripheral::HitInfo> hits);
+    virtual void handle_drum(std::vector<char> hits) override;
 
     // ---------- drawing ----------
     TextRenderer text_renderer;

@@ -18,6 +18,10 @@ void Mode::handle_key(GLFWwindow *window, int key, int scancode, int action, int
    (void)mods;
 }
 
+void Mode::handle_drum(std::vector<char> hits) {
+    (void)hits;
+}
+
 void Mode::draw(glm::uvec2 const &drawable_size) {
     (void)drawable_size;
     glClearColor(0.5, 0.5, 0.5, 1);
