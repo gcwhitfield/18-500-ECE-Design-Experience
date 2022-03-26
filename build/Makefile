@@ -906,6 +906,33 @@ src/DrumPeripheral.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/DrumPeripheral.cpp.s
 .PHONY : src/DrumPeripheral.cpp.s
 
+src/MainMenuMode.o: src/MainMenuMode.cpp.o
+
+.PHONY : src/MainMenuMode.o
+
+# target to build an object file
+src/MainMenuMode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o
+.PHONY : src/MainMenuMode.cpp.o
+
+src/MainMenuMode.i: src/MainMenuMode.cpp.i
+
+.PHONY : src/MainMenuMode.i
+
+# target to preprocess a source file
+src/MainMenuMode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.i
+.PHONY : src/MainMenuMode.cpp.i
+
+src/MainMenuMode.s: src/MainMenuMode.cpp.s
+
+.PHONY : src/MainMenuMode.s
+
+# target to generate assembly for a file
+src/MainMenuMode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.s
+.PHONY : src/MainMenuMode.cpp.s
+
 src/Mode.o: src/Mode.cpp.o
 
 .PHONY : src/Mode.o
@@ -960,6 +987,33 @@ src/PlayMode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.s
 .PHONY : src/PlayMode.cpp.s
 
+src/ScoreScreenMode.o: src/ScoreScreenMode.cpp.o
+
+.PHONY : src/ScoreScreenMode.o
+
+# target to build an object file
+src/ScoreScreenMode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o
+.PHONY : src/ScoreScreenMode.cpp.o
+
+src/ScoreScreenMode.i: src/ScoreScreenMode.cpp.i
+
+.PHONY : src/ScoreScreenMode.i
+
+# target to preprocess a source file
+src/ScoreScreenMode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.i
+.PHONY : src/ScoreScreenMode.cpp.i
+
+src/ScoreScreenMode.s: src/ScoreScreenMode.cpp.s
+
+.PHONY : src/ScoreScreenMode.s
+
+# target to generate assembly for a file
+src/ScoreScreenMode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.s
+.PHONY : src/ScoreScreenMode.cpp.s
+
 src/Shader.o: src/Shader.cpp.o
 
 .PHONY : src/Shader.o
@@ -986,6 +1040,33 @@ src/Shader.s: src/Shader.cpp.s
 src/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
+
+src/SongSelectionMode.o: src/SongSelectionMode.cpp.o
+
+.PHONY : src/SongSelectionMode.o
+
+# target to build an object file
+src/SongSelectionMode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o
+.PHONY : src/SongSelectionMode.cpp.o
+
+src/SongSelectionMode.i: src/SongSelectionMode.cpp.i
+
+.PHONY : src/SongSelectionMode.i
+
+# target to preprocess a source file
+src/SongSelectionMode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.i
+.PHONY : src/SongSelectionMode.cpp.i
+
+src/SongSelectionMode.s: src/SongSelectionMode.cpp.s
+
+.PHONY : src/SongSelectionMode.s
+
+# target to generate assembly for a file
+src/SongSelectionMode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.s
+.PHONY : src/SongSelectionMode.cpp.s
 
 src/Sound.o: src/Sound.cpp.o
 
@@ -1170,15 +1251,24 @@ help:
 	@echo "... src/DrumPeripheral.o"
 	@echo "... src/DrumPeripheral.i"
 	@echo "... src/DrumPeripheral.s"
+	@echo "... src/MainMenuMode.o"
+	@echo "... src/MainMenuMode.i"
+	@echo "... src/MainMenuMode.s"
 	@echo "... src/Mode.o"
 	@echo "... src/Mode.i"
 	@echo "... src/Mode.s"
 	@echo "... src/PlayMode.o"
 	@echo "... src/PlayMode.i"
 	@echo "... src/PlayMode.s"
+	@echo "... src/ScoreScreenMode.o"
+	@echo "... src/ScoreScreenMode.i"
+	@echo "... src/ScoreScreenMode.s"
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"
+	@echo "... src/SongSelectionMode.o"
+	@echo "... src/SongSelectionMode.i"
+	@echo "... src/SongSelectionMode.s"
 	@echo "... src/Sound.o"
 	@echo "... src/Sound.i"
 	@echo "... src/Sound.s"
