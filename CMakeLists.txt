@@ -63,7 +63,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+if(CMAKE_COMPILER_IS_GNUCXX)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic -Wno-deprecated-declarations -std=c++11")
+endif(CMAKE_COMPILER_IS_GNUCXX)
 
 # add the executable
 add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} ${LIBAUDIODECODER_NAMES} ${SERIALIB_NAMES} src/main.cpp)
