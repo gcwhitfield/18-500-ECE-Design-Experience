@@ -7,8 +7,8 @@
 #include "stb_image.h"
 
 // import sounds
-static Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
-static Sound::PlayingSample *music;
+//  Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
+// static Sound::PlayingSample *music;
 
 PlayMode::PlayMode() {
 
@@ -87,10 +87,10 @@ PlayMode::PlayMode() {
         glGenTextures(1, &x_texture);
         glBindTexture(GL_TEXTURE_2D, x_texture);
         int width, height, nr_channels;
-        unsigned char *data = stbi_load("art/images/note.png", &width, &height, &nr_channels, 0);
+        unsigned char *data = stbi_load("art/images/llama.png", &width, &height, &nr_channels, 0);
         if (!data) {
-            std::cerr << "could not read x png" << std::endl;
-            exit(1);
+            std::cerr << "could not read note png" << std::endl;
+            // exit(1);
         }
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
@@ -104,13 +104,13 @@ PlayMode::PlayMode() {
     }
 
     {   // initialize test beatmap from JSON 
-        Beatmap *b = new Beatmap("./songs/DriveBy/json_data3.json");
+        Beatmap *b = new Beatmap("./songs/StarbucksMusic/beatmap.json");
         beatmap = b;
     }
 
     { // play starbucks music
-        music = new Sound::PlayingSample(&drive_by_music);
-        Sound::play(music);
+        // music = new Sound::PlayingSample(&drive_by_music);
+        // Sound::play(music);
     } 
 
     { // initialize drums
@@ -212,7 +212,7 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
 }
 
 void PlayMode::level_finished() {
-    music->pause = true;
+    // music->pause = true;
     Mode::set_current(std::make_shared<ScoreScreenMode>());
 }
 
