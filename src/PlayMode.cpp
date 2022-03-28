@@ -7,7 +7,8 @@
 #include "stb_image.h"
 
 // import sounds
-static Sound::Sample starbucks_music("./songs/StarbucksMusic/StarbucksMusic.wav");
+static Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
+static Sound::PlayingSample *music;
 
 PlayMode::PlayMode() {
 
@@ -86,7 +87,7 @@ PlayMode::PlayMode() {
         glGenTextures(1, &x_texture);
         glBindTexture(GL_TEXTURE_2D, x_texture);
         int width, height, nr_channels;
-        unsigned char *data = stbi_load("art/images/x.png", &width, &height, &nr_channels, 0);
+        unsigned char *data = stbi_load("art/images/note.png", &width, &height, &nr_channels, 0);
         if (!data) {
             std::cerr << "could not read x png" << std::endl;
             exit(1);
@@ -102,28 +103,13 @@ PlayMode::PlayMode() {
         print_gl_errors();
     }
 
-    // { // initialize test beatmap from raw input
-    //     beatmap = new Beatmap();
-    //     size_t test_beatmap_len = 50;
-    //     std::vector<Beatmap::Beat> beats;
-    //     beatmap->beats.reserve(test_beatmap_len);
-    //     float time_between_beats = 1;
-    //     for (size_t i = 0; i < test_beatmap_len; i++) {
-    //         size_t rand_lane = rand() % 4;
-    //         Beatmap::Beat new_beat;
-    //         new_beat.location = (Beatmap::BeatLocation)rand_lane;
-    //         new_beat.time = time_between_beats * i;
-    //         beatmap->beats.push_back(std::make_pair(new_beat, false));
-    //     }
-    // } 
-
     {   // initialize test beatmap from JSON 
-        Beatmap *b = new Beatmap("./songs/StarbucksMusic/beatmap.json");
+        Beatmap *b = new Beatmap("./songs/DriveBy/json_data3.json");
         beatmap = b;
     }
 
     { // play starbucks music
-        Sound::PlayingSample *music = new Sound::PlayingSample(&starbucks_music);
+        music = new Sound::PlayingSample(&drive_by_music);
         Sound::play(music);
     } 
 
@@ -152,8 +138,7 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
         if (key == up || key == down || key == left || key == right) {
             Beatmap::BeatLocation location;
 
-            switch(key)
-            {
+            switch(key) {
                 case up:
                     location = Beatmap::BeatLocation::UP;
                     break;
@@ -192,22 +177,23 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 
 void PlayMode::handle_drum(std::vector<char> hits) {
     (void) hits;
-    BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
-    switch(grade) {
-        case BeatGrade::PERFECT:
-            score += 100;
-            break;
-        case BeatGrade::GOOD:
-            score += 25;
-            break;
-        case BeatGrade::MISS:
-            score -= 25;
-            break;
-        default: // do not modify score for BeatGrade::NONE
-            break;
+    std::cout << "handle drum called" << std::endl;
+    if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
+        BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
+        switch(grade) {
+            case BeatGrade::PERFECT:
+                score += 100;
+                break;
+            case BeatGrade::GOOD:
+                score += 25;
+                break;
+            case BeatGrade::MISS:
+                score -= 25;
+                break;
+            default: // do not modify score for BeatGrade::NONE
+                break;
+        }
     }
-    // if (hits[0] == DrumPeripheral::HitInfo::PRESS) {
-    // }
 }
 
 PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
@@ -225,9 +211,17 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
     }
 }
 
+void PlayMode::level_finished() {
+    music->pause = true;
+    Mode::set_current(std::make_shared<ScoreScreenMode>());
+}
+
 void PlayMode::update(float elapsed) {
     beatmap->update(elapsed);
     drums->update(elapsed);
+    if (beatmap->beats.size() == 0) {
+        level_finished();
+    }
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {

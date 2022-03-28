@@ -29,7 +29,7 @@ struct Beatmap {
     };
 
     size_t BPM = 0;
-    float t = 0.0f; // the current time that has elapsed into the song
+    float t = 0.0f; // the current time that has elapsed into the song in seconds
 
     Beatmap();
     Beatmap(std::string beatmap_file_path); // loads beatmap from JSON file 

@@ -33,12 +33,15 @@ namespace Sound {
             std::vector<float> const &data;
             float volume;
             bool stop = false; // when set to true, this sample will stop playing at the next available 
-            // opportunity
+            // opportunity and it will delete itself
+            bool pause = false; // when set to true, this sample will stop playing at the next available
+            // opportunity. Unlike the 'stop' parameter, the 'pause' parameter will NOT cause the 
+            // sample to get deleted
             bool loop = false; // when set to true, this sample will loop forever until it's stopped
             // TODO: add pan?
         };
 
-        struct paTestData{
+        struct SoundStreamData{
             float left_phase = 0;
             float right_phase = 0;
             std::list<PlayingSample*> *playing_samples;

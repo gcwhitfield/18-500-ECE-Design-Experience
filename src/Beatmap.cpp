@@ -1,5 +1,9 @@
 #include "Beatmap.hpp"
 
+// the maxmium time window (in seconds) that the game will be able to receive an input from the
+// player for hitting a note
+float MAX_INPUT_THRESHOLD = 1.0; 
+
 Beatmap::Beatmap() {
 
 }
@@ -50,10 +54,6 @@ Beatmap::Beatmap(std::string beatmap_file_path) {
         beats[k].first.location = (Beatmap::BeatLocation)b[(int)k].get("location", Json::Value(0)).asInt();
         beats[k].first.time = (float)b[(int)k].get("time", Json::Value(0.0f)).asFloat();
     }
-
-    for (size_t k = 0; k < beats.size(); k++) {
-        std::cout << beats[k].first.time << std::endl;
-    }
 }
 
 Beatmap::~Beatmap() {
@@ -71,9 +71,10 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
     glm::vec2 size(80, 80); // size of the notes
     size.x /= drawable_size.x;
     size.y /= drawable_size.y;
+    float t_until_del_after_judgement = 1.0; // seconds
     for (size_t i = 0; i < beats.size(); i++) {
         std::pair<Beatmap::Beat, bool> *beat = &(beats[i]);
-        if (t < beat->first.time && !beat->second) { // draw the beat
+        if (t - t_until_del_after_judgement < beat->first.time && !beat->second) { // draw the beat
             float scroll_speed = 20.0f;
             float starting_height = scroll_speed * beat->first.time;
             float curr_height = starting_height - scroll_speed*t;
@@ -107,13 +108,12 @@ void Beatmap::update(float elapsed) {
     }
 
     t += elapsed;
-    while (beats[next_beat].first.time < t) {
+    while (beats[next_beat].first.time  < t) {
         next_beat ++;
     }
 }
 
 float Beatmap::process_beat(BeatLocation location) {
-    float MAX_INPUT_THRESHOLD = 1.0; // seconds
     // check for beats coming in the future
     for (size_t i = next_beat; i < beats.size(); i++) {
         Beat &curr_beat = beats[i].first;
@@ -137,6 +137,7 @@ float Beatmap::process_beat(BeatLocation location) {
         if (curr_beat.location != location) continue;
         else {
             beats[i].second = true;
+            std::cout << "note has been hit late" << std::endl;
             return prev_time;
         }
     }

@@ -3,6 +3,7 @@
 #include "DrumPeripheral.hpp"
 #include "Input.hpp"
 #include "Mode.hpp"
+#include "ScoreScreenMode.hpp"
 #include "Sound.hpp"
 #include "TextRenderer.hpp"
 #include "Vertex.hpp"
@@ -34,6 +35,12 @@ struct PlayMode : Mode {
 
     // update is called every frame
     virtual void update(float elapsed) override;
+
+    // level_finished is called when the player completes the level. The level is completed
+    // if the user makes it all the way to the end.
+    //
+    // level_finished changes the current mode to ScoreScreenMode
+    void level_finished();
 
     // handle_key gets called whenever the user presses a key which is detected by GLFW
     virtual void handle_key(

@@ -38,7 +38,6 @@ void DrumPeripheral::update(float elapsed) {
         while (size > 0) {
             if (serial.readChar(&c)) { // if we receive more than 1 message in a single frame, then 
             // only accept data from the LAST message received
-                std::cout << c;
             }
             size--;
         }
@@ -48,21 +47,55 @@ void DrumPeripheral::update(float elapsed) {
             if (c == *i) {
                 std::cout << "Acceptable input found" << std::endl;
                 if (c & HitLocation::DRUM_0) {
-                    
-                } else if (c & HitLocation::DRUM_1) {
-                    
-                } else if (c & HitLocation::DRUM_2) {
-                    
-                } else if (c & HitLocation::DRUM_3) {
+                    if ((HitInfo)hits[0] == HitInfo::NONE)
+                    {
+                        hits[0] = (char)HitInfo::PRESS;
+                    } else if ((HitInfo)hits[0] == HitInfo::PRESS) {
+                        hits[0] = (char)HitInfo::HOLD;
+                    }
+                } else {
+                    hits[0] = (char)HitInfo::NONE;
+                } 
 
+                if (c & HitLocation::DRUM_1) {
+                    if ((HitInfo)hits[1] == HitInfo::NONE)
+                    {
+                        hits[1] = (char)HitInfo::PRESS;
+                    } else if ((HitInfo)hits[1] == HitInfo::PRESS) {
+                        hits[1] = (char)HitInfo::HOLD;
+                    }
+                } else {
+                    hits[1] = (char)HitInfo::NONE;
                 }
+
+                if (c & HitLocation::DRUM_2) {
+                    if ((HitInfo)hits[2] == HitInfo::NONE)
+                    {
+                        hits[2] = (char)HitInfo::PRESS;
+                    } else if ((HitInfo)hits[2] == HitInfo::PRESS) {
+                        hits[2] = (char)HitInfo::HOLD;
+                    }
+                } else {
+                    hits[2] = (char)HitInfo::NONE;
+                }
+                
+                if (c & HitLocation::DRUM_3) {
+                    if ((HitInfo)hits[3] == HitInfo::NONE)
+                    {
+                        hits[3] = (char)HitInfo::PRESS;
+                    } else if ((HitInfo)hits[3] == HitInfo::PRESS) {
+                        hits[3] = (char)HitInfo::HOLD;
+                    }
+                } else {
+                    hits[3] = (char)HitInfo::NONE;
+                }
+                
                 // TODO: call Mode::handle_drum_wrapper based on input 
                 Mode::handle_drum_wrapper(hits);
+                break;
             }
         }
-
-        std::cout << std::endl;
-
+        
         serial.flushReceiver();
     }
 }

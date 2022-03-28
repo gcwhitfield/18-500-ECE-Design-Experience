@@ -2,7 +2,7 @@
 // from the Computer Game Programming course at CMU https://github.com/15-466/15-466-f21-base3/blob/main/Sound.cpp
 // 
 // A lot of the portaudio code in this file was taken from the portaudio tutorials from 
-// http://www.portaudio.com/docs/. Specifically, the code for Sound::Init, Sound::DeInit, Sound::paTestData, 
+// http://www.portaudio.com/docs/. Specifically, the code for Sound::Init, Sound::DeInit, Sound::SoundStreamData, 
 // and stream_callback were taken from the portaudio documentation
 
 #include "Sound.hpp"
@@ -10,7 +10,7 @@
 const size_t NUM_CHANNELS = 2;
 static std::mutex sound_mutex;
 static PaStream *stream;
-static Sound::paTestData stream_data;
+static Sound::SoundStreamData stream_data;
 static std::list<Sound::PlayingSample *> playing_samples;
 
 // This function will be called by the PortAudio engine when audio is needed. It 
@@ -25,7 +25,7 @@ int stream_callback(const void *input, void *output, unsigned long frame_count,
     // line taken from libaudiodecoder documentation: https://github.com/asantoni/libaudiodecoder/blob/master/examples/playsong/playsong.cpp
 
     // cast data passed through stream to our structure
-    Sound::paTestData *data = (Sound::paTestData*) user_data;
+    Sound::SoundStreamData *data = (Sound::SoundStreamData*) user_data;
     (void)data;
     float *out = (float*)output;
     (void)out;
@@ -37,7 +37,7 @@ int stream_callback(const void *input, void *output, unsigned long frame_count,
         Sound::PlayingSample* sample = *s;
 
         for (size_t i = 0; i < frame_count * NUM_CHANNELS; i++) {
-            if (sample->stop) break;
+            if (sample->stop || sample->pause) break;
             
             out[i] += sample->data.data()[sample->curr_index];
 
