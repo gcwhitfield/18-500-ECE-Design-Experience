@@ -114,10 +114,13 @@ void Beatmap::update(float elapsed) {
 }
 
 float Beatmap::process_beat(BeatLocation location) {
+
+    size_t initial_beat = next_beat > 1 ? next_beat - 1 : next_beat;
+
     // check for beats coming in the future
-    for (size_t i = next_beat; i < beats.size(); i++) {
+    for (size_t i = initial_beat; i < beats.size(); i++) {
         Beat &curr_beat = beats[i].first;
-        float next_time = curr_beat.time - t;
+        float next_time = abs(curr_beat.time - t);
         if (MAX_INPUT_THRESHOLD < next_time) {
             break;
         }
@@ -127,19 +130,6 @@ float Beatmap::process_beat(BeatLocation location) {
             return next_time;
         }
     }
-    // check beats that have just occurred
-    for (size_t i = next_beat - 1; i >= 0; i--) {
-        Beat &curr_beat = beats[i].first;
-        float prev_time = t - curr_beat.time;
-        if (MAX_INPUT_THRESHOLD < prev_time) {
-            return -1;
-        }
-        if (curr_beat.location != location) continue;
-        else {
-            beats[i].second = true;
-            std::cout << "note has been hit late" << std::endl;
-            return prev_time;
-        }
-    }
+    
     return -1;
 }

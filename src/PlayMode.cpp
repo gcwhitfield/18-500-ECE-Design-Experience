@@ -7,8 +7,8 @@
 #include "stb_image.h"
 
 // import sounds
-static Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
-static Sound::PlayingSample *music;
+// static Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
+// static Sound::PlayingSample *music;
 
 PlayMode::PlayMode() {
 
@@ -109,8 +109,8 @@ PlayMode::PlayMode() {
     }
 
     { // play starbucks music
-        music = new Sound::PlayingSample(&drive_by_music);
-        Sound::play(music);
+        // music = new Sound::PlayingSample(&drive_by_music);
+        // Sound::play(music);
     } 
 
     { // initialize drums
@@ -212,7 +212,6 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
 }
 
 void PlayMode::level_finished() {
-    music->pause = true;
     Mode::set_current(std::make_shared<ScoreScreenMode>());
 }
 
