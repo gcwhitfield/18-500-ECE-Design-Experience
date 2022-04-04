@@ -4,7 +4,7 @@
 #include "Input.hpp"
 #include "Mode.hpp"
 #include "ScoreScreenMode.hpp"
-// #include "Sound.hpp"
+#include "Sound.hpp"
 #include "TextRenderer.hpp"
 #include "Vertex.hpp"
 
@@ -68,40 +68,11 @@ struct PlayMode : Mode {
     GLuint vertex_buffer_object = -1U;
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
-    GLuint x_texture = -1U;
+    GLuint notes_texture = -1U;
 
     std::vector<Vertex> vertices;
 
     // draw is called whenever we want to draw something to the screen
     virtual void draw(glm::uvec2 const &drawable_size) override;
     
-    // ---------- debugging -----------
-    void print_gl_errors()
-    {
-        GLenum err;
-        while((err = glGetError()) != GL_NO_ERROR)
-        {
-            switch(err)
-            {
-                case GL_INVALID_ENUM: {
-                    std::cout << "Invalid enum" << std::endl;
-                }
-                case GL_INVALID_VALUE: {
-                    std::cout << "Invalid value" << std::endl;
-                }
-                case GL_INVALID_OPERATION: {
-                    std::cout << "Invalid operation" << std::endl;
-                }
-                case GL_INVALID_INDEX: {
-                    std::cout << "Invalid index" << std::endl;
-                }
-                case GL_OUT_OF_MEMORY: {
-                    std::cout << "Out of memory" << std::endl;
-                }
-                default: {
-                    std::cout << "Unknown error" << std::endl;
-                }
-            }
-        }
-    }
 };

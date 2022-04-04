@@ -41,7 +41,7 @@ struct Beatmap {
     // lower indices occur earlier in the song, beats at later indices occur later
     // the first element contains the beat info
     // the second element contains a bool, which flags whether the beet has been hit by the user
-    std::vector<std::pair<Beat, bool>> beats;
+    std::vector< std::pair<Beat, bool> > beats;
     size_t next_beat = 0; // an index into 'beats' that corresponds to the next beat after beatmap.t
 
     // given a path to a song JSON file, loads the data into the 'beats' vector

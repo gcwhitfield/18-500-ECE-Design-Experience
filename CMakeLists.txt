@@ -7,7 +7,7 @@ include_directories(./libs/glfw/include/
                     ./libs/glad/include/
                     ./libs/glm/include/
                     ./libs/portaudio/include/
-		            # ./libs/libaudiodecoder/include/
+		            ./libs/libaudiodecoder/include/
                     ./libs/harfbuzz/include/
                     ./libs/freetype/include/
                     ./libs/jsoncpp/include/
@@ -19,7 +19,7 @@ set(NAMES ./src/Mode.cpp
           ./src/PlayMode.cpp
           ./src/DrumPeripheral.cpp
           ./src/ColorTextureProgram.cpp
-          # ./src/Sound.cpp
+          ./src/Sound.cpp
           ./src/Beatmap.cpp
           ./src/Shader.cpp
           ./src/TextRenderProgram.cpp
@@ -36,23 +36,22 @@ add_subdirectory(./libs/glfw/)
 add_subdirectory(./libs/portaudio/ ./build/bin EXCLUDE_FROM_ALL)
 
 # import libaudiodecoder
-# if (APPLE) # compile for macos
-#     set (LIBAUDIODECODER_NAMES
-#                 ./libs/libaudiodecoder/src/audiodecoderbase.cpp
-#                 ./libs/libaudiodecoder/src/audiodecodercoreaudio.cpp)
-# endif (APPLE)
-# if (WIN32) # compile for windows
-#     set (LIBAUDIODECODER_NAMES
-#                 ./libs/libaudiodecoder/src/audiodecoderbase.cpp
-#                 ./libs/libaudiodecoder/src/audiodecodermediafoundation.cpp)
-# endif (WIN32)
-
-
-# import freetype
-add_subdirectory(./libs/freetype)
+if (APPLE) # compile for macos
+    set (LIBAUDIODECODER_NAMES
+                ./libs/libaudiodecoder/src/audiodecoderbase.cpp
+                ./libs/libaudiodecoder/src/audiodecodercoreaudio.cpp)
+endif (APPLE)
+if (WIN32) # compile for windows
+    set (LIBAUDIODECODER_NAMES
+                ./libs/libaudiodecoder/src/audiodecoderbase.cpp
+                ./libs/libaudiodecoder/src/audiodecodermediafoundation.cpp)
+endif (WIN32)
 
 # import harfbuzz
 add_subdirectory(./libs/harfbuzz)
+
+# import freetype
+add_subdirectory(./libs/freetype)
 
 # import serialib
 set(SERIALIB_NAMES ./libs/serialib/lib/serialib.cpp)
@@ -69,7 +68,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -Wpedantic -Wno-de
 endif(CMAKE_COMPILER_IS_GNUCXX)
 
 # add the executable
-add_executable(RhythmGame libs/glad/src/glad.c ${NAMES} ${SERIALIB_NAMES} src/main.cpp) # ${LIBAUDIODECODER_NAMES}
+add_executable(RhythmGame libs/glad/src/glad.c ${LIBAUDIODECODER_NAMES} ${NAMES} ${SERIALIB_NAMES} src/main.cpp) # ${LIBAUDIODECODER_NAMES}
 
 # link libraries
 target_link_libraries(

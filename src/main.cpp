@@ -4,11 +4,14 @@
 #include <GLFW/glfw3.h>
 
 #include "PlayMode.hpp"
-// #include "Sound.hpp"
+#include "SongSelectionMode.hpp"
+#include "Sound.hpp"
 
 #include <iostream>
 #include <memory>
 #include <chrono>
+
+using namespace std;
 
 int main()
 {
@@ -39,7 +42,7 @@ int main()
     }
 
     // initialize sound
-    // Sound::init();
+    Sound::init();
 
     // set the viewport size 
     glm::uvec2 window_size(1600, 900);
@@ -56,7 +59,7 @@ int main()
 
 
     // set the current mode to the default mode
-    Mode::set_current(std::make_shared<PlayMode>());
+    Mode::set_current(std::make_shared<SongSelectionMode>());
 
     // render loop
     // based from "game 0" base code's render loop from Computer Game Programming 
@@ -85,7 +88,7 @@ int main()
         glfwPollEvents(); // will call input callback functions as needed
     }
 
-    // Sound::de_init();
+    Sound::de_init();
     glfwTerminate();
     return 0;
 }

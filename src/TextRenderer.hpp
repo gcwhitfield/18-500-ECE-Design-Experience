@@ -13,6 +13,9 @@
 #include <map>
 #include <vector>
 
+#ifndef TEXT_RENDERER
+#define TEXT_RENDERER
+
 struct TextRenderer {
     TextRenderer();
     ~TextRenderer();
@@ -43,3 +46,5 @@ struct TextRenderer {
 
     void draw(const glm::uvec2 &drawable_size, std::string text, glm::vec2 loc, glm::vec2 size, glm::u8vec4 color);
 };
+
+#endif

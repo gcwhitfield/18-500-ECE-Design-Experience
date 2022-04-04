@@ -7,7 +7,8 @@
 #include "stb_image.h"
 
 // import sounds
- Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
+Sound::Sample drive_by_music("./songs/Pompeii/Pompeii.wav");
+static std::string beatmap_file("./songs/Pompeii/beatmap.json");
 static Sound::PlayingSample *music;
 
 PlayMode::PlayMode() {
@@ -87,7 +88,7 @@ PlayMode::PlayMode() {
         glGenTextures(1, &notes_texture);
         glBindTexture(GL_TEXTURE_2D, notes_texture);
         int width, height, nr_channels;
-        unsigned char *data = stbi_load("art/images/llama.png", &width, &height, &nr_channels, 0);
+        unsigned char *data = stbi_load("art/images/note.png", &width, &height, &nr_channels, 0);
         if (!data) {
             std::cerr << "could not read note png" << std::endl;
             // exit(1);
@@ -104,7 +105,7 @@ PlayMode::PlayMode() {
     }
 
     {   // initialize test beatmap from JSON 
-        Beatmap *b = new Beatmap("./songs/DriveBy/json_data3.json");
+        Beatmap *b = new Beatmap(beatmap_file);
         beatmap = b;
     }
 

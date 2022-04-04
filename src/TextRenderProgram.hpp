@@ -6,6 +6,8 @@
 
 #include <iostream>
 
+#ifndef TEXT_RENDER_PROGRAM
+#define TEXT_RENDER_PROGRAM
 struct TextRenderProgram : Shader {
     TextRenderProgram();
     ~TextRenderProgram() {};
@@ -18,3 +20,5 @@ struct TextRenderProgram : Shader {
     // uniforms
     GLuint OBJECT_TO_CLIP_MAT4 = -1U;
 };
+
+#endif

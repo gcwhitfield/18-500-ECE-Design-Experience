@@ -6,6 +6,9 @@
 
 #include <iostream>
 
+#ifndef COLOR_TEXTURE_PROGRAM
+#define COLOR_TEXTURE_PROGRAM
+
 struct ColorTextureProgram : Shader {
     ColorTextureProgram();
     ~ColorTextureProgram() {};
@@ -18,3 +21,5 @@ struct ColorTextureProgram : Shader {
     // uniforms
     GLuint OBJECT_TO_CLIP_MAT4 = -1U;
 };
+
+#endif

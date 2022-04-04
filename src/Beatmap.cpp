@@ -2,7 +2,7 @@
 
 // the maxmium time window (in seconds) that the game will be able to receive an input from the
 // player for hitting a note
-float MAX_INPUT_THRESHOLD = 1.0; 
+float MAX_INPUT_THRESHOLD = 0.5; 
 
 Beatmap::Beatmap() {
 
@@ -51,7 +51,7 @@ Beatmap::Beatmap(std::string beatmap_file_path) {
     for (size_t k = 0; k < root["beats"].size(); k++)
     {
         Json::Value b = root["beats"];
-        beats[k].first.location = (Beatmap::BeatLocation)b[(int)k].get("location", Json::Value(0)).asInt();
+        beats[k].first.location = (Beatmap::BeatLocation)b[(int)k].get("locations", Json::Value(0)).asInt();
         beats[k].first.time = (float)b[(int)k].get("time", Json::Value(0.0f)).asFloat();
     }
 }
@@ -65,16 +65,15 @@ void Beatmap::load(std::string filePath) {
 }
 
 void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_size) {
-    // draw the notes that are currently flying towards the player
     glm::vec2 judgement_pos(-200, -400);
     float horz_spacing = 200;
     glm::vec2 size(80, 80); // size of the notes
     size.x /= drawable_size.x;
     size.y /= drawable_size.y;
-    float t_until_del_after_judgement = 1.0; // seconds
+    // draw the notes that are currently flying towards the player
     for (size_t i = 0; i < beats.size(); i++) {
         std::pair<Beatmap::Beat, bool> *beat = &(beats[i]);
-        if (t - t_until_del_after_judgement < beat->first.time && !beat->second) { // draw the beat
+        if (!(beat->second)) { // draw the beat
             float scroll_speed = 20.0f;
             float starting_height = scroll_speed * beat->first.time;
             float curr_height = starting_height - scroll_speed*t;
@@ -107,29 +106,39 @@ void Beatmap::update(float elapsed) {
         }
     }
 
+    { // determine whether the player has missed a note
+        float t_until_del_after_judgement = 1.0; // seconds
+        for (size_t i = 0; i < beats.size(); i++) {
+            if (!beats[i].second && beats[i].first.time + t_until_del_after_judgement < t) {
+                beats[i] = std::make_pair(beats[i].first, true);
+                // TODO: call "note missed" function here
+            }
+        }
+    }
+
     t += elapsed;
-    while (beats[next_beat].first.time  < t) {
+    while (beats[next_beat].first.time < t) {
         next_beat ++;
     }
 }
 
 float Beatmap::process_beat(BeatLocation location) {
-
     size_t initial_beat = next_beat > 1 ? next_beat - 1 : next_beat;
-
+    // size_t initial_beat = 0;
     // check for beats coming in the future
     for (size_t i = initial_beat; i < beats.size(); i++) {
+        if (beats[i].second) continue;
         Beat &curr_beat = beats[i].first;
-        float next_time = abs(curr_beat.time - t);
-        if (MAX_INPUT_THRESHOLD < next_time) {
+        float time_diff = abs(curr_beat.time - t);
+        if (MAX_INPUT_THRESHOLD < time_diff) {
             break;
         }
         if (curr_beat.location != location) continue;
         else {
-            beats[i].second = true;
-            return next_time;
+            beats[i] = std::make_pair(beats[i].first, true);
+            assert(beats[i].second);
+            return time_diff;
         }
     }
-    
     return -1;
 }

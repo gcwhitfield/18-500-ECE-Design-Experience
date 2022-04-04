@@ -48,6 +48,35 @@ struct Mode : std::enable_shared_from_this<Mode> {
     // be implemented by changing the mode
     static void set_current(std::shared_ptr<Mode> const &new_mode);
 
+    // ---------- debugging -----------
+    void print_gl_errors()
+    {
+        GLenum err;
+        while((err = glGetError()) != GL_NO_ERROR)
+        {
+            switch(err)
+            {
+                case GL_INVALID_ENUM: {
+                    std::cout << "Invalid enum" << std::endl;
+                }
+                case GL_INVALID_VALUE: {
+                    std::cout << "Invalid value" << std::endl;
+                }
+                case GL_INVALID_OPERATION: {
+                    std::cout << "Invalid operation" << std::endl;
+                }
+                case GL_INVALID_INDEX: {
+                    std::cout << "Invalid index" << std::endl;
+                }
+                case GL_OUT_OF_MEMORY: {
+                    std::cout << "Out of memory" << std::endl;
+                }
+                default: {
+                    std::cout << "Unknown error" << std::endl;
+                }
+            }
+        }
+    }
 };
 
 #endif

@@ -1,4 +1,6 @@
+#include "ColorTextureProgram.hpp"
 #include "Mode.hpp"
+#include "TextRenderer.hpp"
 #include "Vertex.hpp"
 
 #include <glm.hpp>
@@ -34,6 +36,13 @@ struct ScoreScreenMode : Mode
 
     // ---------- drawing ---------- 
     std::vector<Vertex> vertices;
+
+    TextRenderer text_renderer;
+    GLuint tex = -1U;
+    ColorTextureProgram program;
+    GLuint vertex_buffer_object = -1U;
+    GLuint vertex_array_object = -1U;
+    GLuint white_texture = -1U;
     virtual void draw(glm::uvec2 const &drawable_size) override;
 };
 

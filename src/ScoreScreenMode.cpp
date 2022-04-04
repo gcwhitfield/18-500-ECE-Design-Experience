@@ -1,7 +1,7 @@
 #include "ScoreScreenMode.hpp"
 
 ScoreScreenMode::ScoreScreenMode() {
-
+    
 }
 
 ScoreScreenMode::~ScoreScreenMode() {
