@@ -34,4 +34,3 @@
 # Other things
 .vscode
 .DS_Store
-build/*

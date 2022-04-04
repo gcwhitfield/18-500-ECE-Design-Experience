@@ -7,8 +7,8 @@
 #include "stb_image.h"
 
 // import sounds
-// static Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
-// static Sound::PlayingSample *music;
+ Sound::Sample drive_by_music("./songs/DriveBy/DriveBy.mp3");
+static Sound::PlayingSample *music;
 
 PlayMode::PlayMode() {
 
@@ -84,13 +84,13 @@ PlayMode::PlayMode() {
         print_gl_errors();
     }
     { // import x texture. stb_image code from OpenGL programming book by Joey de Vries
-        glGenTextures(1, &x_texture);
-        glBindTexture(GL_TEXTURE_2D, x_texture);
+        glGenTextures(1, &notes_texture);
+        glBindTexture(GL_TEXTURE_2D, notes_texture);
         int width, height, nr_channels;
-        unsigned char *data = stbi_load("art/images/note.png", &width, &height, &nr_channels, 0);
+        unsigned char *data = stbi_load("art/images/llama.png", &width, &height, &nr_channels, 0);
         if (!data) {
-            std::cerr << "could not read x png" << std::endl;
-            exit(1);
+            std::cerr << "could not read note png" << std::endl;
+            // exit(1);
         }
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
@@ -108,9 +108,9 @@ PlayMode::PlayMode() {
         beatmap = b;
     }
 
-    { // play starbucks music
-        // music = new Sound::PlayingSample(&drive_by_music);
-        // Sound::play(music);
+    { // play music
+        music = new Sound::PlayingSample(&drive_by_music);
+        Sound::play(music);
     } 
 
     { // initialize drums
@@ -177,8 +177,8 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 
 void PlayMode::handle_drum(std::vector<char> hits) {
     (void) hits;
-    std::cout << "handle drum called" << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
+        std::cout << "handle drum called" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
         switch(grade) {
             case BeatGrade::PERFECT:
@@ -212,6 +212,7 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
 }
 
 void PlayMode::level_finished() {
+    // music->pause = true;
     Mode::set_current(std::make_shared<ScoreScreenMode>());
 }
 
@@ -244,7 +245,7 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     
     glBindVertexArray(vertex_array_object);
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, x_texture);
+    glBindTexture(GL_TEXTURE_2D, notes_texture);
 
     glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
     print_gl_errors();

@@ -4,11 +4,11 @@
 #include <GLFW/glfw3.h>
 
 #include "PlayMode.hpp"
-#include "Sound.hpp"
-#include "audiodecoder.h"
+// #include "Sound.hpp"
 
 #include <iostream>
 #include <memory>
+#include <chrono>
 
 int main()
 {
@@ -39,7 +39,7 @@ int main()
     }
 
     // initialize sound
-    Sound::init();
+    // Sound::init();
 
     // set the viewport size 
     glm::uvec2 window_size(1600, 900);
@@ -71,7 +71,7 @@ int main()
 
             // if frames are taking a long time to process, force the game to lag in order to avoid 
             // "spiral of death"
-            elapsed = std::min(0.1f, elapsed);
+            elapsed = min(0.1f, elapsed);
 
             Mode::current->update(elapsed);
             if (!Mode::current) break;
@@ -85,7 +85,7 @@ int main()
         glfwPollEvents(); // will call input callback functions as needed
     }
 
-    Sound::de_init();
+    // Sound::de_init();
     glfwTerminate();
     return 0;
 }
