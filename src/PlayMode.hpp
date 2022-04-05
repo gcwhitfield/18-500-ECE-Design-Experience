@@ -31,6 +31,12 @@ struct PlayMode : Mode {
         NONE // the player did not hit or miss the beat 
     };
     
+    struct BeatGradeDisplay {
+        BeatGrade grade;
+        float lifetime; // the amount of time that the display is on the screen
+    };
+    BeatGradeDisplay beat_grade_display;
+
     int score = 0;
 
     // update is called every frame
@@ -69,6 +75,9 @@ struct PlayMode : Mode {
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
     GLuint notes_texture = -1U;
+    GLuint background_texture = -1U;
+    GLuint healthbar_background_texture = -1U;
+    GLuint healthbar_top_texture = -1U;
 
     std::vector<Vertex> vertices;
 

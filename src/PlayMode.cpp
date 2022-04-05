@@ -8,8 +8,15 @@
 
 // import sounds
 Sound::Sample drive_by_music("./songs/Pompeii/Pompeii.wav");
-static std::string beatmap_file("./songs/Pompeii/beatmap.json");
 static Sound::PlayingSample *music;
+
+static std::string beatmap_file("./songs/Pompeii/beatmap.json");
+
+// import images
+static std::string background_img("./art/images/background.png");
+static std::string note_img("./art/images/note.png");
+static std::string healthbar_background_img("./art/images/health bar background.png");
+static std::string healthbar_top_img("./art/images/health bar top.png");
 
 PlayMode::PlayMode() {
 
@@ -62,46 +69,66 @@ PlayMode::PlayMode() {
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindVertexArray(0);
     }
+    
+    { // import textures
 
-    { // create a solid white texture
-        glGenTextures(1, &white_texture);
-        glBindTexture(GL_TEXTURE_2D, white_texture);
-        glm::uvec2 size(1,1);
-        std::vector<glm::u8vec4> data(size.x * size.y, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, size.x, size.y, 0, 
-            GL_RGBA, GL_UNSIGNED_BYTE, data.data());
+        auto import_img = [](GLuint *tex, std::string img) {
+            glGenTextures(1, tex);
+            glBindTexture(GL_TEXTURE_2D, *tex);
+            int width, height, nr_channels;
+            unsigned char *data = stbi_load(img.c_str(), &width, &height, &nr_channels, 0);
+            if (!data) {
+                std::cerr << "could not read note png" << std::endl;
+                // exit(1);
+            }
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+            glGenerateMipmap(GL_TEXTURE_2D);
+            glBindTexture(GL_TEXTURE_2D, 0);
+            stbi_image_free(data);
+        };
 
-        // set filtering and wrapping parameters
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        { // create a solid white texture
+            glGenTextures(1, &white_texture);
+            glBindTexture(GL_TEXTURE_2D, white_texture);
+            glm::uvec2 size(1,1);
+            std::vector<glm::u8vec4> data(size.x * size.y, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, size.x, size.y, 0, 
+                GL_RGBA, GL_UNSIGNED_BYTE, data.data());
 
-        // since texture uses a mipmap and he have not yet uploaded one, tell opengl to create one
-        // for us
-        glGenerateMipmap(GL_TEXTURE_2D);
+            // set filtering and wrapping parameters
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-        glBindTexture(GL_TEXTURE_2D, 0);
-        print_gl_errors();
-    }
-    { // import x texture. stb_image code from OpenGL programming book by Joey de Vries
-        glGenTextures(1, &notes_texture);
-        glBindTexture(GL_TEXTURE_2D, notes_texture);
-        int width, height, nr_channels;
-        unsigned char *data = stbi_load("art/images/note.png", &width, &height, &nr_channels, 0);
-        if (!data) {
-            std::cerr << "could not read note png" << std::endl;
-            // exit(1);
+            // since texture uses a mipmap and he have not yet uploaded one, tell opengl to create one
+            // for us
+            glGenerateMipmap(GL_TEXTURE_2D);
+
+            glBindTexture(GL_TEXTURE_2D, 0);
+            print_gl_errors();
         }
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-        glGenerateMipmap(GL_TEXTURE_2D);
-        glBindTexture(GL_TEXTURE_2D, 0);
-        stbi_image_free(data);
-        print_gl_errors();
+
+        { // import note texture. stb_image code from OpenGL programming book by Joey de Vries
+            import_img(&notes_texture, note_img);
+            print_gl_errors();
+        }
+
+        { // import background texture
+            import_img(&background_texture, background_img);
+            print_gl_errors();
+        }
+
+        { // import health bar textures
+            import_img(&healthbar_background_texture, healthbar_background_img);
+            import_img(&healthbar_top_texture, healthbar_top_img);
+            print_gl_errors();
+        }
+    
     }
 
     {   // initialize test beatmap from JSON 
@@ -116,6 +143,10 @@ PlayMode::PlayMode() {
 
     { // initialize drums
       drums = new DrumPeripheral();
+    }
+
+    { // initialize beat grade display
+        beat_grade_display.lifetime = -1;
     }
 }
 
@@ -218,47 +249,104 @@ void PlayMode::level_finished() {
 }
 
 void PlayMode::update(float elapsed) {
-    beatmap->update(elapsed);
     drums->update(elapsed);
+
+    beatmap->update(elapsed);
     if (beatmap->beats.size() == 0) {
         level_finished();
+    }
+
+    if (beat_grade_display.lifetime > 0) {
+        beat_grade_display.lifetime -= elapsed;
     }
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {
+    (void) drawable_size;
 
     // drawing starter code taken from "game 0 base code"
     // https://github.com/15-466/15-466-f21-base0
-    vertices.clear();
 
-    beatmap->draw(vertices, drawable_size);
-
-    (void) drawable_size;
     glUseProgram(program.program);
     glClearColor(0.5, 0.5, 0.5, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    // send the vertices to the vertex buffer
-    glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
-    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
     
-    glBindVertexArray(vertex_array_object);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, notes_texture);
+    { // draw the background
+        vertices.clear();
+        draw_rectangle(vertices, glm::vec2(0.0, 0.0), glm::vec2(1, 1), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
 
-    glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
-    print_gl_errors();
-    glBindTexture(GL_TEXTURE_2D, 0);
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, background_texture);
+
+        // run the OpenGL pipeline
+        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+        print_gl_errors();
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+
+    { // draw beatmap
+        vertices.clear();
+        beatmap->draw(vertices, drawable_size);
+
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, notes_texture);
+
+        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+        print_gl_errors();
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
 
     // draw text
     {
         glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
         glBindVertexArray(vertex_array_object);
-        text_renderer.draw(drawable_size, "Score: " + std::to_string(score), glm::vec2(-200,500), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+        text_renderer.draw(drawable_size, "Score: " + std::to_string(score), glm::vec2(200,700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     }
+
+    glUseProgram(program.program);
+
+    { // draw health bar
+        vertices.clear();
+        glm::vec2 health_bar_loc(-0.6, 0.8);
+        glm::vec2 health_bar_size(0.4, 0.1);
+        draw_rectangle(vertices, health_bar_loc, health_bar_size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, healthbar_background_texture);
+
+        // run the OpenGL pipeline
+        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+        print_gl_errors();
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+
+    { // draw beat grade display
+        if (beat_grade_display.lifetime > 0) {
+
+        }
+    }
+
 
     glBindVertexArray(0);    
     glUseProgram(0);

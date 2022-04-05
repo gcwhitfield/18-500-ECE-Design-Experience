@@ -59,7 +59,7 @@ int main()
 
 
     // set the current mode to the default mode
-    Mode::set_current(std::make_shared<SongSelectionMode>());
+    Mode::set_current(std::make_shared<PlayMode>());
 
     // render loop
     // based from "game 0" base code's render loop from Computer Game Programming 

@@ -1292,6 +1292,82 @@ string
 vector
 -
 
+../libs/libaudiodecoder/include/apple/CADebugMacros.h
+CoreAudio/CoreAudioTypes.h
+-
+CoreAudioTypes.h
+../libs/libaudiodecoder/include/apple/CoreAudioTypes.h
+CADebugPrintf.h
+../libs/libaudiodecoder/include/apple/CADebugPrintf.h
+pthread.h
+-
+CAHostTimeBase.h
+../libs/libaudiodecoder/include/apple/CAHostTimeBase.h
+CAHostTimeBase.h
+../libs/libaudiodecoder/include/apple/CAHostTimeBase.h
+CADebugger.h
+../libs/libaudiodecoder/include/apple/CADebugger.h
+
+../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
+CoreAudio/CoreAudioTypes.h
+-
+CoreFoundation/CoreFoundation.h
+-
+CoreAudioTypes.h
+../libs/libaudiodecoder/include/apple/CoreAudioTypes.h
+CoreFoundation.h
+../libs/libaudiodecoder/include/apple/CoreFoundation.h
+CADebugMacros.h
+../libs/libaudiodecoder/include/apple/CADebugMacros.h
+string.h
+-
+stdio.h
+-
+
+../libs/libaudiodecoder/include/audiodecoder.h
+audiodecoderbase.h
+../libs/libaudiodecoder/include/audiodecoderbase.h
+audiodecodermediafoundation.h
+../libs/libaudiodecoder/include/audiodecodermediafoundation.h
+audiodecodercoreaudio.h
+../libs/libaudiodecoder/include/audiodecodercoreaudio.h
+
+../libs/libaudiodecoder/include/audiodecoderbase.h
+string
+-
+vector
+-
+
+../libs/libaudiodecoder/include/audiodecodercoreaudio.h
+audiodecoderbase.h
+../libs/libaudiodecoder/include/audiodecoderbase.h
+AudioToolbox/AudioToolbox.h
+-
+apple/CAStreamBasicDescription.h
+../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
+CoreServices/CoreServices.h
+-
+CoreAudio/CoreAudioTypes.h
+-
+AudioToolbox/AudioFile.h
+-
+AudioToolbox/AudioFormat.h
+-
+CoreAudioTypes.h
+../libs/libaudiodecoder/include/CoreAudioTypes.h
+AudioFile.h
+../libs/libaudiodecoder/include/AudioFile.h
+AudioFormat.h
+../libs/libaudiodecoder/include/AudioFormat.h
+fcntl.h
+-
+
+../libs/libaudiodecoder/include/audiodecodermediafoundation.h
+audiodecoderbase.h
+../libs/libaudiodecoder/include/audiodecoderbase.h
+
+../libs/portaudio/include/portaudio.h
+
 ../libs/serialib/lib/serialib.h
 sys/time.h
 -
@@ -1362,6 +1438,8 @@ map
 vector
 -
 
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
+
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
 DrumPeripheral.hpp
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.hpp
@@ -1374,9 +1452,41 @@ glm.hpp
 memory
 -
 
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.cpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.cpp
+PlayMode.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
+stb_image.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/stb_image.h
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
+Beatmap.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
+ColorTextureProgram.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
+DrumPeripheral.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.hpp
+Input.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
+Mode.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
 ScoreScreenMode.hpp
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.hpp
+Sound.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.hpp
+TextRenderer.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderer.hpp
+Vertex.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
+glm.hpp
+-
+iostream
+-
+vector
+-
+map
+-
+random
+-
 
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.hpp
 ColorTextureProgram.hpp
@@ -1404,6 +1514,20 @@ glm.hpp
 iostream
 -
 string
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.hpp
+portaudio.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/portaudio.h
+audiodecoder.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/audiodecoder.h
+iostream
+-
+vector
+-
+list
+-
+mutex
 -
 
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.hpp
@@ -1446,5 +1570,37 @@ vector
 glm.hpp
 -
 vector
+-
+
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/stb_image.h
+stb_image.h
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
 -
 

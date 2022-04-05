@@ -35,4 +35,11 @@ ColorTextureProgram::ColorTextureProgram() :
     GLuint TEX_sampler_2D = glGetUniformLocation(program, "TEX");
     glUniform1i(TEX_sampler_2D, 0); // step 2) bind TEX to location 0
     glUseProgram(0); // step 3) unbind the program
+
+    // set OBJECT_TO_CLIP to uniform location 1
+    glUseProgram(program);
+    OBJECT_TO_CLIP_MAT4 = glGetUniformLocation(program, "OBJECT_TO_CLIP_MAT4");
+    glUniform1i(OBJECT_TO_CLIP_MAT4, 1);
+    glUseProgram(0);
+
 }
