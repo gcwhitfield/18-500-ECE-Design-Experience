@@ -41,11 +41,12 @@ void DrumPeripheral::update(float elapsed) {
             }
             size--;
         }
-        
         // if the char is an acceptable input
         for (auto i = acceptable_inputs.begin(); i != acceptable_inputs.end(); i++) {
             if (c == *i) {
                 std::cout << c << std::endl;
+                // std::cout << c << std::endl;
+                // std::cout << "Drum has been hit!" << std::endl;
                 if (c & HitLocation::DRUM_0) {
                     if ((HitInfo)hits[0] == HitInfo::NONE)
                     {

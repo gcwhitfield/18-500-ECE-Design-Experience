@@ -906,6 +906,60 @@ src/DrumPeripheral.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/DrumPeripheral.cpp.s
 .PHONY : src/DrumPeripheral.cpp.s
 
+src/FadingScreenTransition.o: src/FadingScreenTransition.cpp.o
+
+.PHONY : src/FadingScreenTransition.o
+
+# target to build an object file
+src/FadingScreenTransition.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o
+.PHONY : src/FadingScreenTransition.cpp.o
+
+src/FadingScreenTransition.i: src/FadingScreenTransition.cpp.i
+
+.PHONY : src/FadingScreenTransition.i
+
+# target to preprocess a source file
+src/FadingScreenTransition.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.i
+.PHONY : src/FadingScreenTransition.cpp.i
+
+src/FadingScreenTransition.s: src/FadingScreenTransition.cpp.s
+
+.PHONY : src/FadingScreenTransition.s
+
+# target to generate assembly for a file
+src/FadingScreenTransition.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.s
+.PHONY : src/FadingScreenTransition.cpp.s
+
+src/LoadImage.o: src/LoadImage.cpp.o
+
+.PHONY : src/LoadImage.o
+
+# target to build an object file
+src/LoadImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o
+.PHONY : src/LoadImage.cpp.o
+
+src/LoadImage.i: src/LoadImage.cpp.i
+
+.PHONY : src/LoadImage.i
+
+# target to preprocess a source file
+src/LoadImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.i
+.PHONY : src/LoadImage.cpp.i
+
+src/LoadImage.s: src/LoadImage.cpp.s
+
+.PHONY : src/LoadImage.s
+
+# target to generate assembly for a file
+src/LoadImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhythmGame.dir/build.make CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.s
+.PHONY : src/LoadImage.cpp.s
+
 src/MainMenuMode.o: src/MainMenuMode.cpp.o
 
 .PHONY : src/MainMenuMode.o
@@ -1251,6 +1305,12 @@ help:
 	@echo "... src/DrumPeripheral.o"
 	@echo "... src/DrumPeripheral.i"
 	@echo "... src/DrumPeripheral.s"
+	@echo "... src/FadingScreenTransition.o"
+	@echo "... src/FadingScreenTransition.i"
+	@echo "... src/FadingScreenTransition.s"
+	@echo "... src/LoadImage.o"
+	@echo "... src/LoadImage.i"
+	@echo "... src/LoadImage.s"
 	@echo "... src/MainMenuMode.o"
 	@echo "... src/MainMenuMode.i"
 	@echo "... src/MainMenuMode.s"

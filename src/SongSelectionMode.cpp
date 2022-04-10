@@ -1,5 +1,21 @@
 #include "SongSelectionMode.hpp"
 
+// "stb_image.h" must be included from the .cpp file and not from an .hpp file.
+// the following two lines must be place inside of a .cpp file and not a .hpp file. Otherwise, 
+// a linker error will occur because STB_IMAGE_IMPLEMENTATION gets defined multiple times. 
+// #define STB_IMAGE_IMPLEMENTATION
+// #include "stb_image.h"
+
+// import sounds
+Sound::Sample song_selection_swoosh("./art/sounds/song selection swoosh.mp3");
+
+// image file paths
+static std::string song_selection_box_img("./art/images/song selection box.png");
+
+// song info display parameters
+static float spacing_vert = 0.25; // vertical spacing between each song info
+static float spacing_horz = 0.0; // the horz offset of each song info
+
 SongSelectionMode::SongSelectionMode() {
     // "create buffer to store vertex information", "create vertex array object...", and 
     // "create solid white texture" sections 
@@ -72,10 +88,43 @@ SongSelectionMode::SongSelectionMode() {
         glBindTexture(GL_TEXTURE_2D, 0);
         print_gl_errors();
     }
+
+    { // load song selection background boc
+        LoadImage::load_img(&song_selection_box_texture, song_selection_box_img);
+        print_gl_errors();
+    }
+
+    { // 1) obtain a vector of all of the files in the songs directory (song_files)
+      // 2) upload into songs vector (vector of song data)
+        song_files = Directory::list_dir("songs");
+        for (size_t i = 0; i < songs.size(); i++) {
+            std::cout << i << ": " << song_files[i] << std::endl;
+        }
+        songs.clear();
+        songs.resize(song_files.size());
+        for (size_t i = 0; i < songs.size(); i++) {
+            SongInfo info;
+            info.curr_pos = glm::vec2(0,0);
+            info.desired_pos = glm::vec2(0,0);
+            songs[i] = info;
+        }
+        set_song_positions();
+    }
+
+
 }
 
 SongSelectionMode::~SongSelectionMode() {
 
+}
+
+void SongSelectionMode::set_song_positions() {
+    for (int j = 0; j < songs.size(); j++) {
+        size_t i = (j + curr_selected) % songs.size();
+        int dist_from_selected = (int)curr_selected - i;
+        glm::vec2 pos(0.3 + std::abs(dist_from_selected)*spacing_horz, 0.5f + spacing_vert*dist_from_selected);
+        songs[i].desired_pos = pos;
+    }
 }
 
 void SongSelectionMode::handle_key(GLFWwindow *window, int key, int scancode, int actions, int mods) {
@@ -84,6 +133,29 @@ void SongSelectionMode::handle_key(GLFWwindow *window, int key, int scancode, in
     (void) scancode;
     (void) actions;
     (void) mods;
+
+    if (actions == Input::KeyAction::PRESS) {
+        if (key == Input::KeyCode::A) {
+            curr_selected++;
+            if (curr_selected >= songs.size()) {
+                curr_selected = 0;
+            }
+            Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
+            Sound::play(bloop);
+        } else if (key == Input::KeyCode::D) {
+            if (curr_selected == 0) {
+                curr_selected = songs.size() - 1;
+            } else {
+                curr_selected--;
+            }
+            Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
+            Sound::play(bloop);
+        } else if (key == Input::KeyCode::ENTER) {
+            Mode::set_current(std::make_shared<PlayMode>("./songs/" + song_files[curr_selected]));
+        }
+    }
+
+    set_song_positions();
 }
 
 void SongSelectionMode::handle_drum(std::vector<char> hits) {
@@ -91,7 +163,22 @@ void SongSelectionMode::handle_drum(std::vector<char> hits) {
 }
 
 void SongSelectionMode::update(float elapsed) {
-
+    { // smoothly interpolate the positions of the song info displays
+        for (size_t i = 0; i < songs.size(); i++) {
+            float EPS = 0.01;
+            float t = 10.0f * elapsed; // make this number bigger to make the animation faster
+            float new_pos_x = songs[i].curr_pos.x*(1.0f-t) + songs[i].desired_pos.x*t;
+            float new_pos_y = songs[i].curr_pos.y*(1.0f-t) + songs[i].desired_pos.y*t;
+            
+            // snap song infos into pos if they are very close to desired pos
+            if (std::abs(songs[i].desired_pos.x - new_pos_x) + std::abs(songs[i].desired_pos.y - new_pos_y) < EPS) {
+                songs[i].curr_pos = songs[i].desired_pos;
+            } else { // otherwise, smoothly interpolate to the desired pos
+                songs[i].curr_pos.x = new_pos_x;
+                songs[i].curr_pos.y = new_pos_y;
+            }
+        }
+    }
 }
 
 void SongSelectionMode::draw(glm::uvec2 const &drawable_size) {
@@ -118,11 +205,39 @@ void SongSelectionMode::draw(glm::uvec2 const &drawable_size) {
     print_gl_errors();
     glBindTexture(GL_TEXTURE_2D, 0);
 
-    // draw text
-    {
+    { // draw the list of songs in 'songs' directory
+        for (size_t i = 0; i < songs.size(); i++) {
+            vertices.clear();
+            glm::u8vec4 selected_col(0xaa, 0xaa, 0xaa, 0xff);
+            glm::u8vec4 unselected_col(0xff, 0xff, 0xff, 0xff);
+            glm::u8vec4 col = i == curr_selected ? selected_col : unselected_col;
+            draw_rectangle(vertices, songs[i].curr_pos, glm::vec2(0.4, 0.1), col);
+        
+            // draw the background 
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, song_selection_box_texture);
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+            glBindTexture(GL_TEXTURE_2D, 0);
+            print_gl_errors();
+
+            // draw text
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBindVertexArray(vertex_array_object);
+            float text_offset = -0.32;
+            glm::vec2 text_size(2, 2);
+            text_renderer.draw(drawable_size, song_files[i], glm::vec2((songs[i].curr_pos.x + text_offset) * drawable_size.x, songs[i].curr_pos.y * drawable_size.y), text_size, glm::u8vec4(0x00, 0x00, 0x00, 0xff));
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            glUseProgram(program.program);
+        }
+    }
+    { // draw title text
         glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
         glBindVertexArray(vertex_array_object);
-        text_renderer.draw(drawable_size, "Score: ", glm::vec2(-200,500), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+        text_renderer.draw(drawable_size, "Select a song", glm::vec2(-1400,700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     }
 

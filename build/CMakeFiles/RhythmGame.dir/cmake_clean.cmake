@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RhythmGame.dir/src/Beatmap.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/ColorTextureProgram.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/DrumPeripheral.cpp.o"
+  "CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o"
+  "CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/Mode.cpp.o"
   "CMakeFiles/RhythmGame.dir/src/PlayMode.cpp.o"

@@ -3,14 +3,8 @@
 // "stb_image.h" must be included from the .cpp file and not from an .hpp file.
 // the following two lines must be place inside of a .cpp file and not a .hpp file. Otherwise, 
 // a linker error will occur because STB_IMAGE_IMPLEMENTATION gets defined multiple times. 
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
-
-// import sounds
-Sound::Sample drive_by_music("./songs/Pompeii/Pompeii.wav");
-static Sound::PlayingSample *music;
-
-static std::string beatmap_file("./songs/Pompeii/beatmap.json");
+// #define STB_IMAGE_IMPLEMENTATION
+// #include "stb_image.h"
 
 // import images
 static std::string background_img("./art/images/background.png");
@@ -18,7 +12,8 @@ static std::string note_img("./art/images/note.png");
 static std::string healthbar_background_img("./art/images/health bar background.png");
 static std::string healthbar_top_img("./art/images/health bar top.png");
 
-PlayMode::PlayMode() {
+PlayMode::PlayMode(std::string song_path) : 
+    song_path(song_path), music_file(song_path + "/song.mp3"), beatmap_file(song_path + "/beatmap.json"){
 
     // "create buffer to store vertex information", "create vertex array object...", and 
     // "create solid white texture" sections 
@@ -72,24 +67,24 @@ PlayMode::PlayMode() {
     
     { // import textures
 
-        auto import_img = [](GLuint *tex, std::string img) {
-            glGenTextures(1, tex);
-            glBindTexture(GL_TEXTURE_2D, *tex);
-            int width, height, nr_channels;
-            unsigned char *data = stbi_load(img.c_str(), &width, &height, &nr_channels, 0);
-            if (!data) {
-                std::cerr << "could not read note png" << std::endl;
-                // exit(1);
-            }
-            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-            glGenerateMipmap(GL_TEXTURE_2D);
-            glBindTexture(GL_TEXTURE_2D, 0);
-            stbi_image_free(data);
-        };
+        // auto import_img = [](GLuint *tex, std::string img) {
+        //     glGenTextures(1, tex);
+        //     glBindTexture(GL_TEXTURE_2D, *tex);
+        //     int width, height, nr_channels;
+        //     unsigned char *data = stbi_load(img.c_str(), &width, &height, &nr_channels, 0);
+        //     if (!data) {
+        //         std::cerr << "could not read note png" << std::endl;
+        //         // exit(1);
+        //     }
+        //     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        //     glGenerateMipmap(GL_TEXTURE_2D);
+        //     glBindTexture(GL_TEXTURE_2D, 0);
+        //     stbi_image_free(data);
+        // };
 
         { // create a solid white texture
             glGenTextures(1, &white_texture);
@@ -114,18 +109,18 @@ PlayMode::PlayMode() {
         }
 
         { // import note texture. stb_image code from OpenGL programming book by Joey de Vries
-            import_img(&notes_texture, note_img);
+            LoadImage::load_img(&notes_texture, note_img);
             print_gl_errors();
         }
 
         { // import background texture
-            import_img(&background_texture, background_img);
+            LoadImage::load_img(&background_texture, background_img);
             print_gl_errors();
         }
 
         { // import health bar textures
-            import_img(&healthbar_background_texture, healthbar_background_img);
-            import_img(&healthbar_top_texture, healthbar_top_img);
+            LoadImage::load_img(&healthbar_background_texture, healthbar_background_img);
+            LoadImage::load_img(&healthbar_top_texture, healthbar_top_img);
             print_gl_errors();
         }
     
@@ -137,7 +132,7 @@ PlayMode::PlayMode() {
     }
 
     { // play music
-        music = new Sound::PlayingSample(&drive_by_music);
+        music = new Sound::PlayingSample(&music_file);
         Sound::play(music);
     } 
 
@@ -147,6 +142,14 @@ PlayMode::PlayMode() {
 
     { // initialize beat grade display
         beat_grade_display.lifetime = -1;
+    }
+    
+    { // initialize the fading screen transition
+        fading_screen_transition.play(
+            FadingScreenTransition::ScreenTransitionAnimType::OPEN,
+            2.0f,
+            glm::u8vec4(0x00, 0x00, 0x00, 0x00
+        ));
     }
 }
 
@@ -209,6 +212,8 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 
 void PlayMode::handle_drum(std::vector<char> hits) {
     (void) hits;
+    // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
+    // std::cout << hits[3] << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
         std::cout << "handle drum called" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
@@ -244,12 +249,13 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
 }
 
 void PlayMode::level_finished() {
-    // music->pause = true;
+    music->stop = true;
     Mode::set_current(std::make_shared<ScoreScreenMode>());
 }
 
 void PlayMode::update(float elapsed) {
     drums->update(elapsed);
+    fading_screen_transition.update(elapsed);
 
     beatmap->update(elapsed);
     if (beatmap->beats.size() == 0) {
@@ -259,6 +265,7 @@ void PlayMode::update(float elapsed) {
     if (beat_grade_display.lifetime > 0) {
         beat_grade_display.lifetime -= elapsed;
     }
+
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {
@@ -347,6 +354,26 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
         }
     }
 
+    { // draw the screen transition
+        if (fading_screen_transition.is_active()) {
+            // send the vertices to the vertex buffer
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(
+                GL_ARRAY_BUFFER, 
+                fading_screen_transition.vertices.size() * sizeof(fading_screen_transition.vertices[0]), 
+                fading_screen_transition.vertices.data(),
+                GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, white_texture);
+
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(fading_screen_transition.vertices.size()));
+            print_gl_errors();
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
+    }
 
     glBindVertexArray(0);    
     glUseProgram(0);

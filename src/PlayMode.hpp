@@ -1,7 +1,12 @@
+#ifndef PLAYMODE
+#define PLAYMODE
+
 #include "Beatmap.hpp"
 #include "ColorTextureProgram.hpp"
 #include "DrumPeripheral.hpp"
+#include "FadingScreenTransition.hpp"
 #include "Input.hpp"
+#include "LoadImage.hpp"
 #include "Mode.hpp"
 #include "ScoreScreenMode.hpp"
 #include "Sound.hpp"
@@ -15,15 +20,18 @@
 #include <map>
 #include <random>
 
-
-
 // PlayMode is where all of the drawing and logic related to gameplay is stored. 
 // The scene where the player plays the game is typically referred to as the "play mode"
 struct PlayMode : Mode {
-    PlayMode();
+    PlayMode(std::string song_path);
     ~PlayMode();
 
     // ---------- gameplay ---------- 
+    std::string song_path;
+    std::string beatmap_file;
+    Sound::Sample music_file;
+    Sound::PlayingSample *music = NULL;
+
     enum BeatGrade {
         PERFECT, // player hit the note exactly with the beat
         GOOD,  // player hit the note more-or-less with the beat
@@ -81,7 +89,13 @@ struct PlayMode : Mode {
 
     std::vector<Vertex> vertices;
 
+    FadingScreenTransition fading_screen_transition;
+
     // draw is called whenever we want to draw something to the screen
     virtual void draw(glm::uvec2 const &drawable_size) override;
     
+    // ------------ sound ------------
+
 };
+
+#endif

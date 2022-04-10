@@ -129,7 +129,7 @@ void TextRenderer::draw(const glm::uvec2 &drawable_size, std::string text, glm::
             glm::vec2 loc(x + (x_offset + ch.bearing.x) * size.x, y + (y_offset - (ch.size.y - ch.bearing.y)) * size.y);
             // calculate the actual position
             vertices.clear();
-            draw_rectangle(vertices, glm::vec2((loc.x+_loc.x)/drawable_size.x, (loc.y+_loc.y)/drawable_size.y), glm::vec2(size.x * ch.size.x/ drawable_size.x, size.y * ch.size.y / drawable_size.y), glm::u8vec4(0Xff, 0xff, 0xff, 0xff));
+            draw_rectangle(vertices, glm::vec2((loc.x+_loc.x)/drawable_size.x, (loc.y+_loc.y)/drawable_size.y), glm::vec2(size.x * ch.size.x/ drawable_size.x, size.y * ch.size.y / drawable_size.y), color);
             // draw_rectangle(vertices, glm::vec2(0.0, 0.0), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
             glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, ch.texture_id);

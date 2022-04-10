@@ -245,9 +245,22 @@ CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.cpp" -o CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.s
 
+CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
+CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o: ../src/LoadImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/LoadImage.cpp"
+
+CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/LoadImage.cpp" > CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.i
+
+CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/LoadImage.cpp" -o CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.s
+
 CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o: ../src/SongSelectionMode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/SongSelectionMode.cpp"
 
 CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.i: cmake_force
@@ -260,7 +273,7 @@ CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.s: cmake_force
 
 CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o: ../src/ScoreScreenMode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.cpp"
 
 CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.i: cmake_force
@@ -271,9 +284,22 @@ CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.cpp" -o CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.s
 
+CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
+CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o: ../src/FadingScreenTransition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/FadingScreenTransition.cpp"
+
+CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/FadingScreenTransition.cpp" > CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.i
+
+CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/FadingScreenTransition.cpp" -o CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.s
+
 CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o: ../libs/serialib/lib/serialib.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/libs/serialib/lib/serialib.cpp"
 
 CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.i: cmake_force
@@ -286,7 +312,7 @@ CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.s: cmake_force
 
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: CMakeFiles/RhythmGame.dir/flags.make
 CMakeFiles/RhythmGame.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RhythmGame.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RhythmGame.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhythmGame.dir/src/main.cpp.o -c "/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/main.cpp"
 
 CMakeFiles/RhythmGame.dir/src/main.cpp.i: cmake_force
@@ -312,8 +338,10 @@ RhythmGame_OBJECTS = \
 "CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o" \
+"CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o" \
+"CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o" \
 "CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o" \
 "CMakeFiles/RhythmGame.dir/src/main.cpp.o"
 
@@ -333,8 +361,10 @@ RhythmGame: CMakeFiles/RhythmGame.dir/src/Shader.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/TextRenderProgram.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/TextRenderer.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o
+RhythmGame: CMakeFiles/RhythmGame.dir/src/LoadImage.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/SongSelectionMode.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/ScoreScreenMode.cpp.o
+RhythmGame: CMakeFiles/RhythmGame.dir/src/FadingScreenTransition.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/libs/serialib/lib/serialib.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/src/main.cpp.o
 RhythmGame: CMakeFiles/RhythmGame.dir/build.make
@@ -351,7 +381,7 @@ RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform
 RhythmGame: /usr/local/lib/libpng.dylib
 RhythmGame: /usr/local/lib/libharfbuzz.dylib
 RhythmGame: CMakeFiles/RhythmGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable RhythmGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable RhythmGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RhythmGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

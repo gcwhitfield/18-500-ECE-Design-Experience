@@ -1,3 +1,6 @@
+#ifndef INPUT
+#define INPUT
+
 struct Input {
     enum KeyCode {
         A = 65,
@@ -50,3 +53,5 @@ struct Input {
                  // first press
     };
 };
+
+#endif

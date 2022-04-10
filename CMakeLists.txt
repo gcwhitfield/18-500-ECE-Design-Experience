@@ -25,8 +25,10 @@ set(NAMES ./src/Mode.cpp
           ./src/TextRenderProgram.cpp
           ./src/TextRenderer.cpp
           ./src/MainMenuMode.cpp
+          ./src/LoadImage.cpp
           ./src/SongSelectionMode.cpp
           ./src/ScoreScreenMode.cpp
+          ./src/FadingScreenTransition.cpp
           )
 
 # import glfw
