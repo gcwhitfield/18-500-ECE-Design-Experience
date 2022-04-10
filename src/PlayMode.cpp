@@ -356,6 +356,8 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
 
     { // draw the screen transition
         if (fading_screen_transition.is_active()) {
+            fading_screen_transition.draw(drawable_size);
+
             // send the vertices to the vertex buffer
             glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
             glBufferData(

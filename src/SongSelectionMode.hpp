@@ -22,6 +22,12 @@ struct SongSelectionMode : Mode
     ~SongSelectionMode();
 
     // ---------- song selection logic ----------
+    enum SongSelectionState {
+        SELECTING, // the player is currently selecting their song
+        CONFIRMED // the player has confirmed their selection
+    };
+    SongSelectionState state = SELECTING;
+
     struct SongInfo {
         Beatmap::BeatFileData data;
         glm::vec2 curr_pos; // the position of the song info on the screen
@@ -56,8 +62,9 @@ struct SongSelectionMode : Mode
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
     GLuint song_selection_box_texture = -1U;
+    
+    FadingScreenTransition fading_screen_transition;
 
-        
     virtual void draw(glm::uvec2 const &drawable_size) override;
 };
 

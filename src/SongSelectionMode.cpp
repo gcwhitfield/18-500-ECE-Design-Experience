@@ -8,6 +8,8 @@
 
 // import sounds
 Sound::Sample song_selection_swoosh("./art/sounds/song selection swoosh.mp3");
+Sound::Sample initialization_sound("./art/sounds/initialization_noise.mp3");
+Sound::Sample bloop_cmaj("./art/sounds/bloop_cmaj911_ascending.mp3");
 
 // image file paths
 static std::string song_selection_box_img("./art/images/song selection box.png");
@@ -111,6 +113,16 @@ SongSelectionMode::SongSelectionMode() {
         set_song_positions();
     }
 
+    { // initialize state
+        state = SongSelectionState::SELECTING;
+        fading_screen_transition.play(
+            FadingScreenTransition::ScreenTransitionAnimType::OPEN,
+            4.0f,
+            glm::u8vec4(0xff, 0xff, 0xff, 0xff)
+        );
+        Sound::PlayingSample *init_noise = new Sound::PlayingSample(&initialization_sound);
+        Sound::play(init_noise);
+    }
 
 }
 
@@ -134,24 +146,33 @@ void SongSelectionMode::handle_key(GLFWwindow *window, int key, int scancode, in
     (void) actions;
     (void) mods;
 
-    if (actions == Input::KeyAction::PRESS) {
-        if (key == Input::KeyCode::A) {
-            curr_selected++;
-            if (curr_selected >= songs.size()) {
-                curr_selected = 0;
+    if (state == SongSelectionState::SELECTING) {
+        if (actions == Input::KeyAction::PRESS) {
+            if (key == Input::KeyCode::A) {
+                curr_selected++;
+                if (curr_selected >= songs.size()) {
+                    curr_selected = 0;
+                }
+                Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
+                Sound::play(bloop);
+            } else if (key == Input::KeyCode::D) {
+                if (curr_selected == 0) {
+                    curr_selected = songs.size() - 1;
+                } else {
+                    curr_selected--;
+                }
+                Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
+                Sound::play(bloop);
+            } else if (key == Input::KeyCode::ENTER) {
+                fading_screen_transition.play(
+                    FadingScreenTransition::ScreenTransitionAnimType::CLOSE,
+                    2.0f, 
+                    glm::u8vec4(0x00, 0x00, 0x00, 0x00)
+                );
+                Sound::PlayingSample *confirmed_noise = new Sound::PlayingSample(&bloop_cmaj);
+                Sound::play(confirmed_noise);
+                state = SongSelectionState::CONFIRMED;
             }
-            Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
-            Sound::play(bloop);
-        } else if (key == Input::KeyCode::D) {
-            if (curr_selected == 0) {
-                curr_selected = songs.size() - 1;
-            } else {
-                curr_selected--;
-            }
-            Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
-            Sound::play(bloop);
-        } else if (key == Input::KeyCode::ENTER) {
-            Mode::set_current(std::make_shared<PlayMode>("./songs/" + song_files[curr_selected]));
         }
     }
 
@@ -176,6 +197,15 @@ void SongSelectionMode::update(float elapsed) {
             } else { // otherwise, smoothly interpolate to the desired pos
                 songs[i].curr_pos.x = new_pos_x;
                 songs[i].curr_pos.y = new_pos_y;
+            }
+        }
+    }
+
+    fading_screen_transition.update(elapsed);
+    if (state == SongSelectionState::CONFIRMED) {
+        if (fading_screen_transition.is_finished()) { 
+            { // executed when the mode is ready to transition to the next mode
+                Mode::set_current(std::make_shared<PlayMode>("./songs/" + song_files[curr_selected]));
             }
         }
     }
@@ -239,6 +269,31 @@ void SongSelectionMode::draw(glm::uvec2 const &drawable_size) {
         glBindVertexArray(vertex_array_object);
         text_renderer.draw(drawable_size, "Select a song", glm::vec2(-1400,700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
         glBindBuffer(GL_ARRAY_BUFFER, 0);
+    }
+    
+    glUseProgram(program.program);
+
+    { // draw the screen transition
+        if (fading_screen_transition.is_active()) {
+            fading_screen_transition.draw(drawable_size);
+
+            // send the vertices to the vertex buffer
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(
+                GL_ARRAY_BUFFER, 
+                fading_screen_transition.vertices.size() * sizeof(fading_screen_transition.vertices[0]), 
+                fading_screen_transition.vertices.data(),
+                GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, white_texture);
+
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(fading_screen_transition.vertices.size()));
+            print_gl_errors();
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
     }
 
     glBindVertexArray(0);    

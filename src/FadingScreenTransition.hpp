@@ -19,8 +19,11 @@ struct FadingScreenTransition {
 
     float anim_time = 1.0f; // the total amount of time that it takes for the animation to play
 
-    // when true, the screen transition is currently animating
+    // returns true the screen transition is currently animating
     bool is_active() { return t < anim_time && t >= 0; }
+
+    // returns true when the screen transition has finished animating
+    bool is_finished() { return t > anim_time; }
 
     void play(ScreenTransitionAnimType anim_type_, float anim_time_, glm::u8vec4 color_); // plays the screen transition. 
 
