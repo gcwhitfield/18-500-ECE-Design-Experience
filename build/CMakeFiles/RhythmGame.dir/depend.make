@@ -1010,6 +1010,7 @@ CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../libs/serialib/lib/serialib.
 CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/Beatmap.hpp
 CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/ColorTextureProgram.hpp
 CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/DrumPeripheral.hpp
+CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/LoadImage.hpp
 CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/MainMenuMode.cpp
 CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/MainMenuMode.hpp
 CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o: ../src/Mode.hpp

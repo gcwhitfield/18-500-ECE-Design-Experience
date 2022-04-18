@@ -1,4 +1,5 @@
 #include "ColorTextureProgram.hpp"
+#include "LoadImage.hpp"
 #include "Mode.hpp"
 #include "TextRenderer.hpp"
 #include "Vertex.hpp"
@@ -33,7 +34,10 @@ struct MainMenuMode : Mode
     ColorTextureProgram program;
     GLuint vertex_buffer_object = -1U;
     GLuint vertex_array_object = -1U;
-    GLuint white_texture;
+    GLuint white_texture = -1U;
+    GLuint background_texture = -1U;
+    GLuint start_texture = -1U;
+    GLuint exit_texture = -1U;
     std::vector<Vertex> vertices;
 
     virtual void draw(glm::uvec2 const &drawable_size) override;

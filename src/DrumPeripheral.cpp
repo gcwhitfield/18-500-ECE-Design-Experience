@@ -22,6 +22,34 @@ DrumPeripheral::DrumPeripheral() {
     {
         hits.resize(4);
     }
+
+    // initialize acceptable inputs
+    {
+        acceptable_inputs.push_back(0);
+        acceptable_inputs.push_back(1);
+        acceptable_inputs.push_back(2);
+        acceptable_inputs.push_back(3);
+        acceptable_inputs.push_back(4);
+        acceptable_inputs.push_back(5);
+        acceptable_inputs.push_back(6);
+        acceptable_inputs.push_back(7);
+        acceptable_inputs.push_back(8);
+        acceptable_inputs.push_back(9);
+        acceptable_inputs.push_back(10);
+        acceptable_inputs.push_back(11);
+        acceptable_inputs.push_back(12);
+        acceptable_inputs.push_back(13);
+        acceptable_inputs.push_back(14);
+        acceptable_inputs.push_back(15);
+    }
+
+    // for (size_t i = 0; i < acceptable_inputs.size(); i++) {
+    //     std::cout << acceptable_inputs[i] << std::endl;
+    // }
+    // for (size_t i = 0; i < acceptable_inputs.size(); i++) {
+    //     std::cout << acceptable_inputs[i] + '0' << std::endl;
+    // }
+    // exit(1);
 }
 
 DrumPeripheral::~DrumPeripheral() {
@@ -33,20 +61,33 @@ DrumPeripheral::~DrumPeripheral() {
 void DrumPeripheral::update(float elapsed) {
     (void) elapsed;
     char c;
+    char _c;
     int size = serial.available();
-    if (size > 0) {
+    int _size = size;
+    std::string msg('0', size);
+    // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
+    if (size <= 0) {
+        // std::cout << "not being hit" << std::endl;
+        hits[0] = (char)HitInfo::NONE;
+        hits[1] = (char)HitInfo::NONE;
+        hits[2] = (char)HitInfo::NONE;
+        hits[3] = (char)HitInfo::NONE;
+    } else {
+
+        // std::cout << " _______ MSG BEGIN _________ size: "<< size << std::endl;
         while (size > 0) {
+            
             if (serial.readChar(&c)) { // if we receive more than 1 message in a single frame, then 
-            // only accept data from the LAST message received
+
             }
             size--;
         }
+
+        // std::cout << "here is the c: " << c << std::endl;
+        // std::cout << "---------- MSG END ----------" << std::endl;
         // if the char is an acceptable input
-        for (auto i = acceptable_inputs.begin(); i != acceptable_inputs.end(); i++) {
-            if (c == *i) {
-                std::cout << c << std::endl;
-                // std::cout << c << std::endl;
-                // std::cout << "Drum has been hit!" << std::endl;
+        for (size_t i = 0; i < acceptable_inputs.size(); i++) {
+            if (c == acceptable_inputs[i] + '0') {
                 if (c & HitLocation::DRUM_0) {
                     if ((HitInfo)hits[0] == HitInfo::NONE)
                     {
@@ -97,6 +138,6 @@ void DrumPeripheral::update(float elapsed) {
             }
         }
         
-        serial.flushReceiver();
     }
+    serial.flushReceiver();
 }

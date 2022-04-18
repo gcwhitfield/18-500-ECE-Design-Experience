@@ -213,10 +213,60 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 void PlayMode::handle_drum(std::vector<char> hits) {
     (void) hits;
     // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
-    // std::cout << hits[3] << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
-        std::cout << "handle drum called" << std::endl;
+        std::cout << "pressed left" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
+        switch(grade) {
+            case BeatGrade::PERFECT:
+                score += 100;
+                break;
+            case BeatGrade::GOOD:
+                score += 25;
+                break;
+            case BeatGrade::MISS:
+                score -= 25;
+                break;
+            default: // do not modify score for BeatGrade::NONE
+                break;
+        }
+    }
+    if (hits[2] == DrumPeripheral::HitInfo::PRESS) {
+        std::cout << "pressed up" << std::endl;
+        BeatGrade grade = grade_input(Beatmap::BeatLocation::UP);
+        switch(grade) {
+            case BeatGrade::PERFECT:
+                score += 100;
+                break;
+            case BeatGrade::GOOD:
+                score += 25;
+                break;
+            case BeatGrade::MISS:
+                score -= 25;
+                break;
+            default: // do not modify score for BeatGrade::NONE
+                break;
+        }
+    }
+    if (hits[1] == DrumPeripheral::HitInfo::PRESS) {
+        std::cout << "pressed down" << std::endl;
+        BeatGrade grade = grade_input(Beatmap::BeatLocation::DOWN);
+        switch(grade) {
+            case BeatGrade::PERFECT:
+                score += 100;
+                break;
+            case BeatGrade::GOOD:
+                score += 25;
+                break;
+            case BeatGrade::MISS:
+                score -= 25;
+                break;
+            default: // do not modify score for BeatGrade::NONE
+                break;
+        }
+    }
+    if (hits[0] == DrumPeripheral::HitInfo::PRESS) {
+        std::cout << "pressed right" << std::endl;
+        BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
         switch(grade) {
             case BeatGrade::PERFECT:
                 score += 100;
@@ -377,6 +427,7 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
                 glBindVertexArray(vertex_array_object);
                 text_renderer.draw(drawable_size, text, glm::vec2(-600,300), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
                 glBindBuffer(GL_ARRAY_BUFFER, 0);
+                glUseProgram(program.program);
             }
         }
     }

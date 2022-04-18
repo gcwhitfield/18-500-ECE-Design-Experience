@@ -13,6 +13,7 @@ Sound::Sample bloop_cmaj("./art/sounds/bloop_cmaj911_ascending.mp3");
 
 // image file paths
 static std::string song_selection_box_img("./art/images/song selection box.png");
+static std::string background_img("./art/images/background.png");
 
 // song info display parameters
 static float spacing_vert = 0.25; // vertical spacing between each song info
@@ -122,6 +123,11 @@ SongSelectionMode::SongSelectionMode() {
         );
         Sound::PlayingSample *init_noise = new Sound::PlayingSample(&initialization_sound);
         Sound::play(init_noise);
+    }
+
+    { // import background texture
+        LoadImage::load_img(&background_texture, background_img);
+        print_gl_errors();
     }
 
 }
@@ -234,6 +240,25 @@ void SongSelectionMode::draw(glm::uvec2 const &drawable_size) {
     glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
     print_gl_errors();
     glBindTexture(GL_TEXTURE_2D, 0);
+
+    { // draw the background
+        vertices.clear();
+        draw_rectangle(vertices, glm::vec2(0.0, 0.0), glm::vec2(1, 1), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, background_texture);
+
+        // run the OpenGL pipeline
+        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+        print_gl_errors();
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
 
     { // draw the list of songs in 'songs' directory
         for (size_t i = 0; i < songs.size(); i++) {

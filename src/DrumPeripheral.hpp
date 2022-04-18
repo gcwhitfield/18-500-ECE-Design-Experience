@@ -38,23 +38,7 @@ struct DrumPeripheral {
     // [X] [ ] [ ] [ ] <---- bit 3 corresponds to the left-most drum
     //
     // The X in an entry of 'acceptable_inputs' means that the drum has been hit 
-    std::vector<char> acceptable_inputs = {
-            0x01, // [_ _ _ X]
-            0x02, // [_ _ X _]
-            0x03, // [_ _ X X]
-            0x04, // [_ X _ _]
-            0x05, // [_ X _ X]
-            0x06, // [_ X X _]
-            0x07, // [_ X X X]
-            0x08, // [X _ _ _]
-            0x09, // [X _ _ X]
-            0x0A, // [X _ X _]
-            0x0B, // [X _ X X]
-            0x0C, // [X X _ _]
-            0x0D, // [X X _ X]
-            0x0E, // [X X X _]
-            0x0F  // [X X X X]
-        };
+    std::vector<char> acceptable_inputs;
 
     std::vector<char> hits; 
 

@@ -62,6 +62,7 @@ struct SongSelectionMode : Mode
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
     GLuint song_selection_box_texture = -1U;
+    GLuint background_texture = -1U;
     
     FadingScreenTransition fading_screen_transition;
 
