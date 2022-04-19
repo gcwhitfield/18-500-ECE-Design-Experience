@@ -1,7 +1,12 @@
 #include "MainMenuMode.hpp"
 
 // define image file paths
-static std::string background_img("./art/images/background.png");
+static std::string background_img("./art/images/main menu background.png");
+
+// import sounds
+static Sound::Sample initialization_sound("./art/sounds/initialization_noise.mp3");
+static Sound::Sample bloop_cmaj("./art/sounds/bloop_cmaj911_ascending.mp3");
+
 
 MainMenuMode::MainMenuMode() {
     // "create buffer to store vertex information", "create vertex array object...", and 
@@ -80,6 +85,19 @@ MainMenuMode::MainMenuMode() {
         LoadImage::load_img(&background_texture, background_img);
         print_gl_errors();
     }
+
+    { // initialize fading screen transition
+        fading_screen_transition.play(
+            FadingScreenTransition::ScreenTransitionAnimType::OPEN,
+            4.0f,
+            glm::u8vec4(0xff, 0xff, 0xff, 0xff)
+        );
+    }
+
+    { // play initialization sound
+        Sound::PlayingSample *init_noise = new Sound::PlayingSample(&initialization_sound);
+        Sound::play(init_noise);
+    }
 }
 
 MainMenuMode::~MainMenuMode() {
@@ -87,15 +105,52 @@ MainMenuMode::~MainMenuMode() {
 }
 
 void MainMenuMode::update(float elapsed) {
-    (void) elapsed;
+    fading_screen_transition.update(elapsed);
+    switch (curr_state) {
+        case OPEN:
+            if (fading_screen_transition.is_finished()) {
+                curr_state = WAIT;
+            }
+            break;
+        case WAIT:
+            // next state is set from handle_key
+            break;
+        case CLOSE:
+            // transition to the next scene if the scene transition animation is finished playing
+            if (fading_screen_transition.is_finished()) {
+                Mode::set_current(std::make_shared<SongSelectionMode>());
+            }
+            break;
+    }
 }
 
 void MainMenuMode::handle_key(GLFWwindow *window, int key, int scancode, int actions, int mods) {
     (void) window;
-    (void) key;
     (void) scancode;
-    (void) actions;
     (void) mods;
+
+    if (actions == Input::KeyAction::PRESS) {
+        switch (curr_state) {
+            case WAIT:
+                if (key == Input::KeyCode::ENTER) {
+                    if (fading_screen_transition.is_finished()) {
+                        fading_screen_transition.play(
+                            FadingScreenTransition::ScreenTransitionAnimType::CLOSE,
+                            4.0f,
+                            glm::u8vec4(0xff, 0xff, 0xff, 0xff)
+                        );
+                        curr_state = CLOSE;
+                        { // play bloops cmaj911 sound
+                            Sound::PlayingSample *bloop_confirm = new Sound::PlayingSample(&bloop_cmaj);
+                            Sound::play(bloop_confirm);
+                        }
+                    }
+                 }
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 void MainMenuMode::handle_drum(std::vector<char> hits) {
@@ -129,24 +184,46 @@ void MainMenuMode::draw(glm::uvec2 const &drawable_size) {
     // tell OpenGL to use the vertex array object that we configued above in the constructor 
     glBindVertexArray(vertex_array_object);
 
-    { // draw solid color rectangles 
-        // use a solid white texture
+    { // draw background image
+        vertices.clear();
+        draw_rectangle(vertices, glm::vec2(0.0, 0.0), glm::vec2(1, 1), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
         glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, white_texture);
+        glBindTexture(GL_TEXTURE_2D, background_texture);
 
         // run the OpenGL pipeline
         glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
-
         print_gl_errors();
-        glBindTexture(GL_TEXTURE_2D, 0); // unbind white texture
+        glBindTexture(GL_TEXTURE_2D, 0);
     }
 
-    // draw text
-    {
-        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
-        glBindVertexArray(vertex_array_object);
-        text_renderer.draw(drawable_size, "Rendering text!", glm::vec2(-200,500), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
+    { // draw the screen transition
+        if (fading_screen_transition.is_active()) {
+            fading_screen_transition.draw(drawable_size);
+
+            // send the vertices to the vertex buffer
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(
+                GL_ARRAY_BUFFER, 
+                fading_screen_transition.vertices.size() * sizeof(fading_screen_transition.vertices[0]), 
+                fading_screen_transition.vertices.data(),
+                GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, white_texture);
+
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(fading_screen_transition.vertices.size()));
+            print_gl_errors();
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
     }
 
     glBindVertexArray(0);    

@@ -60,21 +60,21 @@ DrumPeripheral::~DrumPeripheral() {
 
 void DrumPeripheral::update(float elapsed) {
     (void) elapsed;
+
+    // don't do anything if there aren't any drums connected to the game
+    if (!serial.isDeviceOpen()) {
+        return;
+    }
+
     char c;
-    char _c;
     int size = serial.available();
-    int _size = size;
-    std::string msg('0', size);
-    // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
+    std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (size <= 0) {
-        // std::cout << "not being hit" << std::endl;
         hits[0] = (char)HitInfo::NONE;
         hits[1] = (char)HitInfo::NONE;
         hits[2] = (char)HitInfo::NONE;
         hits[3] = (char)HitInfo::NONE;
     } else {
-
-        // std::cout << " _______ MSG BEGIN _________ size: "<< size << std::endl;
         while (size > 0) {
             
             if (serial.readChar(&c)) { // if we receive more than 1 message in a single frame, then 
@@ -82,9 +82,6 @@ void DrumPeripheral::update(float elapsed) {
             }
             size--;
         }
-
-        // std::cout << "here is the c: " << c << std::endl;
-        // std::cout << "---------- MSG END ----------" << std::endl;
         // if the char is an acceptable input
         for (size_t i = 0; i < acceptable_inputs.size(); i++) {
             if (c == acceptable_inputs[i] + '0') {
@@ -139,5 +136,7 @@ void DrumPeripheral::update(float elapsed) {
         }
         
     }
+    // empty the serial buffer at the end of each frame
     serial.flushReceiver();
+    
 }

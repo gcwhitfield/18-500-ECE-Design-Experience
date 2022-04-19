@@ -1,19 +1,32 @@
+#ifndef MAIN_MENU_MODE
+#define MAIN_MENU_MODE
+
 #include "ColorTextureProgram.hpp"
+#include "FadingScreenTransition.hpp"
+#include "Input.hpp"
 #include "LoadImage.hpp"
 #include "Mode.hpp"
+#include "SongSelectionMode.hpp"
 #include "TextRenderer.hpp"
 #include "Vertex.hpp"
 
 #include <glm.hpp>
 #include <vector>
 
-#ifndef MAIN_MENU_MODE
-#define MAIN_MENU_MODE
 
 struct MainMenuMode : Mode 
 {
     MainMenuMode();
     ~MainMenuMode();
+
+    // ---------- main menu state ------------
+    enum MainMenuState 
+    {
+        OPEN, // while the open animation is playing
+        WAIT, // while the menu is waiting for user input
+        CLOSE // while the menu is playing the closing animation
+    };
+    MainMenuState curr_state = OPEN;
 
     virtual void update(float elapsed) override;
 
@@ -39,6 +52,8 @@ struct MainMenuMode : Mode
     GLuint start_texture = -1U;
     GLuint exit_texture = -1U;
     std::vector<Vertex> vertices;
+
+    FadingScreenTransition fading_screen_transition;
 
     virtual void draw(glm::uvec2 const &drawable_size) override;
 };

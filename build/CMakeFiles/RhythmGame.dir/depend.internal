@@ -1007,15 +1007,29 @@ CMakeFiles/RhythmGame.dir/src/MainMenuMode.cpp.o
  ../libs/jsoncpp/include/json/value.h
  ../libs/jsoncpp/include/json/version.h
  ../libs/jsoncpp/include/json/writer.h
+ ../libs/libaudiodecoder/include/apple/CADebugMacros.h
+ ../libs/libaudiodecoder/include/apple/CAStreamBasicDescription.h
+ ../libs/libaudiodecoder/include/audiodecoder.h
+ ../libs/libaudiodecoder/include/audiodecoderbase.h
+ ../libs/libaudiodecoder/include/audiodecodercoreaudio.h
+ ../libs/libaudiodecoder/include/audiodecodermediafoundation.h
+ ../libs/portaudio/include/portaudio.h
  ../libs/serialib/lib/serialib.h
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Directory.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/FadingScreenTransition.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/LoadImage.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.cpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Shader.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/SongSelectionMode.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Sound.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderProgram.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/TextRenderer.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp
@@ -2494,6 +2508,7 @@ CMakeFiles/RhythmGame.dir/src/main.cpp.o
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/FadingScreenTransition.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Input.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/LoadImage.hpp
+ /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/PlayMode.hpp
  /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ScoreScreenMode.hpp

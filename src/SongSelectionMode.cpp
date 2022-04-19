@@ -7,9 +7,8 @@
 // #include "stb_image.h"
 
 // import sounds
-Sound::Sample song_selection_swoosh("./art/sounds/song selection swoosh.mp3");
-Sound::Sample initialization_sound("./art/sounds/initialization_noise.mp3");
-Sound::Sample bloop_cmaj("./art/sounds/bloop_cmaj911_ascending.mp3");
+static Sound::Sample song_selection_swoosh("./art/sounds/song selection swoosh.mp3");
+static Sound::Sample bloop_cmaj("./art/sounds/bloop_cmaj911_ascending.mp3");
 
 // image file paths
 static std::string song_selection_box_img("./art/images/song selection box.png");
@@ -121,8 +120,6 @@ SongSelectionMode::SongSelectionMode() {
             4.0f,
             glm::u8vec4(0xff, 0xff, 0xff, 0xff)
         );
-        Sound::PlayingSample *init_noise = new Sound::PlayingSample(&initialization_sound);
-        Sound::play(init_noise);
     }
 
     { // import background texture

@@ -67,25 +67,6 @@ PlayMode::PlayMode(std::string song_path) :
     
     { // import textures
 
-        // auto import_img = [](GLuint *tex, std::string img) {
-        //     glGenTextures(1, tex);
-        //     glBindTexture(GL_TEXTURE_2D, *tex);
-        //     int width, height, nr_channels;
-        //     unsigned char *data = stbi_load(img.c_str(), &width, &height, &nr_channels, 0);
-        //     if (!data) {
-        //         std::cerr << "could not read note png" << std::endl;
-        //         // exit(1);
-        //     }
-        //     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        //     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-        //     glGenerateMipmap(GL_TEXTURE_2D);
-        //     glBindTexture(GL_TEXTURE_2D, 0);
-        //     stbi_image_free(data);
-        // };
-
         { // create a solid white texture
             glGenTextures(1, &white_texture);
             glBindTexture(GL_TEXTURE_2D, white_texture);
@@ -215,7 +196,7 @@ void PlayMode::handle_drum(std::vector<char> hits) {
     // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
         std::cout << "pressed left" << std::endl;
-        BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
+        BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
         switch(grade) {
             case BeatGrade::PERFECT:
                 score += 100;
@@ -266,7 +247,7 @@ void PlayMode::handle_drum(std::vector<char> hits) {
     }
     if (hits[0] == DrumPeripheral::HitInfo::PRESS) {
         std::cout << "pressed right" << std::endl;
-        BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
+        BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
         switch(grade) {
             case BeatGrade::PERFECT:
                 score += 100;

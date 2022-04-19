@@ -1,3 +1,6 @@
+#ifndef FADING_SCREEN_TRANSITION
+#define FADING_SCREEN_TRANSITION
+
 #include "Vertex.hpp"
 
 #include <glad/glad.h>
@@ -38,3 +41,5 @@ struct FadingScreenTransition {
     // called every time that the game needs to draw something to the screen
     void draw(glm::uvec2 const &drawable_size);
 };
+
+#endif
