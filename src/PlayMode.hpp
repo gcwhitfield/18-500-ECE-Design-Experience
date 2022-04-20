@@ -46,7 +46,7 @@ struct PlayMode : Mode {
     BeatGradeDisplay beat_grade_display;
 
     int score = 0;
-
+    
     // update is called every frame
     virtual void update(float elapsed) override;
 

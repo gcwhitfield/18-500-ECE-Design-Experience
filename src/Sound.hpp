@@ -1,12 +1,14 @@
+#ifndef SOUND
+#define SOUND
+
 #include "portaudio.h"
 #include "audiodecoder.h"
+
+#include <chrono>
 #include <iostream>
 #include <vector>
 #include <list>
 #include <mutex>
-
-#ifndef SOUND
-#define SOUND
 
 // this Sound class is a simple interface for playing sounds in our game with Portaudio
 namespace Sound {
@@ -82,9 +84,13 @@ namespace Sound {
         // call this function to clean up portaudio resources
         void de_init();
         
+        // resets the sound thread's internal timer (used for debuggin)
+        void reset_timer();
+
         // ---------- private ----------
         // begins playback of PortAudio stream.
         void begin_play();
+
 };
 
 #endif

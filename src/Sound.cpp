@@ -12,6 +12,7 @@ static std::mutex sound_mutex;
 static PaStream *stream;
 static Sound::SoundStreamData stream_data;
 static std::list<Sound::PlayingSample *> playing_samples;
+static float t = 0.0f;
 
 // This function will be called by the PortAudio engine when audio is needed. It 
 // may be called at interrupt level on some machines so do not do anything that could mess 
@@ -32,6 +33,15 @@ int stream_callback(const void *input, void *output, unsigned long frame_count,
     (void) input;
     (void) time_info;
     (void) status_flags;
+
+    { // debugging: log the current internal time of the sound thread:
+        // auto current_time = std::chrono::high_resolution_clock::now();
+        // static auto previous_time = current_time;
+        // float elapsed = std::chrono::duration<float>(current_time - previous_time).count();
+        // previous_time = current_time;
+        // t += elapsed;
+        // std::cout << "Sound time: " << t << std::endl;
+    }
 
     for (auto s = data->playing_samples->begin(); s != data->playing_samples->end(); /* updated in loop */) {
         Sound::PlayingSample* sample = *s;
@@ -68,6 +78,13 @@ int stream_callback(const void *input, void *output, unsigned long frame_count,
     sound_mutex.unlock();
     return 0;
 }
+
+void Sound::reset_timer() {
+    sound_mutex.lock();
+    t = 0.0;
+    sound_mutex.unlock();
+}
+
 void Sound::init() {
 
     PaError err = Pa_Initialize();

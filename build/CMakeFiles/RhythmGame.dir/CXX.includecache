@@ -6,64 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../libs/glad/include/KHR/khrplatform.h
-stdint.h
--
-inttypes.h
--
-stdint.h
--
-
-../libs/glad/include/glad/glad.h
-KHR/khrplatform.h
--
-
-../libs/glfw/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-vulkan/vulkan.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-GLES3/gl32.h
--
-GLES2/gl2ext.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-GL/glcorearb.h
--
-GL/glext.h
--
-OpenGL/glu.h
--
-GL/glu.h
--
-OpenGL/gl.h
--
-GL/gl.h
--
-GL/glext.h
--
-
 ../libs/glm/include/common.hpp
 detail/qualifier.hpp
 ../libs/glm/include/detail/qualifier.hpp
@@ -1164,33 +1106,9 @@ string
 vector
 -
 
-../libs/serialib/lib/serialib.h
-sys/time.h
--
-sys/time.h
--
-windows.h
--
-stdlib.h
--
-sys/types.h
--
-sys/shm.h
--
-termios.h
--
-string.h
--
-iostream
--
-sys/time.h
--
-fcntl.h
--
-unistd.h
--
-sys/ioctl.h
--
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.cpp
+Beatmap.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
 
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
 Vertex.hpp
@@ -1204,38 +1122,6 @@ string
 iostream
 -
 fstream
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.cpp
-DrumPeripheral.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.hpp
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.hpp
-Beatmap.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Beatmap.hpp
-Mode.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
-serialib.h
--
-string
--
-iostream
--
-map
--
-vector
--
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Mode.hpp
-DrumPeripheral.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/DrumPeripheral.hpp
-glad/glad.h
--
-GLFW/glfw3.h
--
-glm.hpp
--
-memory
 -
 
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/Vertex.hpp

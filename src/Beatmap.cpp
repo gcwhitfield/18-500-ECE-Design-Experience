@@ -117,6 +117,7 @@ void Beatmap::update(float elapsed) {
     }
 
     t += elapsed;
+    // std::cout << "Beatmsap: " << t << std::endl;
     while (beats[next_beat].first.time < t) {
         next_beat ++;
     }

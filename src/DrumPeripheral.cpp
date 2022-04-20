@@ -68,7 +68,7 @@ void DrumPeripheral::update(float elapsed) {
 
     char c;
     int size = serial.available();
-    std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
+    // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (size <= 0) {
         hits[0] = (char)HitInfo::NONE;
         hits[1] = (char)HitInfo::NONE;

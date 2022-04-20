@@ -12,6 +12,9 @@ static std::string note_img("./art/images/note.png");
 static std::string healthbar_background_img("./art/images/health bar background.png");
 static std::string healthbar_top_img("./art/images/health bar top.png");
 
+size_t frame_count; // number of frames per second
+
+
 PlayMode::PlayMode(std::string song_path) : 
     song_path(song_path), music_file(song_path + "/song.mp3"), beatmap_file(song_path + "/beatmap.json"){
 
@@ -115,6 +118,7 @@ PlayMode::PlayMode(std::string song_path) :
     { // play music
         music = new Sound::PlayingSample(&music_file);
         Sound::play(music);
+        Sound::reset_timer();
     } 
 
     { // initialize drums
@@ -193,6 +197,7 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 
 void PlayMode::handle_drum(std::vector<char> hits) {
     (void) hits;
+    std::cout << "Drum has been hit!" << std::endl;
     // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
         std::cout << "pressed left" << std::endl;
@@ -304,6 +309,18 @@ void PlayMode::update(float elapsed) {
         beat_grade_display.lifetime -= elapsed;
     }
 
+    // keep track of the game frame rate
+    {
+        static float t = 1.0f;
+        static size_t _frame_count = 0;
+        t -= elapsed;
+        _frame_count ++;
+        if (t < 0.0f) {
+            frame_count = _frame_count;
+            _frame_count = 0;
+            t = 1.0f;
+        }
+    }
 }
 
 void PlayMode::draw(const glm::uvec2 &drawable_size) {
@@ -360,6 +377,14 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
         glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
         glBindVertexArray(vertex_array_object);
         text_renderer.draw(drawable_size, "Score: " + std::to_string(score), glm::vec2(200,700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+    }
+
+    // draw the frame rate in the bottom left corner of the screen
+    {
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBindVertexArray(vertex_array_object);
+        text_renderer.draw(drawable_size, std::to_string(frame_count), glm::vec2(-200,-700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     }
 
