@@ -31,6 +31,12 @@ struct Beatmap {
     size_t BPM = 0;
     float t = 0.0f; // the current time that has elapsed into the song in seconds
 
+    // timers used to determine how long the drum hit affect is played for
+    float t_drum_0 = 0.0;
+    float t_drum_1 = 0.0;
+    float t_drum_2 = 0.0;
+    float t_drum_3 = 0.0;
+
     Beatmap();
     Beatmap(std::string beatmap_file_path); // loads beatmap from JSON file 
     Beatmap(std::vector<Beatmap::Beat> &beats, size_t bpm); // initializes the Beatmap with a given 'beats' queue

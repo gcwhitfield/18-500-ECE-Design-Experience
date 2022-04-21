@@ -111,13 +111,26 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
             draw_rectangle(vertices, pos, size, col);
         }
     }
+
+    // change size of judgement note depending on whether the drum hit affect is active
+    float size_drum_0_offset = 1.0f;
+    float size_drum_1_offset = 1.0f;
+    float size_drum_2_offset = 1.0f;
+    float size_drum_3_offset = 1.0f;
+    float size_offset = 1.3;
+    {
+        if (t_drum_0 > 0) size_drum_0_offset = size_offset;
+        if (t_drum_1 > 0) size_drum_1_offset = size_offset;
+        if (t_drum_2 > 0) size_drum_2_offset = size_offset;
+        if (t_drum_3 > 0) size_drum_3_offset = size_offset;
+    }
     // draw the judgement notes
     judgement_pos.x /= drawable_size.x;
     judgement_pos.y /= drawable_size.y;
-    draw_rectangle(vertices, judgement_pos, size, drum_0_note_color);
-    draw_rectangle(vertices, glm::vec2(judgement_pos.x + horz_spacing/drawable_size.x, judgement_pos.y), size, drum_1_note_color);
-    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 2*horz_spacing/drawable_size.x, judgement_pos.y), size, drum_2_note_color);
-    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 3*horz_spacing/drawable_size.x, judgement_pos.y), size, drum_3_note_color);
+    draw_rectangle(vertices, judgement_pos, size*size_drum_0_offset, drum_0_note_color);
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + horz_spacing/drawable_size.x, judgement_pos.y), size*size_drum_1_offset, drum_1_note_color);
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 2*horz_spacing/drawable_size.x, judgement_pos.y), size*size_drum_2_offset, drum_2_note_color);
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 3*horz_spacing/drawable_size.x, judgement_pos.y), size*size_drum_3_offset, drum_3_note_color);
 }
 
 void Beatmap::update(float elapsed) {
@@ -148,24 +161,56 @@ void Beatmap::update(float elapsed) {
     while (beats[next_beat].first.time < t) {
         next_beat ++;
     }
+
+    // update drum hit indicators
+    {
+        t_drum_0 -= elapsed;
+        t_drum_1 -= elapsed;
+        t_drum_2 -= elapsed;
+        t_drum_3 -= elapsed;
+    }
 }
 
 float Beatmap::process_beat(BeatLocation location) {
-    size_t initial_beat = next_beat > 1 ? next_beat - 1 : next_beat;
-    // size_t initial_beat = 0;
-    // check for beats coming in the future
-    for (size_t i = initial_beat; i < beats.size(); i++) {
-        if (beats[i].second) continue;
-        Beat &curr_beat = beats[i].first;
-        float time_diff = abs(curr_beat.time - t);
-        if (MAX_INPUT_THRESHOLD < time_diff) {
-            break;
+    // set hit effect timer for the drum that was hit. This determines how long the 
+    // effect is played for
+    {
+        float drum_hit_effect_len = 0.1f; // in seconds
+        switch (location)
+        {
+            case LEFT:
+                t_drum_0 = drum_hit_effect_len;
+                break;
+            case DOWN:
+                t_drum_1 = drum_hit_effect_len;
+                break;
+            case UP:
+                t_drum_2 = drum_hit_effect_len;
+                break;
+            case RIGHT:
+                t_drum_3 = drum_hit_effect_len;
+                break;
         }
-        if (curr_beat.location != location) continue;
-        else {
-            beats[i] = std::make_pair(beats[i].first, true);
-            assert(beats[i].second);
-            return time_diff;
+    }
+
+    // mark incoming beats as being 'hit' (beats[i].second gets set to 'true') if the user has hit 
+    // the correct drum at the correct time
+    {
+        size_t initial_beat = next_beat > 1 ? next_beat - 1 : next_beat;
+        // check for beats coming in the future
+        for (size_t i = initial_beat; i < beats.size(); i++) {
+            if (beats[i].second) continue;
+            Beat &curr_beat = beats[i].first;
+            float time_diff = abs(curr_beat.time - t);
+            if (MAX_INPUT_THRESHOLD < time_diff) {
+                break;
+            }
+            if (curr_beat.location != location) continue;
+            else {
+                beats[i] = std::make_pair(beats[i].first, true);
+                assert(beats[i].second);
+                return time_diff;
+            }
         }
     }
     return -1;

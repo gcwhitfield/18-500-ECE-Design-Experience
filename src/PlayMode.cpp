@@ -274,15 +274,15 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
     float time = beatmap->process_beat(location);
     if (time < 0) {
         return BeatGrade::NONE;
-    } else if (time < 0.1) { // one tenth of a second
+    } else if (time < 0.1) { // in seconds
         beat_grade_display.lifetime = 0.5f;
         beat_grade_display.grade = PERFECT;
         return BeatGrade::PERFECT;
-    } else if (time < 0.5) { // half a second
+    } else if (time < 0.3) { // in seconds
         beat_grade_display.lifetime = 0.5f;
         beat_grade_display.grade = GOOD;
         return BeatGrade::GOOD;
-    } else if (time < 1) { // one second
+    } else if (time < 1) { // in seconds
         beat_grade_display.lifetime = 0.5f;
         beat_grade_display.grade = MISS;
         return BeatGrade::MISS;
@@ -391,7 +391,7 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     // {
     //     glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
     //     glBindVertexArray(vertex_array_object);
-    //     text_renderer.draw(drawable_size, std::to_string(frame_count), glm::vec2(-200,-700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+    //     text_renderer.draw(drawable_size, std::to_string(frame_count), glm::vec2(-300,-700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
     //     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // }
 
@@ -419,26 +419,31 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     }
 
     { // draw beat grade display
+        glm::u8vec4 beat_grade_col(0xff, 0xff, 0xff, 0xff);
         if (beat_grade_display.lifetime > 0) {
             {
                 std::string text;
                 switch (beat_grade_display.grade) {
                     case BeatGrade::PERFECT:
                         text = "PERFECT";
+                        beat_grade_col = glm::u8vec4(0xff, 0xff, 0x00, 0xff);
                         break;
                     case BeatGrade::GOOD:
                         text = "GOOD";
+                        beat_grade_col = glm::u8vec4(0x00, 0x00, 0xff, 0xff);
                         break;
                     case BeatGrade::MISS:
                         text = "MISS";
+                        beat_grade_col = glm::u8vec4(0xff, 0x00, 0x00, 0xff);
                         break;
                     case BeatGrade::NONE:
                         text = "NONE";
+                        beat_grade_col = glm::u8vec4(0x00, 0x00, 0x00, 0xff);
                         break;
                 }
                 glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
                 glBindVertexArray(vertex_array_object);
-                text_renderer.draw(drawable_size, text, glm::vec2(-600,300), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+                text_renderer.draw(drawable_size, text, glm::vec2(-600,300), glm::vec2(2, 2), beat_grade_col);
                 glBindBuffer(GL_ARRAY_BUFFER, 0);
                 glUseProgram(program.program);
             }
