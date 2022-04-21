@@ -70,6 +70,12 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
     glm::vec2 size(80, 80); // size of the notes
     size.x /= drawable_size.x;
     size.y /= drawable_size.y;
+
+    glm::u8vec4 drum_0_note_color(0xff, 0x00, 0xff, 0xff);
+    glm::u8vec4 drum_1_note_color(0x00, 0xff, 0xff, 0xff);
+    glm::u8vec4 drum_2_note_color(0xff, 0xff, 0x00, 0xff);
+    glm::u8vec4 drum_3_note_color(0x00, 0x00, 0xff, 0xff);
+
     // draw the notes that are currently flying towards the player
     for (size_t i = 0; i < beats.size(); i++) {
         std::pair<Beatmap::Beat, bool> *beat = &(beats[i]);
@@ -78,19 +84,40 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
             float starting_height = scroll_speed * beat->first.time;
             float curr_height = starting_height - scroll_speed*t;
             curr_height *= scroll_speed;
+
+            // change the color of the notes based on drum location
+            glm::u8vec4 col(0xff, 0xff, 0xff, 0xff);
+            {
+                switch (beat->first.location)
+                {
+                    case LEFT:
+                        col = drum_0_note_color;
+                        break;
+                    case DOWN:
+                        col = drum_1_note_color;
+                        break;
+                    case UP:
+                        col = drum_2_note_color;
+                        break;
+                    case RIGHT:
+                        col = drum_3_note_color;
+                        break;
+                }
+            }
+
             glm::vec2 pos(horz_spacing * (int)beat->first.location + judgement_pos.x, curr_height + judgement_pos.y);
             pos.x /= drawable_size.x;
             pos.y /= drawable_size.y;
-            draw_rectangle(vertices, pos, size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+            draw_rectangle(vertices, pos, size, col);
         }
     }
     // draw the judgement notes
     judgement_pos.x /= drawable_size.x;
     judgement_pos.y /= drawable_size.y;
-    draw_rectangle(vertices, judgement_pos, size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-    draw_rectangle(vertices, glm::vec2(judgement_pos.x + horz_spacing/drawable_size.x, judgement_pos.y), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 2*horz_spacing/drawable_size.x, judgement_pos.y), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 3*horz_spacing/drawable_size.x, judgement_pos.y), size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+    draw_rectangle(vertices, judgement_pos, size, drum_0_note_color);
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + horz_spacing/drawable_size.x, judgement_pos.y), size, drum_1_note_color);
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 2*horz_spacing/drawable_size.x, judgement_pos.y), size, drum_2_note_color);
+    draw_rectangle(vertices, glm::vec2(judgement_pos.x + 3*horz_spacing/drawable_size.x, judgement_pos.y), size, drum_3_note_color);
 }
 
 void Beatmap::update(float elapsed) {

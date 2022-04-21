@@ -39,6 +39,12 @@ struct PlayMode : Mode {
         NONE // the player did not hit or miss the beat 
     };
     
+    enum PlayState {
+        PLAYING, // when the player is playing the game
+        DEAD // the player has died
+    };
+    PlayState curr_state = PLAYING;
+
     struct BeatGradeDisplay {
         BeatGrade grade;
         float lifetime; // the amount of time that the display is on the screen

@@ -297,12 +297,19 @@ void PlayMode::level_finished() {
 }
 
 void PlayMode::update(float elapsed) {
-    drums->update(elapsed);
     fading_screen_transition.update(elapsed);
 
-    beatmap->update(elapsed);
-    if (beatmap->beats.size() == 0) {
-        level_finished();
+    switch (curr_state)
+    {
+        case PLAYING:
+            drums->update(elapsed);
+            beatmap->update(elapsed);
+            if (beatmap->beats.size() == 0) {
+                level_finished();
+            }
+            break;
+        case DEAD:
+            break;
     }
 
     if (beat_grade_display.lifetime > 0) {
@@ -381,12 +388,12 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     }
 
     // draw the frame rate in the bottom left corner of the screen
-    {
-        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
-        glBindVertexArray(vertex_array_object);
-        text_renderer.draw(drawable_size, std::to_string(frame_count), glm::vec2(-200,-700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-    }
+    // {
+    //     glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+    //     glBindVertexArray(vertex_array_object);
+    //     text_renderer.draw(drawable_size, std::to_string(frame_count), glm::vec2(-200,-700), glm::vec2(2, 2), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+    //     glBindBuffer(GL_ARRAY_BUFFER, 0);
+    // }
 
     glUseProgram(program.program);
 
