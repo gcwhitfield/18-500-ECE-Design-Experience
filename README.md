@@ -1,13 +1,16 @@
 # ECE Capstone Project - Rhythm Game
 
 
-![Game Photo](game photo.png)
+![GamePhoto](gamephoto.png)
 
-![Main Menu Screenshot](screenshot 3.png)
 
-![Song Selection Screenshot](screenshot 1.png)
+![MainMenuScreenshot](screenshot3.png)
 
-![Gameplay Screenshot](screenshot 2.png)
+
+![SongSelectionScreenshot](screenshot1.png)
+
+
+![GameplayScreenshot](screenshot2.png)
 
 ## Compiling the game
 CMake is used to create the compilation command for this game. Make sure you have CMake intalled before proceeding. https://cmake.org/install/
