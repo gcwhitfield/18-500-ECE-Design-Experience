@@ -2,6 +2,7 @@
 
 // define image file paths
 static std::string background_img("./art/images/main menu background.png");
+static std::string logo_img("./art/images/logo.png");
 
 // import sounds
 static Sound::Sample initialization_sound("./art/sounds/initialization_noise.mp3");
@@ -83,6 +84,11 @@ MainMenuMode::MainMenuMode() {
 
     { // import background texture
         LoadImage::load_img(&background_texture, background_img);
+        print_gl_errors();
+    }
+
+    { // import logo texture
+        LoadImage::load_img(&logo_texture, logo_img);
         print_gl_errors();
     }
 
@@ -196,6 +202,25 @@ void MainMenuMode::draw(glm::uvec2 const &drawable_size) {
         glBindVertexArray(vertex_array_object);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, background_texture);
+
+        // run the OpenGL pipeline
+        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+        print_gl_errors();
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+
+    { // draw the hit it logo
+        vertices.clear();
+        draw_rectangle(vertices, glm::vec2(0.0, 0.0), glm::vec2(0.5, 0.392), glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, logo_texture);
 
         // run the OpenGL pipeline
         glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));

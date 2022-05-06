@@ -56,8 +56,9 @@ struct Beatmap {
     // draws the beatmap to the screen
     void draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_size);
 
-    // called every frame
-    void update(float elapsed);
+    // called every frame. returns false if the player missed a note on this frame. returns true
+    // if the player hits all notes correctly on that frame 
+    bool update(float elapsed);
 
     // Returns the amount of time that will elapse after beatmap.t until the next occurrence of a 
     // beat at 'location'. If the next occurrence takes too long, this function will return -1.

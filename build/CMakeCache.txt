@@ -509,6 +509,15 @@ PNG_PNG_INCLUDE_DIR:PATH=/Library/Frameworks/Mono.framework/Headers
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=/Library/Frameworks/Python.framework/Versions/3.8/include/python3.8
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=/Library/Frameworks/Python.framework/Versions/3.8/lib/libpython3.8.dylib
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
+
 //Value Computed by CMake
 RhythmGame_BINARY_DIR:STATIC=/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/build
 
@@ -785,6 +794,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_HarfBuzz:INTERNAL=[/usr/local/include/harfbuzz][/us
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/local/lib/libpng.dylib][/Library/Frameworks/Mono.framework/Headers][v1.4.12()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.10()]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/Library/Frameworks/Python.framework/Versions/3.8/lib/libpython3.8.dylib][/Library/Frameworks/Python.framework/Versions/3.8/include/python3.8][v3.8.5()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
@@ -897,6 +908,12 @@ PNG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 PNG_PNG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
 ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_DEBUG

@@ -7,8 +7,10 @@
 #include "FadingScreenTransition.hpp"
 #include "Input.hpp"
 #include "LoadImage.hpp"
+#include "MainMenuMode.hpp"
 #include "Mode.hpp"
 #include "ScoreScreenMode.hpp"
+#include "SongSelectionMode.hpp"
 #include "Sound.hpp"
 #include "TextRenderer.hpp"
 #include "Vertex.hpp"
@@ -52,6 +54,8 @@ struct PlayMode : Mode {
     BeatGradeDisplay beat_grade_display;
 
     int score = 0;
+    float health = 100.0f; // when this reaches 0, the player dies
+    bool has_player_died = false;
     
     // update is called every frame
     virtual void update(float elapsed) override;
@@ -75,6 +79,10 @@ struct PlayMode : Mode {
     // given a beat location 'location', returns the score to assign to the beat
     BeatGrade grade_input(Beatmap::BeatLocation location);
 
+    // this function is called from Beatmap.cpp whenever the player completely misses a note. this 
+    // function is also called from inside of PlayMode::grade_input
+    void beat_missed();
+    
     // ---------- drums input ----------
     DrumPeripheral *drums;
 
@@ -91,7 +99,7 @@ struct PlayMode : Mode {
     GLuint notes_texture = -1U;
     GLuint background_texture = -1U;
     GLuint healthbar_background_texture = -1U;
-    GLuint healthbar_top_texture = -1U;
+    GLuint healthbar_overlay_texture = -1U;
 
     std::vector<Vertex> vertices;
 

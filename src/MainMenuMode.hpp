@@ -49,6 +49,7 @@ struct MainMenuMode : Mode
     GLuint vertex_array_object = -1U;
     GLuint white_texture = -1U;
     GLuint background_texture = -1U;
+    GLuint logo_texture = -1U;
     GLuint start_texture = -1U;
     GLuint exit_texture = -1U;
     std::vector<Vertex> vertices;

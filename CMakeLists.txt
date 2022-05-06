@@ -62,6 +62,10 @@ set(SERIALIB_NAMES ./libs/serialib/lib/serialib.cpp)
 add_subdirectory(./libs/jsoncpp)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+# import Python
+find_package(PythonLibs REQUIRED)
+include_directories(${PYTHON_INCLUDE_DIRS})
+
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -80,4 +84,6 @@ target_link_libraries(
     freetype ${FREETYPE_LIBRARIES}
     harfbuzz
     jsoncpp_static
+    ${PYTHON_LIBRARIES}
+
     )

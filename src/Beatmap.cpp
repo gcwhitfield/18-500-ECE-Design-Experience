@@ -133,7 +133,9 @@ void Beatmap::draw(std::vector<Vertex> &vertices, const glm::uvec2 &drawable_siz
     draw_rectangle(vertices, glm::vec2(judgement_pos.x + 3*horz_spacing/drawable_size.x, judgement_pos.y), size*size_drum_3_offset, drum_3_note_color);
 }
 
-void Beatmap::update(float elapsed) {
+bool Beatmap::update(float elapsed) {
+    bool result = true;
+    
     // validate that the beatmap is being displayed correctly
     {
         // all of the beats that occur after beats[next_beat] will occur in the future
@@ -151,13 +153,12 @@ void Beatmap::update(float elapsed) {
         for (size_t i = 0; i < beats.size(); i++) {
             if (!beats[i].second && beats[i].first.time + t_until_del_after_judgement < t) {
                 beats[i] = std::make_pair(beats[i].first, true);
-                // TODO: call "note missed" function here
+                result = false;
             }
         }
     }
 
     t += elapsed;
-    // std::cout << "Beatmsap: " << t << std::endl;
     while (beats[next_beat].first.time < t) {
         next_beat ++;
     }
@@ -169,6 +170,8 @@ void Beatmap::update(float elapsed) {
         t_drum_2 -= elapsed;
         t_drum_3 -= elapsed;
     }
+
+    return result;
 }
 
 float Beatmap::process_beat(BeatLocation location) {

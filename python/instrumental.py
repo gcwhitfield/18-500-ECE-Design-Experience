@@ -22,7 +22,7 @@ arr = []
 old_time = 0
 #need to detect beat amplitude throughout the song 
 
-
+ 
 
 for i in range(len(wav_data)): 
     val = abs(wav_data[i])

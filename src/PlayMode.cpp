@@ -10,7 +10,7 @@
 static std::string background_img("./art/images/background.png");
 static std::string note_img("./art/images/note.png");
 static std::string healthbar_background_img("./art/images/health bar background.png");
-static std::string healthbar_top_img("./art/images/health bar top.png");
+static std::string healthbar_overlay("./art/images/health bar overlay.png");
 
 size_t frame_count; // number of frames per second
 
@@ -104,7 +104,7 @@ PlayMode::PlayMode(std::string song_path) :
 
         { // import health bar textures
             LoadImage::load_img(&healthbar_background_texture, healthbar_background_img);
-            LoadImage::load_img(&healthbar_top_texture, healthbar_top_img);
+            LoadImage::load_img(&healthbar_overlay_texture, healthbar_overlay);
             print_gl_errors();
         }
     
@@ -192,15 +192,10 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
         }
 
     }
-    // std::cout << "Key has been pressed: " << key << " : " << scancode << " : " << action << " : " << mods << std::endl;
 }
 
 void PlayMode::handle_drum(std::vector<char> hits) {
-    (void) hits;
-    std::cout << "Drum has been hit!" << std::endl;
-    // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
-        std::cout << "pressed left" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
         switch(grade) {
             case BeatGrade::PERFECT:
@@ -217,7 +212,6 @@ void PlayMode::handle_drum(std::vector<char> hits) {
         }
     }
     if (hits[2] == DrumPeripheral::HitInfo::PRESS) {
-        std::cout << "pressed up" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::UP);
         switch(grade) {
             case BeatGrade::PERFECT:
@@ -234,7 +228,6 @@ void PlayMode::handle_drum(std::vector<char> hits) {
         }
     }
     if (hits[1] == DrumPeripheral::HitInfo::PRESS) {
-        std::cout << "pressed down" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::DOWN);
         switch(grade) {
             case BeatGrade::PERFECT:
@@ -251,7 +244,6 @@ void PlayMode::handle_drum(std::vector<char> hits) {
         }
     }
     if (hits[0] == DrumPeripheral::HitInfo::PRESS) {
-        std::cout << "pressed right" << std::endl;
         BeatGrade grade = grade_input(Beatmap::BeatLocation::LEFT);
         switch(grade) {
             case BeatGrade::PERFECT:
@@ -267,6 +259,12 @@ void PlayMode::handle_drum(std::vector<char> hits) {
                 break;
         }
     }
+}
+
+void PlayMode::beat_missed()
+{
+    // subtract health. if the player missess too many notes then they'll die 
+    health -= 10.0;
 }
 
 PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
@@ -285,6 +283,7 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
     } else if (time < 1) { // in seconds
         beat_grade_display.lifetime = 0.5f;
         beat_grade_display.grade = MISS;
+        beat_missed();
         return BeatGrade::MISS;
     } else {
         return BeatGrade::NONE;
@@ -293,39 +292,60 @@ PlayMode::BeatGrade PlayMode::grade_input(Beatmap::BeatLocation location) {
 
 void PlayMode::level_finished() {
     music->stop = true;
-    Mode::set_current(std::make_shared<ScoreScreenMode>());
+    Mode::set_current(std::make_shared<MainMenuMode>());
 }
 
 void PlayMode::update(float elapsed) {
     fading_screen_transition.update(elapsed);
-
-    switch (curr_state)
+    if (!has_player_died)
     {
-        case PLAYING:
-            drums->update(elapsed);
-            beatmap->update(elapsed);
-            if (beatmap->beats.size() == 0) {
-                level_finished();
+        switch (curr_state)
+        {
+            case PLAYING:
+                drums->update(elapsed);
+                if (!beatmap->update(elapsed)) // this function will return false whenever the 
+                // player misses a note
+                {
+                    beat_missed();
+                }
+                if (beatmap->beats.size() == 0) {
+                    level_finished();
+                }
+                break;
+            case DEAD:
+                break;
+        }
+
+        if (beat_grade_display.lifetime > 0) {
+            beat_grade_display.lifetime -= elapsed;
+        }
+
+        // keep track of the game frame rate
+        {
+            static float t = 1.0f;
+            static size_t _frame_count = 0;
+            t -= elapsed;
+            _frame_count ++;
+            if (t < 0.0f) {
+                frame_count = _frame_count;
+                _frame_count = 0;
+                t = 1.0f;
             }
-            break;
-        case DEAD:
-            break;
-    }
-
-    if (beat_grade_display.lifetime > 0) {
-        beat_grade_display.lifetime -= elapsed;
-    }
-
-    // keep track of the game frame rate
-    {
-        static float t = 1.0f;
-        static size_t _frame_count = 0;
-        t -= elapsed;
-        _frame_count ++;
-        if (t < 0.0f) {
-            frame_count = _frame_count;
-            _frame_count = 0;
-            t = 1.0f;
+        }
+        
+        // manage player health
+        {
+            if (health < 0) { // player died
+                has_player_died = true;
+                level_finished();
+            } else {
+                float health_regen_rate = 8;
+                if (health < 100)
+                {
+                    health += health_regen_rate * elapsed; // regenerate some health every frame
+                    if (health > 100) health = 100; // don't give the player more than 100 health
+                }
+            }
         }
     }
 }
@@ -398,24 +418,76 @@ void PlayMode::draw(const glm::uvec2 &drawable_size) {
     glUseProgram(program.program);
 
     { // draw health bar
-        vertices.clear();
+        // draw the background 
         glm::vec2 health_bar_loc(-0.6, 0.8);
         glm::vec2 health_bar_size(0.4, 0.1);
-        draw_rectangle(vertices, health_bar_loc, health_bar_size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+        {
+            vertices.clear();
+            draw_rectangle(vertices, health_bar_loc, health_bar_size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
 
-        // send the vertices to the vertex buffer
-        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
-        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-        
-        glBindVertexArray(vertex_array_object);
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, healthbar_background_texture);
+            // send the vertices to the vertex buffer
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, healthbar_background_texture);
 
-        // run the OpenGL pipeline
-        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
-        print_gl_errors();
-        glBindTexture(GL_TEXTURE_2D, 0);
+            // run the OpenGL pipeline
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+            print_gl_errors();
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
+        // draw the health area
+        {
+            
+            glm::vec2 loc_max(health_bar_loc.x + health_bar_size.x, health_bar_loc.y);
+            glm::vec2 loc_min(health_bar_loc.x - health_bar_size.x, health_bar_loc.y);
+            vertices.clear();
+
+            glm::vec2 health_fill_size(health_bar_size.x * (health/100.0f), health_bar_size.y);
+            health_fill_size.y /= 1.2;
+            
+            // make sure that the health fill size is always positive
+            glm::vec2 center(health_bar_loc.x, health_bar_loc.y);
+            health_fill_size.y /= 2.0;
+            health_fill_size.x *= 0.82;
+            draw_rectangle(vertices, center, health_fill_size, glm::u8vec4(0x96, 0xbe, 0x25, 0xff));
+
+            // send the vertices to the vertex buffer
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, white_texture);
+
+            // run the OpenGL pipeline
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+            print_gl_errors();
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
+        // draw the overlay
+        {
+            vertices.clear();
+            draw_rectangle(vertices, health_bar_loc, health_bar_size, glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+
+            // send the vertices to the vertex buffer
+            glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+            
+            glBindVertexArray(vertex_array_object);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, healthbar_overlay_texture);
+
+            // run the OpenGL pipeline
+            glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+            print_gl_errors();
+            glBindTexture(GL_TEXTURE_2D, 0);
+        }
     }
 
     { // draw beat grade display

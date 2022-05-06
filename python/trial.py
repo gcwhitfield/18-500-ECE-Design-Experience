@@ -1,43 +1,104 @@
 import matplotlib.pyplot as plt
 from scipy.fftpack import fft
 from scipy.io import wavfile # get the api
-import time 
-fs, data = wavfile.read(r"C:\\Users\\shrey\\Documents\\4thYear\\2nd Sem\\Capstone\\DriveBy.wav") # load the data
-a = data.T[0] # this is a two channel soundtrack, I get the first track
-b=[(ele/2**8.)*2-1 for ele in a] # this is 8-bit track, b is now normalized on [-1,1)
-c = fft(b) # calculate fourier transform (complex numbers list)
-d = len(c)/2  # you only need half of the fft list (real signal symmetry)
-d = int(d)
-print("HERE")
-#plt.plot(abs(c[:(d-1)]),'r') 
-print("NOW HERE")
-plt.xlim(1,3)
-#plt.show()
-
-import matplotlib.pyplot as plt
 import numpy as np
+import scipy
+import time
+import librosa
+import statistics
+import sys
+import subprocess
+import librosa
+from bandpass import filter
 
 
-def plot(data):
-    plt.plot(data, color='steelblue')
-    plt.figure()
-    plt.show()
 
-rate, wav_data = wavfile.read(r"C:\\Users\\shrey\\Documents\\4thYear\\2nd Sem\\Capstone\\DriveBy.wav")
-#plot(wav_data)
-plot(np.abs(np.fft.fft(wav_data)))
+def get_stats(wav_data, BPM, time):
+    #transform BPM to beats per second
+    BPM = BPM[0]
+    BPS = BPM/60
+    SPB = 1/BPS
+    print(SPB)
+    i = 0
+    #determines the beginning of the actual song
+    #eliminates false positives
+    #wav_data = wav_data[:, 0]
 
 
-rate, wav_data = wavfile.read(r"C:\\Users\\shrey\\Documents\\4thYear\\2nd Sem\\Capstone\\DriveBy.wav")
+    return wav_data, time, SPB
+
+def get_average_energy(wav_data, time, SPB):
+    #relies on the assumption that the entire song has the same energy
+    summation = 0
+    for i in range(1024):
+        summation +=(wav_data[i])*(wav_data[i])
+    return summation/1024
+
+def get_local_energy(wav_data, time, SPB):
+    summation = 0
+    for i in range(43):
+        summation += wav_data[i]*wav_data[i]
+    return np.amax(wav_data[i])*np.amax(wav_data[i])
+
+def comparison(energy, local_energy,c, beats, time,SPB, wav, location):
+    #try:
+    if (abs(int(local_energy) > c*abs(int((energy))))) and (abs(beats2[-1] - time) > .4) and location < 4: #  :
+
+        beats.append({"locations": 0, "time": time})
+        beats2.append(time)
+        wav = 100000
+    elif (abs(int(local_energy) > c*abs(int((energy))))) and (abs(beats2[-1] - time) > .4) and location < 8: #  :
+
+        beats.append({"locations": 1, "time": time})
+        beats2.append(time)
+        wav = 100000
+    #except:
+    location +=1
+    location = location%8
+
+    return beats, location, wav
 
 
-    #need to determine the correct amplitude 
-    #for j in range(i, len(wav_data)-1):
-    #    if (0 <= abs(time[j] - time[old_beat_ind]) <= 2*SPB):
-    #        wav = np.amax(wav_data[j])
-    #        count +=1
-    #        amplitude.append(wav)
-    #        old_beat_ind = i
-    #print("COUNT", count)
-    #print(amplitude)
-    #return old_beat_ind
+#definition of basic usage vectors
+start_time = time.time()
+rate, wav_data = wavfile.read(r"Pompeii.wav")
+print(rate)
+y,sr = librosa.load(r"Pompeii.wav")
+file = "Pompeii.wav"
+onset_env = librosa.onset.onset_strength(y=y, sr=sr)
+tempo = librosa.beat.tempo(onset_envelope= onset_env, sr=sr)
+#gets the static BPM
+#for the purposes of this test:
+
+beats = [{"locations":0, "time":0}]
+beats2 = [0]
+location = 0
+wav_data = wav_data[:, 0]
+
+#wav_data = filter(r"Mama_Tried.wav", 0)
+duration = librosa.get_duration(filename=r'Pompeii.wav')
+print("DURATION", duration)
+#correlates amplitudes to times
+time1 = np.arange(0,duration,1/rate) #time vector
+
+wav_data, time1, SPB = get_stats(.1*wav_data, tempo,time1)
+energy = abs(get_average_energy(wav_data[len(wav_data)//2:], time1, SPB))
+local_energy = abs(get_local_energy(wav_data[0:43], time1[0:43], SPB))
+
+#c = 7.0
+c = 3
+
+for i in range(43,len(wav_data)):
+    local_energy = wav_data[i]*wav_data[i]
+    beats,location, wav_data[i] = comparison(energy, local_energy, c, beats, time1[i], SPB, wav_data[i], location)
+
+
+new_time = time.time()
+print(len(beats))
+print("My program took", new_time - start_time, "to run")
+
+#wavfile.write("This_Love-melody4.wav", rate, wav_data.astype(np.int16))
+
+
+
+

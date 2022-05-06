@@ -90,7 +90,6 @@ namespace Sound {
         // ---------- private ----------
         // begins playback of PortAudio stream.
         void begin_play();
-
 };
 
 #endif

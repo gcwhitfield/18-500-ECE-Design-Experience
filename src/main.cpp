@@ -6,6 +6,7 @@
 #include "PlayMode.hpp"
 #include "SongSelectionMode.hpp"
 #include "MainMenuMode.hpp"
+#include "Python.h"
 #include "Sound.hpp"
 
 #include <iostream>
@@ -16,6 +17,26 @@ using namespace std;
 
 int main()
 {
+    // generate beatmaps via Python signal processing code
+    {
+        // code for executing Python from C++ copied from medium article
+        // https://medium.datadriveninvestor.com/how-to-quickly-embed-python-in-your-c-application-23c19694813
+
+        // initialize the python instance
+        Py_Initialize();
+
+        // run a file
+        FILE * PScriptFile = fopen("./python/streamlined.py", "r");
+        if (PScriptFile) {
+            PyRun_SimpleFile(PScriptFile, "streamlined.py");
+            fclose(PScriptFile);
+        }
+
+        PyObject *pName, *pModule, pFunc, *pArgs, *pValue;
+        // close the python instance
+        Py_Finalize();
+
+    }
     // initialize OpenGL
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);

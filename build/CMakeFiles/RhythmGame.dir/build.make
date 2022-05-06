@@ -373,6 +373,7 @@ RhythmGame: lib/libportaudio.dylib
 RhythmGame: lib/libfreetype.a
 RhythmGame: lib/libharfbuzz.a
 RhythmGame: lib/libjsoncpp.a
+RhythmGame: /Library/Frameworks/Python.framework/Versions/3.8/lib/libpython3.8.dylib
 RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd
 RhythmGame: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd
 RhythmGame: /usr/local/lib/libpng.dylib
