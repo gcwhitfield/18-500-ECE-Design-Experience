@@ -56,6 +56,7 @@ struct PlayMode : Mode {
     int score = 0;
     float health = 100.0f; // when this reaches 0, the player dies
     bool has_player_died = false;
+    float t = 0.0f; // internal timer for keeping track of whether the song has ended
     
     // update is called every frame
     virtual void update(float elapsed) override;

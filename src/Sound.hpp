@@ -50,6 +50,12 @@ namespace Sound {
             ~Sample() { delete audio; };
             std::vector<float> data;
             AudioDecoder *audio;
+
+            // returns the legnth of the audio file in seconds
+            double length() {
+                // 441000 is the sample rate of the audio
+                return (double)data.size()/(double)44100;
+            }
         };
          
         struct PlayingSample {

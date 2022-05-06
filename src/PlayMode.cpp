@@ -117,6 +117,7 @@ PlayMode::PlayMode(std::string song_path) :
 
     { // play music
         music = new Sound::PlayingSample(&music_file);
+        t = music_file.length();
         Sound::play(music);
         Sound::reset_timer();
     } 
@@ -298,6 +299,7 @@ void PlayMode::level_finished() {
 
 void PlayMode::update(float elapsed) {
     fading_screen_transition.update(elapsed);
+    t -= elapsed;
     if (!has_player_died)
     {
         switch (curr_state)
@@ -309,7 +311,8 @@ void PlayMode::update(float elapsed) {
                 {
                     beat_missed();
                 }
-                if (beatmap->beats.size() == 0) {
+                // if (beatmap->next_beat >= beatmap->beats.size() || t < 0) {
+                if (t < 0) {
                     level_finished();
                 }
                 break;
