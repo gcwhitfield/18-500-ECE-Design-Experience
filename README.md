@@ -1,5 +1,5 @@
 # ECE Capstone Project - Rhythm Game
-Created with "OpenGL Boilerplate" - starter code for making C++ programs with OpenGL. 
+
 
 ## Compiling the game
 CMake is used to create the compilation command for this game. Make sure you have CMake intalled before proceeding. https://cmake.org/install/
