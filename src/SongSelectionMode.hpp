@@ -40,6 +40,13 @@ struct SongSelectionMode : Mode
     // sets the positions of the songs based on the value of 'curr_selected'
     void set_song_positions();
 
+    // changes the selection of the song selection screen
+    void change_selection(int dir);
+
+    // when this function is called, the player's current song selection will get loaded into the 
+    // PlayMode
+    void confirm_selection();
+    
     virtual void update(float elapsed) override;
 
     virtual void handle_key(
@@ -48,6 +55,9 @@ struct SongSelectionMode : Mode
         int scancode, 
         int action, 
         int mods) override;
+
+    // ---------- drums input ----------
+    DrumPeripheral *drums;
 
     // this function is called when the user hits the drum
     virtual void handle_drum(std::vector<char> hits) override;

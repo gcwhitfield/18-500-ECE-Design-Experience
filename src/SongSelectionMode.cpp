@@ -127,6 +127,9 @@ SongSelectionMode::SongSelectionMode() {
         print_gl_errors();
     }
 
+    { // initialize drums
+        drums = new DrumPeripheral();
+    }
 }
 
 SongSelectionMode::~SongSelectionMode() {
@@ -142,6 +145,27 @@ void SongSelectionMode::set_song_positions() {
     }
 }
 
+void SongSelectionMode::change_selection(int dir) {
+    if (dir < 0) {
+        // decrement selection
+        if (curr_selected == 0) {
+            curr_selected = songs.size() - 1;
+        } else {
+            curr_selected --;
+        }
+    } else {
+        // incremenet selection
+        curr_selected ++;
+        if (curr_selected >= songs.size()) {
+            curr_selected = 0;
+        }
+    }
+    Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
+    Sound::play(bloop);
+
+
+}
+
 void SongSelectionMode::handle_key(GLFWwindow *window, int key, int scancode, int actions, int mods) {
     (void) window;
     (void) key;
@@ -152,21 +176,11 @@ void SongSelectionMode::handle_key(GLFWwindow *window, int key, int scancode, in
     if (state == SongSelectionState::SELECTING) {
         if (actions == Input::KeyAction::PRESS) {
             if (key == Input::KeyCode::A) {
-                curr_selected++;
-                if (curr_selected >= songs.size()) {
-                    curr_selected = 0;
-                }
-                Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
-                Sound::play(bloop);
+                change_selection(1);
             } else if (key == Input::KeyCode::D) {
-                if (curr_selected == 0) {
-                    curr_selected = songs.size() - 1;
-                } else {
-                    curr_selected--;
-                }
-                Sound::PlayingSample *bloop = new Sound::PlayingSample(&song_selection_swoosh);
-                Sound::play(bloop);
+                change_selection(-1);
             } else if (key == Input::KeyCode::ENTER) {
+                // go to PlayMode when the player presses Enter
                 fading_screen_transition.play(
                     FadingScreenTransition::ScreenTransitionAnimType::CLOSE,
                     2.0f, 
@@ -183,10 +197,34 @@ void SongSelectionMode::handle_key(GLFWwindow *window, int key, int scancode, in
 }
 
 void SongSelectionMode::handle_drum(std::vector<char> hits) {
-    (void) hits;
+    if (state == SELECTING) {
+        if (hits[3] == DrumPeripheral::HitInfo::PRESS) { // right drum
+            change_selection(1);
+        }
+        if (hits[2] == DrumPeripheral::HitInfo::PRESS) { // right middle drum
+            // go to PlayMode when the player presses the right middle drum
+            fading_screen_transition.play(
+                FadingScreenTransition::ScreenTransitionAnimType::CLOSE,
+                2.0f, 
+                glm::u8vec4(0x00, 0x00, 0x00, 0x00)
+            );
+            Sound::PlayingSample *confirmed_noise = new Sound::PlayingSample(&bloop_cmaj);
+            Sound::play(confirmed_noise);
+            state = SongSelectionState::CONFIRMED;
+        }
+        if (hits[1] == DrumPeripheral::HitInfo::PRESS) { // left middle drum
+        }
+        if (hits[0] == DrumPeripheral::HitInfo::PRESS) { // left drum
+            change_selection(-1);
+        }
+        set_song_positions();
+
+    }
 }
 
 void SongSelectionMode::update(float elapsed) {
+    drums->update(elapsed);
+
     { // smoothly interpolate the positions of the song info displays
         for (size_t i = 0; i < songs.size(); i++) {
             float EPS = 0.01;

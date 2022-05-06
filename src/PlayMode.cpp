@@ -195,6 +195,7 @@ void PlayMode::handle_key(GLFWwindow *window, int key, int scancode, int action,
 }
 
 void PlayMode::handle_drum(std::vector<char> hits) {
+    std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (hits[3] == DrumPeripheral::HitInfo::PRESS) {
         BeatGrade grade = grade_input(Beatmap::BeatLocation::RIGHT);
         switch(grade) {

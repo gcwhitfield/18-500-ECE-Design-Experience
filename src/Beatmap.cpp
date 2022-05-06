@@ -202,17 +202,23 @@ float Beatmap::process_beat(BeatLocation location) {
         size_t initial_beat = next_beat > 1 ? next_beat - 1 : next_beat;
         // check for beats coming in the future
         for (size_t i = initial_beat; i < beats.size(); i++) {
+            if (beats[i].first.location != location) continue;
             if (beats[i].second) continue;
             Beat &curr_beat = beats[i].first;
-            float time_diff = abs(curr_beat.time - t);
-            if (MAX_INPUT_THRESHOLD < time_diff) {
-                break;
+            float time_diff = curr_beat.time - t;
+            if (MAX_INPUT_THRESHOLD < abs(time_diff)) {
+                // if the player completed misses a note, then skip it and go to the next note
+                // if the player hits the drum way too early, then do nothing
+                if (time_diff < 0) {
+                    continue; // player hits way too late
+                } else {
+                    break; // player hits way too early
+                }
             }
-            if (curr_beat.location != location) continue;
             else {
                 beats[i] = std::make_pair(beats[i].first, true);
                 assert(beats[i].second);
-                return time_diff;
+                return abs(time_diff);
             }
         }
     }

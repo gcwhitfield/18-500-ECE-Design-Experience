@@ -38,9 +38,15 @@ struct MainMenuMode : Mode
         int action, 
         int mods) override;
     
+    // ---------- drums input ----------
+    DrumPeripheral *drums;
+    
     // this function is called when the user hits the drum
     virtual void handle_drum(std::vector<char> hits) override;
 
+    // plays exit animation and bloop sound before transitioning to song selection mode
+    void go_to_song_selection_mode();
+    
     // ---------- drawing ----------
     TextRenderer text_renderer;
     GLuint tex = -1U;

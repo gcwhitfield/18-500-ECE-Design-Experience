@@ -81,6 +81,10 @@ MainMenuMode::MainMenuMode() {
         glBindTexture(GL_TEXTURE_2D, 0);
         print_gl_errors();
     }
+    
+    { // initialize drums
+        drums = new DrumPeripheral();
+    }
 
     { // import background texture
         LoadImage::load_img(&background_texture, background_img);
@@ -112,6 +116,7 @@ MainMenuMode::~MainMenuMode() {
 
 void MainMenuMode::update(float elapsed) {
     fading_screen_transition.update(elapsed);
+    drums->update(elapsed);
     switch (curr_state) {
         case OPEN:
             if (fading_screen_transition.is_finished()) {
@@ -130,6 +135,22 @@ void MainMenuMode::update(float elapsed) {
     }
 }
 
+// if the main menu is ready, goes to song selection mode
+void MainMenuMode::go_to_song_selection_mode() {
+    if (fading_screen_transition.is_finished()) {
+        fading_screen_transition.play(
+            FadingScreenTransition::ScreenTransitionAnimType::CLOSE,
+            4.0f,
+            glm::u8vec4(0xff, 0xff, 0xff, 0xff)
+        );
+        curr_state = CLOSE;
+        { // play bloops cmaj911 sound
+            Sound::PlayingSample *bloop_confirm = new Sound::PlayingSample(&bloop_cmaj);
+            Sound::play(bloop_confirm);
+        }
+    }
+}
+
 void MainMenuMode::handle_key(GLFWwindow *window, int key, int scancode, int actions, int mods) {
     (void) window;
     (void) scancode;
@@ -139,18 +160,7 @@ void MainMenuMode::handle_key(GLFWwindow *window, int key, int scancode, int act
         switch (curr_state) {
             case WAIT:
                 if (key == Input::KeyCode::ENTER) {
-                    if (fading_screen_transition.is_finished()) {
-                        fading_screen_transition.play(
-                            FadingScreenTransition::ScreenTransitionAnimType::CLOSE,
-                            4.0f,
-                            glm::u8vec4(0xff, 0xff, 0xff, 0xff)
-                        );
-                        curr_state = CLOSE;
-                        { // play bloops cmaj911 sound
-                            Sound::PlayingSample *bloop_confirm = new Sound::PlayingSample(&bloop_cmaj);
-                            Sound::play(bloop_confirm);
-                        }
-                    }
+                    go_to_song_selection_mode();
                  }
                 break;
             default:
@@ -161,6 +171,14 @@ void MainMenuMode::handle_key(GLFWwindow *window, int key, int scancode, int act
 
 void MainMenuMode::handle_drum(std::vector<char> hits) {
     (void) hits;
+    // when any of the drums are hit, transition into song selection mode
+    switch (curr_state) {
+        case WAIT:
+            go_to_song_selection_mode();
+            break;
+        default:
+            break;
+    }
 }
 
 void MainMenuMode::draw(glm::uvec2 const &drawable_size) {

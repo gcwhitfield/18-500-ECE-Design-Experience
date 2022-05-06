@@ -61,6 +61,7 @@ void DrumPeripheral::update(float elapsed) {
 
     char c;
     int size = serial.available();
+
     // std::cout << (int)hits[0] << " : " << (int)hits[1] << " : " << (int)hits[2] << " : " << (int)hits[3] << std::endl;
     if (size <= 0) {
         hits[0] = (char)HitInfo::NONE;
@@ -82,6 +83,7 @@ void DrumPeripheral::update(float elapsed) {
                     if ((HitInfo)hits[0] == HitInfo::NONE)
                     {
                         hits[0] = (char)HitInfo::PRESS;
+                        std::cout << "DRUM0" << std::endl;
                     } else if ((HitInfo)hits[0] == HitInfo::PRESS) {
                         hits[0] = (char)HitInfo::HOLD;
                     }
@@ -93,6 +95,7 @@ void DrumPeripheral::update(float elapsed) {
                     if ((HitInfo)hits[1] == HitInfo::NONE)
                     {
                         hits[1] = (char)HitInfo::PRESS;
+                        std::cout << "DRUM1" << std::endl;
                     } else if ((HitInfo)hits[1] == HitInfo::PRESS) {
                         hits[1] = (char)HitInfo::HOLD;
                     }
@@ -104,6 +107,7 @@ void DrumPeripheral::update(float elapsed) {
                     if ((HitInfo)hits[2] == HitInfo::NONE)
                     {
                         hits[2] = (char)HitInfo::PRESS;
+                        std::cout << "DRUM2" << std::endl;
                     } else if ((HitInfo)hits[2] == HitInfo::PRESS) {
                         hits[2] = (char)HitInfo::HOLD;
                     }
@@ -115,6 +119,7 @@ void DrumPeripheral::update(float elapsed) {
                     if ((HitInfo)hits[3] == HitInfo::NONE)
                     {
                         hits[3] = (char)HitInfo::PRESS;
+                        std::cout << "DRUM3" << std::endl;
                     } else if ((HitInfo)hits[3] == HitInfo::PRESS) {
                         hits[3] = (char)HitInfo::HOLD;
                     }
