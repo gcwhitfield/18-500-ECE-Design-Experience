@@ -1,7 +1,11 @@
 # ECE Capstone Project - Rhythm Game
+
 ![Game Photo](game photo.png)
+
 ![Main Menu Screenshot](screenshot 3.png)
+
 ![Song Selection Screenshot](screenshot 1.png)
+
 ![Gameplay Screenshot](screenshot 2.png)
 
 ## Compiling the game
