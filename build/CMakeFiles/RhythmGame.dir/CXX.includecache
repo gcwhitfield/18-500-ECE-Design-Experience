@@ -1472,6 +1472,10 @@ iostream
 string
 -
 
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.cpp
+MainMenuMode.hpp
+/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.hpp
+
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/MainMenuMode.hpp
 ColorTextureProgram.hpp
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/ColorTextureProgram.hpp
@@ -1571,10 +1575,6 @@ iostream
 -
 string
 -
-
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/SongSelectionMode.cpp
-SongSelectionMode.hpp
-/Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/SongSelectionMode.hpp
 
 /Users/george/Desktop/教育/CMU/Senior Year/ECE Capstone 18-500/18-500-ECE-Design-Experience/src/SongSelectionMode.hpp
 Beatmap.hpp

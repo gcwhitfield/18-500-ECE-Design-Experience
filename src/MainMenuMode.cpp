@@ -3,6 +3,7 @@
 // define image file paths
 static std::string background_img("./art/images/main menu background.png");
 static std::string logo_img("./art/images/logo.png");
+static std::string hit_drums_to_begin_img("./art/images/hit drums to begin.png");
 
 // import sounds
 static Sound::Sample initialization_sound("./art/sounds/initialization_noise.mp3");
@@ -96,6 +97,12 @@ MainMenuMode::MainMenuMode() {
         print_gl_errors();
     }
 
+    { // import hit drums to continue texture
+        LoadImage::load_img(&hit_drums_to_begin_texture, hit_drums_to_begin_img);
+        print_gl_errors();
+    }
+
+
     { // initialize fading screen transition
         fading_screen_transition.play(
             FadingScreenTransition::ScreenTransitionAnimType::OPEN,
@@ -115,6 +122,15 @@ MainMenuMode::~MainMenuMode() {
 }
 
 void MainMenuMode::update(float elapsed) {
+
+    { // modulate the alpha channel "hit a drum to begin" text over time
+        float modulation_speed = 2;
+        t += elapsed * modulation_speed;
+        if (t > 3.1415926 * 2) {
+            t -= 3.1415926 * 2;
+        }
+    }
+
     fading_screen_transition.update(elapsed);
     drums->update(elapsed);
     switch (curr_state) {
@@ -246,6 +262,29 @@ void MainMenuMode::draw(glm::uvec2 const &drawable_size) {
         glBindTexture(GL_TEXTURE_2D, 0);
     }
 
+    { // draw "hit drums to begin" text
+        vertices.clear();
+        draw_rectangle(vertices, glm::vec2(0.0, -0.5), glm::vec2(0.8, 0.3), 
+            glm::u8vec4(0xff, 0xff, 0xff, 
+                0xff * ((1 + sinf(t)) / 2) // modulate the alpha channel of text over time
+                ));
+
+        // send the vertices to the vertex buffer
+        glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices[0]), vertices.data(), GL_DYNAMIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glBindVertexArray(vertex_array_object);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, hit_drums_to_begin_texture);
+
+        // run the OpenGL pipeline
+        glDrawArrays(GL_TRIANGLES, 0, GLsizei(vertices.size()));
+        print_gl_errors();
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+
+    
     { // draw the screen transition
         if (fading_screen_transition.is_active()) {
             fading_screen_transition.draw(drawable_size);

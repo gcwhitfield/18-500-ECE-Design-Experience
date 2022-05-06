@@ -28,6 +28,8 @@ struct MainMenuMode : Mode
     };
     MainMenuState curr_state = OPEN;
 
+    float t = 0; // internal time variable for making text fade in and out over time
+
     virtual void update(float elapsed) override;
 
     // this function is called when the user presses a key on the keyboard
@@ -40,7 +42,7 @@ struct MainMenuMode : Mode
     
     // ---------- drums input ----------
     DrumPeripheral *drums;
-    
+
     // this function is called when the user hits the drum
     virtual void handle_drum(std::vector<char> hits) override;
 
@@ -58,6 +60,7 @@ struct MainMenuMode : Mode
     GLuint logo_texture = -1U;
     GLuint start_texture = -1U;
     GLuint exit_texture = -1U;
+    GLuint hit_drums_to_begin_texture = -1U;
     std::vector<Vertex> vertices;
 
     FadingScreenTransition fading_screen_transition;
